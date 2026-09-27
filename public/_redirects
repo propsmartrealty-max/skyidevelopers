@@ -1,0 +1,29 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# CLOUDFLARE EDGE 301 CANONICAL & ALIAS REDIRECTS
+# ══════════════════════════════════════════════════════════════════════════════
+
+# Canonical Domain & Protocol Redirects
+https://www.skyidevelopers.in/* https://skyidevelopers.in/:splat 301!
+
+# Legacy & Alias Routes to Canonical Hubs
+/plots                          /na-plots-bhukum 301
+/na-plots                       /na-plots-bhukum 301
+/plots-bhukum                   /na-plots-bhukum 301
+/plots-pune                     /na-plots-bhukum 301
+/songbirds-bhugaon              /songbirds 301
+/skyi-songbirds                 /songbirds 301
+/songbirds-pune                 /songbirds 301
+/manaslake                      /manas-lake 301
+/skyi-manas-lake                /manas-lake 301
+/manas-lake-bhukum              /manas-lake 301
+/bhugaon-pune                   /bhugaon 301
+/skyi-bhugaon                   /bhugaon 301
+/contact-us                     /contact 301
+/contactus                      /contact 301
+/nri                            /nri-hub 301
+/nri-investment                 /nri-hub 301
+/nri-desk                       /nri-hub 301
+/all-projects                   /projects 301
+/portfolio                      /projects 301
+/location                       /connectivity 301
+/location-map                   /connectivity 301

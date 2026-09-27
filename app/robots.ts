@@ -16,11 +16,29 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
       {
-        userAgent: 'Googlebot-Image',
+        userAgent: 'Google-InspectionTool',
         allow: '/',
+        disallow: ['/api/'],
+      },
+      {
+        userAgent: 'Googlebot-Image',
+        allow: ['/', '/*.webp', '/*.jpg', '/*.png', '/*.svg'],
       },
       {
         userAgent: 'Googlebot-Video',
+        allow: '/',
+      },
+      {
+        userAgent: 'Googlebot-Mobile',
+        allow: '/',
+        disallow: ['/api/'],
+      },
+      {
+        userAgent: 'Mediapartners-Google',
+        allow: '/',
+      },
+      {
+        userAgent: 'AdsBot-Google',
         allow: '/',
       },
       {
@@ -30,6 +48,11 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'DuckDuckBot',
+        allow: '/',
+        disallow: ['/api/'],
+      },
+      {
+        userAgent: 'Applebot',
         allow: '/',
         disallow: ['/api/'],
       },

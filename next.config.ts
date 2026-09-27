@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=(), browsing-topics=()',
+            value: 'camera=(), microphone=(), geolocation=(self), browsing-topics=(), payment=(), usb=(), screen-wake-lock=()',
           },
           {
             key: 'X-XSS-Protection',
@@ -40,6 +40,22 @@ const nextConfig: NextConfig = {
           {
             key: 'X-DNS-Prefetch-Control',
             value: 'on',
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin-allow-popups',
+          },
+          {
+            key: 'Cross-Origin-Resource-Policy',
+            value: 'cross-origin',
+          },
+          {
+            key: 'Origin-Agent-Cluster',
+            value: '?1',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.cloudflareinsights.com https://challenges.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: https://images.unsplash.com https://formsubmit.co; connect-src 'self' https://formsubmit.co https://cloudflareinsights.com https://static.cloudflareinsights.com https://www.google-analytics.com; frame-src 'self' https://www.youtube.com https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;",
           },
         ],
       },

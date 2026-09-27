@@ -4,7 +4,9 @@ import './globals.css';
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  viewportFit: 'cover',
   themeColor: '#070b1f',
+  colorScheme: 'dark',
 };
 
 export const metadata: Metadata = {
@@ -87,6 +89,13 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  formatDetection: {
+    telephone: false,
+    date: false,
+    address: false,
+    email: false,
+  },
+  category: 'real estate',
 };
 
 const jsonLdSchema = {
@@ -386,6 +395,10 @@ export default function RootLayout({
   return (
     <html lang="en-IN">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://formsubmit.co" />
+        <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
         <link rel="preload" href="/songbirds-1.webp" as="image" type="image/webp" />
         <link rel="preload" href="/bungalow-plots.jpg" as="image" type="image/jpeg" />
         <script
