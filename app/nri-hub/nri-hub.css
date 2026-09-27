@@ -1,0 +1,404 @@
+.nri-main-container {
+  min-height: 100vh;
+  background: #070b1f;
+  color: #ffffff;
+  padding-top: 80px;
+}
+
+.nri-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Hero ── */
+.nri-hero {
+  position: relative;
+  padding: 100px 24px 80px;
+  text-align: center;
+  background: radial-gradient(circle at 50% 20%, rgba(255, 107, 53, 0.18) 0%, rgba(7, 11, 31, 1) 75%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nri-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.nri-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 107, 53, 0.12);
+  border: 1px solid rgba(255, 107, 53, 0.35);
+  color: #ff6b35;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+}
+
+.nri-title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.nri-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 36px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nri-cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nri-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #ff6b35 0%, #d97706 100%);
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.35);
+}
+
+.nri-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 107, 53, 0.5);
+}
+
+.nri-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.nri-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.nri-btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.nri-btn-whatsapp:hover {
+  transform: translateY(-2px);
+}
+
+/* ── Pillars ── */
+.nri-pillars-section {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nri-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.nri-pillar-card {
+  background: rgba(13, 18, 51, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 24px;
+  border-radius: 16px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.nri-pillar-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 53, 0.4);
+}
+
+.nri-pillar-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 16px 0 10px;
+  color: #ffffff;
+}
+
+.nri-pillar-card p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ── Section Headers ── */
+.nri-section-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+}
+
+.nri-tag {
+  display: inline-block;
+  color: #ffd700;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.nri-section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 850;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.nri-section-header p {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+/* ── Corridors ── */
+.nri-corridors-section {
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nri-projects-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.nri-project-item {
+  background: rgba(13, 18, 51, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nri-proj-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.nri-proj-header h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.nri-status {
+  background: rgba(255, 107, 53, 0.15);
+  color: #ff6b35;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  white-space: nowrap;
+}
+
+.nri-project-item p {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.nri-proj-meta {
+  background: rgba(7, 11, 31, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.nri-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffd700;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+
+.nri-link:hover {
+  gap: 12px;
+}
+
+/* ── Legal Steps ── */
+.nri-legal-section {
+  padding: 80px 0;
+}
+
+.nri-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.nri-step-card {
+  background: rgba(13, 18, 51, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+}
+
+.step-num {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: rgba(255, 107, 53, 0.35);
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.nri-step-card h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.nri-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ── FAQ ── */
+.nri-faq-section {
+  padding: 80px 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nri-faq-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.nri-faq-item {
+  background: rgba(13, 18, 51, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.nri-faq-item h4 {
+  font-size: 1.05rem;
+  font-weight: 750;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.nri-faq-item p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0;
+  padding-left: 26px;
+}
+
+/* ── CTA Card ── */
+.nri-contact-cta {
+  padding: 80px 0 100px;
+}
+
+.nri-cta-card {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(13, 18, 51, 0.95) 100%);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 24px;
+  padding: 60px 40px;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.nri-cta-card h2 {
+  font-size: 2.2rem;
+  font-weight: 850;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.nri-cta-card p {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.nri-desk-contact {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .nri-title {
+    font-size: 2.2rem;
+  }
+  .nri-faq-list {
+    grid-template-columns: 1fr;
+  }
+  .nri-cta-card {
+    padding: 40px 20px;
+  }
+}

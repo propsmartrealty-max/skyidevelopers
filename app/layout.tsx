@@ -38,6 +38,17 @@ export const metadata: Metadata = {
     },
     languages: {
       'en-IN': 'https://skyidevelopers.in/',
+      'en-US': 'https://skyidevelopers.in/',
+      'en-GB': 'https://skyidevelopers.in/',
+      'en-AE': 'https://skyidevelopers.in/',
+      'en-SG': 'https://skyidevelopers.in/',
+      'en-AU': 'https://skyidevelopers.in/',
+      'en-CA': 'https://skyidevelopers.in/',
+      'en-NZ': 'https://skyidevelopers.in/',
+      'en-QA': 'https://skyidevelopers.in/',
+      'en-SA': 'https://skyidevelopers.in/',
+      'en-OM': 'https://skyidevelopers.in/',
+      'en-DE': 'https://skyidevelopers.in/',
       'en': 'https://skyidevelopers.in/',
       'x-default': 'https://skyidevelopers.in/',
     },
@@ -45,9 +56,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://skyidevelopers.in/',
-    title: 'Skyi Developers Pune | Luxury Residences & PMRDA NA Bungalow Plots',
-    description: 'Explore 23+ delivered projects, 7000+ homes, IGBC Platinum certified townships in Pune.',
+    title: 'Skyi Developers Pune | Official Projects & Global NRI Real Estate Portal',
+    description: 'Explore 23+ delivered projects, 7,000+ homes, IGBC Platinum certified townships and PMRDA NA bungalow plots in Pune.',
     siteName: 'Skyi Developers',
+    locale: 'en_IN',
+    alternateLocale: ['en_US', 'en_GB', 'en_AE', 'en_SG', 'en_AU', 'en_CA'],
     images: [
       {
         url: '/songbirds-1.webp',
@@ -59,8 +72,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Skyi Developers Pune | Luxury Flats & NA Plots',
-    description: 'IGBC Platinum & RERA Certified Township Developer in Pune.',
+    title: 'Skyi Developers Pune | Luxury Flats & PMRDA NA Plots',
+    description: 'IGBC Platinum & MahaRERA Certified Township Developer in Pune. Trusted by 7,000+ families & Global NRI Investors.',
     images: ['/songbirds-1.webp'],
   },
   robots: {
@@ -83,12 +96,51 @@ const jsonLdSchema = {
       "@type": "Organization",
       "@id": "https://skyidevelopers.in/#organization",
       "name": "Skyi Developers",
-      "alternateName": ["SKYi Developers", "Skyi Developer Pune", "SKYi Properties", "SKYi Real Estate"],
+      "alternateName": ["SKYi Developers", "Skyi Developer Pune", "SKYi Properties", "SKYi Real Estate", "Enerrgia SKYi Developers"],
       "url": "https://skyidevelopers.in/",
       "logo": "https://skyidevelopers.in/favicon.svg",
       "telephone": "+91-20-66143000",
       "email": "info@skyidevelopers.com",
       "foundingDate": "2004",
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "United Arab Emirates" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "Singapore" },
+        { "@type": "Country", "name": "Australia" },
+        { "@type": "Country", "name": "Canada" },
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "Qatar" },
+        { "@type": "Country", "name": "Saudi Arabia" },
+        { "@type": "Country", "name": "Oman" }
+      ],
+      "knowsAbout": [
+        "Pune Real Estate",
+        "Sustainable Eco-Townships",
+        "IGBC Platinum Green Certification",
+        "MahaRERA Regulatory Compliance",
+        "PMRDA Sanctioned Layouts",
+        "NRI Real Estate Investment India",
+        "FEMA & RBI NRI Property Acquisition Guidelines",
+        "Luxury Hillside Residences Pune"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-20-66143000",
+          "contactType": "sales",
+          "areaServed": ["IN", "US", "AE", "GB", "SG", "AU", "CA"],
+          "availableLanguage": ["English", "Hindi", "Marathi"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-20-66143000",
+          "contactType": "customer support",
+          "contactOption": "TollFree",
+          "availableLanguage": ["English", "Hindi", "Marathi"]
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Skymark One, Balewadi",
@@ -111,7 +163,8 @@ const jsonLdSchema = {
       "name": "Skyi Developers Pune",
       "image": "https://skyidevelopers.in/songbirds-1.webp",
       "telephone": "+91-20-66143000",
-      "priceRange": "₹45 Lakhs - ₹2.5 Crores",
+      "priceRange": "₹42 Lakhs - ₹7.50 Crores",
+      "areaServed": ["Pune", "Maharashtra", "India", "Global NRI Clients"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Skymark One, Balewadi",
