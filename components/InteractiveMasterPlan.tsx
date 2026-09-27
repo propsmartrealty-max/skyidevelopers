@@ -16,12 +16,12 @@ interface Sector {
 
 const SECTORS: Sector[] = [
   {
-    id: 'na-plots-sector',
-    name: 'Sector A: SKYi Manas Lake NA Bungalow Plots',
-    type: 'PMRDA NA Villa Plots',
-    acres: '25 Acres (Phase 1)',
-    status: 'Launching 2025',
-    highlights: ['2,000 - 6,000+ Sq.Ft Plots', 'Starting ₹95 Lakhs*', '100% Clear Title 7/12', 'Direct Lake Promenade Access', 'Underground Utilities'],
+    id: 'manas-lake-residences',
+    name: 'Sector A: SKYi Manas Lake Lakeside Enclave',
+    type: '2 & 3 BHK Lakeview Residences',
+    acres: '30 Acres',
+    status: 'Ready & Ongoing',
+    highlights: ['Lakeside Promenade Access', 'Zero-Wastage Floor Plans', 'IGBC Platinum Certified', 'East-West Cross Ventilation', 'Direct Paud Road 6-Lane Access'],
   },
   {
     id: 'songbirds-township',
@@ -54,7 +54,7 @@ export default function InteractiveMasterPlan() {
             <span className="gradient-text">SKYi Manas Lake &amp; Songbirds Layout</span>
           </h2>
           <p className="masterplan-subtitle">
-            Click on layout sectors to explore PMRDA NA plot sectors, high-rise residential towers, and sports club amenities.
+            Click on layout sectors to explore residential towers, hillside sanctuaries, and championship sports club amenities.
           </p>
         </div>
 

@@ -208,14 +208,14 @@ export default function Footer({ onOpenPrivacyModal }: FooterProps) {
 
             {/* Strategic Links Cluster */}
             <div className="strategic-links-wrap" style={{ marginTop: '30px' }}>
-              <p className="social-title" style={{ marginBottom: '12px', color: 'var(--accent-gold)' }}>Strategic Links — SKYi Manas Lake &amp; NA Plots Bhukum</p>
+              <p className="social-title" style={{ marginBottom: '12px', color: 'var(--accent-gold)' }}>Strategic Links — SKYi Eco-Townships &amp; Residences</p>
               <div className="strategic-links-grid">
-                <a href="/na-plots-bhukum" className="strategic-link-item">SKYi Manas Lake NA Bungalow Plots Bhukum</a>
-                <a href="/projects" className="strategic-link-item">SKYi Manas Lake Lakeside Apartments Paud Road</a>
-                <a href="/songbirds" className="strategic-link-item">Skyi Songbirds Township Bhugaon Pune</a>
+                <a href="/songbirds" className="strategic-link-item">Skyi Songbirds 45-Acre Township Bhugaon</a>
+                <a href="/projects" className="strategic-link-item">SKYi Manas Lake Lakeside Residences Paud Road</a>
                 <a href="/projects" className="strategic-link-item">SKYi Tigers Nest &amp; PWC Towers Bhugaon</a>
-                <a href="/plot-estimator" className="strategic-link-item">PMRDA NA Plot Valuation &amp; FSI Estimator</a>
+                <a href="/connectivity" className="strategic-link-item">Pune Metro &amp; Paud Road Connectivity Matrix</a>
                 <a href="/virtual-tour" className="strategic-link-item">360° Drone Virtual Sightseeing Gallery</a>
+                <a href="/nri-hub" className="strategic-link-item">Global NRI Investment Advisory Hub</a>
               </div>
             </div>
             <div className="social-row">

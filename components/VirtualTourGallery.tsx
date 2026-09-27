@@ -13,7 +13,7 @@ interface VirtualTourProps {
 interface TourMedia {
   id: string;
   title: string;
-  category: 'Aerial Drone' | 'NA Plots' | 'Clubhouse' | 'Townships';
+  category: 'Aerial Drone' | 'Townships' | 'Clubhouse' | 'Residences';
   location: string;
   bgImage: string;
   badge: string;
@@ -34,13 +34,13 @@ const TOUR_ITEMS: TourMedia[] = [
   },
   {
     id: '2',
-    title: 'SKYi Manas Lake NA Bungalow Plots Campus',
-    category: 'NA Plots',
-    location: 'Manas Lake Campus, Bhukum',
-    bgImage: getProjectImage('skyi-manas-lake-na-plots'),
-    badge: 'Vector Blueprint & Plot Tour',
+    title: 'Skyi Star City 20-Acre Township Tour',
+    category: 'Townships',
+    location: 'Dhayari / Sinhagad Road, Pune',
+    bgImage: getProjectImage('skyi-star-city-dhayari'),
+    badge: 'Integrated Township Tour',
     duration: '3:30 Min',
-    description: 'Explore the PMRDA-sanctioned clear title NA plot layouts ranging from 2,000 to 6,000+ sq.ft. (Starting ₹95 Lakhs*) featuring underground utilities and wide concrete roads.',
+    description: 'Explore the 20-acre master-planned community with 70% open green space, zero-wastage apartments, and active community plazas.',
   },
   {
     id: '3',
@@ -55,7 +55,7 @@ const TOUR_ITEMS: TourMedia[] = [
   {
     id: '4',
     title: 'SKYi Tigers Nest & PWC Towers Hillside',
-    category: 'Townships',
+    category: 'Residences',
     location: 'Bhugaon Hillside Sanctuary',
     bgImage: getProjectImage('skyi-tigers-nest-bhugaon'),
     badge: 'Hillside Sanctuary',
@@ -68,7 +68,7 @@ export default function VirtualTourGallery({ onBookSiteVisit }: VirtualTourProps
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [selectedMedia, setSelectedMedia] = useState<TourMedia | null>(null);
 
-  const categories = ['All', 'Aerial Drone', 'NA Plots', 'Clubhouse', 'Townships'];
+  const categories = ['All', 'Aerial Drone', 'Townships', 'Clubhouse', 'Residences'];
 
   const filteredMedia = activeCategory === 'All'
     ? TOUR_ITEMS
@@ -85,7 +85,7 @@ export default function VirtualTourGallery({ onBookSiteVisit }: VirtualTourProps
           </h2>
           <div className="glow-line" style={{ margin: '18px auto 0 auto' }} />
           <p className="vt-intro">
-            Take a virtual walkthrough of SKYi's 90-acre townships, PMRDA NA Bungalow Plot layouts in Bhukum, and hillside sanctuaries in Bhugaon before visiting in person.
+            Take a virtual walkthrough of SKYi's 90-acre eco-townships, Poona Western Club, and hillside sanctuaries in Bhugaon and Bavdhan before visiting in person.
           </p>
         </div>
 

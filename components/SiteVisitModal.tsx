@@ -18,7 +18,7 @@ const PROJECTS = [
   'Skyi Songbirds (Bhugaon)',
   'Skyi Manas Lake (Bavdhan / Paud Rd)',
   'Skyi Star City (Dhayari)',
-  'Skyi NA Plots (Paud Road)',
+  'SKYi Tigers Nest & Iris (Baner / Bhugaon)',
 ];
 
 const TIME_SLOTS = [

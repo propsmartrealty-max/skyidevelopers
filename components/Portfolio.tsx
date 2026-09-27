@@ -9,7 +9,7 @@ import './Portfolio.css';
 
 interface Project {
   title: string;
-  category: 'Apartments' | 'Townships' | 'Plots' | 'Baner & Bavdhan';
+  category: 'Apartments' | 'Townships' | 'Baner & Bavdhan';
   description: string;
   bgImage: string;
   scale: string;
@@ -48,60 +48,6 @@ const PROJECTS: Project[] = [
     seoContent: 'SKYi Manas Lake is an iconic 90+ acre residential township situated on Paud Road at the junction of Bavdhan and Bhukum, Pune, just minutes from Chandani Chowk. Recognized with IGBC Platinum certification, this lakeside community features east-west oriented apartments for maximum natural light and cross ventilation.',
     status: 'Delivered', year: '2015',
     reraNumber: 'MahaRERA: P52100000513 / P52100000514 / P52100026954 / P52100052033',
-  },
-  {
-    title: 'SKYi Manas Lake NA Bungalow Plots',
-    category: 'Plots',
-    description: 'Exclusive PMRDA sanctioned 100% Clear Title NA Bungalow Plots at the serene Manas Lake campus, Bhukum — minutes from Chandani Chowk & Kothrud.',
-    bgImage: getProjectImage('skyi-manas-lake-na-plots'),
-    scale: '100% PMRDA Sanctioned, Gated Community',
-    configuration: 'NA Villa Plots (2,000 to 6,000+ Sq.Ft.) — Starting ₹95 Lakhs*',
-    location: 'Manas Lake Campus, Bhukum, Paud Road (Near Chandani Chowk, Pune)',
-    amenities: [
-      'PMRDA Sanctioned 100% Clear Title NA Status',
-      'Underground Electrical, Water & High-Speed Fiber Lines',
-      'Lakeside Promenade & Scenic Green Boulevards',
-      '24/7 Gated Security & Access to 90-Acre Township Amenities',
-    ],
-    seoContent: 'SKYi Manas Lake NA Bungalow Plots in Bhukum, Paud Road, Pune offer a rare opportunity to invest in PMRDA-sanctioned Non-Agricultural (NA) residential plots within a 90+ acre IGBC Platinum-certified lakeside township. Located just minutes from Chandani Chowk, Kothrud, and Bavdhan, these plots come with complete infrastructure — wide internal roads, street lighting, underground utilities, and clear legal titles — allowing you to design and construct your custom luxury villa or lakeside bungalow.',
-    status: 'Launching Soon', year: '2025',
-    reraNumber: 'PMRDA Sanctioned Collector NA Layout / MahaRERA Compliant',
-  },
-  {
-    title: 'SKYi Star Town NA Villa Plots',
-    category: 'Plots',
-    description: 'PMRDA Sanctioned Clear Title NA Villa Plots at Bhugaon Foothills overlooking the 7,000-acre NDA forest reserve.',
-    bgImage: getProjectImage('skyi-star-town-na-plots'),
-    scale: 'PMRDA Sanctioned, Individual PR Card',
-    configuration: 'NA Villa Plots (2,000 to 6,000 Sq.Ft.)',
-    location: 'Bhugaon Foothills, Paud Road (10 Mins from Kothrud & Chandani Chowk)',
-    amenities: [
-      'PMRDA 1.4 FSI Approved Layout',
-      'Individual Property Card (PR Card) per Plot',
-      '40ft Concrete Internal Road & Demarcated Walls',
-      'Access to 5-Acre Poona Western Club',
-    ],
-    seoContent: 'SKYi Star Town NA Villa Plots in Bhugaon, Paud Road, Pune offer luxury clear title residential plotting in West Pune. Overlooking the NDA forest reserve and 10 minutes from Kothrud, these plots are 100% bank-loan approved for immediate villa construction.',
-    status: 'Ongoing', year: '2024',
-    reraNumber: 'MahaRERA: P52100000769 / PMRDA Sanctioned Collector NA Layout',
-  },
-  {
-    title: 'SKYi Lakeside Meadows NA Plots',
-    category: 'Plots',
-    description: 'Resort-Style Lakefront NA Bungalow Plots fronting Kasarsai Dam — just 12 mins from Hinjawadi Phase 3 IT Park.',
-    bgImage: getProjectImage('skyi-lakeside-meadows-kasarsai'),
-    scale: 'Kasarsai Lake Frontage, PMRDA Approved',
-    configuration: 'Lakeside NA Villa Plots (2,000 to 6,000 Sq.Ft.)',
-    location: 'Kasarsai Dam Lakefront, Hinjewadi Extension, Pune',
-    amenities: [
-      'Direct Lakefront Panorama',
-      'PMRDA Approved Residential R-Zone Layout',
-      'Underground Electrical & Water Connections',
-      'High Capital Appreciation IT Corridor',
-    ],
-    seoContent: 'SKYi Lakeside Meadows NA Plots at Kasarsai Dam offer serene lakefront villa plots close to Hinjewadi Phase 3 IT Park. PMRDA approved with 100% clear title 7/12 extracts.',
-    status: 'Launching Soon', year: '2025',
-    reraNumber: 'PMRDA Approved Collector NA Layout / Clear 7/12 RERA Compliant',
   },
   {
     title: 'SKYi Park & SKYi Iris',
@@ -280,7 +226,7 @@ function TiltCard({
 /* ─── Main Component ─── */
 export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: PortfolioProps) {
   const [selected, setSelected] = useState<Project | null>(null);
-  const [filter, setFilter] = useState<'All' | 'Apartments' | 'Townships' | 'Plots'>('All');
+  const [filter, setFilter] = useState<'All' | 'Townships' | 'Apartments' | 'Baner & Bavdhan'>('All');
 
   useEffect(() => {
     document.body.style.overflow = selected ? 'hidden' : '';
@@ -306,7 +252,7 @@ export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: Portfoli
 
         {/* Filter buttons */}
         <div className="portfolio-filter-tabs">
-          {(['All', 'Townships', 'Apartments', 'Plots'] as const).map((cat) => (
+          {(['All', 'Townships', 'Apartments', 'Baner & Bavdhan'] as const).map((cat) => (
             <button
               key={cat}
               className={`port-filter-btn ${filter === cat ? 'active' : ''}`}
