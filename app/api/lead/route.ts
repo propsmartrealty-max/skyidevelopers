@@ -22,8 +22,12 @@ interface LeadPayload {
 
 export async function POST(request: Request) {
   try {
-    // 0. Rate limiting check
-    const clientIp = request.headers.get('x-forwarded-for') || 'client-ip';
+    // 0. Cloudflare & Proxy IP Extraction with Sliding-Window Rate Limiting
+    const cfIp = request.headers.get('cf-connecting-ip');
+    const realIp = request.headers.get('x-real-ip');
+    const forwardedFor = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim();
+    const clientIp = cfIp || realIp || forwardedFor || 'unknown-client';
+
     const rateLimit = checkRateLimit(clientIp, 5, 10 * 60 * 1000);
     if (!rateLimit.success) {
       return NextResponse.json(
@@ -62,18 +66,18 @@ export async function POST(request: Request) {
       );
     }
 
-    // 2. Sanitize inputs
-    const sanitizedName = sanitizeInput(body.name || '');
-    let sanitizedPhone = sanitizeInput(body.phone || '').replace(/[\s\-()+]/g, '');
+    // 2. Sanitize inputs and enforce length boundaries
+    const sanitizedName = sanitizeInput(body.name || '').slice(0, 70);
+    let sanitizedPhone = sanitizeInput(body.phone || '').replace(/[\s\-()+]/g, '').slice(0, 15);
     if (sanitizedPhone.startsWith('91') && sanitizedPhone.length === 12) {
       sanitizedPhone = sanitizedPhone.slice(2);
     } else if (sanitizedPhone.startsWith('0') && sanitizedPhone.length === 11) {
       sanitizedPhone = sanitizedPhone.slice(1);
     }
-    const sanitizedEmail = sanitizeInput(body.email || '');
-    const sanitizedProject = sanitizeInput(body.project || 'General Inquiry');
-    const sanitizedMessage = sanitizeInput(body.message || '');
-    const utmSource = sanitizeInput(body.utmSource || 'Direct Website Visit');
+    const sanitizedEmail = sanitizeInput(body.email || '').slice(0, 80);
+    const sanitizedProject = sanitizeInput(body.project || 'General Inquiry').slice(0, 80);
+    const sanitizedMessage = sanitizeInput(body.message || '').slice(0, 600);
+    const utmSource = sanitizeInput(body.utmSource || 'Direct Website Visit').slice(0, 80);
 
     // 3. Validate mandatory fields
     if (!sanitizedName || sanitizedName.length < 2) {
