@@ -54,9 +54,13 @@ export async function POST(request: Request) {
     }
 
     const phoneRegex = /^[6-9]\d{9}$/;
-    if (!sanitizedPhone || !phoneRegex.test(sanitizedPhone)) {
+    const hasValidPhone = Boolean(sanitizedPhone && phoneRegex.test(sanitizedPhone));
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const hasValidEmail = Boolean(sanitizedEmail && emailRegex.test(sanitizedEmail));
+
+    if (!hasValidPhone && !hasValidEmail) {
       return NextResponse.json(
-        { success: false, error: 'Please enter a valid 10-digit Indian mobile number.' },
+        { success: false, error: 'Please enter a valid 10-digit mobile number or email address.' },
         { status: 400 }
       );
     }
@@ -73,18 +77,22 @@ export async function POST(request: Request) {
     });
 
     // 4. Dispatch Email Alert to propsmartrealty@gmail.com
-    sendLeadEmailNotification({
-      leadId: leadRefId,
-      name: sanitizedName,
-      phone: sanitizedPhone,
-      email: sanitizedEmail,
-      project: sanitizedProject,
-      visitDate: body.visitDate,
-      visitTime: body.visitTime,
-      pickupNeeded: body.pickupNeeded,
-      message: sanitizedMessage,
-      source: utmSource,
-    }).catch((err) => logger.error('[Email Dispatch Non-Blocking Error]', err));
+    try {
+      await sendLeadEmailNotification({
+        leadId: leadRefId,
+        name: sanitizedName,
+        phone: sanitizedPhone || 'Not Provided',
+        email: sanitizedEmail,
+        project: sanitizedProject,
+        visitDate: body.visitDate,
+        visitTime: body.visitTime,
+        pickupNeeded: body.pickupNeeded,
+        message: sanitizedMessage,
+        source: utmSource,
+      });
+    } catch (err) {
+      logger.error('[Email Dispatch Error]', err);
+    }
 
     // 5. Return success response
     return NextResponse.json(

@@ -112,7 +112,7 @@ export default function Footer({ onOpenPrivacyModal }: FooterProps) {
 
     try {
       // 1. Dispatch via Next.js backend API (FormSubmit + SMTP)
-      await fetch('/api/lead', {
+      const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -124,6 +124,9 @@ export default function Footer({ onOpenPrivacyModal }: FooterProps) {
           utmSource: 'Website Footer Contact Form',
         }),
       });
+      if (!res.ok) {
+        throw new Error(`API returned status ${res.status}`);
+      }
       setSubmitted(true);
     } catch {
       // 2. Direct client-side FormSubmit fail-safe

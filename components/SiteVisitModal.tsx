@@ -183,6 +183,10 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
         }),
       });
 
+      if (!res.ok) {
+        throw new Error(`Lead API returned status ${res.status}`);
+      }
+
       const data = await res.json();
       const ref = data.leadId || ('SK-VISIT-' + Math.floor(100000 + Math.random() * 900000));
       safeSessionStorage.removeItem(DRAFT_KEY);
