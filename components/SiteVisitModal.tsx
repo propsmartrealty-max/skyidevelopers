@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Calendar, Clock, MapPin, Phone, User, CheckCircle2, Car, Mail, AlertCircle, Loader2 } from 'lucide-react';
-import { sanitizeInput, safeSessionStorage } from '../utils/security';
+import { sanitizeInput, safeSessionStorage, isSpamSubmission } from '../utils/security';
 import './SiteVisitModal.css';
 
 const DRAFT_KEY = 'skyi_site_visit_draft';
@@ -30,6 +30,7 @@ const TIME_SLOTS = [
 
 export default function SiteVisitModal({ isOpen, onClose, defaultProject }: SiteVisitModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
+  const modalOpenTime = useRef<number>(Date.now());
   const [formData, setFormData] = useState(() => {
     const savedDraft = safeSessionStorage.getItem(DRAFT_KEY);
     if (savedDraft) {
@@ -43,6 +44,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
           date: parsed.date || new Date().toISOString().split('T')[0],
           timeSlot: parsed.timeSlot || TIME_SLOTS[0],
           pickupNeeded: Boolean(parsed.pickupNeeded),
+          honeypot: '',
         };
       } catch {
         // Fallback if parsing fails
@@ -56,6 +58,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
       date: new Date().toISOString().split('T')[0],
       timeSlot: TIME_SLOTS[0],
       pickupNeeded: false,
+      honeypot: '',
     };
   });
 
@@ -114,6 +117,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
 
   useEffect(() => {
     if (isOpen) {
+      modalOpenTime.current = Date.now();
       document.body.style.overflow = 'hidden';
       window.addEventListener('keydown', handleKeyDown);
       // Auto-focus first input after animation
@@ -134,6 +138,24 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
     if (isSubmitting) return; // Prevent double submission
 
     setValidationError(null);
+    const durationMs = Date.now() - modalOpenTime.current;
+
+    // Client-side anti-spam check
+    const spamCheck = isSpamSubmission({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      honeypot: formData.honeypot,
+      durationMs,
+    });
+
+    if (spamCheck.isSpam) {
+      const ref = 'SK-VISIT-' + Math.floor(100000 + Math.random() * 900000);
+      safeSessionStorage.removeItem(DRAFT_KEY);
+      setBookingRef(ref);
+      setSubmitted(true);
+      return;
+    }
 
     const cleanName = sanitizeInput(formData.name);
     let cleanPhone = sanitizeInput(formData.phone).replace(/[\s\-()+]/g, '');
@@ -180,6 +202,8 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
           visitTime: formData.timeSlot,
           pickupNeeded: formData.pickupNeeded,
           utmSource: 'Website VIP Site Visit Modal',
+          honeypot: formData.honeypot,
+          durationMs,
         }),
       });
 
@@ -273,6 +297,18 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                 )}
 
                 <form onSubmit={handleSubmit} className="visit-form" noValidate>
+                  {/* Bot Honeypot Trap */}
+                  <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true" tabIndex={-1}>
+                    <input
+                      type="text"
+                      name="honeypot"
+                      value={formData.honeypot || ''}
+                      onChange={(e) => setFormData({ ...formData, honeypot: e.target.value })}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </div>
+
                   <div className="form-group">
                     <label htmlFor="modal-project-select"><MapPin size={16} /> Select Project</label>
                     <select

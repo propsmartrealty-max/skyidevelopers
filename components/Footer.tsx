@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Share2, Globe, Play, Send, AlertCircle, Loader2, ShieldCheck, ExternalLink } from 'lucide-react';
-import { sanitizeInput } from '../utils/security';
+import { sanitizeInput, isSpamSubmission } from '../utils/security';
 import './Footer.css';
 
 const CONTACT_INFO = [
@@ -58,18 +58,23 @@ const MAHARERA_DISCLOSURES = [
   },
 ];
 
-type Fields = { name: string; email: string; phone: string; project: string; message: string };
+type Fields = { name: string; email: string; phone: string; project: string; message: string; honeypot?: string };
 
 interface FooterProps {
   onOpenPrivacyModal?: () => void;
 }
 
 export default function Footer({ onOpenPrivacyModal }: FooterProps) {
-  const [form,      setForm]      = useState<Fields>({ name: '', email: '', phone: '', project: '', message: '' });
+  const [form,      setForm]      = useState<Fields>({ name: '', email: '', phone: '', project: '', message: '', honeypot: '' });
   const [focused,   setFocused]   = useState<string | null>(null);
   const [errorMsg,  setErrorMsg]  = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading,   setLoading]   = useState(false);
+  const [initTime,  setInitTime]  = useState(Date.now());
+
+  useEffect(() => {
+    setInitTime(Date.now());
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -80,6 +85,23 @@ export default function Footer({ onOpenPrivacyModal }: FooterProps) {
     if (loading) return; // Prevent double-submit
 
     setErrorMsg(null);
+    const durationMs = Date.now() - initTime;
+
+    // Client-side anti-spam check
+    const spamCheck = isSpamSubmission({
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      message: form.message,
+      honeypot: form.honeypot,
+      durationMs,
+    });
+
+    if (spamCheck.isSpam) {
+      setSubmitted(true);
+      return;
+    }
+
     const cleanName = sanitizeInput(form.name);
     const cleanEmail = sanitizeInput(form.email);
     let cleanPhone = sanitizeInput(form.phone).replace(/[\s\-()+]/g, '');
@@ -122,6 +144,8 @@ export default function Footer({ onOpenPrivacyModal }: FooterProps) {
           project: form.project || 'General Inquiry',
           message: form.message,
           utmSource: 'Website Footer Contact Form',
+          honeypot: form.honeypot,
+          durationMs,
         }),
       });
       if (!res.ok) {
@@ -274,6 +298,17 @@ export default function Footer({ onOpenPrivacyModal }: FooterProps) {
                   )}
 
                   <form onSubmit={handleSubmit} className="contact-form" noValidate>
+                    {/* Bot Honeypot Trap (Hidden from real users) */}
+                    <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true" tabIndex={-1}>
+                      <input
+                        type="text"
+                        name="honeypot"
+                        value={form.honeypot || ''}
+                        onChange={handleChange}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
+                    </div>
 
                     {/* Name */}
                     <div className={`form-field ${isActive('name') ? 'is-active' : ''}`}>

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { sanitizeInput } from '../../../utils/security';
+import { sanitizeInput, isSpamSubmission } from '../../../utils/security';
 import { logger } from '../../../utils/logger';
 import { checkRateLimit } from '../../../utils/rateLimiter';
 import { sendLeadEmailNotification } from '../../../utils/emailService';
@@ -16,6 +16,8 @@ interface LeadPayload {
   utmSource?: string;
   utmMedium?: string;
   utmCampaign?: string;
+  honeypot?: string;
+  durationMs?: number;
 }
 
 export async function POST(request: Request) {
@@ -32,7 +34,35 @@ export async function POST(request: Request) {
 
     const body: LeadPayload = await request.json();
 
-    // 1. Sanitize inputs
+    // 1. Anti-Spam & Honeypot Evaluation
+    const spamCheck = isSpamSubmission({
+      name: body.name,
+      email: body.email,
+      phone: body.phone,
+      message: body.message,
+      honeypot: body.honeypot,
+      durationMs: body.durationMs,
+    });
+
+    if (spamCheck.isSpam) {
+      logger.warn(`[Anti-Spam Filter] Blocked lead submission from IP ${clientIp}. Reason: ${spamCheck.reason}`, {
+        name: body.name,
+        email: body.email,
+        phone: body.phone,
+      });
+
+      // Return a silent mock success to avoid teaching spambots how to evade filters
+      return NextResponse.json(
+        {
+          success: true,
+          leadId: `SKYI-SEC-${Date.now().toString(36).toUpperCase()}`,
+          message: 'Thank you! Your inquiry has been received.',
+        },
+        { status: 200 }
+      );
+    }
+
+    // 2. Sanitize inputs
     const sanitizedName = sanitizeInput(body.name || '');
     let sanitizedPhone = sanitizeInput(body.phone || '').replace(/[\s\-()+]/g, '');
     if (sanitizedPhone.startsWith('91') && sanitizedPhone.length === 12) {
@@ -45,7 +75,7 @@ export async function POST(request: Request) {
     const sanitizedMessage = sanitizeInput(body.message || '');
     const utmSource = sanitizeInput(body.utmSource || 'Direct Website Visit');
 
-    // 2. Validate mandatory fields
+    // 3. Validate mandatory fields
     if (!sanitizedName || sanitizedName.length < 2) {
       return NextResponse.json(
         { success: false, error: 'Please enter a valid full name (minimum 2 characters).' },
@@ -65,7 +95,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // 3. Log lead creation
+    // 4. Log lead creation
     const leadRefId = `SKYI-${Date.now().toString(36).toUpperCase()}`;
     logger.log(`[Serverless Lead Engine] Lead Received ${leadRefId}`, {
       name: sanitizedName,
