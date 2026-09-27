@@ -1,21 +1,25 @@
 /**
  * ══════════════════════════════════════════════════════════════════════════════
- * SKYI DEVELOPERS — DEEP PROJECT DATA & HIGH-INTENT SERP DOMINANCE ENGINE
- * Exhaustive structural mapping of all SKYi developments across Pune & vicinity
+ * SKYI DEVELOPERS PUNE — MASTER PROJECT DATA & ULTRA-ADVANCED SERP ENGINE
+ * Exhaustive structural mapping of ALL ongoing, completed, and township
+ * developments across Bhugaon, Bhukum, Paud Road, Baner, Bavdhan, Dhayari,
+ * Sopan Baug, Aundh, and West Pune micro-markets.
  * ══════════════════════════════════════════════════════════════════════════════
  */
 
 export interface SkyiProjectDeepSpec {
   id: string;
   projectName: string;
-  category: 'NA Bungalow Plots' | 'Township & Apartments' | 'Hillside Luxury' | 'IT Belt & Urban';
+  statusCategory: 'Ongoing' | 'Completed' | 'Township' | 'Plotted';
+  category: 'Townships & Residences' | 'Ultra Luxury & Boutique' | 'Club Residences' | 'NA Bungalow Plots';
   location: string;
-  microLocation: string;
+  microLocation: 'Bhugaon' | 'Bhukum' | 'Paud Road' | 'Baner' | 'Bavdhan' | 'Dhayari' | 'Sopan Baug' | 'Aundh' | 'Kasarsai' | 'Pirangut' | 'Sus';
   corridor: string;
   acreage: string;
   type: string;
   priceStarting: string;
   priceRange: string;
+  configurations: string[];
   sizes: string;
   fsiRatio: string;
   roadWidth: string;
@@ -28,51 +32,317 @@ export interface SkyiProjectDeepSpec {
 }
 
 export const SKYI_ALL_PROJECTS_DEEP_DATA: SkyiProjectDeepSpec[] = [
-  /* ── 1. SKYi Manas Lake NA Bungalow Plots ── */
+  /* ══════════════════════════════════════════════════════════════════════════════
+     1. ONGOING / ACTIVE PORTFOLIO
+  ══════════════════════════════════════════════════════════════════════════════ */
+
+  /* ── 1. SKYi Tigers Nest (Bhugaon) ── */
   {
-    id: 'skyi-manas-lake-na-plots',
-    projectName: 'SKYi Manas Lake PMRDA NA Bungalow Plots',
-    category: 'NA Bungalow Plots',
-    location: 'Manas Lake Campus, Bhukum, Paud Road, Pune',
-    microLocation: 'Bhukum',
-    corridor: 'West Pune / Paud Road Corridor',
-    acreage: '90+ Acres Integrated Lakefront Township',
-    type: 'PMRDA Sanctioned Collector NA Villa Plots',
-    priceStarting: '₹95 Lakhs*',
-    priceRange: '₹95 Lakhs* - ₹2.5 Crores',
-    sizes: '2,000 - 6,000+ Sq.Ft.',
-    fsiRatio: '1.5 FSI Permitted for Multi-Story Bungalows',
-    roadWidth: '40ft & 50ft Wide Internal Concrete Avenues',
-    reraNumbers: 'MahaRERA: P52100000513, P52100000514, P52100026954, P52100052033, P52100079680 / PMRDA Sanctioned NA Layout',
-    titleStatus: '100% Clear Title 7/12 Extract & Individual PR Card',
-    bankApprovals: ['State Bank of India (SBI)', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra'],
+    id: 'skyi-tigers-nest-bhugaon',
+    projectName: 'SKYi Tigers Nest',
+    statusCategory: 'Ongoing',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Bhugaon Hillside, Paud Road, Pune',
+    microLocation: 'Bhugaon',
+    corridor: 'West Pune / Sahyadri Valley Corridor',
+    acreage: 'Hilltop Forest Sanctuary Enclave',
+    type: '3 & 4 BHK Luxury Hillside Sanctuaries',
+    priceStarting: '₹1.79 Crores*',
+    priceRange: '₹1.79 Cr* - ₹3.25 Cr',
+    configurations: ['3 BHK Hillside Residence', '4 BHK Luxury Sanctuary', 'Penthouse'],
+    sizes: '1,650 - 2,800 Sq.Ft. Carpet Area',
+    fsiRatio: 'Sanctioned Hillside Residential FSI',
+    roadWidth: '40ft Concrete Access Boulevard',
+    reraNumbers: 'MahaRERA: P52100000769 / P52100001117 (Songbirds Hillside Enclave)',
+    titleStatus: '100% Clear Title & Sanctioned Architectural Layout',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra'],
     keyHighlights: [
-      'Plots starting 2,000 Sq.Ft. onwards with 1.5 FSI for custom construction',
-      'Overlooking serene Manas Lake with scenic mountain backdrop',
-      '6-Lane Paud Road access — only 6 minutes drive to Chandani Chowk',
-      'Underground electricity, storm water drains, & water pipeline per plot',
-      'Up to 75% bank funding pre-approved by leading nationalized banks',
-      'CRISIL Rated & IGBC Green Township Certification'
+      'Overlooking 7,000-acre NDA forest reserve with 180° uninterrupted valley panorama',
+      'Ultra-exclusive 4-bed residences starting from ₹1.79 Cr*',
+      'Private deck balconies with zero-dead-space luxury architecture',
+      'Exclusive hilltop club amenities, infinity heated pool, and concierge',
+      '10 minutes from Kothrud Metro and Chandani Chowk junction',
     ],
     serpKeywords: [
-      'SKYi Manas Lake NA plots Bhukum', 'PMRDA NA plots Paud Road Pune', 'clear title villa plots Bhukum',
-      'buy NA bungalow plot Bhukum Pune', 'SKYi Manas Lake price list', 'plots near Chandani Chowk Kothrud'
+      'SKYi Tigers Nest', 'SKYi Tigers Nest Pune', 'SKYi Tigers Nest Bhugaon',
+      'SKYi Tigers Nest price', 'SKYi Tigers Nest 4 BHK', 'SKYi Tigers Nest 4 BHK price',
+      'SKYi Tigers Nest floor plan', 'SKYi Tigers Nest amenities', 'SKYi Tigers Nest location',
+      'SKYi Tigers Nest brochure', 'SKYi Tigers Nest RERA', 'SKYi Tigers Nest possession',
+      'SKYi Tigers Nest forest facing', 'SKYi Tigers Nest luxury apartments', 'SKYi Tigers Nest luxury homes',
+      'SKYi Tigers Nest review', 'SKYi Tigers Nest investment',
     ],
-    coordinates: { lat: 18.5100, lng: 73.7500 }
+    coordinates: { lat: 18.4988, lng: 73.7431 },
   },
 
-  /* ── 2. Skyi Songbirds ── */
+  /* ── 2. SKYi Five Racecourse (Sopan Baug / Racecourse) ── */
+  {
+    id: 'skyi-five-racecourse-sopan-baug',
+    projectName: 'SKYi Five Racecourse',
+    statusCategory: 'Ongoing',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Sopan Baug / Racecourse Annexe, Pune',
+    microLocation: 'Sopan Baug',
+    corridor: 'East-Central Pune / Prime Elite Belt',
+    acreage: 'Ultra-Exclusive Private Estate',
+    type: '4 & 5 BHK Ultra-Luxury Sky Mansions',
+    priceStarting: '₹3.85 Crores*',
+    priceRange: '₹3.85 Cr* - ₹7.50 Cr',
+    configurations: ['4 BHK Sky Mansion', '5 BHK Ultra-Luxury Estate', 'Duplex Penthouse'],
+    sizes: '2,800 - 5,200 Sq.Ft. Carpet Area',
+    fsiRatio: 'Prime Urban Residential FSI',
+    roadWidth: '60ft Avenue Access',
+    reraNumbers: 'MahaRERA Registered / Sanctioned Layout',
+    titleStatus: '100% Clear Title Legal Documentation',
+    bankApprovals: ['HDFC Bank', 'ICICI Bank', 'SBI', 'Axis Bank', 'Standard Chartered'],
+    keyHighlights: [
+      'Iconic racecourse facing luxury sky residences in elite Sopan Baug',
+      'Grand 4 & 5 BHK floor plans with private elevator lobbies and double-height decks',
+      'Panoramic 360° views across Pune Racecourse and Cantonment green cover',
+      'Five-star hospitality concierge, temperature-controlled pool, and spa',
+    ],
+    serpKeywords: [
+      'SKYi Five Racecourse', 'Skyi Five Racecourse', 'SKYi Five Racecourse Pune',
+      'SKYi Five Racecourse Sopan Baug', 'SKYi Five Racecourse price', 'SKYi Five Racecourse 4 BHK',
+      'SKYi Five Racecourse 5 BHK', 'SKYi Five Racecourse 4 BHK price', 'SKYi Five Racecourse 5 BHK price',
+      'SKYi Five Racecourse floor plan', 'SKYi Five Racecourse amenities', 'SKYi Five Racecourse location',
+      'SKYi Five Racecourse brochure', 'SKYi Five Racecourse RERA', 'SKYi Five Racecourse review',
+      'SKYi Five Racecourse luxury homes', 'SKYi Five Racecourse racecourse view',
+    ],
+    coordinates: { lat: 18.5150, lng: 73.8850 },
+  },
+
+  /* ── 3. SKYi Five Maidan (Baner) ── */
+  {
+    id: 'skyi-five-maidan-baner',
+    projectName: 'SKYi Five Maidan',
+    statusCategory: 'Ongoing',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Pancard Club Road, Baner, Pune',
+    microLocation: 'Baner',
+    corridor: 'West Pune / Prime Baner High Street IT Corridor',
+    acreage: 'Boutique Urban Luxury Campus',
+    type: '4 BHK Luxury Residences',
+    priceStarting: '₹2.45 Crores*',
+    priceRange: '₹2.45 Cr* - ₹3.95 Cr',
+    configurations: ['4 BHK Luxury Apartment', '4 BHK Grand Suite', 'Penthouse'],
+    sizes: '2,100 - 3,200 Sq.Ft. Carpet Area',
+    fsiRatio: 'Baner Urban Residential FSI',
+    roadWidth: '80ft Pancard Club Arterial Road',
+    reraNumbers: 'MahaRERA Registered / Approved Layout',
+    titleStatus: '100% Clear Title 30-Year Search Certified',
+    bankApprovals: ['HDFC Bank', 'ICICI Bank', 'SBI', 'Kotak Mahindra', 'Axis Bank'],
+    keyHighlights: [
+      'Located on prestigious Pancard Club Road in prime Baner',
+      'Spacious 4 BHK luxury residences tailored for corporate executives and entrepreneurs',
+      '3 minutes from Baner High Street, Balewadi High Street, and Mumbai-Pune Expressway',
+      'Rooftop sky lounge, heated lap pool, state-of-the-art gymnasium, and EV charging',
+    ],
+    serpKeywords: [
+      'SKYi Five Maidan', 'Skyi Five Maidan', 'SKYi Five Maidan Baner',
+      'SKYi Five Maidan Pune', 'SKYi Five Maidan price', 'SKYi Five Maidan 4 BHK',
+      'SKYi Five Maidan 4 BHK price', 'SKYi Five Maidan floor plan', 'SKYi Five Maidan amenities',
+      'SKYi Five Maidan location', 'SKYi Five Maidan Pancard Club Road', 'SKYi Five Maidan luxury apartments',
+      'SKYi Five Maidan premium homes', 'SKYi Five Maidan brochure', 'SKYi Five Maidan RERA',
+      'SKYi Five Maidan review',
+    ],
+    coordinates: { lat: 18.5600, lng: 73.7850 },
+  },
+
+  /* ── 4. SKYi Park (Baner / Bhugaon / Paud Road) ── */
+  {
+    id: 'skyi-park-pune',
+    projectName: 'SKYi Park',
+    statusCategory: 'Ongoing',
+    category: 'Townships & Residences',
+    location: 'Paud Road / Manas Lake / Baner, Pune',
+    microLocation: 'Paud Road',
+    corridor: 'West Pune / Bavdhan-Paud Road Corridor',
+    acreage: 'Integrated Green Community',
+    type: '2 & 3 BHK Contemporary Residences',
+    priceStarting: '₹65 Lakhs*',
+    priceRange: '₹65 Lakhs* - ₹1.25 Crores',
+    configurations: ['2 BHK Comfort Home', '3 BHK Premium Residence'],
+    sizes: '780 - 1,350 Sq.Ft. Carpet Area',
+    fsiRatio: 'Approved Residential FSI',
+    roadWidth: '50ft Concrete Arterial Road',
+    reraNumbers: 'MahaRERA: P52100000449 / Sanctioned Layout',
+    titleStatus: '100% Clear Title & Occupancy Certified',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Baroda'],
+    keyHighlights: [
+      'IGBC Platinum certified green building design with central landscaped parks',
+      'Zero-wastage floor plans maximizing usable carpet area',
+      '5 minutes from Chandani Chowk and Kothrud connection',
+      'Full lifestyle amenities including clubhouse, jogging track, and children play plazas',
+    ],
+    serpKeywords: [
+      'SKYi Park', 'SKYi Park Pune', 'SKYi Park Bhugaon', 'SKYi Park Manas Lake',
+      'SKYi Park Paud Road', 'SKYi Park 2 BHK', 'SKYi Park 3 BHK', 'SKYi Park price',
+      'SKYi Park floor plan', 'SKYi Park amenities', 'SKYi Park location', 'SKYi Park brochure',
+      'SKYi Park RERA', 'SKYi Park possession', 'SKYi Park review', 'SKYi Park township',
+      'SKYi Park investment',
+    ],
+    coordinates: { lat: 18.5085, lng: 73.7400 },
+  },
+
+  /* ── 5. SKYi PWC Towers & PWC Towers Hillside ── */
+  {
+    id: 'skyi-pwc-towers-bhugaon',
+    projectName: 'SKYi PWC Towers & PWC Towers Hillside',
+    statusCategory: 'Ongoing',
+    category: 'Club Residences',
+    location: 'Skyi Songbirds Campus, Bhugaon, Paud Road, Pune',
+    microLocation: 'Bhugaon',
+    corridor: 'West Pune / Songbirds Foothills',
+    acreage: 'Integrated with 5-Acre Poona Western Club',
+    type: '3 & 4 BHK Sports Club Residences',
+    priceStarting: '₹1.15 Crores*',
+    priceRange: '₹1.15 Cr* - ₹2.40 Cr',
+    configurations: ['3 BHK Club Residence', '4 BHK Hillside Club Suite'],
+    sizes: '1,250 - 2,100 Sq.Ft. Carpet Area',
+    fsiRatio: 'Township Sanctioned High-Rise FSI',
+    roadWidth: '60ft Township Boulevard',
+    reraNumbers: 'MahaRERA: P52100000643 / P52100000805 / P52100000769',
+    titleStatus: '100% Clear Title with Pre-Approved Bank Mortgages',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'PNB Housing'],
+    keyHighlights: [
+      'Direct on-campus access to the 5-acre Poona Western Club sports complex',
+      'Olympic-standard swimming pool, professional cricket pitch, and tennis academies',
+      'Hillside views overlooking NDA forest and Mula river watershed',
+      'Zero-dead-space architecture with premium designer fittings',
+    ],
+    serpKeywords: [
+      'SKYi PWC Towers', 'SKYi PWC Towers Pune', 'SKYi PWC Towers Bhugaon',
+      'SKYi PWC Towers Paud Road', 'SKYi PWC Towers 4 BHK', 'SKYi PWC Towers price',
+      'SKYi PWC Towers floor plan', 'SKYi PWC Towers amenities', 'SKYi PWC Towers location',
+      'SKYi PWC Towers brochure', 'SKYi PWC Towers RERA', 'SKYi PWC Towers review',
+      'SKYi PWC Towers hillside', 'SKYi PWC Towers Hillside', 'SKYi PWC Towers Hillside price',
+      'SKYi PWC Towers Hillside 4 BHK', 'SKYi PWC Towers club residence',
+    ],
+    coordinates: { lat: 18.4988, lng: 73.7431 },
+  },
+
+  /* ── 6. SKYi Aura Heights (Bhugaon / Bavdhan) ── */
+  {
+    id: 'skyi-aura-heights-bhugaon',
+    projectName: 'SKYi Aura Heights',
+    statusCategory: 'Ongoing',
+    category: 'Townships & Residences',
+    location: 'Bhugaon / Bavdhan Valley, Paud Road, Pune',
+    microLocation: 'Bhugaon',
+    corridor: 'West Pune / Bavdhan-Bhugaon Hillside',
+    acreage: 'Hillside Residential Enclave',
+    type: '3 BHK Premium Residences',
+    priceStarting: '₹95 Lakhs*',
+    priceRange: '₹95 Lakhs* - ₹1.45 Crores',
+    configurations: ['3 BHK Hillside View Home', '3 BHK Premium Sanctuary'],
+    sizes: '1,150 - 1,550 Sq.Ft. Carpet Area',
+    fsiRatio: 'Sanctioned Residential FSI',
+    roadWidth: '40ft Concrete Access Road',
+    reraNumbers: 'MahaRERA: P52100000769 (Extension) / Sanctioned Layout',
+    titleStatus: '100% Clear Title Documentation',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
+    keyHighlights: [
+      'Scenic valley facing homes with pristine mountain air and forest proximity',
+      'Spacious 3 BHK configurations with wrap-around balconies and modern modular kitchens',
+      '10 minutes from Kothrud and Chandani Chowk multi-level flyover',
+      'IGBC green rating, solar lighting, and rainwater harvesting infrastructure',
+    ],
+    serpKeywords: [
+      'SKYi Aura Heights', 'SKYi Aura Heights Pune', 'SKYi Aura Heights Bhugaon',
+      'SKYi Aura Heights price', 'SKYi Aura Heights 3 BHK', 'SKYi Aura Heights 3 BHK price',
+      'SKYi Aura Heights floor plan', 'SKYi Aura Heights amenities', 'SKYi Aura Heights location',
+      'SKYi Aura Heights brochure', 'SKYi Aura Heights RERA', 'SKYi Aura Heights review',
+      'SKYi Aura Heights township', 'SKYi Aura Heights premium residences',
+    ],
+    coordinates: { lat: 18.5020, lng: 73.7450 },
+  },
+
+  /* ── 7. SKYi Iris Riverside (Bhugaon / Songbirds) ── */
+  {
+    id: 'skyi-iris-riverside-bhugaon',
+    projectName: 'SKYi Iris Riverside',
+    statusCategory: 'Ongoing',
+    category: 'Townships & Residences',
+    location: 'Skyi Songbirds Waterfront, Bhugaon, Pune',
+    microLocation: 'Bhugaon',
+    corridor: 'West Pune / Mula River Watershed',
+    acreage: 'Riverfront Enclave within 45-Acre Township',
+    type: '3 BHK Riverside Luxury Residences',
+    priceStarting: '₹98 Lakhs*',
+    priceRange: '₹98 Lakhs* - ₹1.55 Crores',
+    configurations: ['3 BHK Riverside Home', '3 BHK Scenic Deck Residence'],
+    sizes: '1,180 - 1,600 Sq.Ft. Carpet Area',
+    fsiRatio: 'Township Sanctioned FSI',
+    roadWidth: '50ft Internal Township Boulevard',
+    reraNumbers: 'MahaRERA: P52100019348 / Approved Layout',
+    titleStatus: '100% Clear Title & OC in Phases',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra'],
+    keyHighlights: [
+      'Waterfront residences fronting the natural Mula river corridor',
+      'Uninterrupted green views with bird watching decks and riverfront trails',
+      'Complete access to Poona Western Club and Songbirds on-campus retail',
+      'Sustainable zero-waste community infrastructure',
+    ],
+    serpKeywords: [
+      'SKYi Iris Riverside', 'SKYi Iris Riverside Pune', 'SKYi Iris Riverside Bhugaon',
+      'SKYi Iris Riverside Songbirds', 'SKYi Iris Riverside price', 'SKYi Iris Riverside 3 BHK',
+      'SKYi Iris Riverside 3 BHK price', 'SKYi Iris Riverside floor plan', 'SKYi Iris Riverside amenities',
+      'SKYi Iris Riverside location', 'SKYi Iris Riverside brochure', 'SKYi Iris Riverside RERA',
+      'SKYi Iris Riverside review', 'SKYi Iris Riverside riverside homes', 'SKYi Iris Riverside premium apartments',
+    ],
+    coordinates: { lat: 18.4988, lng: 73.7431 },
+  },
+
+  /* ── 8. SKYi Star City (Dhayari / Sinhagad Road) ── */
+  {
+    id: 'skyi-star-city-dhayari',
+    projectName: 'SKYi Star City',
+    statusCategory: 'Ongoing',
+    category: 'Townships & Residences',
+    location: 'Dhayari Hillside, Near DSK Vishwa, Sinhagad Road, Pune',
+    microLocation: 'Dhayari',
+    corridor: 'South-West Pune / Sinhagad Road Corridor',
+    acreage: '20+ Acres Self-Sufficient Integrated Township',
+    type: '1, 2 & 3 BHK Value & Premium Apartments',
+    priceStarting: '₹42 Lakhs*',
+    priceRange: '₹42 Lakhs* - ₹85 Lakhs',
+    configurations: ['1 BHK Smart Home', '2 BHK Compact', '2 BHK Premium', '3 BHK Family Home'],
+    sizes: '450 - 1,100 Sq.Ft. Carpet Area',
+    fsiRatio: 'Township Sanctioned High-Density FSI',
+    roadWidth: '60ft DP Sanctioned Road',
+    reraNumbers: 'MahaRERA: P52100026727, P52100029481, P52100029474, P52100034274, P52100050099',
+    titleStatus: '100% Clear Title & OC Received for Delivered Towers',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra', 'LIC Housing'],
+    keyHighlights: [
+      '20-acre master-planned township with 70% open green space and dedicated night gardens',
+      'Built on Zero-Wastage design principles to maximize usable living space',
+      'On-campus shopping convenience, temple, amphitheatre, and senior citizen pavilions',
+      '15 minutes from Swargate and Pune-Bangalore National Highway',
+    ],
+    serpKeywords: [
+      'SKYi Star City', 'Skyi Star City', 'SKYi Star City Dhayari', 'SKYi Star City Pune',
+      'SKYi Star City price', 'SKYi Star City 1 BHK', 'SKYi Star City 2 BHK', 'SKYi Star City 3 BHK',
+      'SKYi Star City floor plan', 'SKYi Star City amenities', 'SKYi Star City location',
+      'SKYi Star City brochure', 'SKYi Star City RERA', 'SKYi Star City possession',
+      'SKYi Star City review', 'flats in Dhayari Sinhagad Road',
+    ],
+    coordinates: { lat: 18.4480, lng: 73.8050 },
+  },
+
+  /* ── 9. Skyi Songbirds (Bhugaon) ── */
   {
     id: 'skyi-songbirds-bhugaon',
-    projectName: 'Skyi Songbirds Township',
-    category: 'Township & Apartments',
-    location: 'Bhugaon Foothills, Paud Road, Kothrud Annexe, Pune',
+    projectName: 'Skyi Songbirds Eco-Township',
+    statusCategory: 'Township',
+    category: 'Townships & Residences',
+    location: 'Bhugaon Foothills, Paud Road, Pune',
     microLocation: 'Bhugaon',
     corridor: 'West Pune / Paud Road Corridor',
-    acreage: '45+ Acres Zero Waste Eco Township',
-    type: 'IGBC Platinum Certified 1, 2, 3 & 4 BHK Residences',
+    acreage: '45+ Acres Zero-Waste Eco Township',
+    type: '1, 2, 3 & 4 BHK Sustainable Residences',
     priceStarting: '₹68 Lakhs*',
-    priceRange: '₹68 Lakhs* - ₹1.85 Crores',
+    priceRange: '₹68 Lakhs* - ₹2.10 Crores',
+    configurations: ['1 BHK Studio / Compact', '2 BHK Premium', '3 BHK Luxury', '4 BHK Sky Suite'],
     sizes: '650 - 1,850 Sq.Ft. Carpet Area',
     fsiRatio: 'Township Sanctioned High-Rise FSI',
     roadWidth: '60ft Wide Township Arterial Road',
@@ -85,342 +355,268 @@ export const SKYI_ALL_PROJECTS_DEEP_DATA: SkyiProjectDeepSpec[] = [
       'Zero Waste Township with 100% STP water recycling & solar power grid',
       'Zero Dead Space layout engineering for maximum usable carpet area',
       '10 minutes from Kothrud Metro Station & Bavdhan Flyover',
-      'Over 1,500+ happy families residing in ready & ongoing phases'
+      'Over 2,000+ happy families residing in ready & ongoing phases',
     ],
     serpKeywords: [
-      'Skyi Songbirds Bhugaon Pune', 'Songbirds Bhugaon price list', '2 BHK flats in Bhugaon Paud Road',
-      'flats near Kothrud Bavdhan', 'Skyi Songbirds review', 'ready possession flats Paud Road'
+      'SKYi Songbirds', 'Skyi Songbirds', 'SKYi Songbirds Pune', 'SKYi Songbirds Bhugaon',
+      'SKYi Songbirds Paud Road', 'SKYi Songbirds price', 'SKYi Songbirds 1 BHK',
+      'SKYi Songbirds 3 BHK', 'SKYi Songbirds 4 BHK', 'SKYi Songbirds floor plan',
+      'SKYi Songbirds amenities', 'SKYi Songbirds review', 'SKYi Songbirds location',
+      'SKYi Songbirds RERA', 'SKYi Songbirds possession', 'SKYi Songbirds township',
+      'SKYi Songbirds master plan', 'SKYi Songbirds forest facing', 'SKYi Songbirds NDA forest',
+      'SKYi Songbirds Mula river', 'SKYi Songbirds investment',
     ],
-    coordinates: { lat: 18.4988, lng: 73.7431 }
+    coordinates: { lat: 18.4988, lng: 73.7431 },
   },
 
-  /* ── 3. SKYi Star Town NA Villa Plots ── */
+  /* ── 10. SKYi Manas Lake (Bhukum / Bavdhan) ── */
   {
-    id: 'skyi-star-town-na-plots',
-    projectName: 'SKYi Star Town NA Villa Plots',
-    category: 'NA Bungalow Plots',
-    location: 'Bhugaon Foothills, Paud Road, Pune',
-    microLocation: 'Bhugaon',
-    corridor: 'West Pune / Paud Road Corridor',
-    acreage: '30+ Acres Gated Plotting Community',
-    type: 'PMRDA Approved Collector NA Villa Plots',
-    priceStarting: '₹95 Lakhs*',
-    priceRange: '₹95 Lakhs* - ₹2.8 Crores',
-    sizes: '2,000 - 6,000 Sq.Ft.',
-    fsiRatio: '1.4 FSI Approved',
-    roadWidth: '40ft Wide Internal Concrete Avenues',
-    reraNumbers: 'MahaRERA: P52100000769 / PMRDA Sanctioned Collector NA Layout',
-    titleStatus: 'Individual Property Card (PR Card) & 100% Clear Title',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Bank of Maharashtra'],
+    id: 'skyi-manas-lake-bhukum',
+    projectName: 'SKYi Manas Lake Eco-Township',
+    statusCategory: 'Township',
+    category: 'Townships & Residences',
+    location: 'Manas Lake Campus, Paud Road, Bhukum / Bavdhan, Pune',
+    microLocation: 'Bhukum',
+    corridor: 'West Pune / Bavdhan-Bhukum Lakeside',
+    acreage: '90+ Acres Integrated Lakefront Township',
+    type: '2, 3 & 4 BHK Lakeside Apartments',
+    priceStarting: '₹65 Lakhs*',
+    priceRange: '₹65 Lakhs* - ₹1.65 Crores',
+    configurations: ['2 BHK Lakeview', '3 BHK Premium Lakefront', '4 BHK Penthouse'],
+    sizes: '780 - 1,950 Sq.Ft. Carpet Area',
+    fsiRatio: 'Township Sanctioned High-Rise FSI',
+    roadWidth: '6-Lane Paud Road Direct Access + 50ft Internal Avenues',
+    reraNumbers: 'MahaRERA: P52100000513, P52100000514, P52100026954, P52100052033, P52100079680',
+    titleStatus: '100% Clear Title & OC in Multiple Phases',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra'],
     keyHighlights: [
-      'Independent NA plots starting 2,000 sq.ft. with boundary wall demarcation',
-      'Elevated hillside location offering panoramic green forest vistas',
-      'Clubhouse membership access to Poona Western Club',
-      'Gated security with CCTV monitoring & street lighting',
-      'Direct connectivity to Bavdhan, Kothrud, and Baner IT hub',
-      'High capital appreciation driven by Paud Road 6-laning'
+      '90+ acre IGBC Platinum certified lakefront eco-township',
+      'Direct lakeside promenade, bird sanctuaries, and picnic lawns',
+      'East-West cross-ventilated homes with maximum sunlight and mountain views',
+      '6 minutes from Chandani Chowk and Bavdhan commercial hub',
     ],
     serpKeywords: [
-      'SKYi Star Town NA plots Bhugaon', 'NA bungalow plots Bhugaon Pune', 'PMRDA plots near Kothrud',
-      'buy plot in Bhugaon Pune', 'clear title plots Bhugaon', 'SKYi Star Town price'
+      'SKYi Manas Lake', 'Skyi Manas Lake', 'SKYi Manas Lake Pune', 'SKYi Manas Lake Bhukum',
+      'SKYi Manas Lake Paud Road', 'SKYi Manas Lake price', 'SKYi Manas Lake flats',
+      'SKYi Manas Lake apartments', 'SKYi Manas Lake 2 BHK', 'SKYi Manas Lake 3 BHK',
+      'SKYi Manas Lake 4 BHK', 'SKYi Manas Lake floor plan', 'SKYi Manas Lake amenities',
+      'SKYi Manas Lake township', 'SKYi Manas Lake reviews', 'SKYi Manas Lake location',
+      'SKYi Manas Lake RERA', 'SKYi Manas Lake lake view', 'SKYi Manas Lake investment',
     ],
-    coordinates: { lat: 18.5011, lng: 73.7460 }
+    coordinates: { lat: 18.5085, lng: 73.7380 },
   },
 
-  /* ── 4. SKYi Tigers Nest ── */
+  /* ══════════════════════════════════════════════════════════════════════════════
+     2. COMPLETED DEVELOPMENTS PORTFOLIO
+  ══════════════════════════════════════════════════════════════════════════════ */
+
+  /* ── 11. SKYi First (Bavdhan) ── */
   {
-    id: 'skyi-tigers-nest-bhugaon',
-    projectName: 'SKYi Tigers Nest Hillside Residences',
-    category: 'Hillside Luxury',
-    location: 'Bhugaon Hilltop, Off Paud Road, Pune',
-    microLocation: 'Bhugaon Hilltop',
-    corridor: 'West Pune / Paud Road Corridor',
-    acreage: '15+ Acres Luxury Hillside Enclave',
-    type: 'Luxury 3 & 4 BHK Forest Deck Sanctuaries',
-    priceStarting: '₹1.45 Crores*',
-    priceRange: '₹1.45 Crores* - ₹3.2 Crores',
-    sizes: '1,450 - 2,400 Sq.Ft. Carpet Area',
-    fsiRatio: 'Low-Density Luxury Hillside FSI',
-    roadWidth: '40ft Private Access Hill Road',
-    reraNumbers: 'MahaRERA: P52100000769 / P52100001117 (Songbirds Hillside Enclave)',
-    titleStatus: '100% Clear Title & Sanctioned Architecture Plans',
-    bankApprovals: ['HDFC Bank', 'ICICI Bank', 'SBI Premium', 'Axis Bank'],
+    id: 'skyi-first-bavdhan',
+    projectName: 'SKYi First',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Bavdhan, Pune',
+    microLocation: 'Bavdhan',
+    corridor: 'West Pune / Bavdhan Prime',
+    acreage: 'Completed Boutique Community',
+    type: '2 & 3 BHK Contemporary Residences',
+    priceStarting: '₹75 Lakhs (Delivered)',
+    priceRange: '₹75 Lakhs - ₹1.35 Cr (Resale)',
+    configurations: ['2 BHK', '3 BHK'],
+    sizes: '850 - 1,400 Sq.Ft.',
+    fsiRatio: 'PMC Sanctioned FSI',
+    roadWidth: '40ft Municipal Road',
+    reraNumbers: 'Delivered / Completed Project',
+    titleStatus: '100% Clear Title, Fully Occupied, Conveyance Completed',
+    bankApprovals: ['SBI', 'HDFC', 'ICICI'],
     keyHighlights: [
-      'Ultra-exclusive hillside deck homes perched high above Bhugaon valley',
-      '270-degree uninhibited vistas of NDA forest reserves & Manas Lake',
-      'Private plunge pools & expansive wrap-around sky balconies',
-      'Smart home automation, biometric entry, & EV charging bays',
-      'Private clubhouse with infinity plunge pool & sky lounge',
-      '12 minutes from Chandani Chowk / Kothrud'
+      'Milestone residential project established in prime Bavdhan',
+      '100% occupied with active cooperative housing society',
+      'Minutes from Chandani Chowk and Kothrud',
     ],
-    serpKeywords: [
-      'SKYi Tigers Nest Bhugaon', 'luxury 3 4 BHK flats Bhugaon', 'hillside luxury homes Pune',
-      'forest deck apartments Bhugaon', 'SKYi Tigers Nest price', 'luxury properties Paud Road'
-    ],
-    coordinates: { lat: 18.4950, lng: 73.7380 }
+    serpKeywords: ['SKYi First', 'SKYi First Bavdhan', 'SKYi First Pune', 'SKYi completed projects Bavdhan'],
+    coordinates: { lat: 18.5150, lng: 73.7750 },
   },
 
-  /* ── 5. SKYi Valley NA Estate (Pirangut) ── */
+  /* ── 12. SKYi Five Baner (Baner) ── */
   {
-    id: 'skyi-valley-na-plots-pirangut',
-    projectName: 'SKYi Valley PMRDA NA Plots',
-    category: 'NA Bungalow Plots',
-    location: 'Pirangut Industrial & Residential Hub, Paud Road, Pune',
-    microLocation: 'Pirangut',
-    corridor: 'West Pune / Mulshi Expressway Corridor',
-    acreage: '25+ Acres Gated Plotting Estate',
-    type: 'PMRDA Approved Residential NA Plots',
-    priceStarting: '₹95 Lakhs*',
-    priceRange: '₹95 Lakhs* - ₹1.8 Crores',
-    sizes: '2,000 - 5,000 Sq.Ft.',
-    fsiRatio: '1.25 FSI Sanctioned',
-    roadWidth: '30ft & 40ft Internal Asphalt Roads',
-    reraNumbers: 'PMRDA Collector Sanctioned NA Layout / Clear 7/12 RERA Compliant',
-    titleStatus: '100% Clear Title 7/12 Extract with Demarcation',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'PNB Housing'],
-    keyHighlights: [
-      'Plots starting 2,000 Sq.Ft. onwards in rapidly expanding Pirangut hub',
-      'Ideal for residential custom bungalows & rental villa investments',
-      'Close proximity to Pirangut market, schools, and industrial parks',
-      'Fast access to Hinjewadi Phase 3 via Ghotawade Phata bypass',
-      '75% bank loan availability with clear title documentation',
-      'Complete utility infrastructure: water, power, drainage'
-    ],
-    serpKeywords: [
-      'SKYi Valley NA plots Pirangut', 'PMRDA NA plots Pirangut Paud Road', 'buy bungalow plot Pirangut',
-      'clear title plots Pirangut Pune', 'plots near Ghotawade Phata', 'Pirangut land price'
-    ],
-    coordinates: { lat: 18.5132, lng: 73.6811 }
-  },
-
-  /* ── 6. SKYi Lakeside Meadows (Kasarsai Dam) ── */
-  {
-    id: 'skyi-lakeside-meadows-kasarsai',
-    projectName: 'SKYi Lakeside Meadows NA Plots',
-    category: 'NA Bungalow Plots',
-    location: 'Kasarsai Dam Lakefront, Near Hinjewadi Phase 3, Pune',
-    microLocation: 'Kasarsai',
-    corridor: 'IT Belt / Hinjewadi Annexe',
-    acreage: '20+ Acres Dam View Plotting',
-    type: 'Lakefront PMRDA NA Villa Plots',
-    priceStarting: '₹95 Lakhs*',
-    priceRange: '₹95 Lakhs* - ₹2.2 Crores',
-    sizes: '2,000 - 5,500 Sq.Ft.',
-    fsiRatio: '1.2 FSI Approved',
-    roadWidth: '40ft Concrete Lake Avenue',
-    reraNumbers: 'PMRDA Approved Collector NA Layout / RERA Compliant',
-    titleStatus: 'Clear Single Owner Title & 7/12 Extract',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank'],
-    keyHighlights: [
-      'Direct lakefront views of Kasarsai Dam & surrounding hills',
-      'Just 12 minutes drive from Hinjewadi IT Park Phase 3',
-      'High rental & resale demand from IT professionals',
-      'Gated community with waterside deck & jogging trail',
-      'Clear title 7/12 extract ready for immediate registration',
-      'Custom bungalow construction assistance provided'
-    ],
-    serpKeywords: [
-      'SKYi Lakeside Meadows Kasarsai', 'NA plots Kasarsai Dam Pune', 'plots near Hinjewadi Phase 3',
-      'lakefront NA plots Hinjewadi', 'buy plot near Kasarsai', 'PMRDA plots Kasarsai'
-    ],
-    coordinates: { lat: 18.6189, lng: 73.6740 }
-  },
-
-  /* ── 7. SKYi Ridge (Sus / Bavdhan) ── */
-  {
-    id: 'skyi-ridge-sus-bavdhan',
-    projectName: 'SKYi Ridge Urban Villa Plots',
-    category: 'NA Bungalow Plots',
-    location: 'Sus-Bavdhan Hillside Corridor, West Pune',
-    microLocation: 'Sus / Bavdhan',
-    corridor: 'West Pune Urban Corridor',
-    acreage: '18+ Acres Premium Urban Plotting',
-    type: 'PMRDA Approved Urban Villa Plots',
-    priceStarting: '₹1.10 Crores*',
-    priceRange: '₹1.10 Crores* - ₹3.5 Crores',
-    sizes: '2,000 - 6,000 Sq.Ft.',
-    fsiRatio: '1.5 FSI Permitted',
-    roadWidth: '50ft Wide Internal Concrete Road',
-    reraNumbers: 'PMRDA Sanctioned Urban Layout / MahaRERA Compliant',
-    titleStatus: '100% Clear Title PR Card & N.A. Order',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
-    keyHighlights: [
-      'Prime location bridging Sus, Bavdhan, and Baner',
-      '5 minutes from Mumbai-Bengaluru Highway (NH 48)',
-      '1.5 FSI allows up to 3-story luxury urban mansions',
-      'Complete underground cabling & PNG gas pipeline provisions',
-      'Immediate proximity to VIBGYOR, Loyola, & Symbiosis institutes',
-      'Highest capital growth corridor in West Pune'
-    ],
-    serpKeywords: [
-      'SKYi Ridge NA plots Sus', 'plots in Sus Bavdhan Pune', 'urban villa plots Baner Sus',
-      'PMRDA plots near highway Pune', 'clear title plots Sus Road', 'SKYi Ridge price'
-    ],
-    coordinates: { lat: 18.5580, lng: 73.7650 }
-  },
-
-  /* ── 8. SKYi Breeze (Talegaon Expressway) ── */
-  {
-    id: 'skyi-breeze-talegaon',
-    projectName: 'SKYi Breeze NA Plots & Eco Homes',
-    category: 'NA Bungalow Plots',
-    location: 'Kanhe Phata, Old Pune-Mumbai Highway, Talegaon, Pune',
-    microLocation: 'Talegaon Dabhade',
-    corridor: 'Pune-Mumbai Expressway Corridor',
-    acreage: '35+ Acres Hillside Eco Estate',
-    type: 'PMRDA NA Plots & Compact Eco Villas',
-    priceStarting: '₹95 Lakhs*',
-    priceRange: '₹95 Lakhs* - ₹1.75 Crores',
-    sizes: '2,000 - 4,500 Sq.Ft.',
-    fsiRatio: '1.2 FSI Approved',
-    roadWidth: '40ft Internal Asphalt Avenue',
-    reraNumbers: 'PMRDA Collector Sanctioned NA Layout / RERA Compliant',
-    titleStatus: 'Clear Title 7/12 Extract',
-    bankApprovals: ['SBI', 'HDFC Bank', 'Bank of Maharashtra'],
-    keyHighlights: [
-      'Located along the pleasant climate corridor of Talegaon',
-      '5 minutes from Mumbai-Pune Expressway & Old Highway',
-      'Ideal weekend home destination for Mumbai & Pune buyers',
-      'Surrounded by lush green hills, waterfalls, & fresh air',
-      'Full bank loan approval & low down-payment options',
-      'Water reservoir connection & 24/7 solar security'
-    ],
-    serpKeywords: [
-      'SKYi Breeze Talegaon NA plots', 'NA plots Old Pune Mumbai Highway', 'plots in Talegaon Dabhade',
-      'weekend bungalow plot Talegaon', 'PMRDA plots Kanhe Phata', 'SKYi Breeze price'
-    ],
-    coordinates: { lat: 18.7300, lng: 73.6800 }
-  },
-
-  /* ── 9. SKYi Waterside (Khadakwasla Dam) ── */
-  {
-    id: 'skyi-waterside-khadakwasla',
-    projectName: 'SKYi Waterside Resort NA Plots',
-    category: 'NA Bungalow Plots',
-    location: 'Donje / Sinhagad Foothills, Khadakwasla Dam, Pune',
-    microLocation: 'Khadakwasla',
-    corridor: 'South-West Lake & Fort Corridor',
-    acreage: '22+ Acres Scenic Waterside Estate',
-    type: 'Resort-Style Collector NA Villa Plots',
-    priceStarting: '₹95 Lakhs*',
-    priceRange: '₹95 Lakhs* - ₹2.4 Crores',
-    sizes: '2,000 - 6,000 Sq.Ft.',
-    fsiRatio: '1.1 FSI Sanctioned',
-    roadWidth: '30ft Paved Nature Drive',
-    reraNumbers: 'PMRDA Sanctioned NA Layout / RERA Compliant Clear Title',
-    titleStatus: '100% Clear Title 7/12 Extract',
+    id: 'skyi-five-baner',
+    projectName: 'SKYi Five Baner',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Baner-Pashan Link Road, Baner, Pune',
+    microLocation: 'Baner',
+    corridor: 'West Pune / Baner IT Belt',
+    acreage: 'Delivered Luxury Boutique Tower',
+    type: '3 & 4 BHK Luxury Residences',
+    priceStarting: '₹1.50 Crores (Delivered)',
+    priceRange: '₹1.50 Cr - ₹2.75 Cr (Resale)',
+    configurations: ['3 BHK Luxury', '4 BHK Penthouse'],
+    sizes: '1,450 - 2,400 Sq.Ft.',
+    fsiRatio: 'PMC Urban FSI',
+    roadWidth: '60ft Link Road Access',
+    reraNumbers: 'MahaRERA: P52100000449 / Completed',
+    titleStatus: '100% Clear Title & OC Received',
     bankApprovals: ['HDFC Bank', 'ICICI Bank', 'SBI'],
     keyHighlights: [
-      'Direct views of Khadakwasla Dam backwaters & Sinhagad Fort',
-      'Pure unpolluted mountain air & organic green surroundings',
-      'Gated community with organic farm & private jetty access',
-      '20 minutes drive from Dhayari & Swargate junction',
-      'Clear title 7/12 ready for custom villa construction',
-      'High weekend rental yield potential'
+      'Iconic boutique architecture on Baner-Pashan Link Road',
+      'Minutes from Baner High Street and Balewadi sports complex',
     ],
-    serpKeywords: [
-      'SKYi Waterside Khadakwasla', 'NA plots Khadakwasla Dam Pune', 'plots near Sinhagad Fort',
-      'resort plots Khadakwasla', 'clear title plots Donje Pune', 'SKYi Waterside price'
-    ],
-    coordinates: { lat: 18.4350, lng: 73.7620 }
+    serpKeywords: ['SKYi Five Baner', 'SKYi Five Baner Pune', 'flats in Baner Pashan Link Road'],
+    coordinates: { lat: 18.5550, lng: 73.7850 },
   },
 
-  /* ── 10. SKYi Eastgate (Wagholi / Kharadi Link) ── */
+  /* ── 13. SKYi Iris Baner (Baner) ── */
   {
-    id: 'skyi-eastgate-wagholi',
-    projectName: 'SKYi Eastgate NA Plots & IT Residences',
-    category: 'NA Bungalow Plots',
-    location: 'Kesnand Road, Wagholi, East Pune',
-    microLocation: 'Wagholi',
-    corridor: 'East Pune / Kharadi IT Corridor',
-    acreage: '28+ Acres Integrated Sector',
-    type: 'PMRDA Approved Residential NA Plots',
-    priceStarting: '₹95 Lakhs*',
-    priceRange: '₹95 Lakhs* - ₹2.1 Crores',
-    sizes: '2,000 - 5,000 Sq.Ft.',
-    fsiRatio: '1.4 FSI Approved',
-    roadWidth: '50ft Internal DP Road Link',
-    reraNumbers: 'PMRDA Sanctioned Layout / RERA Compliant',
-    titleStatus: 'Clear Title 7/12 Extract & PR Card',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'],
-    keyHighlights: [
-      'Strategic location 10 minutes from EON IT Park Kharadi',
-      'Direct link to Nagar Road, Solapur Highway, & Pune Airport',
-      'High rental demand from East Pune tech professionals',
-      'Gated enclave with underground utilities & clubhouse',
-      '100% legal title clearance & fast bank loan approvals',
-      'Substantial infrastructure appreciation in Wagholi DP plan'
-    ],
-    serpKeywords: [
-      'SKYi Eastgate Wagholi NA plots', 'plots near Kharadi EON IT Park', 'PMRDA plots Wagholi Pune',
-      'buy plot in Wagholi Kesnand', 'clear title plots East Pune', 'SKYi Eastgate price'
-    ],
-    coordinates: { lat: 18.5800, lng: 73.9800 }
-  },
-
-  /* ── 11. SKYi Park & SKYi Iris (Baner / Bavdhan) ── */
-  {
-    id: 'skyi-park-iris-baner',
-    projectName: 'SKYi Park & SKYi Iris Baner',
-    category: 'IT Belt & Urban',
-    location: 'Off Baner-Pashan Link Road, Baner, Pune',
+    id: 'skyi-iris-baner',
+    projectName: 'SKYi Iris Baner',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Baner, Pune',
     microLocation: 'Baner',
-    corridor: 'West Pune IT Corridor',
-    acreage: '12+ Acres Urban Masterpiece',
-    type: 'IGBC Platinum Certified 2, 3 & 4 BHK Towers',
-    priceStarting: '₹98 Lakhs*',
-    priceRange: '₹98 Lakhs* - ₹2.5 Crores',
-    sizes: '820 - 1,950 Sq.Ft. Carpet Area',
-    fsiRatio: 'High-Density Premium Urban FSI',
-    roadWidth: '80ft DP Road Facing',
-    reraNumbers: 'MahaRERA: P52100019348 (SKYi Iris) / P52100000449 (SKYi Park Baner)',
-    titleStatus: 'Full Occupancy Certificate (OC) Received',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Kotak Mahindra'],
-    keyHighlights: [
-      'Located in Pune\'s most prime residential hotspot — Baner',
-      'Walking distance to Balewadi High Street & Metro Station',
-      'Zero Waste building design with smart home HVAC & solar power',
-      'Resort-style rooftop infinity pool, gym, & amphitheater',
-      '100% power backup & 3-tier biometric security',
-      'High rental yield for IT executives in Baner-Hinjewadi'
-    ],
-    serpKeywords: [
-      'SKYi Park Baner', 'SKYi Iris Baner Bavdhan', '2 3 BHK flats in Baner Pune',
-      'flats near Balewadi High Street', 'SKYi Park Baner price', 'luxury apartments Baner'
-    ],
-    coordinates: { lat: 18.5590, lng: 73.7860 }
+    corridor: 'West Pune / Baner Corridor',
+    acreage: 'Boutique Residential Enclave',
+    type: '2 & 3 BHK Luxury Residences',
+    priceStarting: '₹85 Lakhs (Delivered)',
+    priceRange: '₹85 Lakhs - ₹1.65 Cr (Resale)',
+    configurations: ['2 BHK', '3 BHK'],
+    sizes: '900 - 1,500 Sq.Ft.',
+    fsiRatio: 'PMC Approved FSI',
+    roadWidth: '40ft Avenue',
+    reraNumbers: 'MahaRERA: P52100019348 / Completed',
+    titleStatus: 'Full Clear Title & Occupancy Certificate Issued',
+    bankApprovals: ['SBI', 'HDFC', 'ICICI'],
+    keyHighlights: ['Zero-wastage layout design in prime Baner', 'Rapid connectivity to Hinjewadi IT Park'],
+    serpKeywords: ['SKYi Iris Baner', 'SKYi Iris Baner Pune', 'SKYi Iris review Baner'],
+    coordinates: { lat: 18.5580, lng: 73.7890 },
   },
 
-  /* ── 12. Skyi Star City (Dhayari) ── */
+  /* ── 14. SKYi Seher (Baner) ── */
   {
-    id: 'skyi-star-city-dhayari',
-    projectName: 'Skyi Star City Township',
-    category: 'Township & Apartments',
-    location: 'Dhayari Hillside, Off Sinhagad Road, Pune',
-    microLocation: 'Dhayari',
-    corridor: 'South-West Pune Corridor',
-    acreage: '20+ Acres Hillside Township',
-    type: '1 & 2 BHK Zero Waste Budget Residences',
-    priceStarting: '₹42 Lakhs*',
-    priceRange: '₹42 Lakhs* - ₹75 Lakhs',
-    sizes: '480 - 850 Sq.Ft. Carpet Area',
-    fsiRatio: 'Township Approved FSI',
-    roadWidth: '40ft Internal Concrete Road',
-    reraNumbers: 'MahaRERA: P52100026727 (Ph I), P52100029481 (Ph II), P52100029474 (Ph III), P52100034274 (Ph IV), P52100050099 (Ph V)',
-    titleStatus: 'Full Clear Title & OC Received for Delivered Phases',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Bank of Maharashtra'],
+    id: 'skyi-seher-baner',
+    projectName: 'SKYi Seher',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Baner, Pune',
+    microLocation: 'Baner',
+    corridor: 'West Pune / Baner',
+    acreage: 'Completed Villa & Apartment Enclave',
+    type: 'Row Houses & Luxury Apartments',
+    priceStarting: 'Delivered',
+    priceRange: 'Delivered / Resale on Request',
+    configurations: ['3 BHK Row House', '4 BHK Luxury Villa'],
+    sizes: '1,800 - 3,000 Sq.Ft.',
+    fsiRatio: 'PMC Sanctioned Layout',
+    roadWidth: '40ft Internal Roads',
+    reraNumbers: 'Completed & Delivered',
+    titleStatus: '100% Clear Title Society Registered',
+    bankApprovals: ['SBI', 'HDFC', 'ICICI'],
+    keyHighlights: ['Serene green living in core Baner', 'Timeless architectural aesthetic'],
+    serpKeywords: ['SKYi Seher', 'SKYi Seher Baner', 'SKYi Seher Pune', 'row houses in Baner'],
+    coordinates: { lat: 18.5520, lng: 73.7820 },
+  },
+
+  /* ── 15. SKYi Aquila (Baner) ── */
+  {
+    id: 'skyi-aquila-baner',
+    projectName: 'SKYi Aquila',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Baner, Pune',
+    microLocation: 'Baner',
+    corridor: 'West Pune / Baner Prime',
+    acreage: 'Delivered Residential Project',
+    type: '2 & 3 BHK Apartments',
+    priceStarting: 'Delivered',
+    priceRange: 'Delivered / Resale',
+    configurations: ['2 BHK', '3 BHK'],
+    sizes: '850 - 1,450 Sq.Ft.',
+    fsiRatio: 'PMC Approved',
+    roadWidth: '40ft Road',
+    reraNumbers: 'Completed Project',
+    titleStatus: '100% Clear Title',
+    bankApprovals: ['SBI', 'HDFC', 'ICICI'],
+    keyHighlights: ['Central Baner location with walking access to schools and markets'],
+    serpKeywords: ['SKYi Aquila', 'SKYi Aquila Baner', 'SKYi Aquila Pune'],
+    coordinates: { lat: 18.5560, lng: 73.7860 },
+  },
+
+  /* ── 16. SKYi Nilay (Aundh) ── */
+  {
+    id: 'skyi-nilay-aundh',
+    projectName: 'SKYi Nilay',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Aundh, Pune',
+    microLocation: 'Aundh',
+    corridor: 'North-West Pune / Aundh Elite Belt',
+    acreage: 'Prime City Development',
+    type: '2 & 3 BHK Premium Residences',
+    priceStarting: 'Delivered',
+    priceRange: 'Delivered / Resale',
+    configurations: ['2 BHK', '3 BHK'],
+    sizes: '950 - 1,600 Sq.Ft.',
+    fsiRatio: 'PMC Sanctioned',
+    roadWidth: '50ft Municipal Road',
+    reraNumbers: 'Completed & Delivered',
+    titleStatus: '100% Clear Title Society Registered',
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank'],
     keyHighlights: [
-      'Most affordable zero-waste township in South-West Pune',
-      'Surrounded by quiet green hills with clean mountain breeze',
-      'Direct access to Sinhagad Road 6-lane flyover & Swargate',
-      'Solar water heating, rainwater harvesting, & landscaped gardens',
-      'PMRDA sanctioned & 90% home loan funding pre-approved',
-      'Ideal for first-time homebuyers & smart rental investors'
+      'Situated in prime Aundh near Westend Mall and Bremen Chowk',
+      'Established community living with mature tree canopy',
     ],
-    serpKeywords: [
-      'Skyi Star City Dhayari Pune', '1 2 BHK flats in Dhayari', 'Skyi Star City price list',
-      'budget flats near Sinhagad Road', 'Skyi Dhayari project review', 'flats in Dhayari under 50 lakhs'
-    ],
-    coordinates: { lat: 18.4480, lng: 73.8120 }
-  }
+    serpKeywords: ['SKYi Nilay', 'SKYi Nilay Aundh', 'SKYi Nilay Pune', 'SKYi projects Aundh', 'flats in Aundh Pune'],
+    coordinates: { lat: 18.5620, lng: 73.8050 },
+  },
+
+  /* ── 17. SKYi Iris Bavdhan (Bavdhan) ── */
+  {
+    id: 'skyi-iris-bavdhan',
+    projectName: 'SKYi Iris Bavdhan',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Bavdhan, Pune',
+    microLocation: 'Bavdhan',
+    corridor: 'West Pune / Bavdhan',
+    acreage: 'Completed Enclave',
+    type: '2 & 3 BHK Residences',
+    priceStarting: 'Delivered',
+    priceRange: 'Delivered / Resale',
+    configurations: ['2 BHK', '3 BHK'],
+    sizes: '880 - 1,420 Sq.Ft.',
+    fsiRatio: 'PMC Sanctioned',
+    roadWidth: '40ft Road',
+    reraNumbers: 'Completed Project',
+    titleStatus: '100% Clear Title',
+    bankApprovals: ['SBI', 'HDFC', 'ICICI'],
+    keyHighlights: ['Overlooking Bavdhan hills with instant access to NDA road and Mumbai highway'],
+    serpKeywords: ['SKYi Iris Bavdhan', 'SKYi Iris Bavdhan Pune', 'flats in Bavdhan near Chandani Chowk'],
+    coordinates: { lat: 18.5130, lng: 73.7720 },
+  },
+
+  /* ── 18. SKYi Lighthouse (Bavdhan) ── */
+  {
+    id: 'skyi-lighthouse-bavdhan',
+    projectName: 'SKYi Lighthouse',
+    statusCategory: 'Completed',
+    category: 'Ultra Luxury & Boutique',
+    location: 'Bavdhan, Pune',
+    microLocation: 'Bavdhan',
+    corridor: 'West Pune / Bavdhan',
+    acreage: 'Delivered Landmark',
+    type: '2 & 3 BHK Apartments',
+    priceStarting: 'Delivered',
+    priceRange: 'Delivered / Resale',
+    configurations: ['2 BHK', '3 BHK'],
+    sizes: '850 - 1,380 Sq.Ft.',
+    fsiRatio: 'PMC Sanctioned',
+    roadWidth: '40ft Road',
+    reraNumbers: 'Completed Project',
+    titleStatus: '100% Clear Title',
+    bankApprovals: ['SBI', 'HDFC', 'ICICI'],
+    keyHighlights: ['Modern architecture in peaceful Bavdhan residential neighborhood'],
+    serpKeywords: ['SKYi Lighthouse', 'SKYi Lighthouse Bavdhan', 'SKYi Lighthouse Pune'],
+    coordinates: { lat: 18.5140, lng: 73.7740 },
+  },
 ];

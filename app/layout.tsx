@@ -129,25 +129,47 @@ const jsonLdSchema = {
     },
     {
       "@type": "OfferCatalog",
-      "name": "SKYi Official Real Estate & NA Plot Projects Ecosystem",
+      "name": "SKYi Developers Pune — Master Real Estate Portfolio",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "RealEstateListing",
-            "name": "SKYi Manas Lake PMRDA NA Bungalow Plots Bhukum",
-            "identifier": "MahaRERA: P52100000513, P52100000514, P52100026954, P52100052033",
-            "price": "9500000",
+            "name": "SKYi Tigers Nest Luxury Hillside Residences Bhugaon",
+            "identifier": "MahaRERA: P52100000769",
+            "price": "17900000",
             "priceCurrency": "INR",
-            "address": { "@type": "PostalAddress", "addressLocality": "Bhukum, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
+            "address": { "@type": "PostalAddress", "addressLocality": "Bhugaon Hillside, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "RealEstateListing",
-            "name": "Skyi Songbirds Eco Township Bhugaon",
-            "identifier": "MahaRERA: P52100000769 (Ph A), P52100001117 (Ph B), P52100019348 (Ph E), P52100047992",
+            "name": "SKYi Five Racecourse Ultra-Luxury Sky Mansions Sopan Baug",
+            "identifier": "MahaRERA Registered",
+            "price": "38500000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "addressLocality": "Sopan Baug / Racecourse", "addressRegion": "Pune", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
+            "name": "SKYi Five Maidan 4 BHK Luxury Residences Baner",
+            "identifier": "MahaRERA Registered",
+            "price": "24500000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "addressLocality": "Pancard Club Road, Baner", "addressRegion": "Pune", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
+            "name": "Skyi Songbirds 45-Acre Eco-Township Bhugaon",
+            "identifier": "MahaRERA: P52100000769, P52100001117, P52100019348, P52100047992",
             "price": "6800000",
             "priceCurrency": "INR",
             "address": { "@type": "PostalAddress", "addressLocality": "Bhugaon, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
@@ -157,73 +179,40 @@ const jsonLdSchema = {
           "@type": "Offer",
           "itemOffered": {
             "@type": "RealEstateListing",
-            "name": "SKYi Star Town NA Villa Plots Bhugaon",
-            "identifier": "MahaRERA: P52100000769 / PMRDA Sanctioned Collector NA Layout",
+            "name": "SKYi Manas Lake 90-Acre Eco-Township Bhukum Bavdhan",
+            "identifier": "MahaRERA: P52100000513, P52100000514, P52100026954, P52100052033",
+            "price": "6500000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "addressLocality": "Bhukum, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
+            "name": "SKYi PWC Towers & Hillside Club Residences Bhugaon",
+            "identifier": "MahaRERA: P52100000643, P52100000805",
+            "price": "11500000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "addressLocality": "Songbirds Campus, Bhugaon", "addressRegion": "Pune", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
+            "name": "SKYi Aura Heights Hillside View Residences Bhugaon",
+            "identifier": "MahaRERA: P52100000769 (Extension)",
             "price": "9500000",
             "priceCurrency": "INR",
-            "address": { "@type": "PostalAddress", "addressLocality": "Bhugaon Foothills", "addressRegion": "Pune", "addressCountry": "IN" }
+            "address": { "@type": "PostalAddress", "addressLocality": "Bhugaon, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "RealEstateListing",
-            "name": "SKYi Tigers Nest Hillside Sanctuaries",
-            "identifier": "MahaRERA: P52100000769 / P52100001117 (Songbirds Hillside Enclave)",
-            "price": "14500000",
-            "priceCurrency": "INR",
-            "address": { "@type": "PostalAddress", "addressLocality": "Bhugaon Hilltop", "addressRegion": "Pune", "addressCountry": "IN" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "RealEstateListing",
-            "name": "SKYi Valley PMRDA NA Plots Pirangut",
-            "identifier": "PMRDA Collector Sanctioned NA Layout / RERA Compliant",
-            "price": "9500000",
-            "priceCurrency": "INR",
-            "address": { "@type": "PostalAddress", "addressLocality": "Pirangut, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "RealEstateListing",
-            "name": "SKYi Lakeside Meadows NA Plots Kasarsai Dam",
-            "identifier": "PMRDA Approved Collector NA Layout / Clear 7/12 RERA Compliant",
-            "price": "9500000",
-            "priceCurrency": "INR",
-            "address": { "@type": "PostalAddress", "addressLocality": "Kasarsai Dam, Hinjewadi Extension", "addressRegion": "Pune", "addressCountry": "IN" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "RealEstateListing",
-            "name": "SKYi Ridge Urban Villa Plots Sus Bavdhan",
-            "identifier": "PMRDA Sanctioned Urban Layout / MahaRERA Compliant",
-            "price": "11000000",
-            "priceCurrency": "INR",
-            "address": { "@type": "PostalAddress", "addressLocality": "Sus / Bavdhan", "addressRegion": "Pune", "addressCountry": "IN" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "RealEstateListing",
-            "name": "SKYi Park & SKYi Iris Baner",
-            "identifier": "MahaRERA: P52100019348 (SKYi Iris) / P52100000449 (SKYi Park)",
-            "price": "9800000",
-            "priceCurrency": "INR",
-            "address": { "@type": "PostalAddress", "addressLocality": "Baner / Bavdhan", "addressRegion": "Pune", "addressCountry": "IN" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "RealEstateListing",
-            "name": "Skyi Star City Dhayari",
+            "name": "SKYi Star City 20-Acre Township Dhayari",
             "identifier": "MahaRERA: P52100026727, P52100029481, P52100029474, P52100034274, P52100050099",
             "price": "4200000",
             "priceCurrency": "INR",
@@ -237,9 +226,10 @@ const jsonLdSchema = {
       "@id": "https://skyidevelopers.in/#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://skyidevelopers.in/" },
-        { "@type": "ListItem", "position": 2, "name": "Skyi Developers Projects", "item": "https://skyidevelopers.in/projects" },
-        { "@type": "ListItem", "position": 3, "name": "NA Bungalow Plots Bhukum", "item": "https://skyidevelopers.in/na-plots-bhukum" },
-        { "@type": "ListItem", "position": 4, "name": "Skyi Songbirds Bhugaon", "item": "https://skyidevelopers.in/songbirds" }
+        { "@type": "ListItem", "position": 2, "name": "SKYi Projects Pune", "item": "https://skyidevelopers.in/projects" },
+        { "@type": "ListItem", "position": 3, "name": "Skyi Songbirds Bhugaon", "item": "https://skyidevelopers.in/songbirds" },
+        { "@type": "ListItem", "position": 4, "name": "SKYi Manas Lake Bhukum", "item": "https://skyidevelopers.in/manas-lake" },
+        { "@type": "ListItem", "position": 5, "name": "SKYi Bhugaon", "item": "https://skyidevelopers.in/bhugaon" }
       ]
     },
     {
@@ -247,7 +237,7 @@ const jsonLdSchema = {
       "@id": "https://skyidevelopers.in/#website",
       "url": "https://skyidevelopers.in/",
       "name": "Skyi Developers Pune",
-      "description": "Official Website of SKYi Developers — PMRDA NA Bungalow Plots Bhukum & Premium Townships Pune",
+      "description": "Official Website of SKYi Developers (Enerrgia SKYi Developers) — Premium Eco-Townships & Luxury Residences in Pune",
       "publisher": { "@id": "https://skyidevelopers.in/#organization" },
       "potentialAction": {
         "@type": "SearchAction",
@@ -264,26 +254,34 @@ const jsonLdSchema = {
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Who is SKYi Developers (Enerrgia SKYi Developers) in Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SKYi Developers (also recognized as Enerrgia SKYi Developers) is a leading real estate developer in Pune established in 2004. Over two decades, SKYi has delivered 7,000+ homes across 20+ landmark developments, recognized with IGBC Platinum certifications and 150+ industry awards."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Are Skyi Developers projects registered with MahaRERA?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, all residential townships and plotted estates by Skyi Developers are registered under Maharashtra Real Estate Regulatory Authority (MahaRERA). Registration details include Skyi Songbirds (P52100000769, P52100001117, P52100019348, P52100047992), SKYi Manas Lake (P52100000513, P52100000514, P52100026954, P52100052033), SKYi Star City (P52100026727, P52100029481, P52100029474, P52100034274, P52100050099), and SKYi Iris Baner (P52100019348). Official documents are verifiable on maharera.maharashtra.gov.in."
+            "text": "Yes, all residential townships by Skyi Developers are registered under Maharashtra Real Estate Regulatory Authority (MahaRERA). Registration details include Skyi Songbirds (P52100000769, P52100001117, P52100019348, P52100047992), SKYi Manas Lake (P52100000513, P52100000514, P52100026954, P52100052033), SKYi Star City (P52100026727, P52100029481, P52100029474, P52100034274, P52100050099), and SKYi Iris Baner (P52100019348). Official documents are verifiable on maharera.maharashtra.gov.in."
           }
         },
         {
           "@type": "Question",
-          "name": "Are SKYi Manas Lake NA Bungalow Plots PMRDA approved with clear title?",
+          "name": "What projects are offered by SKYi Developers in Bhugaon and Paud Road?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, SKYi Manas Lake NA Bungalow Plots in Bhukum (near Bavdhan) are 100% PMRDA approved with clear title certificates, individual 7/12 extract demarcation, FSI permissions up to 1.5+, and bank home loan sanction from nationalized banks."
+            "text": "In Bhugaon and along the Paud Road corridor, SKYi offers: Skyi Songbirds (45-acre eco-township with 1, 2, 3 & 4 BHK homes), SKYi Tigers Nest (3 & 4 BHK hillside luxury homes starting ₹1.79 Cr*), SKYi PWC Towers & PWC Towers Hillside (club residences with Poona Western Club access), SKYi Aura Heights, and SKYi Iris Riverside."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the location advantage of Skyi Songbirds Bhugaon & SKYi NA Plots Bhukum?",
+          "name": "What is the location advantage of Skyi Songbirds Bhugaon & SKYi Manas Lake?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Skyi Songbirds and SKYi NA Plots Bhukum are strategically located just 10-15 minutes from Chandani Chowk and Kothrud along the 6-lane Paud Road expressway, providing seamless access to Hinjewadi IT Park and Pune-Bangalore Highway."
+            "text": "Skyi Songbirds and SKYi Manas Lake are strategically located just 6 to 10 minutes from Chandani Chowk and Kothrud along the 6-lane Paud Road expressway, providing seamless access to Hinjewadi IT Park and Pune-Bangalore Highway."
           }
         },
         {
@@ -291,15 +289,15 @@ const jsonLdSchema = {
           "name": "What amenities are included in SKYi IGBC Platinum Certified Townships?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "SKYi Townships offer 70%+ open green space, organic waste processing, solar electricity grids, 24/7 security, clubhouse, infinity swimming pools, sports arenas, and bird sanctuaries."
+            "text": "SKYi Townships offer 70%+ open green space, 100% sewage treatment water recycling, solar electricity grids, 24/7 security, 5-acre Poona Western Club, Olympic-standard swimming pool, sports academies, and lakeside promenades."
           }
         },
         {
           "@type": "Question",
-          "name": "Can NRIs buy PMRDA NA Bungalow Plots in Pune through SKYi Developers?",
+          "name": "Can NRIs buy property in Pune through SKYi Developers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) holding valid Indian passports can legally purchase PMRDA-approved residential NA bungalow plots under RBI and FEMA general permission using NRE/NRO banking channels."
+            "text": "Yes, Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) holding valid Indian passports can legally purchase residential properties, apartments, and PMRDA-approved NA bungalow plots under RBI and FEMA general permission using NRE/NRO banking channels."
           }
         }
       ]

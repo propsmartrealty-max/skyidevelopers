@@ -2,287 +2,207 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, MapPin, Award, Shield, Leaf, FileCheck, CheckCircle2, Globe, DollarSign, ShieldCheck, Compass, Landmark, BookOpen } from 'lucide-react';
+import {
+  ChevronDown,
+  MapPin,
+  Award,
+  Shield,
+  Leaf,
+  FileCheck,
+  CheckCircle2,
+  Globe,
+  DollarSign,
+  ShieldCheck,
+  Compass,
+  Landmark,
+  BookOpen,
+  Building2,
+  Sparkles,
+} from 'lucide-react';
 import './SEOContent.css';
 
-/* ─── Ultra-Advanced FAQ Data ─── */
+/* ─── Ultra-Advanced Google Standards Compliant FAQ Data ─── */
 const FAQS = [
   {
-    q: 'What are the top micro-locations for NA bungalow plots in Pune?',
-    a: 'The premier micro-locations for PMRDA-approved NA bungalow plots in Pune include: (1) Bhukum & Bhugaon on Paud Road (6-10 mins from Chandani Chowk Metro), (2) Pirangut & Lavasa Road (scenic green corridor), (3) Kasarsai Lake & Marunji (12 mins from Hinjawadi Phase 3), (4) Sus & Bavdhan Annexe (5 mins from Baner), (5) Talegaon Dabhade & Kanhe (Old Pune-Mumbai Expressway), (6) Khadakwasla & Donje (lakefront & Sinhagad base), (7) Wagholi & Kesnand (East Pune Kharadi IT link), and (8) Saswad Road / Bopedev Ghat (Purandar Airport corridor).',
+    q: 'Who is SKYi Developers (Enerrgia SKYi Developers) in Pune?',
+    a: 'SKYi Developers (also recognized as Enerrgia SKYi Developers) is one of Pune’s premier real estate development organizations, building thoughtfully designed homes, eco-townships, and luxury residences since 2004. With over two decades of excellence, SKYi has delivered 7,000+ homes across 20+ projects, recognized with over 150 industry awards and IGBC Platinum sustainability ratings.',
   },
   {
-    q: 'What are the starting plot sizes and prices for SKYi NA Bungalow Plots in Pune?',
-    a: 'SKYi NA Bungalow Plots start from 2,000 SQFT onwards (ranging from 2,000 to 6,000+ sq.ft.) with land prices starting from ₹95 Lakhs*. All plots feature PMRDA R-Zone sanction, 100% clear title 7/12 extracts, individual PR cards, and pre-approved bank loans.',
+    q: 'What are the ongoing and upcoming projects by SKYi Developers in Pune?',
+    a: 'SKYi’s active portfolio includes: (1) SKYi Tigers Nest — 3 & 4 BHK luxury hillside homes in Bhugaon (from ₹1.79 Cr*). (2) SKYi Five Racecourse — 4 & 5 BHK ultra-luxury sky mansions in Sopan Baug / Racecourse. (3) SKYi Five Maidan — 4 BHK luxury residences on Pancard Club Road, Baner. (4) SKYi Park — 2 & 3 BHK eco-residences along Paud Road / Manas Lake. (5) SKYi PWC Towers & PWC Towers Hillside — 3 & 4 BHK club residences at Songbirds Bhugaon. (6) SKYi Aura Heights — 3 BHK hillside view apartments in Bhugaon / Bavdhan. (7) SKYi Iris Riverside — 3 BHK riverside homes. (8) Skyi Songbirds — 45+ acre sustainable township in Bhugaon. (9) SKYi Manas Lake — 90+ acre lakeside township in Bhukum / Bavdhan. (10) SKYi Star City — 20-acre township in Dhayari.',
   },
   {
-    q: 'What are all the official developments by Skyi Developers in Pune?',
-    a: 'Skyi Developers has a comprehensive portfolio across Pune: (1) SKYi Manas Lake NA Bungalow Plots at Bhukum/Bavdhan. (2) SKYi Star Town NA Villa Plots at Bhugaon. (3) SKYi Valley NA Estate at Pirangut. (4) SKYi Lakeside Meadows at Kasarsai Dam. (5) SKYi Ridge NA Plots at Sus/Bavdhan. (6) SKYi Breeze NA Plots at Talegaon. (7) Skyi Songbirds, SKYi Tigers Nest, SKYi PWC Towers at Bhugaon. (8) SKYi Park & SKYi Iris at Baner. (9) Skyi Star City at Dhayari.',
+    q: 'Which completed developments has SKYi Developers delivered in Pune?',
+    a: 'SKYi’s successfully completed and delivered residential projects include: (1) SKYi First in Bavdhan, (2) SKYi Five Baner on Baner-Pashan Link Road, (3) SKYi Iris Baner, (4) SKYi Seher row houses & villas in Baner, (5) SKYi Aquila in Baner, (6) SKYi Nilay in Aundh, (7) SKYi Iris Bavdhan, (8) SKYi Lighthouse in Bavdhan, (9) SKYi Star Town in Bhugaon, and (10) SKYi Star Towers in Dhayari.',
   },
   {
-    q: 'What is the legal process for checking a 7/12 extract and PMRDA sanction for NA plots in Pune?',
-    a: 'Before purchasing an NA bungalow plot in Pune, verify: (1) PMRDA Sanctioned Layout Order & R-Zone classification. (2) 100% Clear Title 7/12 Extract with single owner name and zero bank encumbrances/litigation. (3) Individual Property Card (PR Card) issued by Land Records Dept. (4) Demarcated plot boundary with 30-50ft internal concrete roads. SKYi Developers provides 100% verified 7/12 extracts, PR Cards, and bank loan approvals (SBI, HDFC, ICICI) for all plot developments.',
+    q: 'What configurations are available across SKYi projects (1 BHK to 5 BHK)?',
+    a: 'SKYi offers a versatile spectrum of residential configurations: (1) 1 BHK Smart Homes in Skyi Songbirds (Bhugaon) & SKYi Star City (Dhayari). (2) 2 BHK Premium Homes in SKYi Manas Lake, SKYi Park, and SKYi Star City. (3) 3 BHK Luxury Residences in SKYi Songbirds, SKYi Manas Lake, SKYi Aura Heights, and SKYi Iris Riverside. (4) 4 BHK Luxury Sanctuaries in SKYi Tigers Nest (Bhugaon), SKYi Five Maidan (Baner), and SKYi PWC Towers. (5) 4 & 5 BHK Ultra-Luxury Sky Mansions in SKYi Five Racecourse (Sopan Baug).',
   },
   {
-    q: 'Can I build a multi-story villa or bungalow on PMRDA NA plots in Bhukum or Bhugaon?',
-    a: 'Yes! Under Unified DCR (Development Control Regulations) of PMRDA, residential (R-Zone) NA bungalow plots in Bhukum, Bhugaon, Pirangut, and Kasarsai permit an FSI ranging from 1.1 to 1.5+. This allows owners to construct Ground + 2 or Ground + 3 floor custom luxury villas, complete with private gardens, swimming pools, and rooftop terrace decks.',
+    q: 'What is the price range for SKYi residential projects in Pune?',
+    a: 'SKYi project pricing is structured across segments: 1 BHK apartments start from ₹42 Lakhs* onwards in Dhayari and ₹45 Lakhs* in Bhugaon; 2 BHK homes range from ₹65 Lakhs* to ₹85 Lakhs*; 3 BHK luxury residences range from ₹95 Lakhs* to ₹1.45 Crores*; 4 BHK hillside sanctuaries in Tigers Nest start from ₹1.79 Crores*; 4 BHK Baner residences in Five Maidan start from ₹2.45 Crores*; and 4 & 5 BHK sky mansions in Five Racecourse (Sopan Baug) start from ₹3.85 Crores*.',
   },
   {
-    q: 'Where are SKYi NA Bungalow Plots located on Paud Road?',
-    a: 'SKYi Manas Lake NA Bungalow Plots are situated within the 90+ acre Manas Lake campus at Bhukum on Paud Road, Pune — just 6 minutes (4.5 km) from Chandani Chowk Metro Station and Kothrud flyover. SKYi Star Town NA Plots are located right next door in Bhugaon, offering views of the 7,000-acre NDA forest reserve.',
+    q: 'Are all SKYi Developers projects registered with MahaRERA?',
+    a: 'Yes, all SKYi projects comply strictly with the Real Estate (Regulation and Development) Act under Maharashtra Real Estate Regulatory Authority (MahaRERA). Registration details include: Skyi Songbirds (P52100000769, P52100001117, P52100019348, P52100047992), SKYi Manas Lake (P52100000513, P52100000514, P52100026954, P52100052033), SKYi Star City (P52100026727, P52100029481, P52100029474, P52100034274, P52100050099), SKYi Iris Baner (P52100019348), and SKYi Park (P52100000449). Project details are verifiable on maharera.maharashtra.gov.in.',
   },
   {
-    q: 'How far are Kasarsai Lake NA plots from Hinjawadi Phase 3 IT Park?',
-    a: 'Kasarsai Dam Lakefront NA Bungalow Plots (SKYi Lakeside Meadows) are located just 12 to 15 minutes from Hinjawadi Phase 3 (Rajiv Gandhi Infotech Park). This makes Kasarsai the #1 choice for IT professionals looking to build private resort-style villas near work.',
+    q: 'What makes SKYi homes "Nature & Sustainability Centric" (IGBC Platinum)?',
+    a: 'SKYi townships are recognized with Indian Green Building Council (IGBC) Platinum and Gold certifications. Key sustainability pillars include: (1) 70%+ open green spaces, (2) 100% sewage treatment plant (STP) water recycling for zero waste discharge, (3) East-West oriented building envelopes for maximum natural daylight and passive cross-ventilation, (4) Rooftop solar photovoltaic power grids, and (5) Conservation of natural contours fronting the 7,000-acre NDA forest reserve and Manas Lake.',
   },
   {
-    q: 'Are bank loans available for buying NA plots in Pune micro-locations?',
-    a: 'Yes! All SKYi NA bungalow plots across Bhukum, Bhugaon, Pirangut, Kasarsai, Talegaon, Khadakwasla, and Wagholi are pre-approved by leading financial institutions including SBI (State Bank of India), HDFC Bank, ICICI Bank, Axis Bank, and Bank of Maharashtra, offering up to 70%–80% plot purchase loan financing.',
+    q: 'How far are Skyi Songbirds Bhugaon and SKYi Manas Lake from Kothrud & Hinjewadi?',
+    a: 'Skyi Songbirds (Bhugaon) and SKYi Manas Lake (Bhukum / Bavdhan) are situated directly along the 6-lane Paud Road expressway. They are just 6 to 10 minutes drive from Chandani Chowk multi-level interchange and Kothrud Metro Station, and approximately 20 to 25 minutes from Hinjewadi Rajiv Gandhi Infotech Park via the Mumbai-Pune Western Bypass.',
   },
   {
-    q: 'Can NRIs (Non-Resident Indians) buy PMRDA NA bungalow plots in Pune?',
-    a: 'Yes! Under FEMA and RBI general permissions, NRIs and OCIs can freely purchase residential PMRDA-approved NA plots and villas in Pune using NRE/NRO banking channels without prior RBI approval.',
+    q: 'What sports and club amenities are included in Poona Western Club (PWC)?',
+    a: 'The Poona Western Club (PWC), situated inside the Skyi Songbirds campus in Bhugaon, is a 5-acre comprehensive sports and leisure hub featuring: an Olympic-length swimming pool, professional cricket pitch, tennis and badminton academies, football ground, squash courts, gymnasium, wellness spa, fine-dining restaurants, and banquet lawns.',
   },
   {
-    q: 'Why should I invest in PMRDA NA plots in West Pune over completed apartments?',
-    a: 'NA bungalow plots in West Pune (Bhukum, Bhugaon, Pirangut) offer 100% land ownership (7/12 title), 12%–18% historical CAGR land appreciation, zero maintenance overheads during land holding, and full architectural freedom to construct bespoke multi-generational luxury villas.',
+    q: 'Can NRIs purchase property in SKYi projects in Pune?',
+    a: 'Yes, Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) can freely purchase residential apartments, sky suites, and PMRDA-sanctioned NA plots across all SKYi developments under FEMA regulations and general permission granted by the Reserve Bank of India (RBI) via NRE/NRO banking channels.',
   },
 ];
 
-/* ─── Location Data ─── */
-const LOCATIONS = [
+/* ─── Projects Showcase by Location ─── */
+const PROJECT_LOCATIONS = [
   {
-    project: 'SKYi Manas Lake NA Plots',
-    area: 'Manas Lake Campus, Bhukum, Paud Road, Pune',
-    config: 'NA Villa Plots (2,000 – 6,000+ sq.ft.) — Starting ₹95 Lakhs*',
-    acres: '90-Acre Gated Township',
-    status: 'Launching 2025',
-    nearBy: 'Chandani Chowk (6 mins), Kothrud (12 mins), Bavdhan',
+    project: 'SKYi Tigers Nest',
+    area: 'Bhugaon Hillside, Paud Road, Pune',
+    config: '3 & 4 BHK Hillside Sanctuaries (1,650 - 2,800 sq.ft.) — Starting ₹1.79 Cr*',
+    status: 'Ongoing / Signature',
+    category: 'Ultra Luxury Hillside',
+    rera: 'MahaRERA: P52100000769 / P52100001117',
+    color: '#ff6b35',
+  },
+  {
+    project: 'SKYi Five Racecourse',
+    area: 'Sopan Baug / Racecourse Annexe, Pune',
+    config: '4 & 5 BHK Ultra-Luxury Sky Mansions (2,800 - 5,200 sq.ft.) — Starting ₹3.85 Cr*',
+    status: 'Ongoing / Elite',
+    category: 'Sky Mansions',
+    rera: 'MahaRERA Registered',
+    color: '#ab47bc',
+  },
+  {
+    project: 'SKYi Five Maidan',
+    area: 'Pancard Club Road, Baner, Pune',
+    config: '4 BHK Luxury Residences (2,100 - 3,200 sq.ft.) — Starting ₹2.45 Cr*',
+    status: 'Ongoing / Prime',
+    category: 'Urban Luxury',
+    rera: 'MahaRERA Registered',
+    color: '#4fc3f7',
+  },
+  {
+    project: 'Skyi Songbirds Eco-Township',
+    area: 'Bhugaon Foothills, Paud Road, Pune',
+    config: '1, 2, 3 & 4 BHK Sustainable Residences (650 - 1,850 sq.ft.) — Starting ₹68 Lakhs*',
+    status: 'Ready & Ongoing Phases',
+    category: '45-Acre Eco-Township',
+    rera: 'MahaRERA: P52100000769 / P52100001117 / P52100019348',
+    color: '#34d399',
+  },
+  {
+    project: 'SKYi Manas Lake Eco-Township',
+    area: 'Paud Road, Bhukum / Bavdhan, Pune',
+    config: '2, 3 & 4 BHK Lakeside Residences (780 - 1,950 sq.ft.) — Starting ₹65 Lakhs*',
+    status: 'Ready & Ongoing Phases',
+    category: '90-Acre Lakefront Township',
+    rera: 'MahaRERA: P52100000513 / P52100000514 / P52100026954',
     color: '#3b82f6',
   },
   {
-    project: 'SKYi Star Town NA Plots',
-    area: 'Bhugaon Foothills, Paud Road, Pune',
-    config: 'PMRDA NA Villa Plots (2,000 – 6,000 sq.ft.) — Starting ₹95 Lakhs*',
-    acres: 'Gated Villa Estate',
-    status: 'Ongoing Plotting',
-    nearBy: 'Kothrud Flyover (10 mins), NDA Forest Reserve',
-    color: 'var(--accent-1)',
+    project: 'SKYi PWC Towers & Hillside',
+    area: 'Songbirds Campus, Bhugaon, Pune',
+    config: '3 & 4 BHK Sports Club Residences (1,250 - 2,100 sq.ft.) — Starting ₹1.15 Cr*',
+    status: 'Ongoing / Club Integrated',
+    category: 'Club Residences',
+    rera: 'MahaRERA: P52100000643 / P52100000805',
+    color: '#f59e0b',
   },
   {
-    project: 'SKYi Valley NA Estate',
-    area: 'Pirangut Hub, Paud Road, Pune',
-    config: 'Clear Title NA Plots (2,000 – 5,000 sq.ft.) — Starting ₹95 Lakhs*',
-    acres: 'PMRDA Approved',
-    status: 'Ongoing Plotting',
-    nearBy: 'Pirangut Market, Ghotawade Phata, Lavasa Road',
-    color: '#43e97b',
+    project: 'SKYi Star City',
+    area: 'Dhayari, Sinhagad Road, Pune',
+    config: '1, 2 & 3 BHK Value & Premium Homes (450 - 1,100 sq.ft.) — Starting ₹42 Lakhs*',
+    status: 'Ready & Delivered Towers',
+    category: '20-Acre Township',
+    rera: 'MahaRERA: P52100026727 / P52100029481',
+    color: '#ec4899',
   },
   {
-    project: 'SKYi Lakeside Meadows',
-    area: 'Kasarsai Dam Lakefront, Hinjewadi Extension',
-    config: 'Lakeside NA Villa Plots (2,000 – 6,000 sq.ft.) — Starting ₹95 Lakhs*',
-    acres: 'Dam Front Sanctuary',
-    status: 'Pre-Launch',
-    nearBy: 'Hinjawadi Phase 3 (12 mins), Marunji, Nere',
-    color: '#38bdf8',
-  },
-  {
-    project: 'Skyi Songbirds & Tigers Nest',
-    area: 'Bhugaon, Paud Road, Pune',
-    config: '1, 3 & 4 BHK Luxury Flats & Hillside Homes',
-    acres: '45+',
-    status: 'Ongoing / Under Construction',
-    nearBy: 'Kothrud (10 mins), Bavdhan, Paud Road, NDA Forest',
-    color: 'var(--accent-gold)',
+    project: 'SKYi Park & Iris',
+    area: 'Baner-Pashan / Bavdhan / Bhugaon, Pune',
+    config: '2 & 3 BHK Boutique Residences (780 - 1,450 sq.ft.) — Delivered / Resale',
+    status: 'Delivered & OC Received',
+    category: 'Boutique Residences',
+    rera: 'MahaRERA: P52100019348 / P52100000449',
+    color: '#10b981',
   },
 ];
 
-const NA_MICRO_LOCATION_GUIDE = [
+/* ─── Micro-Market Guide ─── */
+const MICRO_MARKETS = [
   {
-    name: 'Bhukum & Bhugaon (Paud Road Corridor)',
-    tagline: 'West Pune’s #1 High-Appreciation Luxury Villa Belt',
-    desc: 'Located just 6–10 minutes from Chandani Chowk and Kothrud flyover, Bhukum and Bhugaon feature 6-lane Paud Road connectivity, proximity to Manas Lake, and panoramic views of the 7,000-acre NDA forest reserve.',
-    fsi: '1.4 - 1.5 FSI',
-    priceTrend: '₹4,750 - ₹7,500 / sq.ft.',
+    id: 'bhugaon-corridor',
+    name: 'Bhugaon & Paud Road',
+    desc: 'West Pune’s signature green valley along the 6-lane Paud Road expressway, just 10 mins from Kothrud and Chandani Chowk. Home to Skyi Songbirds (45 acres), SKYi Tigers Nest, and Poona Western Club, fronting the 7,000-acre NDA forest reserve.',
+    projects: ['Skyi Songbirds', 'SKYi Tigers Nest', 'SKYi PWC Towers', 'SKYi Iris Riverside', 'SKYi Aura Heights'],
   },
   {
-    name: 'Pirangut & Lavasa Road (Mulshi Valley)',
-    tagline: 'Scenic Hillside & Green Sanctuary Plotting',
-    desc: 'Surrounded by lush Sahyadri hills, Pirangut and Lavasa Road offer tranquil living with excellent PMRDA layout approvals, clean air index, and direct link to Hinjawadi Phase 3 via Ghotawade Phata.',
-    fsi: '1.25 - 1.4 FSI',
-    priceTrend: '₹4,750 - ₹5,500 / sq.ft.',
+    id: 'bhukum-manas-lake',
+    name: 'Bhukum & Manas Lake',
+    desc: 'Lakeside residential sanctuary connecting Bavdhan and Kothrud. Features the 90-acre SKYi Manas Lake township with lakeside promenade, CRISIL ratings, and IGBC Platinum zero-waste architecture.',
+    projects: ['SKYi Manas Lake', 'SKYi Park Manas Lake', 'SKYi Manas Lake NA Plots'],
   },
   {
-    name: 'Kasarsai Dam & Marunji (Hinjawadi IT Belt)',
-    tagline: 'Resort-Style Lakefront Villa Plots for IT Professionals',
-    desc: 'Fronting the serene Kasarsai Dam reservoir and just 12 mins from Rajiv Gandhi Infotech Park Phase 3, this micro-location offers rapid capital appreciation driven by tech workforce demand.',
-    fsi: '1.4 FSI',
-    priceTrend: '₹4,750 - ₹6,500 / sq.ft.',
+    id: 'baner-bavdhan',
+    name: 'Baner & Bavdhan',
+    desc: 'Prime high-appreciation urban belts near Hinjewadi IT Park and Mumbai-Pune Expressway. Home to SKYi Five Maidan (Pancard Club Road), SKYi Five Baner, SKYi First, and SKYi Iris Bavdhan.',
+    projects: ['SKYi Five Maidan Baner', 'SKYi Five Baner', 'SKYi Iris Baner', 'SKYi First Bavdhan', 'SKYi Lighthouse'],
   },
   {
-    name: 'Sus & Bavdhan Annexe (Urban Extension)',
-    tagline: 'Prime Urban Gated NA Bungalow Estates',
-    desc: 'Minutes away from Baner High Street, Pashan Lake, and Pune University, Sus and Bavdhan Annexe represent premium city-fringe plotting with full underground municipal utilities.',
-    fsi: '1.5 FSI',
-    priceTrend: '₹5,200 - ₹9,500 / sq.ft.',
-  },
-  {
-    name: 'Talegaon Dabhade & Kanhe Phata (PCMC Corridor)',
-    tagline: 'Mumbai-Pune Expressway Connectivity & Breezy Climate',
-    desc: 'Situated along the Old Pune-Mumbai Highway and Expressway, Talegaon offers cooler temperatures, industrial/IT hub proximity, and clear title PMRDA bungalow plots.',
-    fsi: '1.4 FSI',
-    priceTrend: '₹4,750 - ₹5,200 / sq.ft.',
-  },
-  {
-    name: 'Khadakwasla & Donje (Sinhagad Base)',
-    tagline: 'Lake View Holiday & Weekend Bungalow Land',
-    desc: 'Overlooking Khadakwasla Dam and the iconic Sinhagad Fort, this South-West Pune corridor is ideal for build-your-own holiday homes and weekend retreats within 25 mins of Deccan.',
-    fsi: '1.2 FSI',
-    priceTrend: '₹4,750 - ₹5,500 / sq.ft.',
-  },
-];
-
-/* ─── Ultra-Advanced SEO Articles Reader Data ─── */
-const SEO_ARTICLES = [
-  {
-    id: 'paud-road-guide',
-    title: 'The Master Guide to PMRDA NA Bungalow Plots on Paud Road & Bhukum',
-    readTime: '6 min read',
-    category: 'West Pune Blueprint',
-    content: `Paud Road in West Pune is widely recognized as the city's premier corridor for luxury residential plotting and custom villa construction. Connecting Kothrud and Chandani Chowk to Bhugaon, Bhukum, Pirangut, and Mulshi, Paud Road has transformed into a high-appreciation green residential haven.
-
-PMRDA-sanctioned NA Bungalow Plots at Bhukum (such as SKYi Manas Lake NA Plots) offer plot sizes starting from 2,000 SQFT onwards with land pricing starting at ₹95 Lakhs*. Being situated within a 90-acre IGBC Platinum certified lakeside township guarantees 100% legal clearance, 7/12 single-owner extract titles, individual Property Cards (PR Cards), 40ft/50ft internal concrete roads, pre-laid underground utilities, and pre-approved bank loans from SBI, HDFC, ICICI, and Axis Bank.`,
-  },
-  {
-    id: 'kasarsai-it-belt',
-    title: 'Hinjawadi IT Corridor: Kasarsai Dam Lakefront NA Plots for IT Executives',
-    readTime: '5 min read',
-    category: 'IT Belt Analysis',
-    content: `For IT leaders and tech professionals working at Rajiv Gandhi Infotech Park Hinjawadi (Phases 1, 2, and 3), owning an independent lakefront NA bungalow plot at Kasarsai Dam reservoir represents the ultimate lifestyle upgrade.
-
-Situated just 12 minutes from Hinjawadi Phase 3, SKYi Lakeside Meadows at Kasarsai provides PMRDA R-Zone sanctioned plot layouts starting from 2,000 SQFT at ₹95 Lakhs*. Owners benefit from 1.4 FSI, enabling custom construction of Ground + 2 luxury smart villas overlooking the serene Kasarsai reservoir while retaining rapid access to Hinjawadi, Marunji, Nere, and the Pune-Mumbai Expressway.`,
-  },
-  {
-    id: 'legal-due-diligence',
-    title: '7/12 Extract, PR Card & PMRDA Sanction: Legal Checklist for Pune Plot Buyers',
-    readTime: '7 min read',
-    category: 'Legal & Title Safety',
-    content: `Buying Non-Agricultural (NA) land in Pune requires strict legal due diligence. The 4 mandatory legal pillars to verify before paying a token amount include:
-
-1. PMRDA Sanctioned Layout Order: Ensure the master layout is sanctioned by PMRDA with residential R-Zone status.
-2. 7/12 Extract (Saat Bara): Verify Line 1 owner names, ensure the 'Ither Haq' (Other Rights) column has no undisclosed bank mortgages, and verify Ferfar (mutation entry) history.
-3. Property Card (PR Card / Sampatti Patrak): Confirm government Land Records Department boundary measurements.
-4. Bank Loan Pre-Approval: Pre-approval by tier-1 banks (SBI, HDFC, ICICI) guarantees title clearance. SKYi Developers provides 100% verified legal documentation for all plot projects.`,
-  },
-  {
-    id: 'sus-bavdhan-urban-plotting',
-    title: 'Sus & Bavdhan Annexe: City-Fringe Gated Plotted Communities',
-    readTime: '4 min read',
-    category: 'Urban Fringe Focus',
-    content: `Sus and Bavdhan Annexe represent West Pune's most sought-after urban fringe plotted locations, situated just 5 minutes from Baner High Street, Pashan Lake, Aundh, and Balewadi.
-
-With PMRDA 1.5 FSI approvals, plots in Sus and Bavdhan starting from 2,000 SQFT provide high-net-worth individuals the rare opportunity to build custom architectural mansions with private plunge pools, elevators, and rooftop decks right on the edge of Pune city.`,
-  },
-  {
-    id: 'talegaon-expressway-belt',
-    title: 'Talegaon & Kanhe Phata: Expressway Link & Breezy Mountain Plotting',
-    readTime: '5 min read',
-    category: 'Expressway Growth',
-    content: `Positioned along the Old Pune-Mumbai Highway and the Pune-Mumbai Expressway, Talegaon Dabhade and Kanhe Phata offer a cool mountain microclimate, industrial/IT hub proximity, and clear title PMRDA bungalow plots.
-
-With plot sizes from 2,000 SQFT onwards starting at ₹95 Lakhs*, Talegaon represents an ideal investment for buyers seeking weekend retreats or primary homes connected to both Mumbai and PCMC.`,
-  },
-  {
-    id: 'khadakwasla-saswad-corridor',
-    title: 'Resort Living: Khadakwasla Lake View & Purandar Airport Growth Belt',
-    readTime: '5 min read',
-    category: 'Holiday & Airport Corridor',
-    content: `South and South-West Pune feature two distinct plotted growth zones: Khadakwasla/Donje (fronting Khadakwasla Dam and Sinhagad Fort) and Bopedev Ghat/Saswad (the Purandar International Airport corridor).
-
-These PMRDA R-Zone plots provide tranquil, pollution-free valley surroundings 25 minutes from Deccan Gymkhana, offering outstanding long-term land appreciation for resort bungalow builders.`,
-  },
-];
-
-const NA_PLOT_CHECKLIST = [
-  {
-    title: 'PMRDA Sanctioned Layout Order',
-    desc: '100% legally approved master plan layout issued by Pune Metropolitan Region Development Authority.',
-  },
-  {
-    title: '100% Clear Title 7/12 Extract',
-    desc: 'Unencumbered land titles with single-owner clearance, zero litigation history, and zero bank mortgages.',
-  },
-  {
-    title: 'Individual PR Card (Property Card)',
-    desc: 'Government Land Records PR Card generated per plot for seamless registration and ownership transfer.',
-  },
-  {
-    title: 'Residential Zone (R-Zone) Status',
-    desc: 'Zoned strictly for residential villa and bungalow construction under Unified DCR guidelines.',
-  },
-  {
-    title: 'Underground Infrastructure Pre-Laid',
-    desc: 'Serviced plots with pre-laid water supply connections, underground electricity, storm drainage, and fiber optics.',
-  },
-  {
-    title: '30ft - 50ft Concrete Internal Roads',
-    desc: 'Wide internal asphalt/concrete avenues with street lighting, paved footpaths, and entrance security plazas.',
-  },
-];
-
-const NRI_BENEFITS = [
-  {
-    title: 'FEMA & RBI Compliance',
-    desc: '100% compliant property acquisition guidelines for NRIs & OCIs via NRE/NRO banking channels.',
-    icon: <ShieldCheck size={20} />,
-  },
-  {
-    title: 'Capital Repatriability',
-    desc: 'Seamless repatriation of sale proceeds (up to USD 1 Million per financial year under RBI general permission).',
-    icon: <DollarSign size={20} />,
-  },
-  {
-    title: 'RERA & PMRDA Legal Safeguards',
-    desc: 'Escrow account security, mandatory completion timelines, and transparent title documentation under MahaRERA.',
-    icon: <FileCheck size={20} />,
-  },
-  {
-    title: 'Global NRI Desk & Virtual Tours',
-    desc: 'End-to-end assistance with Power of Attorney (PoA) execution, virtual 3D site tours, and tenant management.',
-    icon: <Globe size={20} />,
+    id: 'sopan-baug-dhayari',
+    name: 'Sopan Baug & Dhayari',
+    desc: 'Elite Central Pune luxury in Sopan Baug featuring SKYi Five Racecourse (4 & 5 BHK sky mansions), and South-West Pune self-sufficient living at SKYi Star City (20-acre township in Dhayari).',
+    projects: ['SKYi Five Racecourse Sopan Baug', 'SKYi Star City Dhayari', 'SKYi Star Towers'],
   },
 ];
 
 export default function SEOContent() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
-  const [activeArticleId, setActiveArticleId] = useState<string>('paud-road-guide');
+  const [activeMarketId, setActiveMarketId] = useState<string>('bhugaon-corridor');
 
   const toggle = (i: number) => setOpenIdx(openIdx === i ? null : i);
-
-  const activeArticle = SEO_ARTICLES.find((a) => a.id === activeArticleId) || SEO_ARTICLES[0];
+  const activeMarket = MICRO_MARKETS.find((m) => m.id === activeMarketId) || MICRO_MARKETS[0];
 
   return (
     <section className="seo-section" id="about">
-      {/* ── Schema.org JSON-LD Microdata for Pune NA Plots ── */}
+      {/* ── Schema.org Microdata for Pune Real Estate Ecosystem ── */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Place',
-            name: 'SKYi NA Bungalow Plots & Townships Pune',
-            description: 'PMRDA Sanctioned Clear Title NA Bungalow Plots across Bhukum, Bhugaon, Pirangut, Kasarsai, Talegaon, Khadakwasla, Wagholi & Saswad in Pune.',
-            geo: {
-              '@type': 'GeoCoordinates',
-              latitude: 18.5100,
-              longitude: 73.7500,
-            },
+            '@type': 'RealEstateAgent',
+            '@id': 'https://skyidevelopers.in/#developer',
+            name: 'SKYi Developers Pune (Enerrgia SKYi Developers)',
+            description: 'Premier real estate developer in Pune since 2004 with 7,000+ homes and 20+ projects across Bhugaon, Bhukum, Paud Road, Baner, Bavdhan, Dhayari, and Sopan Baug.',
+            url: 'https://skyidevelopers.in',
+            telephone: '+91-20-66143000',
+            priceRange: '₹42 Lakhs - ₹7.50 Crores',
             address: {
               '@type': 'PostalAddress',
-              addressLocality: 'Bhukum, Paud Road',
-              addressRegion: 'Pune, Maharashtra',
+              streetAddress: 'Skymark One, Balewadi',
+              addressLocality: 'Pune',
+              addressRegion: 'Maharashtra',
+              postalCode: '411045',
               addressCountry: 'IN',
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 18.5700,
+              longitude: 73.7700,
             },
           }),
         }}
@@ -307,16 +227,16 @@ export default function SEOContent() {
         </div>
         <div className="trust-divider" />
         <div className="trust-item">
-          <Shield size={22} />
+          <ShieldCheck size={22} />
           <div>
             <p className="trust-title">MahaRERA &amp; PMRDA Approved</p>
-            <p className="trust-sub">100% Clear Title 7/12 &amp; Escrow Protection</p>
+            <p className="trust-sub">100% Clear Title 7/12 &amp; Escrow Security</p>
           </div>
         </div>
       </div>
 
       <div className="seo-inner">
-        {/* ── Left: Project locations table ── */}
+        {/* ── Left Column: Master Portfolio Showcase ── */}
         <div className="seo-left">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -324,25 +244,21 @@ export default function SEOContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <span className="section-subtitle">All Developments</span>
+            <span className="section-subtitle">Developer Portfolio &amp; Micro-Markets</span>
             <h2 className="section-title seo-h2">
-              Skyi Developments<br />
-              <span className="gradient-text">Across Pune Footprint</span>
+              SKYi Developers Pune<br />
+              <span className="gradient-text">Complete Project Ecosystem</span>
             </h2>
             <div className="glow-line" style={{ marginTop: 16, marginBottom: 28 }} />
 
             <p className="seo-intro">
-              Skyi Developers (also known as <strong>SKYi Developers</strong>) is one of Pune's most trusted real estate developers,
-              with over <strong>20 years</strong> of design &amp; plotting excellence. SKYi's footprint spans prime Pune NA plot &amp; township corridors including{' '}
-              <strong>Bhugaon, Bhukum, Bavdhan, Chandani Chowk, Kothrud, Paud Road, Pirangut, Kasarsai, Talegaon, Khadakwasla, Wagholi &amp; Dhayari</strong>. Key developments feature{' '}
-              <strong>SKYi Manas Lake NA Bungalow Plots</strong> at Bhukum; <strong>SKYi Star Town NA Plots</strong> at Bhugaon;{' '}
-              <strong>SKYi Valley NA Plots</strong> at Pirangut; <strong>SKYi Lakeside Meadows</strong> at Kasarsai Dam; and{' '}
-              <strong>Skyi Songbirds &amp; SKYi Tigers Nest</strong> at Bhugaon.
+              <strong>SKYi Developers</strong> (also known as <em>Enerrgia SKYi Developers</em>) is one of Pune’s most respected and awarded real estate developers, building sustainable homes and master-planned communities since <strong>2004</strong>. With over <strong>7,000+ homes delivered</strong> and <strong>20+ landmark projects</strong>, SKYi’s footprint spans prime Pune growth corridors including <strong>Bhugaon, Bhukum, Paud Road, Baner, Bavdhan, Dhayari, Sopan Baug, and Aundh</strong>.
             </p>
           </motion.div>
 
+          {/* Master Project Cards */}
           <div className="location-cards">
-            {LOCATIONS.map((loc, i) => (
+            {PROJECT_LOCATIONS.map((loc, i) => (
               <motion.article
                 key={loc.project}
                 className="location-card glass"
@@ -350,7 +266,7 @@ export default function SEOContent() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
+                transition={{ duration: 0.6, delay: i * 0.08 }}
                 whileHover={{ x: 6 }}
               >
                 <div className="lc-accent" />
@@ -359,22 +275,59 @@ export default function SEOContent() {
                     <h3 className="lc-title">{loc.project}</h3>
                     <span className="lc-status">{loc.status}</span>
                   </div>
-                  <p className="lc-area">
-                    <MapPin size={12} /> {loc.area}
-                  </p>
-                  <div className="lc-meta">
-                    <span>{loc.config}</span>
-                    <span className="lc-dot" />
-                    <span>{loc.acres}</span>
+                  <div className="lc-area">
+                    <MapPin size={13} />
+                    <span>{loc.area}</span>
                   </div>
-                  <p className="lc-nearby">Near: {loc.nearBy}</p>
+                  <p className="lc-config">{loc.config}</p>
+                  <p className="lc-near" style={{ fontSize: '11px', color: '#94a3b8', marginTop: '6px' }}>
+                    <Shield size={11} style={{ display: 'inline', marginRight: '4px' }} />
+                    {loc.rera}
+                  </p>
                 </div>
               </motion.article>
             ))}
           </div>
+
+          {/* Micro-Market Deep Guide */}
+          <div className="encyclopedia-tabs-wrap" style={{ marginTop: '40px' }}>
+            <div className="guide-badge"><Compass size={16} /> Pune Micro-Market Real Estate Guide</div>
+            <h3 style={{ color: '#ffffff', fontSize: '1.4rem', fontWeight: 800, marginTop: '10px', marginBottom: '16px' }}>
+              Explore SKYi Developments by Locality
+            </h3>
+
+            <div className="article-tab-pills">
+              {MICRO_MARKETS.map((market) => (
+                <button
+                  key={market.id}
+                  type="button"
+                  className={`article-pill-btn ${activeMarketId === market.id ? 'active' : ''}`}
+                  onClick={() => setActiveMarketId(market.id)}
+                >
+                  {market.name}
+                </button>
+              ))}
+            </div>
+
+            <div className="active-article-card glass" style={{ marginTop: '16px', padding: '24px', borderRadius: '16px' }}>
+              <h4 style={{ color: '#ff6b35', fontSize: '1.2rem', fontWeight: 700, marginBottom: '8px' }}>
+                {activeMarket.name} Real Estate Corridor
+              </h4>
+              <p style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: '1.65', marginBottom: '16px' }}>
+                {activeMarket.desc}
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {activeMarket.projects.map((proj) => (
+                  <span key={proj} style={{ background: 'rgba(255, 107, 53, 0.15)', border: '1px solid rgba(255, 107, 53, 0.3)', color: '#ffd700', padding: '4px 10px', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 600 }}>
+                    {proj}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* ── Right: FAQ accordion ── */}
+        {/* ── Right Column: FAQ Accordion & Buying Guides ── */}
         <div className="seo-right">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -382,202 +335,72 @@ export default function SEOContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            <span className="section-subtitle">FAQ</span>
+            <span className="section-subtitle">Frequently Asked Questions</span>
             <h2 className="section-title seo-h2">
-              Common Questions<br />
-              <span className="gradient-text">About SKYi NA Plots &amp; Homes</span>
+              Everything You Need To Know<br />
+              <span className="gradient-text">About SKYi Projects</span>
             </h2>
             <div className="glow-line" style={{ marginTop: 16, marginBottom: 28 }} />
           </motion.div>
 
-          <div className="faq-list" itemScope itemType="https://schema.org/FAQPage">
-            {FAQS.map((faq, i) => (
-              <motion.div
-                key={i}
-                className={`faq-item glass ${openIdx === i ? 'open' : ''}`}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.06 }}
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
-              >
-                <button
-                  className="faq-question"
+          <div className="faq-list">
+            {FAQS.map((faq, i) => {
+              const isOpen = openIdx === i;
+              return (
+                <div
+                  key={faq.q}
+                  className={`faq-item glass ${isOpen ? 'open' : ''}`}
                   onClick={() => toggle(i)}
-                  aria-expanded={openIdx === i}
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={isOpen}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(i); } }}
                 >
-                  <span itemProp="name">{faq.q}</span>
-                  <motion.div
-                    animate={{ rotate: openIdx === i ? 180 : 0 }}
-                    transition={{ duration: 0.25 }}
-                    className="faq-chevron"
-                  >
-                    <ChevronDown size={18} />
-                  </motion.div>
-                </button>
-
-                <AnimatePresence initial={false}>
-                  {openIdx === i && (
+                  <div className="faq-q">
+                    <span>{faq.q}</span>
                     <motion.div
-                      className="faq-answer"
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                      itemScope
-                      itemProp="acceptedAnswer"
-                      itemType="https://schema.org/Answer"
+                      className="faq-arrow"
+                      animate={{ rotate: isOpen ? 180 : 0 }}
+                      transition={{ duration: 0.25 }}
                     >
-                      <p itemProp="text">{faq.a}</p>
+                      <ChevronDown size={18} />
                     </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
+                  </div>
 
-      {/* ── Footer Level: Pune NA Bungalow Plots Ecosystem Encyclopedia & Research Archive ── */}
-      <motion.div
-        className="pune-na-articles-section glass"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="na-guide-header">
-          <div className="guide-badge"><BookOpen size={16} /> Pune NA Plots SEO Encyclopedia</div>
-          <h3>Pune NA Bungalow Plots Research Archive &amp; Buying Guides</h3>
-          <p>Exhaustive legal, geographical, and investment research covering every NA plot corridor across Pune and vicinity.</p>
-        </div>
-
-        <div className="na-articles-wrapper">
-          {/* Article Nav Buttons */}
-          <div className="na-articles-nav">
-            {SEO_ARTICLES.map((art) => (
-              <button
-                key={art.id}
-                type="button"
-                className={`na-art-btn ${activeArticleId === art.id ? 'active' : ''}`}
-                onClick={() => setActiveArticleId(art.id)}
-              >
-                <span className="na-art-cat">{art.category}</span>
-                <span className="na-art-title">{art.title}</span>
-              </button>
-            ))}
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div
+                        className="faq-a"
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                      >
+                        <p>{faq.a}</p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              );
+            })}
           </div>
 
-          {/* Active Article Viewer */}
-          <div className="na-article-viewer glass">
-            <div className="na-art-view-head">
-              <span className="na-art-tag">{activeArticle.category}</span>
-              <span className="na-art-read"><BookOpen size={14} /> {activeArticle.readTime}</span>
-            </div>
-            <h4>{activeArticle.title}</h4>
-            <div className="na-art-body">
-              {activeArticle.content.split('\n\n').map((p, idx) => (
-                <p key={idx}>{p}</p>
-              ))}
-            </div>
+          {/* Quick Facts Strip */}
+          <div className="glass" style={{ marginTop: '30px', padding: '24px', borderRadius: '16px', border: '1px solid rgba(255, 255, 255, 0.12)' }}>
+            <h4 style={{ color: '#ffffff', fontSize: '1.1rem', fontWeight: 800, marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Sparkles size={18} className="text-amber-400" />
+              SKYi Key Milestone Summary
+            </h4>
+            <ul style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: '1.7', paddingLeft: '18px', margin: 0 }}>
+              <li><strong>Founded</strong>: 2004 in Pune by visionary architects and engineers</li>
+              <li><strong>Homes Delivered</strong>: Over 7,000+ families across 20+ projects</li>
+              <li><strong>Green Certifications</strong>: IGBC Platinum and Gold Certified Townships</li>
+              <li><strong>Flagship Townships</strong>: Skyi Songbirds (45 Acres), SKYi Manas Lake (90 Acres), SKYi Star City (20 Acres)</li>
+              <li><strong>Ultra-Luxury Line</strong>: SKYi Tigers Nest (Bhugaon), SKYi Five Racecourse (Sopan Baug), SKYi Five Maidan (Baner)</li>
+              <li><strong>Sports Infrastructure</strong>: 5-Acre Poona Western Club with Olympic pool and sports academies</li>
+            </ul>
           </div>
         </div>
-      </motion.div>
-
-      {/* ── Pune NA Bungalow Plot Micro-Location Investment Guide ── */}
-      <motion.div
-        className="pune-zones-section glass"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="na-guide-header">
-          <div className="guide-badge"><Compass size={16} /> Micro-Location Blueprint</div>
-          <h3>Pune NA Bungalow Plots Micro-Location Investment Guide</h3>
-          <p>Detailed analysis of price trends, FSI allowances, infrastructure, and appreciation potential across Pune’s top plotted residential corridors.</p>
-        </div>
-
-        <div className="pune-zones-grid">
-          {NA_MICRO_LOCATION_GUIDE.map((guide) => (
-            <div key={guide.name} className="pune-zone-card">
-              <div className="pz-accent" />
-              <h4>{guide.name}</h4>
-              <p className="pz-suburbs"><strong>Corridor Advantage:</strong> {guide.tagline}</p>
-              <p className="pz-desc">{guide.desc}</p>
-              <div className="pz-footer-info" style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid rgba(255,255,255,0.08)', display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: 'var(--accent-gold)' }}>
-                <span><Landmark size={12} style={{ display: 'inline', marginRight: '4px' }} /> FSI: {guide.fsi}</span>
-                <span>Trend: {guide.priceTrend}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* ── Global NRI Real Estate Investment Guide & Regulatory Hub ── */}
-      <motion.div
-        className="nri-hub-section glass"
-        id="nri-hub"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="nri-hub-header">
-          <div className="nri-badge"><Globe size={16} /> Global NRI Investment Hub</div>
-          <h3>NRI Property &amp; NA Plot Investment Guide for Pune Real Estate</h3>
-          <p>Comprehensive regulatory, banking, and capital growth guide for Non-Resident Indians in UAE, USA, UK, Singapore, Australia &amp; Canada investing in Skyi Pune developments.</p>
-        </div>
-
-        <div className="nri-benefits-grid">
-          {NRI_BENEFITS.map((item) => (
-            <div key={item.title} className="nri-benefit-card">
-              <div className="nri-card-icon">{item.icon}</div>
-              <h4>{item.title}</h4>
-              <p>{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* ── Specialized Pune NA Plots Legal Checklist & Guide ── */}
-      <motion.div
-        className="na-guide-section glass"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="na-guide-header">
-          <div className="guide-badge"><FileCheck size={16} /> PMRDA &amp; 7/12 Guide</div>
-          <h3>Pune NA Bungalow Plots Legal &amp; Infrastructure Checklist</h3>
-          <p>Key legal parameters to verify before investing in Non-Agricultural bungalow plots in Bhukum, Bhugaon, Pirangut, Kasarsai, Talegaon, Khadakwasla, or Wagholi.</p>
-        </div>
-
-        <div className="na-checklist-grid">
-          {NA_PLOT_CHECKLIST.map((item) => (
-            <div key={item.title} className="na-check-card">
-              <CheckCircle2 size={20} className="na-check-icon" />
-              <div>
-                <h4>{item.title}</h4>
-                <p>{item.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* ── Master Keyword Injection Block (Google Search Guidelines Compliant) ── */}
-      <div className="seo-keywords-block">
-        <p>
-          <strong>Skyi Developers</strong> (also known as <strong>SKYi Developers</strong>) is Pune, Maharashtra's premier real estate builder and developer. Official footprint includes:
-          <strong>SKYi Manas Lake NA Bungalow Plots Bhukum Paud Road</strong>, <strong>SKYi Star Town NA Plots Bhugaon</strong>, <strong>SKYi Valley NA Plots Pirangut</strong>, <strong>SKYi Lakeside Meadows NA Plots Kasarsai Dam</strong>, <strong>SKYi Ridge NA Plots Sus Bavdhan</strong>, <strong>SKYi Breeze NA Plots Talegaon Expressway</strong>, <strong>SKYi Waterside NA Plots Khadakwasla</strong>, <strong>SKYi Eastgate NA Plots Wagholi</strong>, <strong>Skyi Songbirds Bhugaon</strong>, <strong>SKYi Tigers Nest Bhugaon</strong>, <strong>SKYi PWC Towers</strong>, <strong>SKYi Aura Heights</strong>, <strong>SKYi Park Baner</strong>, <strong>SKYi Iris Baner Bavdhan</strong>, and <strong>Skyi Star City Dhayari</strong>.
-        </p>
-        <p style={{ marginTop: '8px' }}>
-          <strong>Entire Pune Real Estate Market &amp; NA Bungalow Plots High-Intent Search Matrix</strong>: NA bungalow plots Pune, PMRDA NA plots Pune, clear title 7/12 extract NA plots Pune, NA plots in Bhukum, NA plots in Bhugaon, NA plots in Pirangut, NA plots in Kasarsai, NA plots in Talegaon, NA plots in Khadakwasla, NA plots in Saswad, NA plots in Wagholi, NA plots in Lavasa Road, NA plots in Lavale, NA plots in Ghotawade Phata, NA plots in Sus Bavdhan, villa plots for sale Paud Road Pune, lakeside NA plots Pune, gated township plotting Pune, PMRDA collector NA approved land Pune, plot for bungalow in Pune, NA plots 2000 sqft Pune, NA plots starting 95 lakhs Pune, buy 1 BHK flat Pune, buy 2 BHK flat Pune, buy 3 BHK flat Pune, buy 4 BHK flat Pune, buy NA plot in Pune, flat for sale in Kothrud, flats for sale in Bavdhan, flats for sale in Bhugaon, flats near Hinjewadi IT Park, ready possession flats Pune, under construction projects Paud Road, lakeside apartments Pune, top real estate developers Pune, best builders in Pune, buy plot in Bhukum, buy bungalow plot Bhugaon, buy villa plot Bavdhan, residential land for sale Pune, ghar bandhnya sathi plot pune, pune madhe NA plot sale, swatacha bungalow pune plot.
-        </p>
       </div>
     </section>
   );
