@@ -8,15 +8,8 @@ import {
   Award,
   Shield,
   Leaf,
-  FileCheck,
-  CheckCircle2,
-  Globe,
-  DollarSign,
   ShieldCheck,
   Compass,
-  Landmark,
-  BookOpen,
-  Building2,
   Sparkles,
 } from 'lucide-react';
 import './SEOContent.css';
