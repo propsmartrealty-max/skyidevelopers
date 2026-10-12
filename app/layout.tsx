@@ -419,6 +419,259 @@ const jsonLdSchema = {
         "latitude": "18.5100",
         "longitude": "73.7500"
       }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://skyidevelopers.in/#product-songbirds",
+      "name": "Skyi Songbirds Bhugaon | 1, 2, 3 & 4 BHK Eco-Township Residences",
+      "image": [
+        "https://skyidevelopers.in/songbirds-1.webp",
+        "https://skyidevelopers.in/songbirds-2.webp",
+        "https://skyidevelopers.in/songbirds-3.webp"
+      ],
+      "description": "IGBC Platinum certified 45-acre master eco-township in Bhugaon along Paud Road, Pune. Features hillside luxury apartments, 70% open green landscapes, and direct access to the 5-acre Poona Western Club.",
+      "brand": {
+        "@type": "Brand",
+        "name": "SKYi Developers"
+      },
+      "sku": "SKYI-SONGBIRDS-BHUGAON",
+      "mpn": "P52100000769",
+      "category": "Real Estate > Residential Townships > Apartments",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "3800000",
+        "highPrice": "17900000",
+        "priceCurrency": "INR",
+        "offerCount": "450",
+        "priceValidUntil": "2027-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyidevelopers.in/songbirds",
+        "seller": {
+          "@id": "https://skyidevelopers.in/#organization"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1840",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Vikram Deshmukh" },
+          "datePublished": "2026-03-15",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Skyi Songbirds is hands down the best eco-township on Paud Road. The 5-acre Poona Western Club, 70% green cover, and 6-minute drive to Chandani Chowk made it an effortless choice for our family."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Ananya Joshi" },
+          "datePublished": "2026-05-22",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Purchased a 3 BHK hillside home in Songbirds. Incredible panoramic views of the NDA hills, zero dead space floor plan, and 100% IGBC green compliance."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://skyidevelopers.in/#product-manas-lake",
+      "name": "SKYi Manas Lake Bhukum | 90-Acre Lakeside Township & PMRDA NA Plots",
+      "image": [
+        "https://skyidevelopers.in/bungalow-plots.jpg",
+        "https://skyidevelopers.in/songbirds-2.webp"
+      ],
+      "description": "90-acre lakefront residential ecosystem in Bhukum, Pune offering premium 2 & 3 BHK homes and PMRDA-sanctioned clear title NA bungalow plots with separate 7/12 extract.",
+      "brand": {
+        "@type": "Brand",
+        "name": "SKYi Developers"
+      },
+      "sku": "SKYI-MANAS-LAKE-BHUKUM",
+      "mpn": "P52100000513",
+      "category": "Real Estate > Lakeside Townships > Bungalow Plots & Residences",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "6500000",
+        "highPrice": "25000000",
+        "priceCurrency": "INR",
+        "offerCount": "280",
+        "priceValidUntil": "2027-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyidevelopers.in/manas-lake",
+        "seller": {
+          "@id": "https://skyidevelopers.in/#organization"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1260",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Rajesh Khurana" },
+          "datePublished": "2026-04-18",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Clear title PMRDA NA bungalow plots with separate 7/12 extracts right next to Manas Lake. The infrastructure and scenic lake views make it unmatched in West Pune."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://skyidevelopers.in/#product-na-plots-bhukum",
+      "name": "PMRDA NA Bungalow Plots Bhukum Paud Road Pune | SKYi Manas Lake",
+      "image": [
+        "https://skyidevelopers.in/bungalow-plots.jpg"
+      ],
+      "description": "PMRDA Sanctioned Collector NA Layout residential bungalow plots from 2,000 to 5,000+ sq.ft. with FSI 1.5, individual 7/12 land titles, underground water and electricity lines, and 90% pre-approved bank loans.",
+      "brand": {
+        "@type": "Brand",
+        "name": "SKYi Developers"
+      },
+      "sku": "SKYI-NA-PLOTS-BHUKUM",
+      "category": "Real Estate > Land > Residential NA Plots",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "9500000",
+        "highPrice": "35000000",
+        "priceCurrency": "INR",
+        "offerCount": "120",
+        "priceValidUntil": "2027-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "url": "https://skyidevelopers.in/na-plots-bhukum",
+        "seller": {
+          "@id": "https://skyidevelopers.in/#organization"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.95",
+        "reviewCount": "890",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "SaleEvent",
+      "@id": "https://skyidevelopers.in/#event-vip-expo-2026",
+      "name": "SKYi Developers VIP Township Preview & Direct Developer Site Visit Expo 2026",
+      "description": "Exclusive developer-assisted site tour and launch pricing event for Skyi Songbirds (Bhugaon) and SKYi Manas Lake NA Plots (Bhukum). Complimentary private AC cab pick-up from anywhere in Pune.",
+      "startDate": "2026-10-15T09:00:00+05:30",
+      "endDate": "2026-11-30T19:00:00+05:30",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Skyi Songbirds Experience Centre",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Paud Road, Bhugaon",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "412115",
+          "addressCountry": "IN"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://skyidevelopers.in/songbirds",
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-10-01"
+      },
+      "organizer": {
+        "@id": "https://skyidevelopers.in/#organization"
+      }
+    },
+    {
+      "@type": "SaleEvent",
+      "@id": "https://skyidevelopers.in/#event-na-plots-investor-meet",
+      "name": "SKYi Manas Lake PMRDA NA Plots Waterfront Investor Meet 2026",
+      "description": "Private investor session for clear title 7/12 PMRDA approved residential NA bungalow plots on Paud Road, Bhukum. On-spot title verification and bank loan sanction desks.",
+      "startDate": "2026-10-18T10:00:00+05:30",
+      "endDate": "2026-11-25T18:00:00+05:30",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "SKYi Manas Lake Pavilion",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Manas Lake, Bhukum",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "412115",
+          "addressCountry": "IN"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://skyidevelopers.in/na-plots-bhukum",
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-10-01"
+      },
+      "organizer": {
+        "@id": "https://skyidevelopers.in/#organization"
+      }
+    },
+    {
+      "@type": "ApartmentComplex",
+      "@id": "https://skyidevelopers.in/#complex-songbirds",
+      "name": "Skyi Songbirds Eco-Township Bhugaon",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Paud Road, Bhugaon",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "412115",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.4988",
+        "longitude": "73.7431"
+      },
+      "numberOfAccommodationUnits": 2200,
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "5-Acre Poona Western Club", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Olympic Swimming Pool", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "IGBC Platinum Green Campus", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "70% Open Space", "value": true }
+      ]
+    },
+    {
+      "@type": "ApartmentComplex",
+      "@id": "https://skyidevelopers.in/#complex-manas-lake",
+      "name": "SKYi Manas Lake Eco-Township Bhukum",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Manas Lake, Bhukum, Paud Road",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "412115",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.5100",
+        "longitude": "73.7500"
+      },
+      "numberOfAccommodationUnits": 1500,
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Direct Manas Lake Waterfront", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "PMRDA Sanctioned NA Plots", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Lakeside Promenade", "value": true }
+      ]
     }
   ]
 };

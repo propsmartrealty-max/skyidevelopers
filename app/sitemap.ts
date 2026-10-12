@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { PROGRAMMATIC_SEO_ITEMS } from '../utils/programmaticSeo';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://skyidevelopers.in';
 

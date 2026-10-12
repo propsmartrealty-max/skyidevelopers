@@ -1,5 +1,7 @@
 import { PROGRAMMATIC_SEO_ITEMS } from '../../utils/programmaticSeo';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
   const baseUrl = 'https://skyidevelopers.in';
 
