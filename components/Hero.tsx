@@ -136,6 +136,7 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
 
         {/* Title */}
         <motion.h1 className="hero-title" variants={item}>
+          <span className="sr-only">SKYi Developers Pune | Official Luxury Eco-Townships &amp; PMRDA NA Bungalow Plots | </span>
           Built around<br />
           <span className="hero-title-accent">life.</span>{' '}
           <span className="hero-title-sub">Shaped</span><br />
@@ -147,8 +148,7 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
 
         {/* Description */}
         <motion.p className="hero-description" variants={item}>
-          For over two decades, Skyi has been crafting Pune's most thoughtfully designed
-          communities — where every home is a statement of purpose.
+          Official portal of SKYi Developers in Pune. For over 20 years, crafting premier IGBC Platinum eco-townships across 45-acre Skyi Songbirds (Bhugaon), 90-acre SKYi Manas Lake (Bhukum), and PMRDA-sanctioned clear title NA bungalow plots.
         </motion.p>
 
         {/* CTAs */}
