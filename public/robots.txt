@@ -2,6 +2,98 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-# Official Canonical Sitemap Index for Googlebot & Global Search Crawlers
+# Google Search & Googlebot Family
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.webp
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+Disallow: /api/
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Global Search Engines
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+User-agent: Applebot
+Allow: /
+Disallow: /api/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /api/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+
+User-agent: YandexBot
+Allow: /
+Disallow: /api/
+
+# Social & Messaging Rich Previews
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Generative AI & Answer Engine Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Sitemaps
 Sitemap: https://skyidevelopers.in/sitemap.xml
+Sitemap: https://skyidevelopers.in/sitemap-images.xml
+Sitemap: https://skyidevelopers.in/feed.xml
 Host: https://skyidevelopers.in

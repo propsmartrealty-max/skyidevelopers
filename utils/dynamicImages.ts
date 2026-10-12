@@ -96,19 +96,16 @@ function createProjectSvgDataUri(
 }
 
 export const DYNAMIC_PROJECT_IMAGES: Record<string, string> = {
-  // Existing real assets mapped specifically where applicable
-  'skyi-songbirds': '/songbirds-1.webp',
-  'skyi-manas-lake-apartment': '/songbirds-2.webp',
-  
-  // Unique dynamic SVG visual identity for each project to remove redundancy
-  'skyi-manas-lake-na-plots': createProjectSvgDataUri(
-    'SKYi Manas Lake NA Plots',
-    'PMRDA NA VILLA PLOTS',
-    '#0c1938',
-    '#050816',
-    '#ff6b35',
-    'plots'
-  ),
+  // Real static assets with optimized dimensions for Googlebot & Open Graph
+  'skyi-songbirds': '/images/projects/skyi-songbirds.webp',
+  'skyi-manas-lake-apartment': '/images/projects/skyi-manas-lake.webp',
+  'skyi-manas-lake-na-plots': '/images/projects/skyi-manas-lake-na-plots.jpg',
+  'skyi-tigers-nest-bhugaon': '/images/projects/skyi-tigers-nest.webp',
+  'skyi-five-racecourse': '/images/projects/skyi-five-racecourse.webp',
+  'skyi-five-maidan': '/images/projects/skyi-five-maidan.webp',
+  'skyi-star-city-dhayari': '/images/projects/skyi-star-city.webp',
+  'skyi-park-iris-baner': '/images/projects/skyi-iris-baner.webp',
+  'skyi-pwc-towers': '/images/projects/skyi-songbirds-club.webp',
   'skyi-star-town-na-plots': createProjectSvgDataUri(
     'SKYi Star Town NA Plots',
     'BHUGAON VILLA PLOTS',
@@ -164,38 +161,6 @@ export const DYNAMIC_PROJECT_IMAGES: Record<string, string> = {
     '#080312',
     '#a855f7',
     'plots'
-  ),
-  'skyi-park-iris-baner': createProjectSvgDataUri(
-    'SKYi Park & SKYi Iris',
-    'BANER IT TOWERS',
-    '#131b2e',
-    '#060912',
-    '#818cf8',
-    'towers'
-  ),
-  'skyi-star-city-dhayari': createProjectSvgDataUri(
-    'Skyi Star City Township',
-    'DHAYARI ECO TOWNSHIP',
-    '#142416',
-    '#060c07',
-    '#4ade80',
-    'towers'
-  ),
-  'skyi-tigers-nest-bhugaon': createProjectSvgDataUri(
-    'SKYi Tigers Nest',
-    'HILLSIDE SKY DECKS',
-    '#26150b',
-    '#0f0703',
-    '#f97316',
-    'hillside'
-  ),
-  'skyi-pwc-towers': createProjectSvgDataUri(
-    'SKYi PWC Towers',
-    'POONA WESTERN CLUB VIEW',
-    '#0f172a',
-    '#020617',
-    '#38bdf8',
-    'towers'
   ),
 };
 

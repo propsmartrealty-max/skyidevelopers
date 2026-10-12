@@ -54,10 +54,16 @@ export const metadata: Metadata = {
     alternateLocale: ['en_US', 'en_GB', 'en_AE', 'en_SG', 'en_AU', 'en_CA'],
     images: [
       {
-        url: '/songbirds-1.webp',
+        url: 'https://skyidevelopers.in/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Skyi Songbirds Bhugaon Pune',
+        alt: 'Skyi Developers Pune — Official Master Portfolio & Eco-Townships',
+      },
+      {
+        url: 'https://skyidevelopers.in/images/projects/skyi-songbirds.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Skyi Songbirds Bhugaon Pune Eco-Township',
       },
     ],
   },
@@ -65,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Skyi Developers Pune | Luxury Flats & PMRDA NA Plots',
     description: 'IGBC Platinum & MahaRERA Certified Township Developer in Pune. Trusted by 7,000+ families & Global NRI Investors.',
-    images: ['/songbirds-1.webp'],
+    images: ['https://skyidevelopers.in/og-image.jpg'],
   },
   robots: {
     index: true,

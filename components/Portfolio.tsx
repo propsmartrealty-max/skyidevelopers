@@ -155,23 +155,18 @@ function TiltCard({
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* Hidden image element to detect network loading errors */}
-      <img
-        src={project.bgImage}
-        alt={project.title}
-        onError={() => setImgError(true)}
-        style={{ display: 'none' }}
-      />
-
-      {/* Image */}
-      <div
-        className="card-image"
-        style={{
-          backgroundImage: imgError
-            ? 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)'
-            : `url(${project.bgImage})`,
-        }}
-      >
+      {/* Crawlable SEO Image */}
+      <div className="card-image">
+        <img
+          src={project.bgImage}
+          alt={`${project.title} — ${project.scale} at ${project.location} by SKYi Developers Pune`}
+          loading="lazy"
+          decoding="async"
+          width="600"
+          height="340"
+          className="card-actual-img"
+          onError={() => setImgError(true)}
+        />
         <div className="card-image-overlay" />
         <span className={`card-status ${
           project.status === 'Ongoing'       ? 'status-ongoing'   :

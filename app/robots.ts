@@ -12,6 +12,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/'],
       },
+      // Google Family of Crawlers
       {
         userAgent: 'Googlebot',
         allow: '/',
@@ -20,7 +21,6 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'Google-InspectionTool',
         allow: '/',
-        disallow: ['/api/'],
       },
       {
         userAgent: 'Googlebot-Image',
@@ -28,6 +28,14 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'Googlebot-Video',
+        allow: '/',
+      },
+      {
+        userAgent: 'Googlebot-News',
+        allow: '/',
+      },
+      {
+        userAgent: 'Storebot-Google',
         allow: '/',
       },
       {
@@ -44,17 +52,27 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
+        userAgent: 'Google-Extended',
+        allow: '/',
+      },
+      // Major Search Engine Crawlers
+      {
         userAgent: 'Bingbot',
         allow: '/',
         disallow: ['/api/'],
       },
       {
-        userAgent: 'DuckDuckBot',
+        userAgent: 'msnbot',
         allow: '/',
         disallow: ['/api/'],
       },
       {
         userAgent: 'Applebot',
+        allow: '/',
+        disallow: ['/api/'],
+      },
+      {
+        userAgent: 'DuckDuckBot',
         allow: '/',
         disallow: ['/api/'],
       },
@@ -68,8 +86,58 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/'],
       },
+      // Social & Rich Previews
+      {
+        userAgent: 'facebookexternalhit',
+        allow: '/',
+      },
+      {
+        userAgent: 'Twitterbot',
+        allow: '/',
+      },
+      {
+        userAgent: 'LinkedInBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'WhatsApp',
+        allow: '/',
+      },
+      {
+        userAgent: 'Pinterestbot',
+        allow: '/',
+      },
+      // AI Search Engines & LLM Answer Engines
+      {
+        userAgent: 'GPTBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'ChatGPT-User',
+        allow: '/',
+      },
+      {
+        userAgent: 'ClaudeBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'Claude-Web',
+        allow: '/',
+      },
+      {
+        userAgent: 'PerplexityBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'Bytespider',
+        allow: '/',
+      },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [
+      `${baseUrl}/sitemap.xml`,
+      `${baseUrl}/sitemap-images.xml`,
+      `${baseUrl}/feed.xml`,
+    ],
     host: baseUrl,
   };
 }
