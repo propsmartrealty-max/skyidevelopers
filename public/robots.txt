@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: https://skyidevelopers.com/sitemap.xml
+# Official Canonical Sitemap Index for Googlebot & Global Search Crawlers
+Sitemap: https://skyidevelopers.in/sitemap.xml
+Host: https://skyidevelopers.in

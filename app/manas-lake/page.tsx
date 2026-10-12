@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: 'Skyi Developers',
     images: [
       {
-        url: 'https://skyidevelopers.in/manaslake-1.webp',
+        url: 'https://skyidevelopers.in/bungalow-plots.jpg',
         width: 1200,
         height: 630,
         alt: 'SKYi Manas Lake PMRDA NA Plots & Township Pune',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'SKYi Manas Lake Bhukum Bavdhan Pune | NA Plots & Apartments',
     description: '90+ Acre Lakefront Township near Chandani Chowk. PMRDA NA Plots with FSI 1.5 & Lakeside Flats.',
-    images: ['https://skyidevelopers.in/manaslake-1.webp'],
+    images: ['https://skyidevelopers.in/bungalow-plots.jpg'],
   },
 };
 

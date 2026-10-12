@@ -1,55 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Core Canonical Hubs -->
   <url>
-    <loc>https://skyidevelopers.com/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://skyidevelopers.in/</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://skyidevelopers.com/songbirds-1.webp</image:loc>
-      <image:title>Skyi Songbirds Bhugaon Pune Luxury Residences</image:title>
+      <image:loc>https://skyidevelopers.in/songbirds-1.webp</image:loc>
+      <image:title>Skyi Songbirds Bhugaon Pune 45-Acre Eco-Township</image:title>
+      <image:caption>Skyi Songbirds 1 BHK New Launch, 2, 3 and 4 BHK Luxury Residences overlooking NDA Forest</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://skyidevelopers.com/songbirds-2.webp</image:loc>
-      <image:title>SKYi Manas Lake Bavdhan Bhukum Pune Lakeside Township</image:title>
+      <image:loc>https://skyidevelopers.in/bungalow-plots.jpg</image:loc>
+      <image:title>SKYi Manas Lake PMRDA NA Bungalow Plots Bhukum Paud Road Pune</image:title>
+      <image:caption>Clear Title 7/12 PMRDA Approved Residential Villa Plots with 1.5 FSI</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://skyidevelopers.com/bungalow-plots.jpg</image:loc>
-      <image:title>SKYi Manas Lake NA Bungalow Plots Bhukum Paud Road Pune</image:title>
+      <image:loc>https://skyidevelopers.in/songbirds-2.webp</image:loc>
+      <image:title>SKYi Manas Lake Lakeside Residences Paud Road Pune</image:title>
+      <image:caption>90-Acre IGBC Platinum Certified Lakefront Township near Chandani Chowk</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/songbirds-3.webp</image:loc>
+      <image:title>SKYi Tigers Nest 4 BHK Luxury Hillside Sanctuaries Bhugaon</image:title>
+      <image:caption>Ultra Luxury Hillside Homes with 180 Degree Valley Panorama starting 1.79 Cr</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://skyidevelopers.com/#portfolio</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://skyidevelopers.in/songbirds</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/songbirds-1.webp</image:loc>
+      <image:title>Skyi Songbirds 1 BHK New Launch 430 Sqft</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/manas-lake</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/bungalow-plots.jpg</image:loc>
+      <image:title>SKYi Manas Lake PMRDA NA Plots and Waterfront Sector</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots-bhukum</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/bungalow-plots.jpg</image:loc>
+      <image:title>PMRDA NA Bungalow Plots Bhukum Paud Road Pune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/projects</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/bhugaon</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/nri-hub</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://skyidevelopers.com/#calculator</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skyidevelopers.com/#connectivity</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skyidevelopers.com/#nri-hub</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://skyidevelopers.in/plot-estimator</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://skyidevelopers.com/#contact</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://skyidevelopers.in/virtual-tour</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/connectivity</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/contact</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Programmatic Micro-Location Plotted Enclaves -->
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/manas-lake-na-plots-bhukum</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/star-town-na-plots-bhugaon</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/pirangut-valley-na-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/lakeside-meadows-kasarsai</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/ridge-sus-bavdhan</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/pashan-hills-na-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/hinjewadi-greens-marunji</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/green-acres-mulshi</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/talegaon-expressway-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/khadakwasla-lake-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/wagholi-east-na-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/saswad-heritage-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/lavasa-road-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/somatane-toll-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/urse-midc-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/na-plots/kanhe-highway-plots</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
 </urlset>

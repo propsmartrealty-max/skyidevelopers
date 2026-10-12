@@ -84,6 +84,9 @@ export const metadata: Metadata = {
     address: false,
     email: false,
   },
+  verification: {
+    google: 'google-site-verification=skyidevelopers-official-portal',
+  },
   category: 'real estate',
 };
 
@@ -100,6 +103,12 @@ const jsonLdSchema = {
       "telephone": "+91-20-66143000",
       "email": "info@skyidevelopers.com",
       "foundingDate": "2004",
+      "sameAs": [
+        "https://facebook.com/skyidevelopers",
+        "https://instagram.com/skyi_developers",
+        "https://youtube.com/@skyidevelopers",
+        "https://www.linkedin.com/company/skyi-developers"
+      ],
       "areaServed": [
         { "@type": "Country", "name": "India" },
         { "@type": "Country", "name": "United States" },
@@ -424,8 +433,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://formsubmit.co" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
         <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
+        <link rel="dns-prefetch" href="https://formsubmit.co" />
         <link rel="preload" href="/songbirds-1.webp" as="image" type="image/webp" />
         <link rel="preload" href="/bungalow-plots.jpg" as="image" type="image/jpeg" />
         <script

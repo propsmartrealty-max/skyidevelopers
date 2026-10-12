@@ -2,8 +2,14 @@
 # CLOUDFLARE EDGE 301 CANONICAL & ALIAS REDIRECTS
 # ══════════════════════════════════════════════════════════════════════════════
 
-# Canonical Domain & Protocol Redirects
-https://www.skyidevelopers.in/* https://skyidevelopers.in/:splat 301!
+# Canonical Domain & Protocol Redirects (Permanent 301)
+https://www.skyidevelopers.in/*   https://skyidevelopers.in/:splat 301!
+http://www.skyidevelopers.in/*    https://skyidevelopers.in/:splat 301!
+http://skyidevelopers.in/*        https://skyidevelopers.in/:splat 301!
+https://skyidevelopers.com/*      https://skyidevelopers.in/:splat 301!
+https://www.skyidevelopers.com/*  https://skyidevelopers.in/:splat 301!
+http://skyidevelopers.com/*       https://skyidevelopers.in/:splat 301!
+http://www.skyidevelopers.com/*   https://skyidevelopers.in/:splat 301!
 
 # Legacy & Alias Routes to Canonical Hubs
 /plots                          /na-plots-bhukum 301

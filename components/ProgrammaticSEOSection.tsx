@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Search, MapPin, CheckCircle2, ShieldCheck, Tag, FileText, Landmark, Compass } from 'lucide-react';
 import { PROGRAMMATIC_SEO_ITEMS, CORRIDORS_LIST, PROPERTY_TYPES, PUNE_MICRO_LOCATIONS } from '../utils/programmaticSeo';
@@ -152,6 +153,20 @@ export default function ProgrammaticSEOSection({ onBookVisit }: ProgrammaticSEOS
                 </div>
 
                 <div className="p-seo-card-footer">
+                  <Link
+                    href={`/na-plots/${item.id}`}
+                    className="p-seo-internal-link"
+                    style={{
+                      display: 'block',
+                      color: '#ffd700',
+                      fontSize: '0.84rem',
+                      fontWeight: 700,
+                      marginBottom: '8px',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    View 7/12 &amp; Plot Layout Details →
+                  </Link>
                   {onBookVisit && (
                     <button
                       type="button"
