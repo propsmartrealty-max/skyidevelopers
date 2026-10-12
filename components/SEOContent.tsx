@@ -11,8 +11,11 @@ import {
   ShieldCheck,
   Compass,
   Sparkles,
+  Search,
+  Layers,
 } from 'lucide-react';
 import './SEOContent.css';
+import { SKYI_ECOSYSTEM_MASTER_KEYWORDS } from '../utils/skyiDeepDataEngine';
 
 /* ─── Ultra-Advanced Google Standards Compliant FAQ Data ─── */
 const FAQS = [
@@ -27,6 +30,14 @@ const FAQS = [
   {
     q: 'Which completed developments has SKYi Developers delivered in Pune?',
     a: 'SKYi’s successfully completed and delivered residential projects include: (1) SKYi First in Bavdhan, (2) SKYi Five Baner on Baner-Pashan Link Road, (3) SKYi Iris Baner, (4) SKYi Seher row houses & villas in Baner, (5) SKYi Aquila in Baner, (6) SKYi Nilay in Aundh, (7) SKYi Iris Bavdhan, (8) SKYi Lighthouse in Bavdhan, (9) SKYi Star Town in Bhugaon, and (10) SKYi Star Towers in Dhayari.',
+  },
+  {
+    q: 'What are the details of the new launch 1 BHK (430 Sq.Ft.) in Skyi Songbirds Bhugaon?',
+    a: 'Skyi Songbirds has launched an exclusive new phase of smart 1 BHK eco-residences featuring 430 Sq.Ft. usable RERA carpet area starting from ₹38 Lakhs*. These homes are designed on Zero-Dead-Space principles with scenic hillside balconies facing the 7,000-acre NDA forest, full access to the 5-acre Poona Western Club, and up to 90% pre-approved bank loans.',
+  },
+  {
+    q: 'Is PMRDA NA bungalow plotting available at SKYi Manas Lake in Bhukum Pune?',
+    a: 'Yes, SKYi Manas Lake offers PMRDA-sanctioned clear title residential NA bungalow plots directly along the lakefront. Plot sizes range from 2,000 to 5,000+ Sq.Ft. with FSI 1.5 (sanctioned for Ground + 2 Floors luxury villa construction), separate demarcation, 100% clear title individual 7/12 extract per plot, underground electricity and water networks, and 90% home loan funding from nationalized banks.',
   },
   {
     q: 'What configurations are available across SKYi projects (1 BHK to 5 BHK)?',
@@ -90,8 +101,8 @@ const PROJECT_LOCATIONS = [
   {
     project: 'Skyi Songbirds Eco-Township',
     area: 'Bhugaon Foothills, Paud Road, Pune',
-    config: '1, 2, 3 & 4 BHK Sustainable Residences (650 - 1,850 sq.ft.) — Starting ₹68 Lakhs*',
-    status: 'Ready & Ongoing Phases',
+    config: 'NEW LAUNCH: 1 BHK (430 sq.ft. from ₹38L*), 2, 3 & 4 BHK Sustainable Residences — Starting ₹38 Lakhs*',
+    status: 'New Launch & Ongoing Phases',
     category: '45-Acre Eco-Township',
     rera: 'MahaRERA: P52100000769 / P52100001117 / P52100019348',
     color: '#34d399',
@@ -104,6 +115,15 @@ const PROJECT_LOCATIONS = [
     category: '90-Acre Lakefront Township',
     rera: 'MahaRERA: P52100000513 / P52100000514 / P52100026954',
     color: '#3b82f6',
+  },
+  {
+    project: 'SKYi Manas Lake PMRDA NA Plots',
+    area: 'Manas Lake Waterfront, Bhukum, Paud Road, Pune',
+    config: 'PMRDA Sanctioned Clear Title NA Villa Plots (2,000 - 5,000+ sq.ft.) with FSI 1.5 — Starting ₹95 Lakhs*',
+    status: 'Ready Possession Plotted Enclave',
+    category: 'Waterfront NA Plots',
+    rera: 'PMRDA Sanctioned / Clear 7/12 Individual Extract',
+    color: '#10b981',
   },
   {
     project: 'SKYi PWC Towers & Hillside',
@@ -165,9 +185,39 @@ const MICRO_MARKETS = [
 export default function SEOContent() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
   const [activeMarketId, setActiveMarketId] = useState<string>('bhugaon-corridor');
+  const [activeKeywordTab, setActiveKeywordTab] = useState<string>('all');
+  const [searchTerm, setSearchTerm] = useState<string>('');
 
   const toggle = (i: number) => setOpenIdx(openIdx === i ? null : i);
   const activeMarket = MICRO_MARKETS.find((m) => m.id === activeMarketId) || MICRO_MARKETS[0];
+
+  // Compute displayed keywords based on active tab & search
+  const tabKeywordMap: Record<string, string[]> = {
+    all: [
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.coreBrand,
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.locations,
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.configurations,
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.pricing,
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.songbirds,
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.manasLake,
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.natureSustainability,
+      ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.localMarathi,
+    ],
+    brand: [...SKYI_ECOSYSTEM_MASTER_KEYWORDS.coreBrand, ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.developerCompany],
+    locations: SKYI_ECOSYSTEM_MASTER_KEYWORDS.locations,
+    configurations: SKYI_ECOSYSTEM_MASTER_KEYWORDS.configurations,
+    pricing: [...SKYI_ECOSYSTEM_MASTER_KEYWORDS.pricing, ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.floorPlans],
+    songbirds: SKYI_ECOSYSTEM_MASTER_KEYWORDS.songbirds,
+    manasLake: SKYI_ECOSYSTEM_MASTER_KEYWORDS.manasLake,
+    nature: SKYI_ECOSYSTEM_MASTER_KEYWORDS.natureSustainability,
+    local: [...SKYI_ECOSYSTEM_MASTER_KEYWORDS.localMarathi, ...SKYI_ECOSYSTEM_MASTER_KEYWORDS.nriGlobal],
+  };
+
+  const currentTabKeywords = tabKeywordMap[activeKeywordTab] || tabKeywordMap.all;
+  const uniqueTabKeywords = Array.from(new Set(currentTabKeywords));
+  const displayedKeywords = searchTerm.trim()
+    ? uniqueTabKeywords.filter((k) => k.toLowerCase().includes(searchTerm.toLowerCase().trim()))
+    : uniqueTabKeywords;
 
   return (
     <section className="seo-section" id="about">
@@ -394,6 +444,97 @@ export default function SEOContent() {
             </ul>
           </div>
         </div>
+      </div>
+
+      {/* ── SKYi Master Keyword Ecosystem Directory ── */}
+      <div className="seo-keywords-block" style={{ marginTop: '50px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px', marginBottom: '20px' }}>
+          <div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#ff6b35', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <Layers size={14} /> SKYi Developers Pune Keyword Ecosystem
+            </div>
+            <h3 style={{ color: '#ffffff', fontSize: '1.25rem', fontWeight: 800, margin: '6px 0 0 0' }}>
+              Topical Authority &amp; Search Engine Keyword Directory
+            </h3>
+          </div>
+          <div style={{ position: 'relative', minWidth: '240px' }}>
+            <Search size={15} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: '#94a3b8' }} />
+            <input
+              type="text"
+              placeholder="Search ecosystem keywords..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '8px 14px 8px 36px',
+                borderRadius: '8px',
+                background: 'rgba(255, 255, 255, 0.06)',
+                border: '1px solid rgba(255, 255, 255, 0.12)',
+                color: '#ffffff',
+                fontSize: '0.82rem',
+                outline: 'none',
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Tab Pills */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '20px' }}>
+          {[
+            { id: 'all', label: 'All Ecosystem Keywords' },
+            { id: 'brand', label: 'Core Brand & Company' },
+            { id: 'locations', label: 'Pune Micro-Markets' },
+            { id: 'configurations', label: '1 BHK - 5 BHK & Plots' },
+            { id: 'pricing', label: 'Price & Cost Sheet' },
+            { id: 'songbirds', label: 'Skyi Songbirds 1 BHK & Township' },
+            { id: 'manasLake', label: 'SKYi Manas Lake & PMRDA Plots' },
+            { id: 'nature', label: 'IGBC Platinum Sustainability' },
+            { id: 'local', label: 'Marathi / Local Search Queries' },
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              onClick={() => setActiveKeywordTab(tab.id)}
+              style={{
+                padding: '6px 12px',
+                borderRadius: '6px',
+                fontSize: '0.78rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+                background: activeKeywordTab === tab.id ? '#ff6b35' : 'rgba(255, 255, 255, 0.05)',
+                color: activeKeywordTab === tab.id ? '#ffffff' : '#94a3b8',
+                border: activeKeywordTab === tab.id ? '1px solid #ff6b35' : '1px solid rgba(255, 255, 255, 0.08)',
+              }}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Keywords Grid / Pill Cloud */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', maxHeight: '240px', overflowY: 'auto', paddingRight: '8px' }}>
+          {displayedKeywords.map((kw) => (
+            <span
+              key={kw}
+              style={{
+                padding: '4px 10px',
+                borderRadius: '6px',
+                fontSize: '0.75rem',
+                background: 'rgba(255, 255, 255, 0.04)',
+                border: '1px solid rgba(255, 255, 255, 0.08)',
+                color: '#cbd5e1',
+                display: 'inline-block',
+              }}
+            >
+              {kw}
+            </span>
+          ))}
+        </div>
+
+        <p style={{ marginTop: '16px', fontSize: '0.75rem', color: '#64748b', lineHeight: '1.5', margin: '16px 0 0 0' }}>
+          Showing <strong>{displayedKeywords.length}</strong> verified Google indexable keywords across SKYi Developers Pune portfolio. Fully compliant with Google Search Essentials, Schema.org RealEstateAgent &amp; OfferCatalog microdata.
+        </p>
       </div>
     </section>
   );

@@ -162,7 +162,10 @@ function HomeContent() {
       <SEOContent />
 
       {/* Footer */}
-      <Footer onOpenPrivacyModal={() => setIsPrivacyModalOpen(true)} />
+      <Footer
+        onOpenPrivacyModal={() => setIsPrivacyModalOpen(true)}
+        onOpenSiteVisit={handleOpenVisit}
+      />
 
       {/* Interactive Modals */}
       <SiteVisitModal

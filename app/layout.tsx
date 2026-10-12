@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { SKYI_ALL_ECOSYSTEM_KEYWORDS } from '../utils/skyiDeepDataEngine';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -12,19 +13,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'Skyi Developers Pune | Official Projects | Songbirds, Manas Lake, NA Plots, Tigers Nest, Park Baner',
   description: 'Skyi Developers — Pune\'s premier real estate builder since 2004. Official portfolio includes Skyi Songbirds (Bhugaon), SKYi Manas Lake & PMRDA NA Bungalow Plots (Bhukum/Bavdhan), SKYi Tigers Nest, SKYi PWC Towers, SKYi Park (Baner), SKYi Iris, SKYi Aura Heights, Skyi Star City (Dhayari). RERA & IGBC Platinum certified. ☎ +91 20 6614 3000.',
-  keywords: [
-    'Skyi Developers', 'SKYi Developers', 'Skyi Developer Pune', 'Skyi real estate Pune', 'Skyi properties Pune', 'Skyi builders Pune',
-    'Skyi Songbirds', 'Skyi Songbirds Bhugaon', 'Songbirds Bhugaon Pune', 'SKYi Tigers Nest', 'SKYi PWC Towers', 'SKYi PWC Towers Hillside',
-    'Manas Lake Pune', 'SKYi Manas Lake', 'Manas Lake Bavdhan', 'Manas Lake Bhukum', 'Manas Lake Paud Road', 'SKYi Manas Lake NA Plots',
-    'SKYi Park Baner', 'SKYi Iris Baner', 'SKYi Aura Heights', 'SKYi Five Baner', 'SKYi Five Racecourse', 'SKYi Five Maidan',
-    'SKYi Star City Dhayari', 'SKYi Nilay', 'SKYi Aquila', 'SKYi Seher Towers',
-    'NA bungalow plots Pune', 'PMRDA NA plots Pune', 'clear title 7/12 NA plots Pune', 'NA plots Bhukum', 'NA plots Bavdhan', 'NA plots Manas Lake', 'NA plots Bhugaon', 'NA plots Chandani Chowk',
-    'NA plots Kothrud', 'NA plots Baner', 'NA plots Paud Road', 'NA plots Mulshi', 'NA plots Pirangut', 'NA plots Sus', 'NA plots Hinjewadi', 'NA plots Kasarsai', 'NA plots Talegaon', 'NA plots Khadakwasla', 'NA plots Wagholi', 'NA plots Saswad', 'NA plots Lavasa Road',
-    'PMRDA approved NA plots Pune', 'clear title NA plots Pune', 'villa plots Paud Road Pune', 'NRI real estate investment Pune', 'NA plots 2000 sqft Pune', 'NA plots 95 lakhs Pune',
-    'buy 1 BHK flat Pune', 'buy 2 BHK flat Pune', 'buy 3 BHK flat Pune', 'buy 4 BHK flat Pune', 'buy NA plot in Pune', 'flat for sale in Kothrud', 'flats for sale in Bavdhan', 'flats for sale in Bhugaon',
-    'flats near Hinjewadi IT Park', 'ready possession flats Pune', 'under construction projects Paud Road', 'lakeside apartments Pune', 'top real estate developers Pune', 'best builders in Pune',
-    'pune madhe plot', 'pune NA plot sale', 'bhugaon bungalow plot', 'ghar bandhnya sathi plot pune', 'swatacha bungalow pune plot'
-  ],
+  keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
   authors: [{ name: 'Skyi Developers' }],
   publisher: 'Skyi Developers',
   icons: {
@@ -241,11 +230,33 @@ const jsonLdSchema = {
           "@type": "Offer",
           "itemOffered": {
             "@type": "RealEstateListing",
+            "name": "Skyi Songbirds New Launch 1 BHK (430 Sq.Ft. Smart Eco-Home)",
+            "identifier": "MahaRERA: P52100000769 (Songbirds New Phase)",
+            "price": "3800000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "addressLocality": "Bhugaon, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
             "name": "SKYi Manas Lake 90-Acre Eco-Township Bhukum Bavdhan",
             "identifier": "MahaRERA: P52100000513, P52100000514, P52100026954, P52100052033",
             "price": "6500000",
             "priceCurrency": "INR",
             "address": { "@type": "PostalAddress", "addressLocality": "Bhukum, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
+            "name": "SKYi Manas Lake PMRDA NA Bungalow Plots (Waterfront Sector)",
+            "identifier": "PMRDA Sanctioned Collector NA Layout / Clear 7/12",
+            "price": "9500000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "addressLocality": "Manas Lake Waterfront, Bhukum, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
           }
         },
         {
@@ -352,6 +363,22 @@ const jsonLdSchema = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "SKYi Townships offer 70%+ open green space, 100% sewage treatment water recycling, solar electricity grids, 24/7 security, 5-acre Poona Western Club, Olympic-standard swimming pool, sports academies, and lakeside promenades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the specifications of the new launch 1 BHK (430 Sq.Ft.) at Skyi Songbirds Bhugaon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skyi Songbirds in Bhugaon features an exclusive new launch of 1 BHK smart eco-homes with 430 Sq.Ft. usable RERA carpet area starting at ₹38 Lakhs*. Built with zero-dead-space architecture, private scenic decks facing the 7,000-acre NDA forest reserve, and direct access to the 5-acre Poona Western Club."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is PMRDA NA bungalow plotting available at SKYi Manas Lake in Bhukum Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, SKYi Manas Lake offers PMRDA-sanctioned clear title residential NA bungalow plots directly on the waterfront. Sizes range from 2,000 to 5,000+ Sq.Ft. with FSI 1.5 (Ground + 2 floors permissible), separate 7/12 extract per plot, underground electricity and water infrastructure, starting from ₹95 Lakhs*."
           }
         },
         {

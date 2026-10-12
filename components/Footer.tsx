@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Share2, Globe, Play, Send, AlertCircle, Loader2, ShieldCheck, ExternalLink } from 'lucide-react';
 import { sanitizeInput, isSpamSubmission } from '../utils/security';
+import GoogleWebStories from './GoogleWebStories';
 import './Footer.css';
 
 const CONTACT_INFO = [
@@ -62,9 +63,10 @@ type Fields = { name: string; email: string; phone: string; project: string; mes
 
 interface FooterProps {
   onOpenPrivacyModal?: () => void;
+  onOpenSiteVisit?: (projectName?: string) => void;
 }
 
-export default function Footer({ onOpenPrivacyModal }: FooterProps) {
+export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterProps) {
   const [form,      setForm]      = useState<Fields>({ name: '', email: '', phone: '', project: '', message: '', honeypot: '' });
   const [focused,   setFocused]   = useState<string | null>(null);
   const [errorMsg,  setErrorMsg]  = useState<string | null>(null);
@@ -182,6 +184,9 @@ export default function Footer({ onOpenPrivacyModal }: FooterProps) {
 
   return (
     <footer id="contact">
+      {/* ══ Google Web Stories for All SKYi Projects ══ */}
+      <GoogleWebStories onOpenSiteVisit={onOpenSiteVisit} />
+
       {/* ══ Contact Section ══ */}
       <section className="contact-section">
         {/* Background */}

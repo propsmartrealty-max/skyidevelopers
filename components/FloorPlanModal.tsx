@@ -14,6 +14,34 @@ interface FloorPlanModalProps {
 
 const FLOOR_PLANS = [
   {
+    type: '1 BHK Eco Home (Songbirds New Launch)',
+    carpetArea: '430 Sq.Ft. Carpet Area',
+    balcony: 'Scenic Hillside Deck',
+    facing: 'East / West Facing (Vastu Compliant)',
+    priceStarting: 'Starting ₹ 38 Lakhs*',
+    specs: ['Smart 430 Sq.Ft. Zero-Dead-Space Layout', 'Spacious Master Bedroom with Wardrobe Niche', 'Bright Living & Dining Deck with Sahyadri Views', 'IGBC Platinum Certified Green Fixtures & Solar Water'],
+    blueprintSvg: (
+      <svg viewBox="0 0 400 300" className="blueprint-svg">
+        <rect x="10" y="10" width="380" height="280" rx="12" fill="#0f172a" stroke="#ff6b35" strokeWidth="2" strokeDasharray="6 4" />
+        {/* Living Room */}
+        <rect x="30" y="30" width="180" height="150" fill="rgba(255, 107, 53, 0.15)" stroke="#ff6b35" strokeWidth="1.5" />
+        <text x="120" y="105" fill="#fed7aa" fontSize="13" textAnchor="middle" fontWeight="bold">Living &amp; Dining (430 SF)</text>
+        {/* Master Bedroom */}
+        <rect x="220" y="30" width="150" height="150" fill="rgba(59, 130, 246, 0.15)" stroke="#60a5fa" strokeWidth="1.5" />
+        <text x="295" y="105" fill="#bfdbfe" fontSize="12" textAnchor="middle">Master Bedroom</text>
+        {/* Kitchen */}
+        <rect x="30" y="190" width="110" height="90" fill="rgba(245, 158, 11, 0.15)" stroke="#fbbf24" strokeWidth="1.5" />
+        <text x="85" y="240" fill="#fde68a" fontSize="11" textAnchor="middle">Kitchen + Utility</text>
+        {/* Bathroom */}
+        <rect x="150" y="190" width="100" height="90" fill="rgba(16, 185, 129, 0.15)" stroke="#34d399" strokeWidth="1.5" />
+        <text x="200" y="240" fill="#a7f3d0" fontSize="11" textAnchor="middle">Bath / Toilet</text>
+        {/* Scenic Deck */}
+        <rect x="260" y="190" width="110" height="90" fill="rgba(168, 85, 247, 0.15)" stroke="#c084fc" strokeWidth="1.5" />
+        <text x="315" y="240" fill="#e9d5ff" fontSize="11" textAnchor="middle">Hillside Deck</text>
+      </svg>
+    ),
+  },
+  {
     type: '2 BHK Luxury Residence',
     carpetArea: '845 - 920 Sq.Ft.',
     balcony: 'Dual Scenic Decks',
