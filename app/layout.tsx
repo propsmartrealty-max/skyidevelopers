@@ -94,6 +94,12 @@ export const metadata: Metadata = {
     google: 'google-site-verification=skyidevelopers-official-portal',
   },
   category: 'real estate',
+  other: {
+    'geo.region': 'IN-MH',
+    'geo.placename': 'Pune',
+    'geo.position': '18.4988;73.7431',
+    'ICBM': '18.4988, 73.7431',
+  },
 };
 
 const jsonLdSchema = {
