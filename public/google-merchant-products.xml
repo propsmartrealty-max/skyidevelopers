@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>SKYi Developers Pune — Official Real Estate &amp; Township Product Catalog</title>
+    <link>https://skyidevelopers.in</link>
+    <description>Official catalog of luxury apartments, sustainable eco-townships, and PMRDA-sanctioned NA bungalow plots across Pune by SKYi Developers (Enerrgia SKYi Developers).</description>
+    
+    <!-- 1. Skyi Songbirds 1 BHK New Launch -->
+    <item>
+      <g:id>SKYI-SONGBIRDS-1BHK</g:id>
+      <g:title>Skyi Songbirds 1 BHK Smart Eco-Home (430 Sq.Ft.) Bhugaon Pune</g:title>
+      <g:description>New launch 1 BHK smart sustainable residences with scenic deck facing 7,000-acre NDA forest reserve and 5-acre Poona Western Club along 6-lane Paud Road, Bhugaon, Pune.</g:description>
+      <g:link>https://skyidevelopers.in/songbirds</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-songbirds.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3800000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Residential Townships &gt; Apartments</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>P52100000769</g:mpn>
+    </item>
+
+    <!-- 2. Skyi Songbirds 2, 3 & 4 BHK Luxury Residences -->
+    <item>
+      <g:id>SKYI-SONGBIRDS-TOWNSHIP</g:id>
+      <g:title>Skyi Songbirds 45-Acre Eco-Township 2, 3 &amp; 4 BHK Bhugaon Pune</g:title>
+      <g:description>IGBC Platinum certified 45-acre master eco-township in Bhugaon along Paud Road, Pune. 70% open green landscapes, Olympic-standard pool, and zero-dead-space architecture.</g:description>
+      <g:link>https://skyidevelopers.in/songbirds</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-songbirds.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>6800000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Residential Townships &gt; Apartments</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>P52100000769</g:mpn>
+    </item>
+
+    <!-- 3. SKYi Manas Lake Lakeside Residences -->
+    <item>
+      <g:id>SKYI-MANAS-LAKE-HOMES</g:id>
+      <g:title>SKYi Manas Lake 90-Acre Lakeside Township 2 &amp; 3 BHK Bhukum Pune</g:title>
+      <g:description>Lakefront luxury residences along 6-lane Paud Road connecting Bavdhan and Kothrud Pune. Complete township with lakeside promenade, club, and school.</g:description>
+      <g:link>https://skyidevelopers.in/manas-lake</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-manas-lake.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>6500000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Residential Townships &gt; Apartments</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>P52100000513</g:mpn>
+    </item>
+
+    <!-- 4. SKYi Manas Lake PMRDA NA Bungalow Plots -->
+    <item>
+      <g:id>SKYI-NA-PLOTS-BHUKUM</g:id>
+      <g:title>PMRDA Sanctioned Clear Title NA Bungalow Plots Bhukum Paud Road Pune</g:title>
+      <g:description>100% clear title 7/12 PMRDA approved residential NA bungalow plots with FSI 1.5, 2,000 to 5,000+ sq.ft., underground electricity and water, 90% pre-approved bank loans.</g:description>
+      <g:link>https://skyidevelopers.in/na-plots-bhukum</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-manas-lake-na-plots.jpg</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>9500000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Land &gt; Residential NA Plots</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>PMRDA-NA-BHUKUM-7-12</g:mpn>
+    </item>
+
+    <!-- 5. SKYi Tigers Nest Hillside Residences -->
+    <item>
+      <g:id>SKYI-TIGERS-NEST</g:id>
+      <g:title>SKYi Tigers Nest 3 &amp; 4 BHK Hillside Luxury Residences Bhugaon Pune</g:title>
+      <g:description>Exclusive hillside sky villas with private decks overlooking Sahyadri Hills and NDA forest. Starting at 1.79 Cr along Paud Road, Bhugaon.</g:description>
+      <g:link>https://skyidevelopers.in/bhugaon</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-tigers-nest.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>17900000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Luxury Residences &gt; Villas</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>P52100000769</g:mpn>
+    </item>
+
+    <!-- 6. SKYi Five Racecourse -->
+    <item>
+      <g:id>SKYI-FIVE-RACECOURSE</g:id>
+      <g:title>SKYi Five Racecourse Ultra-Luxury Sky Mansions Sopan Baug Pune</g:title>
+      <g:description>Signature ultra-luxury sky mansions in Sopan Baug overlooking Pune Racecourse. Unmatched privacy, private elevators, and bespoke architecture.</g:description>
+      <g:link>https://skyidevelopers.in/projects</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>38500000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Luxury Residences &gt; Penthouses</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>MAHARERA-FIVE-RACECOURSE</g:mpn>
+    </item>
+
+    <!-- 7. SKYi Five Maidan Baner -->
+    <item>
+      <g:id>SKYI-FIVE-MAIDAN</g:id>
+      <g:title>SKYi Five Maidan 4 BHK Luxury Residences Baner Pune</g:title>
+      <g:description>Prestigious 4 BHK luxury residences on Pancard Club Road, Baner, Pune. Close to Mumbai-Pune Expressway and Hinjewadi IT Park.</g:description>
+      <g:link>https://skyidevelopers.in/projects</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-five-maidan.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>24500000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Luxury Residences &gt; Apartments</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>MAHARERA-FIVE-MAIDAN</g:mpn>
+    </item>
+
+    <!-- 8. SKYi Star City Dhayari -->
+    <item>
+      <g:id>SKYI-STAR-CITY</g:id>
+      <g:title>SKYi Star City 20-Acre Delivered Eco-Township Dhayari Pune</g:title>
+      <g:description>Vibrant 20-acre delivered township on Sinhagad Road, Dhayari, Pune. Featuring 1 &amp; 2 BHK homes with complete civic infrastructure and clubhouse.</g:description>
+      <g:link>https://skyidevelopers.in/projects</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-star-city.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>4200000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Residential Townships &gt; Apartments</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>P52100026727</g:mpn>
+    </item>
+  </channel>
+</rss>

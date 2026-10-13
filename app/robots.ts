@@ -137,6 +137,7 @@ export default function robots(): MetadataRoute.Robots {
       `${baseUrl}/sitemap.xml`,
       `${baseUrl}/sitemap-images.xml`,
       `${baseUrl}/feed.xml`,
+      `${baseUrl}/google-merchant-products.xml`,
     ],
     host: baseUrl,
   };

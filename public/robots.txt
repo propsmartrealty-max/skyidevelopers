@@ -96,4 +96,5 @@ Allow: /
 Sitemap: https://skyidevelopers.in/sitemap.xml
 Sitemap: https://skyidevelopers.in/sitemap-images.xml
 Sitemap: https://skyidevelopers.in/feed.xml
+Sitemap: https://skyidevelopers.in/google-merchant-products.xml
 Host: https://skyidevelopers.in
