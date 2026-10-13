@@ -75,19 +75,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/stories/songbirds.html`,
+      url: `${baseUrl}/stories/songbirds`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/stories/manas-lake.html`,
+      url: `${baseUrl}/stories/manas-lake`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/stories/tigers-nest.html`,
+      url: `${baseUrl}/stories/tigers-nest`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
