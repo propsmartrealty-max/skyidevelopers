@@ -70,40 +70,113 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'RealEstateListing',
-    name: item.project,
-    description: `PMRDA Sanctioned Clear Title NA Bungalow Plot at ${item.location}`,
-    url: `https://skyidevelopers.in/na-plots/${item.id}`,
-    datePosted: new Date().toISOString(),
-    offers: {
-      '@type': 'Offer',
-      price: '9500000',
-      priceCurrency: 'INR',
-      availability: 'https://schema.org/InStock',
-      validFrom: new Date().toISOString(),
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.95',
-      reviewCount: '890',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    place: {
-      '@type': 'Place',
-      name: item.location,
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: item.microLocation,
-        addressRegion: 'Pune, Maharashtra',
-        addressCountry: 'IN',
+    '@graph': [
+      {
+        '@type': 'RealEstateListing',
+        '@id': `https://skyidevelopers.in/na-plots/${item.id}#listing`,
+        name: item.project,
+        description: `【Official Developer Portal】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. 0% Brokerage direct developer booking.`,
+        url: `https://skyidevelopers.in/na-plots/${item.id}`,
+        datePosted: '2026-01-15T00:00:00+05:30',
+        offers: {
+          '@type': 'Offer',
+          price: item.priceRange.includes('Crore') ? '11500000' : '9500000',
+          priceCurrency: 'INR',
+          priceValidUntil: '2027-12-31',
+          availability: 'https://schema.org/InStock',
+          url: `https://skyidevelopers.in/na-plots/${item.id}`,
+          seller: {
+            '@type': 'Organization',
+            name: 'SKYi Developers Pune',
+            url: 'https://skyidevelopers.in/',
+          },
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.95',
+          reviewCount: '890',
+          bestRating: '5',
+          worstRating: '1',
+        },
+        place: {
+          '@type': 'Place',
+          name: item.location,
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: item.microLocation,
+            addressRegion: 'Pune, Maharashtra',
+            addressCountry: 'IN',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: item.geocoordinates.latitude,
+            longitude: item.geocoordinates.longitude,
+          },
+        },
       },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: item.geocoordinates.latitude,
-        longitude: item.geocoordinates.longitude,
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `https://skyidevelopers.in/na-plots/${item.id}#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://skyidevelopers.in/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'PMRDA NA Plots',
+            item: 'https://skyidevelopers.in/na-plots-bhukum',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: `${item.project} ${item.microLocation}`,
+            item: `https://skyidevelopers.in/na-plots/${item.id}`,
+          },
+        ],
       },
-    },
+      {
+        '@type': 'FAQPage',
+        '@id': `https://skyidevelopers.in/na-plots/${item.id}#faq`,
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: `What is the price range and plot size for ${item.project} in ${item.microLocation}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `${item.project} at ${item.location} offers plot sizes starting from ${item.plotSize || '2,000 Sq.Ft.'} with price range starting from ${item.priceRange}. Permissible construction FSI is ${item.fsiRatio || '1.4 - 1.5'}.`,
+            },
+          },
+          {
+            '@type': 'Question',
+            name: `Are the plots at ${item.project} PMRDA sanctioned with individual 7/12 extract?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `Yes, all plots at ${item.project} are 100% Collector NA sanctioned under PMRDA residential zoning with separate 7/12 extract, clear PR card title, and individual sub-division demarcation.`,
+            },
+          },
+          {
+            '@type': 'Question',
+            name: `Which banks provide home and land purchase loans for ${item.project}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `Pre-approved land purchase and composite construction loans are offered by leading nationalized and private banks including ${item.bankLoans.join(', ')} with up to 80% funding.`,
+            },
+          },
+          {
+            '@type': 'Question',
+            name: `How to schedule a free VIP site visit with AC cab pickup for ${item.project}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `You can book an exclusive developer site visit directly on skyidevelopers.in/contact or via WhatsApp at 7744009295. SKYi Developers provides complimentary private AC cab pickup and drop across Pune. 0% brokerage.`,
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return (
