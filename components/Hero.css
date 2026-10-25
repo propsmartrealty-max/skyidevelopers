@@ -22,6 +22,8 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(90px);
+  will-change: transform;
+  transform: translateZ(0);
   animation: orb-float 20s infinite alternate ease-in-out;
 }
 .g1 {
@@ -73,11 +75,18 @@
   border-radius: 50%;
   background: var(--accent-1);
   opacity: 0;
+  will-change: transform, opacity;
   animation: particle-rise 8s infinite ease-in-out;
 }
 .particle:nth-child(odd)  { background: var(--accent-3); width: 3px; height: 3px; }
 .particle:nth-child(3n)   { background: var(--accent-gold); width: 5px; height: 5px; }
 .particle:nth-child(5n)   { background: var(--accent-4); }
+
+@media (max-width: 768px) {
+  .particle {
+    display: none !important;
+  }
+}
 
 @keyframes particle-rise {
   0%   { opacity: 0; transform: translateY(0) scale(0); }
@@ -150,12 +159,14 @@
   -webkit-text-fill-color: var(--accent-3);
 }
 
-/* Typewriter line */
+/* Typewriter line — high-contrast gold fill */
 .hero-typewriter {
   display: inline-block;
-  -webkit-text-stroke: 2px rgba(255,255,255,0.32);
-  -webkit-text-fill-color: transparent;
+  color: #ffd700;
+  -webkit-text-fill-color: #ffd700;
+  -webkit-text-stroke: 0;
   min-height: 1.05em;
+  font-weight: 800;
 }
 .tw-cursor {
   -webkit-text-fill-color: var(--accent-1);

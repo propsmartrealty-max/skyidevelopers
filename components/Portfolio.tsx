@@ -124,8 +124,6 @@ function TiltCard({
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [hovered, setHovered] = useState(false);
 
-  const [imgError, setImgError] = useState(false);
-
   const onMouseMove = (e: ReactMouseEvent<HTMLDivElement>) => {
     const card = cardRef.current;
     if (!card) return;
@@ -165,7 +163,6 @@ function TiltCard({
           width="600"
           height="340"
           className="card-actual-img"
-          onError={() => setImgError(true)}
         />
         <div className="card-image-overlay" />
         <span className={`card-status ${

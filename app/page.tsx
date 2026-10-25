@@ -1,26 +1,31 @@
 'use client';
 
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Metrics from '../components/Metrics';
-import VideoSection from '../components/VideoSection';
 import Portfolio from '../components/Portfolio';
-import InteractiveMasterPlan from '../components/InteractiveMasterPlan';
-import MortgageCalculator from '../components/MortgageCalculator';
-import VirtualTourGallery from '../components/VirtualTourGallery';
 import Connectivity from '../components/Connectivity';
 import Testimonials from '../components/Testimonials';
 import ProgrammaticSEOSection from '../components/ProgrammaticSEOSection';
 import SEOContent from '../components/SEOContent';
 import Footer from '../components/Footer';
-import SiteVisitModal from '../components/SiteVisitModal';
-import FloorPlanModal from '../components/FloorPlanModal';
-import PrivacyPolicyModal from '../components/PrivacyPolicyModal';
-import AIMatchmakerModal from '../components/AIMatchmakerModal';
 import FloatingActions from '../components/FloatingActions';
 import OfflineBanner from '../components/OfflineBanner';
+
+/* Code-split heavy interactive calculators and below-the-fold widgets */
+const InteractiveMasterPlan = dynamic(() => import('../components/InteractiveMasterPlan'), { ssr: true });
+const VirtualTourGallery = dynamic(() => import('../components/VirtualTourGallery'), { ssr: true });
+const MortgageCalculator = dynamic(() => import('../components/MortgageCalculator'), { ssr: true });
+const VideoSection = dynamic(() => import('../components/VideoSection'), { ssr: true });
+
+/* Code-split client-only modals to eliminate initial main-thread load */
+const SiteVisitModal = dynamic(() => import('../components/SiteVisitModal'), { ssr: false });
+const FloorPlanModal = dynamic(() => import('../components/FloorPlanModal'), { ssr: false });
+const PrivacyPolicyModal = dynamic(() => import('../components/PrivacyPolicyModal'), { ssr: false });
+const AIMatchmakerModal = dynamic(() => import('../components/AIMatchmakerModal'), { ssr: false });
 
 function HomeContent() {
   /* Modal States */

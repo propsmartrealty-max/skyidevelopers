@@ -78,7 +78,7 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
         <div className="nav-container">
           {/* Logo */}
           <a href="#home" className="logo" onClick={(e) => scrollTo('home', e)}>
-            <img src="/logo-white.svg" alt="Skyi Developers" style={{ height: '30px' }} />
+            <img src="/logo-white.svg" alt="Skyi Developers" width="65" height="30" style={{ height: '30px', width: 'auto' }} />
           </a>
 
           {/* Desktop links */}

@@ -112,7 +112,7 @@ function TestimonialsComp() {
               <div className="author-info">
                 <div className="avatar-circle">{review.avatarInitials}</div>
                 <div className="author-details">
-                  <h4>{review.name}</h4>
+                  <h3>{review.name}</h3>
                   <span className="project-owned">{review.project}</span>
                   {review.verified && (
                     <span className="verified-tag">

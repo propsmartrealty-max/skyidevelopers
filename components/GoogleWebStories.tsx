@@ -953,9 +953,9 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
               <span className="amp-lightning-icon">⚡</span>
               <span>GOOGLE WEB STORIES</span>
             </div>
-            <h3 className="web-stories-title">
+            <h2 className="section-title web-stories-title">
               Visual Project Walkthroughs <span className="gradient-text">&amp; New Launches</span>
-            </h3>
+            </h2>
             <p className="web-stories-subtitle">
               Tap any story to watch instant mobile-first visual tours of 1 BHK 430 sqft, PMRDA NA villa plots, and luxury hillside residences.
             </p>
@@ -1012,6 +1012,9 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
                     alt={story.title}
                     className="story-card-img"
                     loading="lazy"
+                    decoding="async"
+                    width="180"
+                    height="320"
                   />
                   <div className="story-card-overlay" />
 
@@ -1028,7 +1031,7 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
                   {/* Bottom Text */}
                   <div className="story-card-info">
                     <span className="story-card-price">{story.priceStarting}</span>
-                    <h4 className="story-card-name">{story.title}</h4>
+                    <h3 className="story-card-name">{story.title}</h3>
                     <p className="story-card-loc">
                       <MapPin size={11} /> {story.location}
                     </p>
@@ -1077,6 +1080,9 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
                     src={activeStory.coverImage}
                     alt=""
                     className="story-player-avatar"
+                    width="38"
+                    height="38"
+                    decoding="async"
                   />
                   <div>
                     <span className="story-player-author">SKYi Official • {activeStory.category}</span>
@@ -1118,6 +1124,9 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
                   src={currentSlide.image}
                   alt={currentSlide.title}
                   className="story-slide-img"
+                  width="480"
+                  height="854"
+                  decoding="async"
                 />
                 <div className="story-slide-vignette" />
               </div>
@@ -1141,7 +1150,7 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
                   <span>{currentSlide.badge}</span>
                 </div>
 
-                <h2 className="story-slide-title">{currentSlide.title}</h2>
+                <h3 className="story-slide-title">{currentSlide.title}</h3>
                 <p className="story-slide-sub">{currentSlide.subtitle}</p>
 
                 <p className="story-slide-desc">{currentSlide.description}</p>

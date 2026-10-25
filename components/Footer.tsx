@@ -448,7 +448,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
             <div className="footer-maharera-title-wrap">
               <ShieldCheck size={22} className="text-emerald-400" />
               <div>
-                <h4>MahaRERA Regulatory Compliance &amp; Official Registrations</h4>
+                <h3>MahaRERA Regulatory Compliance &amp; Official Registrations</h3>
                 <p>
                   All projects by Skyi Developers are registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA). Details and sanctions available at{' '}
                   <a
@@ -486,7 +486,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
       <div className="footer-bottom">
         <div className="fb-container">
           <div className="fb-left">
-            <img src="/logo-white.svg" alt="Skyi Developers" style={{ height: '24px' }} />
+            <img src="/logo-white.svg" alt="Skyi Developers" width="52" height="24" style={{ height: '24px', width: 'auto' }} />
             <p className="fb-copy">
               © {new Date().getFullYear()} Skyi Developers. Built around life. All Rights Reserved.
             </p>

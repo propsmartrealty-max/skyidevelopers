@@ -1,34 +1,21 @@
-# SKYi Developers Pune — Official Knowledge Base
+# SKYi Developers Pune
 
-> SKYi Developers (Enerrgia SKYi Developers) is Pune's premier real estate developer established in 2004. Over 20+ years, SKYi has delivered 7,000+ homes across 20+ landmark developments covering over 500+ acres with IGBC Platinum Green Certifications.
+> Official knowledge base for SKYi Developers (Enerrgia SKYi Developers), Pune's premier real estate developer established in 2004 with 7,000+ delivered homes, IGBC Platinum certified townships, and PMRDA-sanctioned clear title NA bungalow plots across 500+ acres.
 
-## Flagship Townships & Developments
+SKYi Developers designs sustainable, zero-waste eco-townships and premium residential enclaves in West Pune along Paud Road, Bhugaon, Bhukum, Bavdhan, Baner, and Dhayari.
 
-- **Skyi Songbirds (Bhugaon, Paud Road)**: 45-acre master eco-township featuring 1, 2, 3 & 4 BHK hillside residences, 70% open green space, and the 5-acre Poona Western Club. Prices start at ₹38 Lakhs* for 1 BHK smart homes. MahaRERA: P52100000769, P52100001117, P52100019348, P52100047992.
-  - URL: https://skyidevelopers.in/songbirds
+## Key Projects
 
-- **SKYi Manas Lake (Bhukum, Paud Road)**: 90-acre lakeside township offering 2 & 3 BHK homes and PMRDA-sanctioned clear title NA bungalow plots directly on the waterfront. Prices start at ₹65 Lakhs* for residences, ₹95 Lakhs* for NA plots. MahaRERA: P52100000513, P52100000514, P52100026954, P52100052033.
-  - URL: https://skyidevelopers.in/manas-lake
+- [Skyi Songbirds](https://skyidevelopers.in/songbirds): 45-acre master eco-township in Bhugaon, Paud Road featuring 1 BHK (430 sqft) smart homes and 3 & 4 BHK hillside residences with 5-acre Poona Western Club.
+- [SKYi Manas Lake](https://skyidevelopers.in/manas-lake): 90-acre lakefront township on Paud Road in Bhukum / Bavdhan featuring waterfront apartments and PMRDA-sanctioned NA plots with FSI 1.5.
+- [SKYi PMRDA NA Bungalow Plots](https://skyidevelopers.in/na-plots-bhukum): 100% Collector NA sanction villa plots with individual 7/12 extracts, underground utilities, and 90% pre-approved bank loans.
+- [Pune Metro & Paud Road Connectivity](https://skyidevelopers.in/connectivity): Infrastructure, Ring Road, and transit access matrix connecting SKYi townships to Chandani Chowk and Kothrud.
+- [360° Drone Virtual Tours](https://skyidevelopers.in/virtual-tour): High-definition virtual site inspection and aerial walkthroughs of Songbirds and Manas Lake.
+- [Global NRI Investment Hub](https://skyidevelopers.in/nri-hub): FEMA and RBI compliant real estate acquisition, NRE/NRO repatriation, and virtual advisory for international buyers.
+- [Interactive Plot ROI Estimator](https://skyidevelopers.in/plot-estimator): Real-time NA plot construction, appreciation, and valuation calculator for Pune real estate.
+- [VIP Enquiry & Site Visit](https://skyidevelopers.in/#contact): Direct VIP booking desk for complimentary AC cab site visits and developer consultations.
 
-- **SKYi Manas Lake PMRDA NA Bungalow Plots (Bhukum)**: 100% clear title Collector NA sanction, individual 7/12 extracts, FSI 1.5 (G+2 allowable), plot sizes 2,000 to 5,000+ sq.ft., underground electricity, water, and sewage lines.
-  - URL: https://skyidevelopers.in/na-plots-bhukum
+## Optional
 
-- **SKYi Tigers Nest (Bhugaon Foothills)**: Ultra-luxury hillside villas and 3 & 4 BHK residences starting at ₹1.79 Cr*.
-- **SKYi Five Racecourse (Sopan Baug)**: Exclusive luxury sky mansions starting at ₹3.85 Cr*.
-- **SKYi Five Maidan (Baner)**: 4 BHK premium residences starting at ₹2.45 Cr*.
-- **SKYi Star City (Dhayari, Sinhagad Road)**: 20-acre delivered township with 1 & 2 BHK homes starting at ₹42 Lakhs*.
-
-## Key Locations & Connectivity
-- **Bhugaon & Bhukum Corridor**: Paud Road 6-lane expressway connecting Chandani Chowk and Kothrud (6-10 minutes drive). Close to Pune Ring Road and Hinjewadi IT Park.
-- **Micro-Locations Covered**: Bhugaon, Bhukum, Bavdhan, Pirangut, Lavale, Manas Lake, Chandani Chowk, Kothrud, Baner, Sopan Baug.
-
-## NRI Real Estate Investment Desk
-- FEMA & RBI compliant acquisitions through NRE/NRO banking.
-- 3D Virtual Tours, digital agreement execution, zero-commission developer advisory.
-  - URL: https://skyidevelopers.in/nri-hub
-
-## Official Contact & Verification
-- Official Website: https://skyidevelopers.in
-- Official Enquiry Desk: https://skyidevelopers.in/#contact
-- WhatsApp VIP Assistance: Available via official website instant desk
-- Corporate Office: Skymark One, Balewadi, Pune, Maharashtra 411045
+- [SKYi XML Product Feed](https://skyidevelopers.in/google-merchant-products.xml): Google Merchant Center structured property listings and pricing data.
+- [XML Sitemap](https://skyidevelopers.in/sitemap.xml): Search engine sitemap covering all canonical project directories and landing pages.

@@ -689,13 +689,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" />
         <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
         <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
         <link rel="dns-prefetch" href="https://formsubmit.co" />
-        <link rel="preload" href="/songbirds-1.webp" as="image" type="image/webp" />
-        <link rel="preload" href="/bungalow-plots.jpg" as="image" type="image/jpeg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}

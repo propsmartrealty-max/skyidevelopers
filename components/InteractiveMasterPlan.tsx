@@ -73,7 +73,7 @@ export default function InteractiveMasterPlan() {
                   <Map size={18} />
                   <span>{sector.type}</span>
                 </div>
-                <h4>{sector.name}</h4>
+                <h3>{sector.name}</h3>
                 <p className="mp-acres"><Layers size={14} /> {sector.acres} • {sector.status}</p>
               </motion.button>
             ))}

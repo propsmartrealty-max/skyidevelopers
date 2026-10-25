@@ -429,10 +429,10 @@ export default function SEOContent() {
 
           {/* Quick Facts Strip */}
           <div className="glass" style={{ marginTop: '30px', padding: '24px', borderRadius: '16px', border: '1px solid rgba(255, 255, 255, 0.12)' }}>
-            <h4 style={{ color: '#ffffff', fontSize: '1.1rem', fontWeight: 800, marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <h3 style={{ color: '#ffffff', fontSize: '1.1rem', fontWeight: 800, marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Sparkles size={18} className="text-amber-400" />
               SKYi Key Milestone Summary
-            </h4>
+            </h3>
             <ul style={{ color: '#cbd5e1', fontSize: '0.88rem', lineHeight: '1.7', paddingLeft: '18px', margin: 0 }}>
               <li><strong>Founded</strong>: 2004 in Pune by visionary architects and engineers</li>
               <li><strong>Homes Delivered</strong>: Over 7,000+ families across 20+ projects</li>

@@ -5,8 +5,6 @@ import type { Variants } from 'framer-motion';
 import { useEffect, useRef, useState, useCallback } from 'react';
 import './Hero.css';
 
-const EASE_OUT = [0.22, 1, 0.36, 1] as [number, number, number, number];
-
 const TYPEWRITER_STRINGS = [
   'Shaped through design.',
   'Built for generations.',
@@ -23,10 +21,10 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
   const mouseRef  = useRef({ x: 0, y: 0 });
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
 
-  /* Typewriter state */
+  /* Typewriter state — initialized with full phrase for instantaneous LCP */
   const [twIndex,   setTwIndex]   = useState(0);
-  const [twText,    setTwText]    = useState('');
-  const [twCharIdx, setTwCharIdx] = useState(0);
+  const [twText,    setTwText]    = useState(TYPEWRITER_STRINGS[0]);
+  const [twCharIdx, setTwCharIdx] = useState(TYPEWRITER_STRINGS[0].length);
   const [twDel,     setTwDel]     = useState(false);
 
   /* Scroll parallax */
@@ -35,8 +33,11 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
   const contentY = useTransform(scrollY, [0, 700], [0, 90]);
   const fade     = useTransform(scrollY, [0, 520], [1, 0]);
 
-  /* Mouse parallax */
+  /* Mouse parallax — guarded for desktop fine pointer only to save mobile main thread */
   useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia('(pointer: fine)').matches) {
+      return;
+    }
     const onMove = (e: MouseEvent) => {
       mouseRef.current = {
         x: (e.clientX / window.innerWidth  - 0.5) * 2,
@@ -56,19 +57,19 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
     return () => { window.removeEventListener('mousemove', onMove); cancelAnimationFrame(raf); };
   }, []);
 
-  /* Typewriter */
+  /* Typewriter with deferred cycle for clean, stable LCP capture */
   useEffect(() => {
     const str = TYPEWRITER_STRINGS[twIndex];
     let t: ReturnType<typeof setTimeout>;
     if (!twDel) {
       if (twCharIdx < str.length) {
-        t = setTimeout(() => setTwCharIdx(c => c + 1), 62);
+        t = setTimeout(() => setTwCharIdx(c => c + 1), 68);
       } else {
-        t = setTimeout(() => setTwDel(true), 2600);
+        t = setTimeout(() => setTwDel(true), 3200);
       }
     } else {
       if (twCharIdx > 0) {
-        t = setTimeout(() => setTwCharIdx(c => c - 1), 34);
+        t = setTimeout(() => setTwCharIdx(c => c - 1), 32);
       } else {
         setTwDel(false);
         setTwIndex(i => (i + 1) % TYPEWRITER_STRINGS.length);
@@ -78,15 +79,14 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
     return () => clearTimeout(t);
   }, [twCharIdx, twDel, twIndex]);
 
-  /* Framer variants */
+  /* Framer variants optimized for instant FCP / LCP */
   const container: Variants = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { staggerChildren: 0.13, delayChildren: 0.25 } },
+    hidden: { opacity: 1 },
+    show: { opacity: 1, transition: { staggerChildren: 0.08 } },
   };
   const item: Variants = {
-    hidden: { opacity: 0, y: 55, filter: 'blur(18px)' },
-    show:   { opacity: 1, y: 0,  filter: 'blur(0px)',
-              transition: { duration: 1.1, ease: EASE_OUT } },
+    hidden: { opacity: 1, y: 0 },
+    show:   { opacity: 1, y: 0 },
   };
 
   const scrollToPortfolio = useCallback(() =>
