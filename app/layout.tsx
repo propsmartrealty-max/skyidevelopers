@@ -11,8 +11,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Skyi Developers Pune | Official Projects | Songbirds, Manas Lake, NA Plots, Tigers Nest, Park Baner',
-  description: 'Skyi Developers — Pune\'s premier real estate builder since 2004. Official portfolio includes Skyi Songbirds (Bhugaon), SKYi Manas Lake & PMRDA NA Bungalow Plots (Bhukum/Bavdhan), SKYi Tigers Nest, SKYi PWC Towers, SKYi Park (Baner), SKYi Iris, SKYi Aura Heights, Skyi Star City (Dhayari). RERA & IGBC Platinum certified.',
+  title: {
+    default: '【Official】SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L* | 0% Brokerage',
+    template: '%s | SKYi Developers Pune™',
+  },
+  description: '⭐ Official SKYi Developers Portal. Direct Developer Booking — 0% Brokerage. Skyi Songbirds 45-Acre Township (1, 2, 3 & 4 BHK from ₹38L*) & SKYi Manas Lake PMRDA NA Plots (From ₹95L*). Sahyadri Hill Views, 5-Acre Club. Download 2026 Floor Plans PDF & Schedule Free AC Cab Site Visit!',
   keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
   authors: [{ name: 'Skyi Developers' }],
   publisher: 'Skyi Developers',
@@ -47,8 +50,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://skyidevelopers.in/',
-    title: 'Skyi Developers Pune | Official Projects & Global NRI Real Estate Portal',
-    description: 'Explore 23+ delivered projects, 7,000+ homes, IGBC Platinum certified townships and PMRDA NA bungalow plots in Pune.',
+    title: '【Official】SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L* | 0% Brokerage',
+    description: '⭐ Official Developer Portal. 20+ Years, 7,000+ Families, IGBC Platinum certified townships & PMRDA NA bungalow plots. Explore 1 BHK to 4 BHK from ₹38L* & NA plots from ₹95L*. Zero brokerage direct developer booking.',
     siteName: 'Skyi Developers',
     locale: 'en_IN',
     alternateLocale: ['en_US', 'en_GB', 'en_AE', 'en_SG', 'en_AU', 'en_CA'],
@@ -69,8 +72,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Skyi Developers Pune | Luxury Flats & PMRDA NA Plots',
-    description: 'IGBC Platinum & MahaRERA Certified Township Developer in Pune. Trusted by 7,000+ families & Global NRI Investors.',
+    title: '【Official】SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L*',
+    description: '⭐ Direct Developer Booking (0% Brokerage). 1, 2, 3, 4 BHK & PMRDA NA Plots from ₹38L*. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/og-image.jpg'],
   },
   robots: {
@@ -400,6 +403,71 @@ const jsonLdSchema = {
             "@type": "Answer",
             "text": "Yes, Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) holding valid Indian passports can legally purchase residential properties, apartments, and PMRDA-approved NA bungalow plots under RBI and FEMA general permission using NRE/NRO banking channels."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I book flats or PMRDA NA plots directly with SKYi Developers without paying brokerage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Booking directly through skyidevelopers.in connects you directly with the official SKYi sales desk, ensuring 0% brokerage, exclusive direct-developer pricing benefits, guaranteed inventory allocation, and official MahaRERA registered documentation without third-party agency markups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to schedule a complimentary VIP site visit with private AC cab pickup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can schedule a guided VIP site visit directly on skyidevelopers.in/contact or click 'Book Site Visit' on the homepage. SKYi Developers provides complimentary private AC cab pickup and drop from any location across Pune, Kothrud, Baner, Hinjawadi, and Pune Airport."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://skyidevelopers.in/#site-navigation",
+      "name": "SKYi Developers Sitelinks & Portals",
+      "itemListElement": [
+        {
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "Skyi Songbirds Bhugaon (1 to 4 BHK)",
+          "description": "45-Acre Eco-Township, smart 1 BHK from ₹38L* and 3-4 BHK hillside homes next to NDA forest.",
+          "url": "https://skyidevelopers.in/songbirds"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 2,
+          "name": "SKYi Manas Lake PMRDA NA Plots",
+          "description": "90-Acre lakefront township with clear title 7/12 PMRDA approved bungalow plots from ₹95L*.",
+          "url": "https://skyidevelopers.in/na-plots-bhukum"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 3,
+          "name": "All Delivered & Ongoing Projects",
+          "description": "Master portfolio: Baner, Bavdhan, Bhugaon, Bhukum, Dhayari, Sopan Baug.",
+          "url": "https://skyidevelopers.in/projects"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 4,
+          "name": "NA Plot Valuation Calculator",
+          "description": "Instant valuation, FSI 1.5 construction area estimator, and bank loan EMI calculator.",
+          "url": "https://skyidevelopers.in/plot-estimator"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 5,
+          "name": "360° Drone Virtual Tours",
+          "description": "Interactive aerial sightseeing, campus walkthroughs, and Sahyadri hillside panoramas.",
+          "url": "https://skyidevelopers.in/virtual-tour"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 6,
+          "name": "Global NRI Real Estate Hub",
+          "description": "FEMA/RBI compliant acquisition, NRE/NRO banking, virtual tours, and VIP NRI concierge.",
+          "url": "https://skyidevelopers.in/nri-hub"
         }
       ]
     },
@@ -693,6 +761,9 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
         <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
         <link rel="dns-prefetch" href="https://formsubmit.co" />
+        <link rel="alternate" type="application/rss+xml" title="SKYi Developers RSS Feed" href="https://skyidevelopers.in/feed.xml" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="https://skyidevelopers.in/sitemap.xml" />
+        <link rel="alternate" href="https://skyidevelopers.in/llms.txt" type="text/plain" title="LLM Context" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}

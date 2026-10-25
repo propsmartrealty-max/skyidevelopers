@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { name: 'Home',         href: '/',             id: 'home' },
   { name: 'Portfolio',    href: '/projects',     id: 'portfolio' },
   { name: 'Songbirds',    href: '/songbirds',    id: 'songbirds' },
+  { name: 'NA Plots',     href: '/na-plots-bhukum', id: 'na-plots' },
   { name: 'Connectivity', href: '/connectivity', id: 'connectivity' },
   { name: 'Calculator',   href: '#calculator',   id: 'calculator' },
   { name: 'Contact',      href: '/contact',      id: 'contact' },

@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import SongbirdsHubContent from '../../components/SongbirdsHubContent';
 
 export const metadata: Metadata = {
-  title: 'Skyi Songbirds Bhugaon Pune | New Launch 1 BHK (430 Sq.Ft.) & 3, 4 BHK Luxury Residences',
-  description: 'Skyi Songbirds New Launch: Smart 1 BHK (430 Sq.Ft. Carpet) from ₹38L* & Luxury 3, 4 BHK Hillside Homes in 45-Acre Eco-Township, Bhugaon, Paud Road, Pune. 10 Mins from Kothrud & Chandani Chowk. 5-Acre Poona Western Club. MahaRERA P52100000769.',
+  title: '⭐ Skyi Songbirds Bhugaon™ | 1, 2, 3 & 4 BHK From ₹38L* | 2026 Floor Plans & Price List',
+  description: '【Official Developer Portal】Explore Skyi Songbirds 45-Acre Township in Bhugaon, Paud Road (10 Mins from Kothrud & Chandani Chowk). New Launch Smart 1 BHK (430 Sq.Ft.) from ₹38L* & Luxury 3 & 4 BHK Hillside Homes. 5-Acre Poona Western Club. MahaRERA P52100000769. Download Verified Floor Plans PDF & Book Free Cab Site Visit!',
   keywords: [
     'Skyi Songbirds',
     'Skyi Songbirds Bhugaon',
     'Songbirds 1 BHK 430 sqft',
     'Skyi Songbirds 1 BHK',
     'Skyi Songbirds new launch',
+    'Skyi Songbirds price list 2026',
     '1 BHK flat Bhugaon Songbirds',
     'Skyi Songbirds 430 sqft price',
     'Songbirds 1 BHK floor plan',
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/songbirds',
   },
   openGraph: {
-    title: 'Skyi Songbirds Bhugaon Pune | New Launch 1 BHK (430 Sq.Ft.) & 3, 4 BHK Homes',
-    description: '45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New launch 1 BHK (430 Sq.Ft.) starting ₹38L*.',
+    title: '⭐ Skyi Songbirds Bhugaon™ | 1, 2, 3 & 4 BHK From ₹38L* | 2026 Floor Plans & Price List',
+    description: '【Official Developer Portal】45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New launch 1 BHK (430 Sq.Ft.) starting ₹38L*. Download Floor Plans PDF!',
     url: 'https://skyidevelopers.in/songbirds',
     siteName: 'Skyi Developers',
     images: [
@@ -43,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Skyi Songbirds Bhugaon Pune | New Launch 1 BHK (430 Sq.Ft.)',
-    description: '45+ Acre IGBC Platinum Township near Kothrud. Smart 1 BHK from ₹38 Lakhs*.',
+    title: '⭐ Skyi Songbirds Bhugaon™ | 1, 2, 3 & 4 BHK From ₹38L*',
+    description: '45+ Acre IGBC Platinum Township near Kothrud. Smart 1 BHK from ₹38 Lakhs*. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/songbirds-1.webp'],
   },
 };
@@ -79,6 +80,20 @@ const songbirdsSchema = {
         { "@type": "LocationFeatureSpecification", name: "IGBC Platinum Certified Green Township", value: true },
         { "@type": "LocationFeatureSpecification", name: "Zero Waste Sustainable Architecture", value: true },
       ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "1840",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: "3800000",
+        highPrice: "17900000",
+        priceCurrency: "INR",
+        availability: "https://schema.org/InStock",
+      },
       identifier: "MahaRERA: P52100000769 (Ph A), P52100001117 (Ph B), P52100019348 (Ph E), P52100047992",
     },
     {

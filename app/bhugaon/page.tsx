@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Home from '../page';
 
 export const metadata: Metadata = {
-  title: 'Skyi Bhugaon Pune | Luxury Hillside Townships & Residences on Paud Road',
-  description: 'Explore SKYi Developments in Bhugaon, Paud Road, Pune — Skyi Songbirds, SKYi Tigers Nest & PWC Towers. Situated next to 7,000-acre NDA Forest Reserve, 10 Mins from Kothrud & Chandani Chowk.',
+  title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L* | Official Site',
+  description: '【Official SKYi Bhugaon Hub】Discover premier townships along 6-lane Paud Road: Skyi Songbirds (1-4 BHK from ₹38L*), SKYi Tigers Nest & PWC Towers. Next to 7,000-acre NDA Forest. Download Brochures & Book Free AC Cab Site Visit!',
   keywords: [
     'Skyi Bhugaon',
     'Skyi Songbirds Bhugaon',
@@ -13,13 +13,14 @@ export const metadata: Metadata = {
     'Apartments near Kothrud Pune',
     'Poona Western Club Bhugaon',
     'Luxury residences Bhugaon',
+    '1 BHK in Bhugaon Pune',
   ],
   alternates: {
     canonical: 'https://skyidevelopers.in/bhugaon',
   },
   openGraph: {
-    title: 'Skyi Bhugaon Pune | Luxury Hillside Townships on Paud Road',
-    description: 'Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune.',
+    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L* | Official Site',
+    description: '【Official SKYi Bhugaon Hub】Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune. Direct developer booking & zero brokerage.',
     url: 'https://skyidevelopers.in/bhugaon',
     siteName: 'Skyi Developers',
     images: [
@@ -35,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Skyi Bhugaon Pune | Luxury Hillside Townships on Paud Road',
-    description: 'Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Kothrud.',
+    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L*',
+    description: 'Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Kothrud. Download 2026 Floor Plans!',
     images: ['https://skyidevelopers.in/songbirds-1.webp'],
   },
 };

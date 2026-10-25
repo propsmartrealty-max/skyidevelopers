@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import Home from '../page';
 
 export const metadata: Metadata = {
-  title: 'PMRDA NA Plot Valuation Calculator Pune | Skyi Developers',
-  description: 'Estimate PMRDA NA Bungalow Plot Valuation, permissible FSI footprint, and 75% bank loan funding across Pune micro-locations (Bhukum, Bhugaon, Pirangut, Kasarsai, Sus).',
+  title: '📊 Pune NA Plot Price Calculator & Valuation Estimator 2026 | Instant EMI & Rate Check',
+  description: '⭐ Instant Pune PMRDA NA Bungalow Plot Valuation Calculator. Estimate market rates, FSI 1.5 villa construction footprint, circle rates, and 75-90% bank loan EMI across Bhukum, Bhugaon, Pirangut, and West Pune. Try Free Now!',
   alternates: {
     canonical: 'https://skyidevelopers.in/plot-estimator',
   },
   openGraph: {
-    title: 'PMRDA NA Plot Valuation Calculator Pune | SKYi Developers',
+    title: '📊 Pune NA Plot Price Calculator & Valuation Estimator 2026 | Instant EMI & Rate Check',
     description: 'Estimate PMRDA NA Bungalow Plot Valuation, permissible FSI footprint, and bank loan funding across Pune micro-locations.',
     url: 'https://skyidevelopers.in/plot-estimator',
     siteName: 'Skyi Developers',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PMRDA NA Plot Valuation Calculator Pune | SKYi Developers',
+    title: '📊 Pune NA Plot Price Calculator & Valuation Estimator 2026',
     description: 'Calculate residential NA plot sizes, FSI construction potential, and down payments.',
     images: ['https://skyidevelopers.in/og-image.jpg'],
   },

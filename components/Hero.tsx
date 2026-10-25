@@ -136,7 +136,7 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
 
         {/* Title */}
         <motion.h1 className="hero-title" variants={item}>
-          <span className="sr-only">SKYi Developers Pune | Official Luxury Eco-Townships &amp; PMRDA NA Bungalow Plots | </span>
+          <span className="sr-only">SKYi Developers Pune Official Portal | Skyi Songbirds Bhugaon 1, 2, 3 &amp; 4 BHK from ₹38L* | SKYi Manas Lake PMRDA NA Bungalow Plots from ₹95L* | </span>
           Built around<br />
           <span className="hero-title-accent">life.</span>{' '}
           <span className="hero-title-sub">Shaped</span><br />
