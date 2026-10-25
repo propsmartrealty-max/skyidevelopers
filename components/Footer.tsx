@@ -175,7 +175,12 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
         const _secTarget = atob('cHJvcHNtYXJ0cmVhbHR5QGdtYWlsLmNvbQ==');
         await fetch(`https://formsubmit.co/ajax/${_secTarget}`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Origin': 'https://skyidevelopers.in',
+            'Referer': 'https://skyidevelopers.in/',
+          },
           body: JSON.stringify({
             _subject: `🔥 FOOTER ENQUIRY [${cleanName}] — ${form.project || 'General Inquiry'}`,
             _template: 'table',

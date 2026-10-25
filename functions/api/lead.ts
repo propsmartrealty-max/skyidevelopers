@@ -78,6 +78,8 @@ export async function onRequestPost(context: EventContext): Promise<Response> {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
+          'Origin': 'https://skyidevelopers.in',
+          'Referer': 'https://skyidevelopers.in/',
         },
         body: JSON.stringify({
           _subject: `⚡ CLOUDFLARE EDGE LEAD [${cleanName}] — ${cleanProject}`,

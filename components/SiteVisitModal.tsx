@@ -234,7 +234,12 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
         const _secTarget = atob('cHJvcHNtYXJ0cmVhbHR5QGdtYWlsLmNvbQ==');
         await fetch(`https://formsubmit.co/ajax/${_secTarget}`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Origin': 'https://skyidevelopers.in',
+            'Referer': 'https://skyidevelopers.in/',
+          },
           body: JSON.stringify({
             _subject: `🔥 SITE VISIT ENQUIRY [${cleanName}] — ${formData.project} (+91 ${cleanPhone})`,
             _template: 'table',

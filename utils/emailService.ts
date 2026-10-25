@@ -52,6 +52,8 @@ export async function sendLeadEmailNotification(params: SendLeadEmailParams): Pr
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
+        'Origin': 'https://skyidevelopers.in',
+        'Referer': 'https://skyidevelopers.in/',
       },
       body: JSON.stringify(formSubmitPayload),
     });
