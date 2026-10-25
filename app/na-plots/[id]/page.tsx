@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Home from '../../page';
+import MicroLocationLanding from '../../../components/MicroLocationLanding';
 import { PROGRAMMATIC_SEO_ITEMS } from '../../../utils/programmaticSeo';
 
 interface PageProps {
@@ -185,7 +185,7 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Home />
+      <MicroLocationLanding item={item} />
     </>
   );
 }
