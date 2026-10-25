@@ -567,9 +567,18 @@
 
   .story-player-viewport {
     height: 100vh;
-    max-height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
     border-radius: 0;
     border: none;
+  }
+
+  .story-player-header {
+    padding-top: calc(14px + env(safe-area-inset-top, 0px));
+  }
+
+  .story-cta-footer {
+    padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
   }
 
   .story-modal-backdrop {

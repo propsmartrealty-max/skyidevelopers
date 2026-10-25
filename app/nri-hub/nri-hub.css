@@ -204,7 +204,7 @@
 
 .nri-projects-showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 28px;
 }
 
@@ -394,6 +394,12 @@
 @media (max-width: 768px) {
   .nri-title {
     font-size: 2.2rem;
+  }
+  .nri-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .nri-projects-showcase {
+    grid-template-columns: 1fr;
   }
   .nri-faq-list {
     grid-template-columns: 1fr;

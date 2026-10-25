@@ -34,6 +34,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .masterplan-section { padding: 60px 16px; }
+  .mp-sector-btn { padding: 16px 18px; border-radius: 14px; min-height: 48px; }
+  .mp-detail-card { padding: 20px 16px; border-radius: 18px; }
+}
+
 .mp-sector-list {
   display: flex;
   flex-direction: column;

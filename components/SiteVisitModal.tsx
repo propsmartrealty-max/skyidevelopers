@@ -326,6 +326,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                     <label htmlFor="modal-project-select"><MapPin size={16} /> Select Project</label>
                     <select
                       id="modal-project-select"
+                      aria-label="Select Project"
                       value={formData.project}
                       onChange={(e) => setFormData({ ...formData, project: e.target.value })}
                       disabled={isSubmitting}
@@ -343,6 +344,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                       <input
                         id="modal-name"
                         type="text"
+                        autoComplete="name"
                         placeholder="e.g. Rahul Sharma"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -356,6 +358,8 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                       <input
                         id="modal-phone"
                         type="tel"
+                        inputMode="tel"
+                        autoComplete="tel"
                         placeholder="10-digit Mobile No."
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -372,6 +376,8 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                       <input
                         id="modal-email"
                         type="email"
+                        inputMode="email"
+                        autoComplete="email"
                         placeholder="rahul@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -383,6 +389,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                       <label htmlFor="modal-timeslot"><Clock size={16} /> Time Slot</label>
                       <select
                         id="modal-timeslot"
+                        aria-label="Preferred Time Slot"
                         value={formData.timeSlot}
                         onChange={(e) => setFormData({ ...formData, timeSlot: e.target.value })}
                         disabled={isSubmitting}
@@ -400,6 +407,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                       <input
                         id="modal-date"
                         type="date"
+                        aria-label="Preferred Visit Date"
                         min={minDate || undefined}
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}

@@ -230,7 +230,7 @@
 
 .pune-zones-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 1.25rem;
   margin-top: 1.5rem;
 }
@@ -440,7 +440,7 @@
 
 .nri-benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1.25rem;
 }
 
@@ -527,7 +527,7 @@
 
 .na-checklist-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1.25rem;
 }
 
@@ -588,8 +588,14 @@
   .seo-trust-row { justify-content: flex-start; }
 }
 @media (max-width: 600px) {
-  .seo-section { padding: 70px 24px 60px; }
-  .trust-badge { padding: 14px 20px; min-width: 140px; }
-  .seo-trust-row { margin-bottom: 50px; }
-  .seo-keywords-block { padding: 20px 20px; }
+  .seo-section { padding: 60px 16px 50px; }
+  .trust-badge { padding: 14px 16px; min-width: 140px; }
+  .seo-trust-row { margin-bottom: 40px; }
+  .seo-keywords-block { padding: 18px 16px; }
+  .pune-zones-section { padding: 1.5rem 1rem; border-radius: 16px; }
+  .pune-zones-grid { grid-template-columns: 1fr; }
+  .nri-hub-section { padding: 1.5rem 1rem; border-radius: 16px; }
+  .nri-benefits-grid { grid-template-columns: 1fr; }
+  .na-plot-guide-section { padding: 1.5rem 1rem; border-radius: 16px; }
+  .na-checklist-grid { grid-template-columns: 1fr; }
 }

@@ -157,7 +157,7 @@ export default function SongbirdsHubContent() {
               </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '30px', alignItems: 'center' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '30px', alignItems: 'center' }}>
               <div className="glass" style={{ padding: '36px', borderRadius: '20px', border: '1px solid rgba(255, 107, 53, 0.35)' }}>
                 <span style={{ background: 'rgba(255, 107, 53, 0.2)', color: '#ff6b35', padding: '4px 12px', borderRadius: '8px', fontSize: '0.8rem', fontWeight: 800 }}>
                   SPECIFICATION HIGHLIGHTS

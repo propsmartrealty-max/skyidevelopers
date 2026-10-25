@@ -122,7 +122,9 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
           {/* Mobile toggle */}
           <button
             className="mobile-menu-btn"
-            aria-label="Toggle menu"
+            aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-nav-menu"
             onClick={() => setMobileOpen(v => !v)}
           >
             <AnimatePresence mode="wait">
@@ -144,6 +146,9 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-nav-menu"
+            role="navigation"
+            aria-label="Mobile Navigation Menu"
             className="mobile-menu glass"
             initial={{ opacity: 0, y: -16, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}

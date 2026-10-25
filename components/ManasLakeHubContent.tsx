@@ -154,7 +154,7 @@ export default function ManasLakeHubContent() {
               </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '30px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '30px' }}>
               <div className="glass" style={{ padding: '36px', borderRadius: '20px', border: '1px solid rgba(16, 185, 129, 0.35)' }}>
                 <span style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#34d399', padding: '4px 12px', borderRadius: '8px', fontSize: '0.8rem', fontWeight: 800 }}>
                   PLOT SECTOR SPECIFICATIONS

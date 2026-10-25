@@ -179,9 +179,10 @@
   background: #1e293b !important;
   border: 1.5px solid rgba(255, 255, 255, 0.4) !important;
   border-radius: 10px;
-  padding: 0.9rem 1rem;
+  padding: 0.85rem 1rem;
   color: #ffffff !important;
-  font-size: 0.95rem;
+  font-size: 16px !important; /* Min 16px prevents iOS Safari & Chrome viewport auto-zoom */
+  min-height: 48px;
   font-weight: 600;
   outline: none;
   transition: all 0.2s ease;
@@ -252,9 +253,10 @@
   color: #ffffff !important;
   border: none;
   border-radius: 12px;
-  padding: 1.05rem 1.5rem;
+  padding: 1rem 1.5rem;
   font-size: 1.05rem;
   font-weight: 800;
+  min-height: 48px;
   cursor: pointer !important;
   box-shadow: 0 10px 25px rgba(255, 107, 53, 0.5);
   margin-top: 0.5rem;

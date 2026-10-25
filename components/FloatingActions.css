@@ -45,6 +45,7 @@
 .visit-btn {
   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   width: auto;
+  min-height: 48px;
   border-radius: 100px;
   padding: 0 1.25rem;
   gap: 0.5rem;
@@ -80,7 +81,8 @@
 
 @media (max-width: 640px) {
   .floating-actions-container {
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+    right: calc(1rem + env(safe-area-inset-right, 0px));
+    gap: 0.65rem;
   }
 }

@@ -342,7 +342,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
 
                     {/* Email */}
                     <div className={`form-field ${isActive('email') ? 'is-active' : ''}`}>
-                      <input id="f-email" name="email" type="email" autoComplete="email"
+                      <input id="f-email" name="email" type="email" autoComplete="email" inputMode="email"
                         value={form.email} onChange={handleChange}
                         onFocus={() => setFocused('email')} onBlur={() => setFocused(null)} required disabled={loading} />
                       <label htmlFor="f-email">Email Address</label>
@@ -351,7 +351,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
 
                     {/* Phone */}
                     <div className={`form-field ${isActive('phone') ? 'is-active' : ''}`}>
-                      <input id="f-phone" name="phone" type="tel" autoComplete="tel"
+                      <input id="f-phone" name="phone" type="tel" autoComplete="tel" inputMode="tel"
                         value={form.phone} onChange={handleChange}
                         onFocus={() => setFocused('phone')} onBlur={() => setFocused(null)} disabled={loading} />
                       <label htmlFor="f-phone">Phone Number (Optional)</label>
@@ -360,7 +360,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
 
                     {/* Project */}
                     <div className={`form-field is-select ${isActive('project') ? 'is-active' : ''}`}>
-                      <select id="f-project" name="project"
+                      <select id="f-project" name="project" aria-label="Interested Project"
                         value={form.project} onChange={handleChange}
                         onFocus={() => setFocused('project')} onBlur={() => setFocused(null)} disabled={loading}>
                         <option value="" disabled hidden />
