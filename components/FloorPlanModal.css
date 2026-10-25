@@ -15,6 +15,11 @@
   justify-content: center;
   padding: 1.25rem;
   overflow-y: auto;
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transform: none !important;
 }
 
 .floor-plan-modal {
@@ -33,8 +38,13 @@
   -webkit-overflow-scrolling: touch;
   z-index: 100001 !important;
   filter: none !important;
+  -webkit-filter: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transform: translateZ(0);
 }
 
 /* Force native cursor and interaction inside modal */

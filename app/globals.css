@@ -300,3 +300,34 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
     margin-bottom: 36px;
   }
 }
+
+/* ════════════════════════════════════════
+   UNIVERSAL MODAL ANTI-BLUR & SHARPNESS SHIELD
+   Guarantees all modal containers and forms render with 100% crispness
+════════════════════════════════════════ */
+.site-visit-backdrop,
+.floor-plan-backdrop,
+.ai-modal-backdrop,
+.privacy-modal-backdrop,
+.vt-modal-backdrop,
+.story-modal-backdrop {
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.site-visit-modal,
+.floor-plan-modal,
+.ai-modal-card,
+.privacy-modal-card,
+.vt-modal-content {
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transform: translateZ(0);
+}

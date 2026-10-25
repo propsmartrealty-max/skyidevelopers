@@ -220,7 +220,7 @@ export default function FloorPlanModal({
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="modal-backdrop floor-plan-backdrop"
+          className="floor-plan-backdrop"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

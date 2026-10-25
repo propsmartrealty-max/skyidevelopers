@@ -271,7 +271,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="modal-backdrop"
+          className="site-visit-backdrop"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

@@ -3,6 +3,7 @@
    Note: No backdrop-filter on parent backdrop to prevent WebKit/Blink child blur bugs
 ══════════════════════════════════════════════════════════════════════════════ */
 
+.site-visit-backdrop,
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -16,6 +17,12 @@
   justify-content: center;
   padding: 1.25rem;
   overflow-y: auto;
+  /* Guarantee zero filter or blur at root */
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transform: none !important;
 }
 
 .site-visit-modal {
@@ -33,13 +40,19 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 100001 !important;
-  /* Prevent any inherited blur or filter */
+  /* Crystal clear text rendering */
   filter: none !important;
+  -webkit-filter: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transform: translateZ(0);
 }
 
 /* Force native cursor and interaction inside modal */
+.site-visit-backdrop *,
 .modal-backdrop *,
 .site-visit-modal * {
   cursor: auto !important;

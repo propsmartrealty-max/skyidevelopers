@@ -279,7 +279,7 @@ export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: Portfoli
             transition={{ duration: 0.3 }}
             onClick={() => setSelected(null)}
           >
-            <div className="modal-backdrop" style={{ backgroundImage: `url(${selected.bgImage})` }} />
+            <div className="project-modal-backdrop" style={{ backgroundImage: `url(${selected.bgImage})` }} />
             <div className="modal-overlay" />
 
             <motion.div
