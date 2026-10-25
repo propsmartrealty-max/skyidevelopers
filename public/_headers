@@ -75,24 +75,24 @@
   Cloudflare-CDN-Cache-Control: public, max-age=31536000, immutable
 
 /*.webp
-  Cache-Control: public, max-age=31536000, immutable
-  CDN-Cache-Control: public, max-age=31536000, immutable
-  Cloudflare-CDN-Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
 
 /*.svg
-  Cache-Control: public, max-age=31536000, immutable
-  CDN-Cache-Control: public, max-age=31536000, immutable
-  Cloudflare-CDN-Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
 
 /*.jpg
-  Cache-Control: public, max-age=31536000, immutable
-  CDN-Cache-Control: public, max-age=31536000, immutable
-  Cloudflare-CDN-Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
 
 /*.png
-  Cache-Control: public, max-age=31536000, immutable
-  CDN-Cache-Control: public, max-age=31536000, immutable
-  Cloudflare-CDN-Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  Cloudflare-CDN-Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
 
 /*.woff2
   Cache-Control: public, max-age=31536000, immutable
