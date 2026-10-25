@@ -55,6 +55,22 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'Google-Extended',
         allow: '/',
       },
+      {
+        userAgent: 'Feedfetcher-Google',
+        allow: '/',
+      },
+      {
+        userAgent: 'GoogleOther',
+        allow: '/',
+      },
+      {
+        userAgent: 'GoogleOther-Image',
+        allow: '/',
+      },
+      {
+        userAgent: 'GoogleOther-Video',
+        allow: '/',
+      },
       // Major Search Engine Crawlers
       {
         userAgent: 'Bingbot',

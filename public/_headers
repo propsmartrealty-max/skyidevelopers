@@ -14,7 +14,12 @@
   Cross-Origin-Opener-Policy: same-origin-allow-popups
   Cross-Origin-Resource-Policy: cross-origin
   Origin-Agent-Cluster: ?1
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.cloudflareinsights.com https://challenges.cloudflare.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: https://images.unsplash.com https://formsubmit.co; connect-src 'self' https://formsubmit.co https://cloudflareinsights.com https://static.cloudflareinsights.com https://www.google-analytics.com https://www.google.com; frame-src 'self' https://www.youtube.com https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;
+
+# Private / Backend API Endpoints (Disallow Indexing)
+/api/*
+  X-Robots-Tag: noindex, nofollow, noarchive
 
 # HTML & Dynamic Pages (Edge TTL: 1 Hour, Stale While Revalidate: 1 Day)
 /
@@ -47,23 +52,54 @@
   CDN-Cache-Control: public, s-maxage=3600, stale-while-revalidate=86400
   Cloudflare-CDN-Cache-Control: public, s-maxage=3600, stale-while-revalidate=86400
 
-# Search Engine Assets (Sitemaps, Robots, Feeds)
+# Search Engine Assets (Sitemaps, Robots, Feeds, Merchant & IndexNow)
 /sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  X-Robots-Tag: noindex, follow
+  Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=3600, s-maxage=86400
+  Cloudflare-CDN-Cache-Control: public, max-age=3600, s-maxage=86400
+
+/sitemap-images.xml
+  Content-Type: application/xml; charset=utf-8
+  X-Robots-Tag: noindex, follow
   Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400
   CDN-Cache-Control: public, max-age=3600, s-maxage=86400
   Cloudflare-CDN-Cache-Control: public, max-age=3600, s-maxage=86400
 
 /feed.xml
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=3600, s-maxage=86400
+  Cloudflare-CDN-Cache-Control: public, max-age=3600, s-maxage=86400
+
+/google-merchant-products.xml
+  Content-Type: application/xml; charset=utf-8
   Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400
   CDN-Cache-Control: public, max-age=3600, s-maxage=86400
   Cloudflare-CDN-Cache-Control: public, max-age=3600, s-maxage=86400
 
 /robots.txt
+  Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=86400, s-maxage=86400
   CDN-Cache-Control: public, max-age=86400
   Cloudflare-CDN-Cache-Control: public, max-age=86400
 
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  X-Robots-Tag: index, follow
+  Cache-Control: public, max-age=86400, s-maxage=604800
+  CDN-Cache-Control: public, max-age=604800
+  Cloudflare-CDN-Cache-Control: public, max-age=604800
+
+/4f6d89a710b2401f8021c356972e0bf4.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=604800
+  CDN-Cache-Control: public, max-age=604800
+  Cloudflare-CDN-Cache-Control: public, max-age=604800
+
 /manifest.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
   Cache-Control: public, max-age=86400, s-maxage=604800
   CDN-Cache-Control: public, max-age=604800
   Cloudflare-CDN-Cache-Control: public, max-age=604800

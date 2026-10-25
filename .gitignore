@@ -19,6 +19,9 @@ coverage/
 .env.development.local
 .env.test.local
 .env.production.local
+service_account*.json
+*credentials*.json
+indexer_report.json
 
 # Logs & Debug
 logs

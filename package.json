@@ -6,7 +6,10 @@
     "dev": "next dev --host 127.0.0.1",
     "build": "next build",
     "start": "next start --host 127.0.0.1",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "indexer": "node scripts/google_indexer.mjs",
+    "indexer:inspect": "node scripts/google_indexer.mjs --inspect",
+    "indexer:indexnow": "node scripts/google_indexer.mjs --indexnow"
   },
   "dependencies": {
     "@types/nodemailer": "8.0.1",
