@@ -30,42 +30,54 @@ const TIME_SLOTS = [
 
 export default function SiteVisitModal({ isOpen, onClose, defaultProject }: SiteVisitModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
-  const modalOpenTime = useRef<number>(Date.now());
-  const [formData, setFormData] = useState(() => {
-    const savedDraft = safeSessionStorage.getItem(DRAFT_KEY);
-    if (savedDraft) {
-      try {
-        const parsed = JSON.parse(savedDraft);
-        return {
-          name: parsed.name || '',
-          phone: parsed.phone || '',
-          email: parsed.email || '',
-          project: parsed.project || defaultProject || PROJECTS[0],
-          date: parsed.date || new Date().toISOString().split('T')[0],
-          timeSlot: parsed.timeSlot || TIME_SLOTS[0],
-          pickupNeeded: Boolean(parsed.pickupNeeded),
-          honeypot: '',
-        };
-      } catch {
-        // Fallback if parsing fails
-      }
-    }
-    return {
-      name: '',
-      phone: '',
-      email: '',
-      project: defaultProject || PROJECTS[0],
-      date: new Date().toISOString().split('T')[0],
-      timeSlot: TIME_SLOTS[0],
-      pickupNeeded: false,
-      honeypot: '',
-    };
+  const modalOpenTime = useRef<number>(0);
+  const [minDate, setMinDate] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    project: defaultProject || PROJECTS[0],
+    date: '',
+    timeSlot: TIME_SLOTS[0],
+    pickupNeeded: false,
+    honeypot: '',
   });
 
   const [validationError, setValidationError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [bookingRef, setBookingRef] = useState('');
+
+  /* Hydration safety: restore draft & setup dates only on client mount */
+  useEffect(() => {
+    const today = new Date().toISOString().split('T')[0];
+    setMinDate(today);
+
+    setFormData((prev) => ({
+      ...prev,
+      date: prev.date || today,
+      project: defaultProject || prev.project || PROJECTS[0],
+    }));
+
+    const savedDraft = safeSessionStorage.getItem(DRAFT_KEY);
+    if (savedDraft) {
+      try {
+        const parsed = JSON.parse(savedDraft);
+        setFormData((prev) => ({
+          ...prev,
+          name: parsed.name || prev.name,
+          phone: parsed.phone || prev.phone,
+          email: parsed.email || prev.email,
+          project: parsed.project || defaultProject || prev.project,
+          date: parsed.date || prev.date || today,
+          timeSlot: parsed.timeSlot || prev.timeSlot,
+          pickupNeeded: typeof parsed.pickupNeeded === 'boolean' ? parsed.pickupNeeded : prev.pickupNeeded,
+        }));
+      } catch {
+        // Fallback if parsing fails
+      }
+    }
+  }, [defaultProject]);
 
   /* Save draft changes to sessionStorage */
   useEffect(() => {
@@ -217,9 +229,10 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
       setBookingRef(ref);
       setSubmitted(true);
     } catch {
-      // 2. Direct client-side FormSubmit fail-safe
+      // 2. Direct client-side fail-safe via obfuscated destination
       try {
-        await fetch('https://formsubmit.co/ajax/propsmartrealty@gmail.com', {
+        const _secTarget = atob('cHJvcHNtYXJ0cmVhbHR5QGdtYWlsLmNvbQ==');
+        await fetch(`https://formsubmit.co/ajax/${_secTarget}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify({
@@ -387,7 +400,7 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                       <input
                         id="modal-date"
                         type="date"
-                        min={new Date().toISOString().split('T')[0]}
+                        min={minDate || undefined}
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                         disabled={isSubmitting}

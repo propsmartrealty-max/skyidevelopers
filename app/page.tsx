@@ -64,25 +64,39 @@ function HomeContent() {
       />
 
       {/* 2D/3D Interactive Master Layout Visualizer */}
-      <InteractiveMasterPlan />
+      <ErrorBoundary sectionName="InteractiveMasterPlan" silent>
+        <InteractiveMasterPlan />
+      </ErrorBoundary>
 
       {/* 360° Virtual Tour & Drone Sightseeing Gallery */}
-      <VirtualTourGallery onBookSiteVisit={handleOpenVisit} />
+      <ErrorBoundary sectionName="VirtualTourGallery" silent>
+        <VirtualTourGallery onBookSiteVisit={handleOpenVisit} />
+      </ErrorBoundary>
 
       {/* Home Loan & EMI Calculator */}
-      <MortgageCalculator onBookSiteVisit={() => handleOpenVisit()} />
+      <ErrorBoundary sectionName="MortgageCalculator" silent>
+        <MortgageCalculator onBookSiteVisit={() => handleOpenVisit()} />
+      </ErrorBoundary>
 
       {/* Connectivity & Proximity Matrix */}
-      <Connectivity />
+      <ErrorBoundary sectionName="Connectivity" silent>
+        <Connectivity />
+      </ErrorBoundary>
 
       {/* Video & Virtual Tours */}
-      <VideoSection />
+      <ErrorBoundary sectionName="VideoSection" silent>
+        <VideoSection />
+      </ErrorBoundary>
 
       {/* Customer Testimonials & Verified Reviews */}
-      <Testimonials />
+      <ErrorBoundary sectionName="Testimonials" silent>
+        <Testimonials />
+      </ErrorBoundary>
 
       {/* Programmatic SEO Search Engine Hub */}
-      <ProgrammaticSEOSection onBookVisit={handleOpenVisit} />
+      <ErrorBoundary sectionName="ProgrammaticSEOSection" silent>
+        <ProgrammaticSEOSection onBookVisit={handleOpenVisit} />
+      </ErrorBoundary>
 
       {/* Comprehensive SEO Content & FAQ Accordion */}
       <SEOContent />
@@ -93,30 +107,38 @@ function HomeContent() {
         onOpenSiteVisit={handleOpenVisit}
       />
 
-      {/* Interactive Modals */}
-      <SiteVisitModal
-        isOpen={isVisitModalOpen}
-        onClose={() => setIsVisitModalOpen(false)}
-        defaultProject={visitDefaultProject}
-      />
+      {/* Interactive Modals — Isolated Fail-Safe Boundaries */}
+      <ErrorBoundary sectionName="SiteVisitModal" silent>
+        <SiteVisitModal
+          isOpen={isVisitModalOpen}
+          onClose={() => setIsVisitModalOpen(false)}
+          defaultProject={visitDefaultProject}
+        />
+      </ErrorBoundary>
 
-      <FloorPlanModal
-        isOpen={isFloorModalOpen}
-        onClose={() => setIsFloorModalOpen(false)}
-        projectTitle={floorProjectTitle}
-        onBookVisit={() => handleOpenVisit(floorProjectTitle)}
-      />
+      <ErrorBoundary sectionName="FloorPlanModal" silent>
+        <FloorPlanModal
+          isOpen={isFloorModalOpen}
+          onClose={() => setIsFloorModalOpen(false)}
+          projectTitle={floorProjectTitle}
+          onBookVisit={() => handleOpenVisit(floorProjectTitle)}
+        />
+      </ErrorBoundary>
 
-      <PrivacyPolicyModal
-        isOpen={isPrivacyModalOpen}
-        onClose={() => setIsPrivacyModalOpen(false)}
-      />
+      <ErrorBoundary sectionName="PrivacyPolicyModal" silent>
+        <PrivacyPolicyModal
+          isOpen={isPrivacyModalOpen}
+          onClose={() => setIsPrivacyModalOpen(false)}
+        />
+      </ErrorBoundary>
 
-      <AIMatchmakerModal
-        isOpen={isAiMatchmakerOpen}
-        onClose={() => setIsAiMatchmakerOpen(false)}
-        onSelectProject={(project) => handleOpenVisit(project)}
-      />
+      <ErrorBoundary sectionName="AIMatchmakerModal" silent>
+        <AIMatchmakerModal
+          isOpen={isAiMatchmakerOpen}
+          onClose={() => setIsAiMatchmakerOpen(false)}
+          onSelectProject={(project) => handleOpenVisit(project)}
+        />
+      </ErrorBoundary>
 
       {/* Floating Quick Action Buttons */}
       <FloatingActions onOpenVisitModal={() => handleOpenVisit()} />
@@ -125,9 +147,5 @@ function HomeContent() {
 }
 
 export default function Home() {
-  return (
-    <ErrorBoundary>
-      <HomeContent />
-    </ErrorBoundary>
-  );
+  return <HomeContent />;
 }

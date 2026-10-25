@@ -58,7 +58,6 @@ const songbirdsSchema = {
       name: "Skyi Songbirds Eco-Township (New Launch 1 BHK & Hillside Residences)",
       description: "45+ Acre IGBC Platinum certified residential township located in Bhugaon along Paud Road, Pune. New launch featuring smart 1 BHK (430 Sq.Ft. Carpet Area) residences alongside luxury 3 & 4 BHK hillside homes.",
       url: "https://skyidevelopers.in/songbirds",
-      telephone: "+91-20-66143000",
       priceRange: "₹38 Lakhs - ₹2.10 Crores",
       address: {
         "@type": "PostalAddress",

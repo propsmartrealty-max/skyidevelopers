@@ -2,15 +2,30 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Share2, Globe, Play, Send, AlertCircle, Loader2, ShieldCheck, ExternalLink } from 'lucide-react';
+import { MessageSquare, Mail, MapPin, Share2, Globe, Play, Send, AlertCircle, Loader2, ShieldCheck, ExternalLink } from 'lucide-react';
 import { sanitizeInput, isSpamSubmission } from '../utils/security';
 import GoogleWebStories from './GoogleWebStories';
 import './Footer.css';
 
 const CONTACT_INFO = [
-  { Icon: Phone,  label: 'Call Us',   value: '+91 20 6614 3000',                   href: 'tel:+912066143000' },
-  { Icon: Mail,   label: 'Email',     value: 'info@skyidevelopers.com',             href: 'mailto:info@skyidevelopers.com' },
-  { Icon: MapPin, label: 'Office',    value: 'Skymark One, Balewadi, Pune — 411045', href: '#' },
+  {
+    Icon: MessageSquare,
+    label: 'WhatsApp Enquiry',
+    value: 'Chat with Sales Desk',
+    href: 'https://wa.me/917744009295?text=' + encodeURIComponent('Hi SKYi Developers, I would like to inquire about your residential projects & NA plots in Pune.'),
+  },
+  {
+    Icon: Mail,
+    label: 'VIP Enquiry',
+    value: 'Instant Sales Assistance',
+    href: '#contact',
+  },
+  {
+    Icon: MapPin,
+    label: 'Experience Centre',
+    value: 'Skymark One, Balewadi, Pune — 411045',
+    href: 'https://maps.google.com/?q=Skymark+One+Balewadi+Pune',
+  },
 ];
 
 const SOCIAL = [
@@ -72,7 +87,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
   const [errorMsg,  setErrorMsg]  = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading,   setLoading]   = useState(false);
-  const [initTime,  setInitTime]  = useState(Date.now());
+  const [initTime,  setInitTime]  = useState(0);
 
   useEffect(() => {
     setInitTime(Date.now());
@@ -87,7 +102,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
     if (loading) return; // Prevent double-submit
 
     setErrorMsg(null);
-    const durationMs = Date.now() - initTime;
+    const durationMs = initTime > 0 ? Date.now() - initTime : 2000;
 
     // Client-side anti-spam check
     const spamCheck = isSpamSubmission({
@@ -135,7 +150,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
     setLoading(true);
 
     try {
-      // 1. Dispatch via Next.js backend API (FormSubmit + SMTP)
+      // 1. Dispatch via Cloudflare Pages Function / Lead API (routes to propsmartrealty@gmail.com server-side)
       const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -155,9 +170,10 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
       }
       setSubmitted(true);
     } catch {
-      // 2. Direct client-side FormSubmit fail-safe
+      // 2. Direct client-side fail-safe via obfuscated endpoint
       try {
-        await fetch('https://formsubmit.co/ajax/propsmartrealty@gmail.com', {
+        const _secTarget = atob('cHJvcHNtYXJ0cmVhbHR5QGdtYWlsLmNvbQ==');
+        await fetch(`https://formsubmit.co/ajax/${_secTarget}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify({
@@ -382,6 +398,33 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
                         </>
                       )}
                     </motion.button>
+
+                    <div style={{ marginTop: '14px', textAlign: 'center' }}>
+                      <a
+                        href="https://wa.me/917744009295?text=Hi%20SKYi%20Developers%2C%20I%20am%20interested%20in%20Songbirds%20%2F%20Manas%20Lake%20property%20details."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '8px',
+                          width: '100%',
+                          padding: '11px 16px',
+                          background: 'rgba(37, 211, 102, 0.12)',
+                          border: '1px solid rgba(37, 211, 102, 0.35)',
+                          borderRadius: '10px',
+                          color: '#25d366',
+                          fontSize: '0.88rem',
+                          fontWeight: 600,
+                          textDecoration: 'none',
+                          transition: 'all 0.2s ease',
+                        }}
+                      >
+                        <MessageSquare size={16} />
+                        <span>Chat on WhatsApp (Instant Response)</span>
+                      </a>
+                    </div>
                   </form>
                 </>
               ) : (

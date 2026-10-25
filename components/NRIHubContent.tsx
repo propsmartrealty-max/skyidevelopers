@@ -327,11 +327,15 @@ export default function NRIHubContent() {
                 >
                   Book Priority Video Consultation
                 </button>
-                <a href="tel:+912066143000" className="nri-btn-secondary">
-                  Call +91 20 6614 3000
-                </a>
+                <button
+                  type="button"
+                  onClick={() => setIsVisitOpen(true)}
+                  className="nri-btn-secondary"
+                >
+                  Schedule VIP Consultation
+                </button>
                 <a
-                  href="https://wa.me/912066143000?text=Hello%20SKYi%20NRI%20Desk%2C%20I%20am%20an%20overseas%20investor%20interested%20in%20Pune%20properties."
+                  href="https://wa.me/917744009295?text=Hello%20SKYi%20NRI%20Desk%2C%20I%20am%20an%20overseas%20investor%20interested%20in%20Pune%20properties."
                   className="nri-btn-whatsapp"
                   target="_blank"
                   rel="noopener noreferrer"

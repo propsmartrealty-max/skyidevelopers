@@ -59,7 +59,6 @@ const manasLakeSchema = {
       name: "SKYi Manas Lake Eco-Township & PMRDA NA Bungalow Plots",
       description: "90+ Acre IGBC Platinum certified residential lakefront township located in Bhukum / Bavdhan along Paud Road, Pune. Featuring PMRDA sanctioned clear title NA bungalow plots (2,000 - 5,000+ Sq.Ft. with FSI 1.5) and lakeside 2 & 3 BHK residences.",
       url: "https://skyidevelopers.in/manas-lake",
-      telephone: "+91-20-66143000",
       priceRange: "₹65 Lakhs - ₹2.50 Crores",
       address: {
         "@type": "PostalAddress",

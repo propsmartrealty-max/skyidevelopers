@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Skyi Developers Pune | Official Projects | Songbirds, Manas Lake, NA Plots, Tigers Nest, Park Baner',
-  description: 'Skyi Developers — Pune\'s premier real estate builder since 2004. Official portfolio includes Skyi Songbirds (Bhugaon), SKYi Manas Lake & PMRDA NA Bungalow Plots (Bhukum/Bavdhan), SKYi Tigers Nest, SKYi PWC Towers, SKYi Park (Baner), SKYi Iris, SKYi Aura Heights, Skyi Star City (Dhayari). RERA & IGBC Platinum certified. ☎ +91 20 6614 3000.',
+  description: 'Skyi Developers — Pune\'s premier real estate builder since 2004. Official portfolio includes Skyi Songbirds (Bhugaon), SKYi Manas Lake & PMRDA NA Bungalow Plots (Bhukum/Bavdhan), SKYi Tigers Nest, SKYi PWC Towers, SKYi Park (Baner), SKYi Iris, SKYi Aura Heights, Skyi Star City (Dhayari). RERA & IGBC Platinum certified.',
   keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
   authors: [{ name: 'Skyi Developers' }],
   publisher: 'Skyi Developers',
@@ -112,8 +112,6 @@ const jsonLdSchema = {
       "alternateName": ["SKYi Developers", "Skyi Developer Pune", "SKYi Properties", "SKYi Real Estate", "Enerrgia SKYi Developers"],
       "url": "https://skyidevelopers.in/",
       "logo": "https://skyidevelopers.in/favicon.svg",
-      "telephone": "+91-20-66143000",
-      "email": "info@skyidevelopers.com",
       "foundingDate": "2004",
       "sameAs": [
         "https://facebook.com/skyidevelopers",
@@ -147,16 +145,9 @@ const jsonLdSchema = {
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+91-20-66143000",
-          "contactType": "sales",
+          "contactType": "VIP Sales Desk",
+          "url": "https://skyidevelopers.in/#contact",
           "areaServed": ["IN", "US", "AE", "GB", "SG", "AU", "CA"],
-          "availableLanguage": ["English", "Hindi", "Marathi"]
-        },
-        {
-          "@type": "ContactPoint",
-          "telephone": "+91-20-66143000",
-          "contactType": "customer support",
-          "contactOption": "TollFree",
           "availableLanguage": ["English", "Hindi", "Marathi"]
         }
       ],
@@ -181,7 +172,7 @@ const jsonLdSchema = {
       "@id": "https://skyidevelopers.in/#agent",
       "name": "Skyi Developers Pune",
       "image": "https://skyidevelopers.in/songbirds-1.webp",
-      "telephone": "+91-20-66143000",
+      "url": "https://skyidevelopers.in/",
       "priceRange": "₹42 Lakhs - ₹7.50 Crores",
       "areaServed": ["Pune", "Maharashtra", "India", "Global NRI Clients"],
       "address": {

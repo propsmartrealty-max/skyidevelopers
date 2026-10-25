@@ -140,7 +140,7 @@ export async function POST(request: Request) {
   } catch (error) {
     logger.error('[Serverless Lead Engine Error]', error);
     return NextResponse.json(
-      { success: false, error: 'An unexpected server error occurred. Please try again or call +91 20 6614 3000.' },
+      { success: false, error: 'An unexpected server error occurred. Please try again or reach out on WhatsApp.' },
       { status: 500 }
     );
   }

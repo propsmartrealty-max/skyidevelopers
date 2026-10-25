@@ -232,7 +232,6 @@ export default function SEOContent() {
             name: 'SKYi Developers Pune (Enerrgia SKYi Developers)',
             description: 'Premier real estate developer in Pune since 2004 with 7,000+ homes and 20+ projects across Bhugaon, Bhukum, Paud Road, Baner, Bavdhan, Dhayari, and Sopan Baug.',
             url: 'https://skyidevelopers.in',
-            telephone: '+91-20-66143000',
             priceRange: '₹42 Lakhs - ₹7.50 Crores',
             address: {
               '@type': 'PostalAddress',

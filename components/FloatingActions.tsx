@@ -24,7 +24,7 @@ export default function FloatingActions({ onOpenVisitModal }: FloatingActionsPro
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const whatsappUrl = 'https://wa.me/912066143000?text=' + encodeURIComponent('Hi Skyi Developers, I would like to inquire about Songbirds / Manas Lake project details.');
+  const whatsappUrl = 'https://wa.me/917744009295?text=' + encodeURIComponent('Hi Skyi Developers, I would like to inquire about Songbirds / Manas Lake project details.');
 
   return (
     <div className="floating-actions-container">
