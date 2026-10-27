@@ -2,21 +2,21 @@ import type { Metadata } from 'next';
 import Home from '../page';
 
 export const metadata: Metadata = {
-  title: '⭐ SKYi Projects Directory™ | All Townships & Luxury Residences From ₹38L* | 2026 Price List & PDF',
-  description: '【Direct Developer Booking — 0% Brokerage】⭐ Explore all landmark developments by SKYi: Skyi Songbirds (1 BHK from ₹38L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), Tigers Nest, Five Racecourse Sopan Baug, Five Aguada Bandra Mumbai, Star City. Download 2026 Floor Plans PDF & Schedule Free AC Cab Site Visit!',
+  title: '⭐ SKYi Projects Directory™ | All Townships & Luxury Residences From ₹49L* | 2026 Price List & PDF',
+  description: '【Direct Developer Booking — 0% Brokerage】⭐ Explore all landmark developments by SKYi: Skyi Songbirds (1 BHK All-Inclusive Only ₹49L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), Tigers Nest, Five Racecourse Sopan Baug, Five Aguada Bandra Mumbai, Star City. Download 2026 Floor Plans PDF & Schedule Free AC Cab Site Visit!',
   alternates: {
     canonical: 'https://skyidevelopers.in/projects',
   },
   openGraph: {
-    title: '⭐ SKYi Projects Directory™ | All Townships & Luxury Residences From ₹38L*',
-    description: 'Explore all delivered and ongoing landmarks by SKYi Developers: Skyi Songbirds, SKYi Manas Lake, Five Racecourse, Five Aguada, Five Maidan, Tiger’s Nest, PWC Towers, and SKYi Park. Direct developer booking & zero brokerage.',
+    title: '⭐ SKYi Projects Directory™ | All Townships & Luxury Residences From ₹49L*',
+    description: 'Explore all delivered and ongoing landmarks by SKYi Developers: Skyi Songbirds (1 BHK All-Inclusive Only ₹49L*), SKYi Manas Lake, Five Racecourse, Five Aguada, Five Maidan, Tiger’s Nest, PWC Towers, and SKYi Park. Direct developer booking & zero brokerage.',
     url: 'https://skyidevelopers.in/projects',
     siteName: 'Skyi Developers',
     images: [{ url: 'https://skyidevelopers.in/og-image.jpg', width: 1200, height: 630, alt: 'SKYi Developers Projects Directory' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ SKYi Projects Directory™ | All Townships & Luxury Residences From ₹38L*',
+    title: '⭐ SKYi Projects Directory™ | All Townships & Luxury Residences From ₹49L*',
     description: 'Explore all delivered and ongoing landmarks by SKYi Developers in Pune & Mumbai. Direct booking & 0% brokerage.',
     images: ['https://skyidevelopers.in/og-image.jpg'],
   },
@@ -91,7 +91,7 @@ const projectsSchema = {
           name: 'What is the starting price for SKYi Developers properties?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Property prices start from ₹38 Lakhs* for smart 1 BHK eco-homes at Aria Heights Songbirds, ₹65 Lakhs* for lakeside apartments at Manas Lake, ₹95 Lakhs* for clear title PMRDA NA bungalow plots, up to ₹12.00+ Crores* for sea-facing mansions in Bandra West Mumbai.',
+            text: 'Property prices start from only ₹49 Lakhs* All-Inclusive for smart 1 BHK eco-homes at Aria Heights Songbirds, ₹65 Lakhs* for lakeside apartments at Manas Lake, ₹95 Lakhs* for clear title PMRDA NA bungalow plots, up to ₹12.00+ Crores* for sea-facing mansions in Bandra West Mumbai.',
           },
         },
         {

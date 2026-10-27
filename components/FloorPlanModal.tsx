@@ -18,7 +18,7 @@ const FLOOR_PLANS = [
     carpetArea: '430 Sq.Ft. Carpet Area (Zero Dead Space)',
     balcony: 'Private Hillside Sundeck (10\'x4\'6")',
     facing: 'East / West Facing (Vastu Compliant)',
-    priceStarting: 'Starting ₹ 38 Lakhs*',
+    priceStarting: 'All-Inclusive Only ₹ 49 Lacs*',
     specs: [
       'Smart 430 Sq.Ft. Usable RERA Carpet (Zero Dead Space Layout)',
       'Living & Dining (10\'0" × 13\'6") with Panoramic Forest View Deck',

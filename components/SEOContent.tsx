@@ -110,7 +110,7 @@ const PROJECT_LOCATIONS = [
   {
     project: 'Skyi Songbirds Eco-Township',
     area: 'Bhugaon Foothills, Paud Road, Pune',
-    config: 'NEW LAUNCH: 1 BHK (430 sq.ft. from ₹38L*), 2, 3 & 4 BHK Sustainable Residences — Starting ₹38 Lakhs*',
+    config: 'NEW LAUNCH: 1 BHK (430 sq.ft. All-Inclusive Only ₹49L*), 2, 3 & 4 BHK Sustainable Residences — Starting ₹49 Lakhs* All-Inclusive',
     status: 'New Launch & Ongoing Phases',
     category: '45-Acre Eco-Township',
     rera: 'MahaRERA: P52100000769 / P52100001117 / P52100019348',

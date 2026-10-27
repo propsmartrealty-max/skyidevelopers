@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
     title: 'Skyi Songbirds',
     category: 'Townships',
     tagline: '45+ Acre Award-Winning Eco-Township',
-    description: 'Surrounded by the Sahyadri Hills and 7,000-acre NDA forest reserve. NEW TOWER LAUNCH: Aria Heights Smart 1 BHK (430 Sq.Ft. Carpet) starting ₹38L* plus 3 & 4 BHK sustainable hillside homes.',
+    description: 'Surrounded by the Sahyadri Hills and 7,000-acre NDA forest reserve. NEW TOWER LAUNCH: Aria Heights Smart 1 BHK (430 Sq.Ft. Carpet) All-Inclusive Only ₹49L* plus 3 & 4 BHK sustainable hillside homes.',
     bgImage: getProjectImage('skyi-songbirds'),
     scale: '45+ Acres, 2,000+ Families',
     configuration: '1 BHK (Aria Heights 430 Sq.Ft. New Launch), 2, 3 & 4 BHK Residences',

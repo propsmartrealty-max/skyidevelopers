@@ -717,10 +717,11 @@ export const PROGRAMMATIC_SEO_ITEMS: ProgrammaticItem[] = [
     microLocation: 'Bhugaon',
     corridor: 'West Pune / Paud Road',
     type: '1 BHK Smart Eco-Residences (430 Sq.Ft.)',
-    priceRange: '₹38 Lakhs* - ₹45 Lakhs*',
+    priceRange: 'Only ₹49 Lacs* (All-Inclusive)',
     plotSize: '430 Sq.Ft. Usable RERA Carpet Area',
     features: [
       '430 Sq.Ft. Zero-Dead-Space Layout with Forest Sundeck',
+      'All-Inclusive Package: Only ₹49 Lacs* (Zero Hidden Costs)',
       'High-Rise G+14 Elevation (Only 4 Units per Core)',
       'Direct Unobstructed 180° NDA Forest Reserve Panoramas',
       'Access to 5-Acre Operational Poona Western Club',
@@ -729,8 +730,8 @@ export const PROGRAMMATIC_SEO_ITEMS: ProgrammaticItem[] = [
     bankLoans: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra'],
     geocoordinates: { latitude: 18.4988, longitude: 73.7431 },
     keywords: [
-      'Aria Heights Songbirds', 'Skyi Aria Heights 1 BHK', 'Songbirds 1 BHK new tower launch',
-      '1 BHK under 40 lakhs Pune', '1 BHK flat Bhugaon', 'Aria Heights price', 'Songbirds 1 BHK floor plan'
+      'Aria Heights Songbirds', 'Skyi Aria Heights 1 BHK', 'Songbirds 1 BHK all inclusive 49 lakhs',
+      'Aria Heights 49 lakhs', 'Songbirds 1 BHK new tower launch', '1 BHK flat Bhugaon', 'Aria Heights price', 'Songbirds 1 BHK floor plan'
     ],
     reraApproved: true,
     reraNumber: 'MahaRERA: P52100028121',
@@ -934,12 +935,12 @@ export const PROGRAMMATIC_SEO_ITEMS: ProgrammaticItem[] = [
     location: 'Paud Road Expressway Corridor, Bhugaon, Pune',
     microLocation: 'Bhugaon',
     corridor: 'West Pune / Paud Road',
-    type: '1 BHK Smart Eco-Residences',
-    priceRange: '₹38 Lakhs* - ₹42 Lakhs*',
+    type: '1 BHK Smart Eco-Residences (All-Inclusive Only ₹49L*)',
+    priceRange: 'Only ₹49 Lacs* (All-Inclusive)',
     plotSize: '430 Sq.Ft. RERA Usable Carpet Area',
     features: [
-      'Starting from ₹38 Lakhs* (Under 40 Lakhs Budget)',
-      '90% Bank Loan Approved with Low EMI (~₹24,999/mo)',
+      'All-Inclusive Package: Only ₹49 Lacs* (Zero Hidden Costs)',
+      '90% Bank Loan Approved with Low EMI (~₹27,999/mo)',
       'Scenic Balcony Deck with Sahyadri Views',
       '5-Acre Sports Club Access (Poona Western Club)',
       '6 Mins to Chandani Chowk & Kothrud Metro',
@@ -947,8 +948,8 @@ export const PROGRAMMATIC_SEO_ITEMS: ProgrammaticItem[] = [
     bankLoans: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra'],
     geocoordinates: { latitude: 18.4988, longitude: 73.7431 },
     keywords: [
-      '1 BHK under 40 lakhs Pune', 'cheap 1 BHK flats near Kothrud',
-      '1 BHK under 45 lakhs Paud Road', '1 BHK flat near Chandani Chowk', 'budget flats West Pune', '1 BHK ready possession under 40L'
+      '1 BHK all inclusive 49 lakhs Pune', 'cheap 1 BHK flats near Kothrud',
+      '1 BHK all inclusive Paud Road', '1 BHK flat near Chandani Chowk', 'budget flats West Pune', '1 BHK ready possession 49L'
     ],
     reraApproved: true,
     reraNumber: 'MahaRERA: P52100028121 / P52100000769',
@@ -1071,7 +1072,7 @@ export const PROGRAMMATIC_SEO_ITEMS: ProgrammaticItem[] = [
     microLocation: 'Bhugaon',
     corridor: 'West Pune / Paud Road',
     type: '1, 2, 3 & 4 BHK Integrated Township Residences',
-    priceRange: '₹38 Lakhs* - ₹2.10 Crores*',
+    priceRange: '₹49 Lakhs* (1 BHK All-Inclusive) - ₹2.10 Crores*',
     plotSize: '430 - 1,850 Sq.Ft. Carpet Area',
     features: [
       '45-Acre IGBC Platinum Certified Township',

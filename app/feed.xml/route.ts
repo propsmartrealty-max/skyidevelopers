@@ -7,15 +7,15 @@ export async function GET() {
 
   const canonicalItems = [
     {
-      title: 'SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L* | 0% Brokerage',
+      title: 'SKYi Developers Pune™ | Songbirds 1 BHK All-Inclusive ₹49L* & NA Plots | 0% Brokerage',
       link: `${baseUrl}/`,
-      description: 'Featured showcase of SKYi Developers in Pune: Skyi Songbirds (1-4 BHK from ₹38L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), SKYi Tigers Nest, and Poona Western Club.',
+      description: 'Featured showcase of SKYi Developers in Pune: Skyi Songbirds (1 BHK All-Inclusive Only ₹49L* & 3-4 BHK), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), SKYi Tigers Nest, and Poona Western Club.',
       image: `${baseUrl}/og-image.jpg`,
     },
     {
-      title: '⭐ Skyi Songbirds Bhugaon™ | New Tower Launch: Aria Heights 1 BHK (430 Sq.Ft.) From ₹38L*',
+      title: '⭐ Skyi Songbirds Bhugaon™ | New Tower Launch: Aria Heights 1 BHK All-Inclusive Only ₹49L*',
       link: `${baseUrl}/songbirds`,
-      description: 'Skyi Songbirds: New Tower Launch Aria Heights smart 1 BHK (430 Sq.Ft. Carpet) from ₹38L* plus 3 & 4 BHK hillside residences along Paud Road. 5-acre sports club and Olympic pool. MahaRERA P52100028121.',
+      description: 'Skyi Songbirds: New Tower Launch Aria Heights smart 1 BHK (430 Sq.Ft. Carpet) All-Inclusive Only ₹49L* plus 3 & 4 BHK hillside residences along Paud Road. 5-acre sports club and Olympic pool. MahaRERA P52100028121.',
       image: `${baseUrl}/songbirds-1.webp`,
     },
     {

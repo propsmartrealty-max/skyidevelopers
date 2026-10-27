@@ -12,10 +12,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: '⭐ SKYi Developers Pune™ | 1-4 BHK & NA Plots From ₹38L* | 2026 Floor Plans & Price List',
+    default: '⭐ SKYi Developers Pune™ | 1 BHK All-Inclusive ₹49L* & NA Plots | 2026 Price List',
     template: '%s | SKYi Developers™',
   },
-  description: '【Direct Developer Booking — 0% Brokerage】⭐ Explore SKYi Developers Pune: Skyi Songbirds (New Launch 1 BHK from ₹38L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), Tigers Nest, Five Racecourse Sopan Baug, Five Aguada Bandra Mumbai. MahaRERA Approved. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
+  description: '【Direct Developer Booking — 0% Brokerage】⭐ Explore SKYi Developers Pune: Skyi Songbirds (New Launch 1 BHK All-Inclusive Only ₹49L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), Tigers Nest, Five Racecourse Sopan Baug, Five Aguada Bandra Mumbai. MahaRERA Approved. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
   keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
   authors: [{ name: 'Skyi Developers' }],
   publisher: 'Skyi Developers',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SKYi Developers | Eco-Townships & Ultra-Luxury Residences',
-    description: '⭐ Direct Developer Booking (0% Brokerage). 1, 2, 3, 4 BHK & Ultra-Luxury Residences from ₹38L*. Download Floor Plans PDF & Schedule Site Tour!',
+    description: '⭐ Direct Developer Booking (0% Brokerage). 1 BHK All-Inclusive Only ₹49L*, 2, 3, 4 BHK & Ultra-Luxury Residences. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/og-image.jpg'],
   },
   robots: {
@@ -269,7 +269,7 @@ const jsonLdSchema = {
             "@type": "RealEstateListing",
             "name": "Skyi Songbirds New Tower Launch: Aria Heights 1 BHK (430 Sq.Ft. Smart Eco-Home)",
             "identifier": "MahaRERA: P52100028121 (Aria Heights Phase I) / P52100000769",
-            "price": "3800000",
+            "price": "4900000",
             "priceCurrency": "INR",
             "address": { "@type": "PostalAddress", "addressLocality": "Bhugaon, Paud Road", "addressRegion": "Pune", "addressCountry": "IN" }
           }
@@ -407,7 +407,7 @@ const jsonLdSchema = {
           "name": "What are the specifications of the new launch 1 BHK (430 Sq.Ft.) at Skyi Songbirds Bhugaon?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Skyi Songbirds in Bhugaon features an exclusive new launch of 1 BHK smart eco-homes with 430 Sq.Ft. usable RERA carpet area starting at ₹38 Lakhs*. Built with zero-dead-space architecture, private scenic decks facing the 7,000-acre NDA forest reserve, and direct access to the 5-acre Poona Western Club."
+            "text": "Skyi Songbirds in Bhugaon features an exclusive new tower launch of 1 BHK smart eco-homes (Aria Heights) with 430 Sq.Ft. usable RERA carpet area at an all-inclusive price of only ₹49 Lacs*. Built with zero-dead-space architecture, private scenic decks facing the 7,000-acre NDA forest reserve, and direct access to the 5-acre Poona Western Club."
           }
         },
         {
@@ -453,7 +453,7 @@ const jsonLdSchema = {
           "@type": "SiteNavigationElement",
           "position": 1,
           "name": "Skyi Songbirds Bhugaon (1 to 4 BHK)",
-          "description": "45-Acre Eco-Township, smart 1 BHK from ₹38L* and 3-4 BHK hillside homes next to NDA forest.",
+          "description": "45-Acre Eco-Township, smart 1 BHK all-inclusive only ₹49L* and 3-4 BHK hillside homes next to NDA forest.",
           "url": "https://skyidevelopers.in/songbirds"
         },
         {
@@ -532,7 +532,7 @@ const jsonLdSchema = {
       "category": "Real Estate > Residential Townships > Apartments",
       "offers": {
         "@type": "AggregateOffer",
-        "lowPrice": "3800000",
+        "lowPrice": "4900000",
         "highPrice": "17900000",
         "priceCurrency": "INR",
         "offerCount": "450",

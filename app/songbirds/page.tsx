@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import SongbirdsHubContent from '../../components/SongbirdsHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ Skyi Songbirds Bhugaon™ | New Tower Launch: Aria Heights 1 BHK From ₹38L* | 2026 Price List',
-  description: '【Project Showcase & Booking】Explore Skyi Songbirds 45-Acre Township in Bhugaon, Paud Road (10 Mins from Kothrud & Chandani Chowk). New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) from ₹38L* & Luxury 3 & 4 BHK Hillside Homes. 5-Acre Poona Western Club. MahaRERA P52100028121 / P52100000769. Download Verified Floor Plans PDF & Book Free Cab Site Visit!',
+  title: '⭐ Skyi Songbirds Bhugaon™ | 1 BHK All-Inclusive Only ₹49 Lacs* | New Tower Launch',
+  description: '【Project Showcase & Booking】Explore Skyi Songbirds 45-Acre Township in Bhugaon, Paud Road (10 Mins from Kothrud & Chandani Chowk). New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) All-Inclusive Only ₹49 Lacs* & Luxury 3 & 4 BHK Hillside Homes. 5-Acre Poona Western Club. MahaRERA P52100028121 / P52100000769. Download Verified Floor Plans PDF & Book Free Cab Site Visit!',
   keywords: [
     'Skyi Songbirds',
     'Skyi Songbirds Bhugaon',
     'Aria Heights Songbirds',
     'Skyi Aria Heights',
     'Skyi Aria Heights 1 BHK',
+    'Songbirds 1 BHK 49 lakhs all inclusive',
     'Songbirds 1 BHK new tower launch',
     'Songbirds 1 BHK 430 sqft',
     'Skyi Songbirds 1 BHK',
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     '1 BHK flat Bhugaon Songbirds',
     'Skyi Songbirds 430 sqft price',
     'Songbirds 1 BHK floor plan',
-    '1 BHK under 40 lakhs Pune',
+    '1 BHK under 50 lakhs Pune',
     'Skyi Songbirds Paud Road Pune',
     'Songbirds Bhugaon Pune',
     'Aria Heights Bhugaon Pune',
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/songbirds',
   },
   openGraph: {
-    title: '⭐ Skyi Songbirds Bhugaon™ | New Tower Launch: Aria Heights 1 BHK From ₹38L*',
-    description: '【Project Showcase & Booking】45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) starting ₹38L*. Download Floor Plans PDF!',
+    title: '⭐ Skyi Songbirds Bhugaon™ | 1 BHK All-Inclusive Only ₹49 Lacs* | New Tower Launch',
+    description: '【Project Showcase & Booking】45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) All-Inclusive Only ₹49 Lacs*. Download Floor Plans PDF!',
     url: 'https://skyidevelopers.in/songbirds',
     siteName: 'Skyi Developers',
     images: [
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
         url: 'https://skyidevelopers.in/songbirds-1.webp',
         width: 1200,
         height: 630,
-        alt: 'Skyi Songbirds Aria Heights New Tower Launch 1 BHK Township Bhugaon Pune',
+        alt: 'Skyi Songbirds Aria Heights New Tower Launch 1 BHK All Inclusive 49 Lacs Bhugaon Pune',
       },
     ],
     locale: 'en_IN',
@@ -49,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ Skyi Songbirds Bhugaon™ | New Tower Launch: Aria Heights 1 BHK From ₹38L*',
-    description: '45+ Acre IGBC Platinum Township near Kothrud. Aria Heights Smart 1 BHK from ₹38 Lakhs*. Download Floor Plans PDF & Schedule Site Tour!',
+    title: '⭐ Skyi Songbirds Bhugaon™ | 1 BHK All-Inclusive Only ₹49 Lacs*',
+    description: '45+ Acre IGBC Platinum Township near Kothrud. Aria Heights Smart 1 BHK All-Inclusive Only ₹49 Lacs*. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/songbirds-1.webp'],
   },
 };
@@ -61,10 +62,10 @@ const songbirdsSchema = {
     {
       "@type": "ApartmentComplex",
       "@id": "https://skyidevelopers.in/songbirds#complex",
-      name: "Skyi Songbirds Eco-Township (New Tower Launch: Aria Heights 1 BHK & Hillside Residences)",
-      description: "45+ Acre IGBC Platinum certified residential township located in Bhugaon along Paud Road, Pune. New tower launch featuring Aria Heights smart 1 BHK (430 Sq.Ft. Carpet Area) residences alongside luxury 3 & 4 BHK hillside homes.",
+      name: "Skyi Songbirds Eco-Township (New Tower Launch: Aria Heights 1 BHK All-Inclusive Only ₹49 Lacs* & Hillside Residences)",
+      description: "45+ Acre IGBC Platinum certified residential township located in Bhugaon along Paud Road, Pune. New tower launch featuring Aria Heights smart 1 BHK (430 Sq.Ft. Carpet Area) residences with all-inclusive price of only ₹49 Lacs* alongside luxury 3 & 4 BHK hillside homes.",
       url: "https://skyidevelopers.in/songbirds",
-      priceRange: "₹38 Lakhs - ₹2.10 Crores",
+      priceRange: "₹49 Lakhs - ₹2.10 Crores",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Paud Road, Bhugaon",
@@ -79,7 +80,7 @@ const songbirdsSchema = {
         longitude: 73.7431,
       },
       amenityFeature: [
-        { "@type": "LocationFeatureSpecification", name: "🔥 New Tower Launch: Aria Heights 1 BHK 430 Sq.Ft. Residences", value: true },
+        { "@type": "LocationFeatureSpecification", name: "🔥 New Tower Launch: Aria Heights 1 BHK 430 Sq.Ft. All-Inclusive Only ₹49 Lacs*", value: true },
         { "@type": "LocationFeatureSpecification", name: "5-Acre Poona Western Club with Olympic Pool", value: true },
         { "@type": "LocationFeatureSpecification", name: "Adjacent to 7,000-Acre NDA Forest Reserve", value: true },
         { "@type": "LocationFeatureSpecification", name: "IGBC Platinum Certified Green Township", value: true },
@@ -94,7 +95,7 @@ const songbirdsSchema = {
       },
       offers: {
         "@type": "AggregateOffer",
-        lowPrice: "3800000",
+        lowPrice: "4900000",
         highPrice: "17900000",
         priceCurrency: "INR",
         availability: "https://schema.org/InStock",
@@ -110,15 +111,15 @@ const songbirdsSchema = {
           "name": "What is the new 1 BHK tower launch at Skyi Songbirds Bhugaon?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The new tower launch at Skyi Songbirds is Aria Heights, featuring smart 1 BHK eco-residences with 430 Sq.Ft. usable RERA carpet area starting from ₹38 Lakhs*. These homes are designed with Zero-Dead-Space layouts, private hillside deck balconies, and full access to township amenities."
+            "text": "The new tower launch at Skyi Songbirds is Aria Heights, featuring smart 1 BHK eco-residences with 430 Sq.Ft. usable RERA carpet area at an all-inclusive price of only ₹49 Lacs*. These homes are designed with Zero-Dead-Space layouts, private hillside deck balconies, and full access to township amenities."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the starting price of 1 BHK in Skyi Songbirds Aria Heights?",
+          "name": "What is the all-inclusive price of 1 BHK in Skyi Songbirds Aria Heights?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The 1 BHK (430 Sq.Ft. Carpet) in Skyi Songbirds Aria Heights starts at ₹38 Lakhs* (base agreement value, ~₹42.5L* all-inclusive) with pre-approved bank loans up to 90% from SBI, HDFC, and ICICI Bank."
+            "text": "The 1 BHK (430 Sq.Ft. Carpet) in Skyi Songbirds Aria Heights has an all-inclusive launch package price of only ₹49 Lacs* (covering agreement value, stamp duty, registration, GST, and infrastructure levies) with pre-approved bank loans up to 90% from SBI, HDFC, and ICICI Bank."
           }
         },
         {

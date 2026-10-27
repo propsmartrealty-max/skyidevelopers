@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Home from '../page';
 
 export const metadata: Metadata = {
-  title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L* | 2026 Price List',
-  description: '【Direct Developer Booking — 0% Brokerage】⭐ Discover premier townships along 6-lane Paud Road: Skyi Songbirds (1-4 BHK from ₹38L*), SKYi Tigers Nest & PWC Towers. Next to 7,000-acre NDA Forest. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
+  title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds 1 BHK All-Inclusive ₹49L* & Tigers Nest',
+  description: '【Direct Developer Booking — 0% Brokerage】⭐ Discover premier townships along 6-lane Paud Road: Skyi Songbirds (1 BHK All-Inclusive Only ₹49L* & 3-4 BHK), SKYi Tigers Nest & PWC Towers. Next to 7,000-acre NDA Forest. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
   keywords: [
     'Skyi Bhugaon',
     'Skyi Songbirds Bhugaon',
@@ -15,14 +15,15 @@ export const metadata: Metadata = {
     'Luxury residences Bhugaon',
     '1 BHK in Bhugaon Pune',
     'Aria Heights Bhugaon',
+    'Songbirds 1 BHK 49 lakhs all inclusive',
     'Songbirds 1 BHK 430 sqft',
   ],
   alternates: {
     canonical: 'https://skyidevelopers.in/bhugaon',
   },
   openGraph: {
-    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L*',
-    description: '【Direct Developer Booking — 0% Brokerage】Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune. Download 2026 Price List & Plans!',
+    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds 1 BHK All-Inclusive ₹49L* & Tigers Nest',
+    description: '【Direct Developer Booking — 0% Brokerage】Skyi Songbirds (1 BHK All-Inclusive ₹49L*), Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune. Download 2026 Price List & Plans!',
     url: 'https://skyidevelopers.in/bhugaon',
     siteName: 'Skyi Developers',
     images: [
@@ -38,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L*',
-    description: 'Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Kothrud. Download 2026 Floor Plans & Book Cab Tour!',
+    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds 1 BHK All-Inclusive ₹49L* & Tigers Nest',
+    description: 'Skyi Songbirds (1 BHK All-Inclusive ₹49L*), Tigers Nest & PWC Towers in Bhugaon near Kothrud. Download 2026 Floor Plans & Book Cab Tour!',
     images: ['https://skyidevelopers.in/songbirds-1.webp'],
   },
 };
@@ -98,7 +99,7 @@ const bhugaonSchema = {
           name: 'What residential projects are offered by SKYi in Bhugaon, Pune?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'SKYi Developers offers the 45-acre Skyi Songbirds eco-township (featuring the newly launched Aria Heights 1 BHK from ₹38L* and 3 & 4 BHK hillside homes), SKYi Tigers Nest (luxury 4 BHK forest homes starting ₹1.79 Cr*), and PWC Towers integrated with the 5-acre Poona Western Club.',
+            text: 'SKYi Developers offers the 45-acre Skyi Songbirds eco-township (featuring the newly launched Aria Heights 1 BHK with all-inclusive price of only ₹49 Lacs* and 3 & 4 BHK hillside homes), SKYi Tigers Nest (luxury 4 BHK forest homes starting ₹1.79 Cr*), and PWC Towers integrated with the 5-acre Poona Western Club.',
           },
         },
         {

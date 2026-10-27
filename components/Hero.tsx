@@ -136,7 +136,7 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
 
         {/* Title */}
         <motion.h1 className="hero-title" variants={item}>
-          <span className="sr-only">SKYi Developers Portfolio Showcase | Skyi Songbirds Bhugaon 1, 2, 3 &amp; 4 BHK from ₹38L* | SKYi Manas Lake 2 &amp; 3 BHK | Five Racecourse Sopan Baug | Five Aguada Bandra Mumbai | </span>
+          <span className="sr-only">SKYi Developers Portfolio Showcase | Skyi Songbirds Bhugaon 1 BHK All-Inclusive Only ₹49L* &amp; 3, 4 BHK | SKYi Manas Lake 2 &amp; 3 BHK | Five Racecourse Sopan Baug | Five Aguada Bandra Mumbai | </span>
           Built around<br />
           <span className="hero-title-accent">life.</span>{' '}
           <span className="hero-title-sub">Shaped</span><br />

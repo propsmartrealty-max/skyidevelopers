@@ -37,7 +37,7 @@ export default function SongbirdsHubContent() {
 
   const openWhatsApp = () => {
     const text = encodeURIComponent(
-      'Hello, I am interested in the New Tower Launch: Aria Heights 1 BHK (430 Sq.Ft.) at Skyi Songbirds (starting ₹38L*). Please share the complete brochure, floor plan PDF, and cost sheet.'
+      'Hello, I am interested in the New Tower Launch: Aria Heights 1 BHK (430 Sq.Ft.) at Skyi Songbirds (All-Inclusive Price Only ₹49 Lacs*). Please share the complete brochure, floor plan PDF, and cost sheet.'
     );
     window.open(`https://wa.me/917744009295?text=${text}`, '_blank');
   };
@@ -81,13 +81,14 @@ export default function SongbirdsHubContent() {
 
             <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 3.4rem)', fontWeight: 900, lineHeight: 1.15, marginBottom: '20px', color: '#ffffff' }}>
               Skyi Songbirds Eco-Township<br />
-              <span className="gradient-text">New 1 BHK Tower Launch from ₹38 Lakhs*</span>
+              <span className="gradient-text">New 1 BHK Tower Launch — All-Inclusive Only ₹49 Lacs*</span>
             </h1>
 
             <p style={{ fontSize: '1.15rem', lineHeight: 1.6, color: '#cbd5e1', maxWidth: '840px', margin: '0 auto 36px' }}>
               45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon, Paud Road (10 Mins from Kothrud &amp; Chandani Chowk).
               Presenting <strong>Tower Aria Heights</strong>: Smart 1 BHK Residences (430 Sq.Ft. Carpet) with Zero Dead Corridor layout
-              and 180° Sahyadri &amp; NDA Forest views, integrated with the 5-Acre Poona Western Club.
+              and 180° Sahyadri &amp; NDA Forest views, integrated with the 5-Acre Poona Western Club. 
+              <strong> All-Inclusive Price: Only ₹49 Lacs*</strong> (Zero Hidden Costs).
             </p>
 
             {/* Quick Metrics Bar */}
@@ -106,8 +107,8 @@ export default function SongbirdsHubContent() {
                 <div style={{ fontSize: '0.82rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>RERA Usable Carpet</div>
               </div>
               <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
-                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#10b981' }}>₹38 Lakhs*</div>
-                <div style={{ fontSize: '0.82rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Starting Price</div>
+                <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#10b981' }}>Only ₹49 Lacs*</div>
+                <div style={{ fontSize: '0.82rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>All-Inclusive Package</div>
               </div>
               <div style={{ background: 'rgba(255, 255, 255, 0.05)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
                 <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#38bdf8' }}>G+14 High Rise</div>
@@ -224,7 +225,7 @@ export default function SongbirdsHubContent() {
                 Aria Heights at Songbirds: Smart 1 BHK (430 Sq.Ft.)
               </h2>
               <p style={{ color: '#94a3b8', fontSize: '1.05rem', maxWidth: '750px', margin: '10px auto 0' }}>
-                Engineered with Zero Dead Space architecture, offering the luxury, ventilation, and amenities of a 45-acre master township at an unbeatable entry price starting ₹38 Lakhs*.
+                Engineered with Zero Dead Space architecture, offering the luxury, ventilation, and amenities of a 45-acre master township at an unbeatable all-inclusive price of only ₹49 Lacs*.
               </p>
             </div>
 
@@ -424,29 +425,29 @@ export default function SongbirdsHubContent() {
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '24px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-                      <span style={{ color: '#cbd5e1' }}>Agreement Value (Base)</span>
-                      <strong style={{ color: '#ffffff' }}>₹38,00,000*</strong>
+                      <span style={{ color: '#cbd5e1' }}>Agreement Value</span>
+                      <strong style={{ color: '#ffffff' }}>₹44,00,000*</strong>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
                       <span style={{ color: '#cbd5e1' }}>Stamp Duty (~6% Pune) &amp; Reg</span>
-                      <strong style={{ color: '#ffffff' }}>~₹2,58,000*</strong>
+                      <strong style={{ color: '#ffffff' }}>~₹3,08,000*</strong>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
                       <span style={{ color: '#cbd5e1' }}>GST (1% Affordable Housing)</span>
-                      <strong style={{ color: '#ffffff' }}>~₹38,000*</strong>
+                      <strong style={{ color: '#ffffff' }}>~₹44,000*</strong>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
                       <span style={{ color: '#cbd5e1' }}>Infra &amp; Development Charges</span>
-                      <strong style={{ color: '#ffffff' }}>~₹1,50,000*</strong>
+                      <strong style={{ color: '#ffffff' }}>~₹1,48,000*</strong>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 14px', background: 'rgba(16, 185, 129, 0.12)', borderRadius: '10px' }}>
-                      <span style={{ color: '#ffffff', fontWeight: 700 }}>Est. All-Inclusive Total</span>
-                      <strong style={{ color: '#10b981', fontSize: '1.15rem' }}>~₹42,46,000*</strong>
+                      <span style={{ color: '#ffffff', fontWeight: 700 }}>Total All-Inclusive Package</span>
+                      <strong style={{ color: '#10b981', fontSize: '1.25rem' }}>Only ₹49 Lacs*</strong>
                     </div>
                   </div>
 
                   <p style={{ fontSize: '0.82rem', color: '#94a3b8', margin: '0 0 20px 0' }}>
-                    *Prices are subject to floor rise and orientation. Government taxes and statutory charges as applicable at the time of registration.
+                    *All-inclusive package covers agreement value, stamp duty, registration, GST, and infrastructure levies. Zero hidden charges.
                   </p>
 
                   <button
@@ -484,7 +485,7 @@ export default function SongbirdsHubContent() {
 
                     <div style={{ padding: '16px', background: 'rgba(255, 255, 255, 0.04)', borderRadius: '12px' }}>
                       <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase' }}>Estimated Monthly Loan EMI</div>
-                      <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#38bdf8' }}>~₹24,999 / mo*</div>
+                      <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#38bdf8' }}>~₹27,999 / mo*</div>
                       <p style={{ fontSize: '0.85rem', color: '#cbd5e1', margin: '4px 0 0' }}>Based on 90% loan sanction from SBI, HDFC Bank, ICICI Bank at 8.4% for 30 years.</p>
                     </div>
 
@@ -680,7 +681,7 @@ export default function SongbirdsHubContent() {
                   What is the exact starting price and booking token for the 1 BHK?
                 </h4>
                 <p style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: 1.6, margin: 0 }}>
-                  The 1 BHK at Aria Heights starts from <strong>₹38 Lakhs*</strong> (base agreement value), with estimated all-inclusive pricing of ~₹42.5 Lakhs* including stamp duty, registration, and 1% GST under affordable housing norms. You can book your preferred unit with a token amount of just <strong>₹51,000*</strong>.
+                  The 1 BHK at Aria Heights has an exclusive launch all-inclusive package price of <strong>only ₹49 Lacs*</strong> (covering agreement value, stamp duty, registration, GST, and infrastructure levies with zero hidden costs). You can book your preferred unit with a token amount of just <strong>₹51,000*</strong>.
                 </p>
               </div>
 
