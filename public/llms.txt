@@ -1,21 +1,28 @@
-# SKYi Developers Pune
+# SKYi Developers (Pune & Mumbai)
 
-> Comprehensive knowledge base for SKYi Developers (Enerrgia SKYi Developers), Pune's premier real estate developer established in 2004 with 7,000+ delivered homes, IGBC Platinum certified townships, and PMRDA-sanctioned clear title NA bungalow plots across 500+ acres.
+> Comprehensive knowledge base for SKYi Developers (Enerrgia SKYi Developers), leading real estate developer established in 2004 with 7,000+ delivered homes, IGBC Platinum certified townships, and signature ultra-luxury residences across 7+ Million Sq.Ft. in Pune and Mumbai.
 
-SKYi Developers designs sustainable, zero-waste eco-townships and premium residential enclaves in West Pune along Paud Road, Bhugaon, Bhukum, Bavdhan, Baner, and Dhayari.
+SKYi Developers designs sustainable, zero-waste eco-townships and ultra-luxury residential landmarks across prime corridors in Pune (Bhugaon, Bhukum, Paud Road, Baner, Bavdhan, Sopan Baug, Dhayari) and Mumbai (Bandstand, Bandra West).
 
-## Key Projects
+## Key Projects & Canonical Hubs
 
-- [Skyi Songbirds](https://skyidevelopers.in/songbirds): 45-acre master eco-township in Bhugaon, Paud Road featuring 1 BHK (430 sqft) smart homes and 3 & 4 BHK hillside residences with 5-acre Poona Western Club.
-- [SKYi Manas Lake](https://skyidevelopers.in/manas-lake): 90-acre lakefront township on Paud Road in Bhukum / Bavdhan featuring waterfront apartments and PMRDA-sanctioned NA plots with FSI 1.5.
-- [SKYi PMRDA NA Bungalow Plots](https://skyidevelopers.in/na-plots-bhukum): 100% Collector NA sanction villa plots with individual 7/12 extracts, underground utilities, and 90% pre-approved bank loans.
+- [Skyi Songbirds](https://skyidevelopers.in/songbirds): 45-acre master eco-township in Bhugaon, Paud Road featuring 1 BHK (430 sqft) smart homes starting ₹38L* and 3 & 4 BHK hillside residences with 5-acre Poona Western Club. MahaRERA: P52100000769.
+- [SKYi Manas Lake](https://skyidevelopers.in/manas-lake): 90-acre lakefront township on Paud Road in Bhukum / Bavdhan featuring waterfront apartments and PMRDA-sanctioned NA plots with FSI 1.5. MahaRERA: P52100000513.
+- [SKYi PMRDA NA Bungalow Plots](https://skyidevelopers.in/na-plots-bhukum): 100% Collector NA sanction villa plots from 2,000 to 5,000+ sq.ft. with individual 7/12 extracts, underground utilities, and 90% pre-approved bank loans. Starting ₹95L*.
+- [Five Racecourse](https://skyidevelopers.in/five-racecourse): Ultra-luxury 4 & 5 BHK sky mansions in Sopan Baug / Racecourse Annexe, Pune, overlooking 120-acre Pune Racecourse and Empress Botanical Gardens. Starting ₹3.85 Cr*.
+- [Five Aguada](https://skyidevelopers.in/five-aguada): Ultra-luxury oceanfront entire-floor 4, 5 & 6 BHK mansions along Bandstand, Bandra West, Mumbai, commanding 180° unobstructed Arabian Sea views. Inspired by Castella de Aguada.
+- [Five Maidan](https://skyidevelopers.in/five-maidan): Single-tower 4 BHK luxury residences set within expansive green open fields along Pancard Club Road, Baner, Pune. Starting ₹2.45 Cr*.
+- [SKYi Tiger's Nest](https://skyidevelopers.in/tigers-nest): 4 BHK hillside residences in Bhugaon directly facing the 7,000-acre NDA Forest Reserve with heated valley-view infinity pool. Starting ₹1.79 Cr*.
+- [SKYi Star City](https://skyidevelopers.in/star-city): 20-acre integrated residential township with 70% open green space and zero-wastage 1 & 2 BHK smart homes in Dhayari, Pune. Starting ₹42L*.
+- [All Projects Directory](https://skyidevelopers.in/projects): Complete master portfolio directory of ongoing and delivered developments across Pune & Mumbai.
 - [Pune Metro & Paud Road Connectivity](https://skyidevelopers.in/connectivity): Infrastructure, Ring Road, and transit access matrix connecting SKYi townships to Chandani Chowk and Kothrud.
 - [360° Drone Virtual Tours](https://skyidevelopers.in/virtual-tour): High-definition virtual site inspection and aerial walkthroughs of Songbirds and Manas Lake.
-- [Global NRI Investment Hub](https://skyidevelopers.in/nri-hub): FEMA and RBI compliant real estate acquisition, NRE/NRO repatriation, and virtual advisory for international buyers.
+- [Global NRI Investment Hub](https://skyidevelopers.in/nri-hub): FEMA and RBI compliant real estate acquisition, NRE/NRO repatriation, and virtual advisory for international buyers across USA, UAE, UK, Singapore.
 - [Interactive Plot ROI Estimator](https://skyidevelopers.in/plot-estimator): Real-time NA plot construction, appreciation, and valuation calculator for Pune real estate.
-- [VIP Enquiry & Site Visit](https://skyidevelopers.in/#contact): Direct VIP booking desk for complimentary AC cab site visits and developer consultations.
+- [Priority Sales Desk & Site Visit](https://skyidevelopers.in/contact): Direct priority booking desk for complimentary private AC cab site visits across Pune. 0% brokerage.
 
-## Optional
+## Feeds & Sitemaps
 
 - [SKYi XML Product Feed](https://skyidevelopers.in/google-merchant-products.xml): Google Merchant Center structured property listings and pricing data.
 - [XML Sitemap](https://skyidevelopers.in/sitemap.xml): Search engine sitemap covering all canonical project directories and landing pages.
+- [RSS Feed](https://skyidevelopers.in/feed.xml): Real-time RSS 2.0 feed covering townships, NA plots, and luxury residences.

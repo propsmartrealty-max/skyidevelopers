@@ -76,9 +76,9 @@
     <!-- 5. SKYi Tigers Nest Hillside Residences -->
     <item>
       <g:id>SKYI-TIGERS-NEST</g:id>
-      <g:title>SKYi Tigers Nest 3 &amp; 4 BHK Hillside Luxury Residences Bhugaon Pune</g:title>
-      <g:description>Exclusive hillside sky villas with private decks overlooking Sahyadri Hills and NDA forest. Starting at 1.79 Cr along Paud Road, Bhugaon.</g:description>
-      <g:link>https://skyidevelopers.in/bhugaon</g:link>
+      <g:title>SKYi Tigers Nest 4 BHK Hillside Luxury Residences Bhugaon Pune</g:title>
+      <g:description>Exclusive hillside sky villas with private decks overlooking 7,000-acre NDA forest reserve. Starting at ₹1.79 Cr along Paud Road, Bhugaon.</g:description>
+      <g:link>https://skyidevelopers.in/tigers-nest</g:link>
       <g:image_link>https://skyidevelopers.in/images/projects/skyi-tigers-nest.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>17900000 INR</g:price>
@@ -90,12 +90,12 @@
       <g:mpn>P52100000769</g:mpn>
     </item>
 
-    <!-- 6. SKYi Five Racecourse -->
+    <!-- 6. SKYi Five Racecourse Sopan Baug -->
     <item>
       <g:id>SKYI-FIVE-RACECOURSE</g:id>
-      <g:title>SKYi Five Racecourse Ultra-Luxury Sky Mansions Sopan Baug Pune</g:title>
-      <g:description>Signature ultra-luxury sky mansions in Sopan Baug overlooking Pune Racecourse. Unmatched privacy, private elevators, and bespoke architecture.</g:description>
-      <g:link>https://skyidevelopers.in/projects</g:link>
+      <g:title>SKYi Five Racecourse Ultra-Luxury 4 &amp; 5 BHK Sky Mansions Sopan Baug Pune</g:title>
+      <g:description>Signature ultra-luxury sky mansions in Sopan Baug overlooking 120-acre Pune Racecourse and Empress Botanical Gardens. Double-height decks and private elevators.</g:description>
+      <g:link>https://skyidevelopers.in/five-racecourse</g:link>
       <g:image_link>https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>38500000 INR</g:price>
@@ -107,12 +107,29 @@
       <g:mpn>MAHARERA-FIVE-RACECOURSE</g:mpn>
     </item>
 
-    <!-- 7. SKYi Five Maidan Baner -->
+    <!-- 7. SKYi Five Aguada Bandstand Bandra West Mumbai -->
+    <item>
+      <g:id>SKYI-FIVE-AGUADA-MUMBAI</g:id>
+      <g:title>Five Aguada 4, 5 &amp; 6 BHK Sea-Facing Mansions Bandstand Bandra West Mumbai</g:title>
+      <g:description>Ultra-luxury entire-floor sea-facing mansions along Bandstand Bandra West Mumbai commanding 180° unobstructed Arabian Sea panoramas. Private plunge pools and white-glove concierge.</g:description>
+      <g:link>https://skyidevelopers.in/five-aguada</g:link>
+      <g:image_link>https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>120000000 INR</g:price>
+      <g:brand>SKYi Developers</g:brand>
+      <g:condition>new</g:condition>
+      <g:product_type>Real Estate &gt; Luxury Residences &gt; Mansions</g:product_type>
+      <g:google_product_category>Real Estate</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:mpn>MAHARERA-FIVE-AGUADA</g:mpn>
+    </item>
+
+    <!-- 8. SKYi Five Maidan Baner -->
     <item>
       <g:id>SKYI-FIVE-MAIDAN</g:id>
-      <g:title>SKYi Five Maidan 4 BHK Luxury Residences Baner Pune</g:title>
-      <g:description>Prestigious 4 BHK luxury residences on Pancard Club Road, Baner, Pune. Close to Mumbai-Pune Expressway and Hinjewadi IT Park.</g:description>
-      <g:link>https://skyidevelopers.in/projects</g:link>
+      <g:title>SKYi Five Maidan 4 BHK Luxury Tower Residences Baner Pune</g:title>
+      <g:description>Rare single-tower luxury residential development set within sprawling landscaped open maidans on Pancard Club Road, Baner, Pune. Double-height decks and zero-wastage layouts.</g:description>
+      <g:link>https://skyidevelopers.in/five-maidan</g:link>
       <g:image_link>https://skyidevelopers.in/images/projects/skyi-five-maidan.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>24500000 INR</g:price>
@@ -124,12 +141,12 @@
       <g:mpn>MAHARERA-FIVE-MAIDAN</g:mpn>
     </item>
 
-    <!-- 8. SKYi Star City Dhayari -->
+    <!-- 9. SKYi Star City Dhayari -->
     <item>
       <g:id>SKYI-STAR-CITY</g:id>
-      <g:title>SKYi Star City 20-Acre Delivered Eco-Township Dhayari Pune</g:title>
-      <g:description>Vibrant 20-acre delivered township on Sinhagad Road, Dhayari, Pune. Featuring 1 &amp; 2 BHK homes with complete civic infrastructure and clubhouse.</g:description>
-      <g:link>https://skyidevelopers.in/projects</g:link>
+      <g:title>SKYi Star City 20-Acre Eco-Township 1 &amp; 2 BHK Dhayari Pune</g:title>
+      <g:description>Vibrant 20-acre township on Sinhagad Road, Dhayari, Pune. Featuring zero-wastage 1 &amp; 2 BHK homes with 70% open green space, central night garden, and on-campus retail.</g:description>
+      <g:link>https://skyidevelopers.in/star-city</g:link>
       <g:image_link>https://skyidevelopers.in/images/projects/skyi-star-city.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>4200000 INR</g:price>

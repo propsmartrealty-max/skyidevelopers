@@ -100,4 +100,49 @@
       <image:geo_location>Baner, Pune, Maharashtra, India</image:geo_location>
     </image:image>
   </url>
+  <url>
+    <loc>https://skyidevelopers.in/five-racecourse</loc>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp</image:loc>
+      <image:title>Five Racecourse Sopan Baug Sky Mansions Pune</image:title>
+      <image:caption>Ultra-luxury 4 and 5 BHK sky mansions overlooking the 120-acre Pune Racecourse</image:caption>
+      <image:geo_location>Sopan Baug, Pune, Maharashtra, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/five-aguada</loc>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp</image:loc>
+      <image:title>Five Aguada Bandstand Bandra West Mumbai Sea-Facing Mansions</image:title>
+      <image:caption>Ultra-luxury oceanfront full-floor residences overlooking the Arabian Sea along Bandstand Bandra West</image:caption>
+      <image:geo_location>Bandra West, Mumbai, Maharashtra, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/five-maidan</loc>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/images/projects/skyi-five-maidan.webp</image:loc>
+      <image:title>Five Maidan Baner Luxury Parkland Residences</image:title>
+      <image:caption>Single-tower 4 BHK luxury residences set within expansive green open fields in Baner Pune</image:caption>
+      <image:geo_location>Baner, Pune, Maharashtra, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/tigers-nest</loc>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/images/projects/skyi-tigers-nest.webp</image:loc>
+      <image:title>Tiger's Nest Hillside Residences Bhugaon Pune</image:title>
+      <image:caption>Ultra-luxury forest-facing 4 BHK hillside residences bordering the 7,000-acre NDA Forest Reserve</image:caption>
+      <image:geo_location>Bhugaon, Pune, Maharashtra, India</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skyidevelopers.in/star-city</loc>
+    <image:image>
+      <image:loc>https://skyidevelopers.in/images/projects/skyi-star-city.webp</image:loc>
+      <image:title>SKYi Star City 20-Acre Township Dhayari Pune</image:title>
+      <image:caption>Master-planned residential township with 70% open green space and zero-wastage 1 and 2 BHK smart homes</image:caption>
+      <image:geo_location>Dhayari, Pune, Maharashtra, India</image:geo_location>
+    </image:image>
+  </url>
 </urlset>

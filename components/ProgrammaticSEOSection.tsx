@@ -154,7 +154,23 @@ export default function ProgrammaticSEOSection({ onBookVisit }: ProgrammaticSEOS
 
                 <div className="p-seo-card-footer">
                   <Link
-                    href={`/na-plots/${item.id}`}
+                    href={
+                      item.id === 'five-aguada-bandra-west'
+                        ? '/five-aguada'
+                        : item.id === 'five-racecourse-sopan-baug'
+                        ? '/five-racecourse'
+                        : item.id === 'five-maidan-baner'
+                        ? '/five-maidan'
+                        : item.id === 'tigers-nest-bhugaon'
+                        ? '/tigers-nest'
+                        : item.id === 'songbirds-bhugaon-flats'
+                        ? '/songbirds'
+                        : item.id === 'star-city-dhayari-township'
+                        ? '/star-city'
+                        : item.id === 'manas-lake-na-plots-bhukum'
+                        ? '/na-plots-bhukum'
+                        : `/na-plots/${item.id}`
+                    }
                     className="p-seo-internal-link"
                     style={{
                       display: 'block',
@@ -165,7 +181,9 @@ export default function ProgrammaticSEOSection({ onBookVisit }: ProgrammaticSEOS
                       textDecoration: 'none',
                     }}
                   >
-                    View 7/12 &amp; Plot Layout Details →
+                    {item.plotSize?.includes('Carpet') || item.type.includes('Flats') || item.type.includes('Mansions')
+                      ? 'View Floor Plans & Sanctioned Details →'
+                      : 'View 7/12 & Layout Blueprint →'}
                   </Link>
                   {onBookVisit && (
                     <button
@@ -173,7 +191,9 @@ export default function ProgrammaticSEOSection({ onBookVisit }: ProgrammaticSEOS
                       className="btn-secondary p-seo-btn"
                       onClick={() => onBookVisit(item.project)}
                     >
-                      Check 7/12 Title &amp; Book Site Visit
+                      {item.plotSize?.includes('Carpet') || item.type.includes('Flats') || item.type.includes('Mansions')
+                        ? 'Request Dossier & Book VIP Visit'
+                        : 'Check 7/12 Title & Book Site Visit'}
                     </button>
                   )}
                 </div>

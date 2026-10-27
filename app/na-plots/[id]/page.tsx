@@ -19,19 +19,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!item) {
     return {
-      title: 'NA Bungalow Plots Pune | Skyi Developers',
-      description: 'PMRDA Sanctioned Clear Title NA Bungalow Plots across Pune.',
+      title: 'Real Estate Projects & NA Plots Pune & Mumbai | SKYi Developers',
+      description: 'PMRDA Sanctioned Clear Title NA Bungalow Plots and Luxury Residences across Pune and Mumbai.',
     };
   }
 
-  const title = `⭐ ${item.project} ${item.microLocation} | PMRDA NA Plots From ${item.priceRange.split('-')[0].trim()}* | Clear 7/12`;
-  const description = `【Verified SKYi Listing】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). 0% Brokerage. Book VIP Site Tour!`;
+  const isPlot = item.type.toLowerCase().includes('plot');
+  const title = isPlot
+    ? `⭐ ${item.project} ${item.microLocation} | PMRDA NA Plots From ${item.priceRange.split('-')[0].trim()}* | Clear 7/12`
+    : `⭐ ${item.project} ${item.microLocation} | ${item.type.split('&')[0].trim()} From ${item.priceRange.split('-')[0].trim()}* | SKYi`;
+
+  const description = isPlot
+    ? `【Verified SKYi Listing】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). 0% Brokerage. Book VIP Site Tour!`
+    : `【Project Showcase & Booking】${item.project} at ${item.location}. ${item.type}. Configurations: ${item.plotSize || 'Expansive Carpet Areas'}. Approved Bank Loans (${item.bankLoans.join(', ')}). 0% Brokerage Direct Booking. Schedule VIP Visit!`;
+
   const canonicalUrl = `https://skyidevelopers.in/na-plots/${item.id}`;
 
   return {
     title,
     description,
-    keywords: [...item.keywords, 'NA bungalow plots Pune', 'PMRDA NA plots Pune', 'clear title 7/12 plots Pune'],
+    keywords: isPlot
+      ? [...item.keywords, 'NA bungalow plots Pune', 'PMRDA NA plots Pune', 'clear title 7/12 plots Pune']
+      : [...item.keywords, `${item.project} price`, `${item.project} floor plan`, `${item.project} brochure`, 'SKYi Developers'],
     alternates: {
       canonical: canonicalUrl,
     },
@@ -39,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
       url: canonicalUrl,
-      siteName: 'Skyi Developers Pune',
+      siteName: item.location.includes('Mumbai') ? 'Skyi Developers Mumbai' : 'Skyi Developers Pune',
       locale: 'en_IN',
       type: 'website',
       images: [
@@ -87,7 +96,7 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
           url: `https://skyidevelopers.in/na-plots/${item.id}`,
           seller: {
             '@type': 'Organization',
-            name: 'SKYi Developers Pune',
+            name: item.location.includes('Mumbai') ? 'SKYi Developers Mumbai' : 'SKYi Developers Pune',
             url: 'https://skyidevelopers.in/',
           },
         },
@@ -104,7 +113,7 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
           address: {
             '@type': 'PostalAddress',
             addressLocality: item.microLocation,
-            addressRegion: 'Pune, Maharashtra',
+            addressRegion: item.location.includes('Mumbai') ? 'Mumbai, Maharashtra' : 'Pune, Maharashtra',
             addressCountry: 'IN',
           },
           geo: {

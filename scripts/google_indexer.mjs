@@ -351,8 +351,8 @@ async function syncGoogleSearchConsole(accessToken) {
         console.log(`  │ Total Google Organic Clicks  │ ${String(row.clicks).padEnd(28)} │`);
         console.log(`  │ Average Click-Through Rate   │ ${String(ctrPct + '%').padEnd(28)} │`);
         console.log(`  │ Average SERP Rank Position   │ ${String(avgPos).padEnd(28)} │`);
-        console.log(`  │ Target Impression Milestone  │ 4,000+ Impressions           │`);
-        console.log(`  │ Target CTR Milestone         │ 40% Snippet CTR              │`);
+        console.log(`  │ Target Impression Milestone  │ 5,000+ Impressions/Day      │`);
+        console.log(`  │ Target CTR Milestone         │ 50% Snippet CTR             │`);
         console.log(`  └──────────────────────────────┴──────────────────────────────┘`);
       }
     }
