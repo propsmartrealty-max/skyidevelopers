@@ -883,6 +883,41 @@ export const SKYI_STAR_CITY_KEYWORDS: string[] = [
   'SKYi Star City brochure', 'SKYi Star City RERA', 'SKYi Star City possession', 'SKYi Star City review'
 ];
 
+export const SKYI_FIVE_AGUADA_KEYWORDS: string[] = [
+  'SKYi Five Aguada', 'Skyi Five Aguada', 'Five Aguada Bandra', 'Five Aguada Mumbai',
+  'Five Aguada Bandstand', 'Five Aguada price', 'Five Aguada 4 BHK', 'Five Aguada 5 BHK',
+  'Five Aguada 6 BHK', 'Five Aguada sea facing', 'Five Aguada floor plan', 'Five Aguada amenities',
+  'Five Aguada brochure', 'Five Aguada RERA', 'Five Aguada review', 'luxury flats Bandstand Bandra',
+  'sea facing apartments Bandra West', 'Castella de Aguada luxury homes', 'Skyi Developers Mumbai',
+  'ultra luxury penthouses Bandra', 'entire floor apartments Mumbai', 'Arabian Sea view flats Mumbai'
+];
+
+export const SKYI_IRIS_RIVERSIDE_KEYWORDS: string[] = [
+  'SKYi Iris Riverside', 'Skyi Iris Riverside', 'Iris Riverside Bavdhan', 'Iris Riverside Pune',
+  'SKYi Iris Riverside price', 'Iris Riverside 3 BHK', 'Iris Riverside floor plan',
+  'Iris Riverside amenities', 'Iris Riverside location', 'Iris Riverside RERA',
+  'riverside flats Bavdhan', 'waterfront apartments Pune', 'flats near Chandani Chowk Bavdhan'
+];
+
+export const SKYI_NILAY_AUNDH_KEYWORDS: string[] = [
+  'SKYi Nilay', 'Skyi Nilay', 'Nilay Aundh', 'Nilay Pune', 'Nilay by Skyi',
+  'Nilay zero common walls', 'Nilay Aundh apartments', 'Nilay Aundh reviews',
+  'Skyi Nilay floor plans', 'flats in Aundh Pune', 'luxury homes Aundh'
+];
+
+export const SKYI_AQUILA_BANER_KEYWORDS: string[] = [
+  'SKYi Aquila', 'Skyi Aquila', 'Aquila Baner', 'Aquila townhouses Baner',
+  'Aquila Pune', 'Skyi Aquila split level', 'luxury townhouses Baner',
+  'townhouses in Pune', 'split level homes Baner'
+];
+
+export const SKYI_MAX_LIGHT_ZERO_WASTE_KEYWORDS: string[] = [
+  'Max Light design', 'Max Light technology', 'Max Light homes Pune', 'SKYi Max Light',
+  'zero wastage homes Pune', 'zero dead space flats', '100 percent usable carpet area',
+  'sun path tracking architecture', 'seasonal LUX simulation Pune', 'IGBC Platinum green homes Pune',
+  'zero waste campus Pune', 'sustainable residential developer Pune', 'Poona Western Club sports campus'
+];
+
 export const SKYI_LOCAL_MARATHI_KEYWORDS: string[] = [
   'pune madhe plot', 'pune NA plot sale', 'bhugaon bungalow plot', 'ghar bandhnya sathi plot pune',
   'swatacha bungalow pune plot', 'skyi flat pune', 'skyi songbirds bhugaon flat', 'manas lake plot bhukum',
@@ -909,10 +944,15 @@ export const SKYI_ECOSYSTEM_MASTER_KEYWORDS = {
   tigersNest: SKYI_TIGERS_NEST_KEYWORDS,
   park: SKYI_PARK_KEYWORDS,
   fiveRacecourse: SKYI_FIVE_RACECOURSE_KEYWORDS,
+  fiveAguada: SKYI_FIVE_AGUADA_KEYWORDS,
   fiveMaidan: SKYI_FIVE_MAIDAN_KEYWORDS,
   pwcTowers: SKYI_PWC_TOWERS_KEYWORDS,
   auraHeights: SKYI_AURA_HEIGHTS_KEYWORDS,
+  irisRiverside: SKYI_IRIS_RIVERSIDE_KEYWORDS,
   starCity: SKYI_STAR_CITY_KEYWORDS,
+  nilay: SKYI_NILAY_AUNDH_KEYWORDS,
+  aquila: SKYI_AQUILA_BANER_KEYWORDS,
+  maxLightZeroWaste: SKYI_MAX_LIGHT_ZERO_WASTE_KEYWORDS,
   localMarathi: SKYI_LOCAL_MARATHI_KEYWORDS,
   nriGlobal: SKYI_NRI_GLOBAL_KEYWORDS,
 };
@@ -935,10 +975,15 @@ export const SKYI_ALL_ECOSYSTEM_KEYWORDS: string[] = Array.from(
     ...SKYI_TIGERS_NEST_KEYWORDS,
     ...SKYI_PARK_KEYWORDS,
     ...SKYI_FIVE_RACECOURSE_KEYWORDS,
+    ...SKYI_FIVE_AGUADA_KEYWORDS,
     ...SKYI_FIVE_MAIDAN_KEYWORDS,
     ...SKYI_PWC_TOWERS_KEYWORDS,
     ...SKYI_AURA_HEIGHTS_KEYWORDS,
+    ...SKYI_IRIS_RIVERSIDE_KEYWORDS,
     ...SKYI_STAR_CITY_KEYWORDS,
+    ...SKYI_NILAY_AUNDH_KEYWORDS,
+    ...SKYI_AQUILA_BANER_KEYWORDS,
+    ...SKYI_MAX_LIGHT_ZERO_WASTE_KEYWORDS,
     ...SKYI_LOCAL_MARATHI_KEYWORDS,
     ...SKYI_NRI_GLOBAL_KEYWORDS,
   ])

@@ -212,6 +212,17 @@ const jsonLdSchema = {
           "@type": "Offer",
           "itemOffered": {
             "@type": "RealEstateListing",
+            "name": "SKYi Five Aguada 4, 5 & 6 BHK Sea-Facing Mansions Bandstand Bandra Mumbai",
+            "identifier": "MahaRERA: Official Bandra Coastal Listing",
+            "price": "120000000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "streetAddress": "Bandstand", "addressLocality": "Bandra West, Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
             "name": "SKYi Five Racecourse Ultra-Luxury Sky Mansions Sopan Baug",
             "identifier": "MahaRERA Registered",
             "price": "38500000",
@@ -228,6 +239,17 @@ const jsonLdSchema = {
             "price": "24500000",
             "priceCurrency": "INR",
             "address": { "@type": "PostalAddress", "addressLocality": "Pancard Club Road, Baner", "addressRegion": "Pune", "addressCountry": "IN" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "RealEstateListing",
+            "name": "SKYi Iris Riverside 3 BHK Waterfront Residences Bavdhan",
+            "identifier": "MahaRERA: P52100019348",
+            "price": "10500000",
+            "priceCurrency": "INR",
+            "address": { "@type": "PostalAddress", "addressLocality": "Bavdhan, Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" }
           }
         },
         {
