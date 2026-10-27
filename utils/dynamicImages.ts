@@ -96,42 +96,36 @@ function createProjectSvgDataUri(
 }
 
 export const DYNAMIC_PROJECT_IMAGES: Record<string, string> = {
-  // Real static assets with optimized dimensions for Googlebot & Open Graph
+  // Real static assets with optimized dimensions from skyi.com
   'skyi-songbirds': '/images/projects/skyi-songbirds.webp',
   'skyi-manas-lake-apartment': '/images/projects/skyi-manas-lake.webp',
+  'skyi-manas-lake': '/images/projects/skyi-manas-lake.webp',
   'skyi-manas-lake-na-plots': '/images/projects/skyi-manas-lake-na-plots.jpg',
   'skyi-tigers-nest-bhugaon': '/images/projects/skyi-tigers-nest.webp',
+  'skyi-tigers-nest': '/images/projects/skyi-tigers-nest.webp',
   'skyi-five-racecourse': '/images/projects/skyi-five-racecourse.webp',
+  'skyi-five-aguada': '/images/projects/skyi-five-aguada.webp',
   'skyi-five-maidan': '/images/projects/skyi-five-maidan.webp',
   'skyi-star-city-dhayari': '/images/projects/skyi-star-city.webp',
-  'skyi-park-iris-baner': '/images/projects/skyi-iris-baner.webp',
-  'skyi-pwc-towers': '/images/projects/skyi-songbirds-club.webp',
-  'skyi-five-aguada': createProjectSvgDataUri(
-    'Five Aguada by SKYi',
-    'BANDSTAND BANDRA MUMBAI',
-    '#051525',
-    '#020b14',
-    '#f59e0b',
-    'lake'
-  ),
-  'skyi-aura-heights': '/images/projects/skyi-tigers-nest.webp',
-  'skyi-iris-riverside': '/images/projects/skyi-iris-baner.webp',
-  'skyi-nilay-aundh': createProjectSvgDataUri(
-    'Nilay by SKYi',
-    'AUNDH PUNE • DELIVERED',
-    '#0f172a',
-    '#020617',
-    '#38bdf8',
-    'forest'
-  ),
-  'skyi-aquila-baner': createProjectSvgDataUri(
-    'Aquila Townhouses by SKYi',
-    'BANER PUNE • DELIVERED',
-    '#18181b',
-    '#09090b',
-    '#eab308',
-    'towers'
-  ),
+  'skyi-star-city': '/images/projects/skyi-star-city.webp',
+  'skyi-park': '/images/projects/skyi-park.webp',
+  'skyi-park-iris-baner': '/images/projects/skyi-park.webp',
+  'skyi-iris-baner': '/images/projects/skyi-iris-baner.webp',
+  'skyi-iris': '/images/projects/skyi-iris-baner.webp',
+  'skyi-pwc-towers': '/images/projects/skyi-pwc-towers.webp',
+  'skyi-pwc-hillside': '/images/projects/skyi-pwc-hillside.webp',
+  'skyi-aura-heights': '/images/projects/skyi-aura-heights.webp',
+  'skyi-iris-riverside': '/images/projects/skyi-iris-riverside.webp',
+  'skyi-nilay-aundh': '/images/projects/skyi-nilay.webp',
+  'skyi-nilay': '/images/projects/skyi-nilay.webp',
+  'skyi-aquila-baner': '/images/projects/skyi-aquila.webp',
+  'skyi-aquila': '/images/projects/skyi-aquila.webp',
+  'skyi-lighthouse': '/images/projects/skyi-lighthouse.webp',
+  'skyi-five-sopanbaug': '/images/projects/skyi-five-sopanbaug.webp',
+  'skyi-star-town': '/images/projects/skyi-star-town.webp',
+  'skyi-seher': '/images/projects/skyi-seher.webp',
+  'skyi-iris-bavdhan': '/images/projects/skyi-iris-bavdhan.webp',
+  'skyi-star-towers': '/images/projects/skyi-star-towers.webp',
   'skyi-star-town-na-plots': createProjectSvgDataUri(
     'SKYi Star Town NA Plots',
     'BHUGAON VILLA PLOTS',
@@ -197,7 +191,7 @@ export function getProjectImage(projectIdOrTitle: string): string {
     return DYNAMIC_PROJECT_IMAGES[normalizedKey];
   }
 
-  // Matching heuristics
+  // Exact matching heuristics — ensuring zero repetition
   if (normalizedKey.includes('aguada')) {
     return DYNAMIC_PROJECT_IMAGES['skyi-five-aguada'];
   }
@@ -208,10 +202,10 @@ export function getProjectImage(projectIdOrTitle: string): string {
     return DYNAMIC_PROJECT_IMAGES['skyi-five-maidan'];
   }
   if (normalizedKey.includes('nilay')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-nilay-aundh'];
+    return DYNAMIC_PROJECT_IMAGES['skyi-nilay'];
   }
   if (normalizedKey.includes('aquila')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-aquila-baner'];
+    return DYNAMIC_PROJECT_IMAGES['skyi-aquila'];
   }
   if (normalizedKey.includes('riverside')) {
     return DYNAMIC_PROJECT_IMAGES['skyi-iris-riverside'];
@@ -223,10 +217,37 @@ export function getProjectImage(projectIdOrTitle: string): string {
     return DYNAMIC_PROJECT_IMAGES['skyi-songbirds'];
   }
   if (normalizedKey.includes('manas-lake')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-manas-lake-apartment'];
+    return DYNAMIC_PROJECT_IMAGES['skyi-manas-lake'];
+  }
+  if (normalizedKey.includes('park')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-park'];
+  }
+  if (normalizedKey.includes('iris')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-iris-baner'];
+  }
+  if (normalizedKey.includes('dhayari') || normalizedKey.includes('star-city')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-star-city'];
+  }
+  if (normalizedKey.includes('tigers-nest')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-tigers-nest'];
+  }
+  if (normalizedKey.includes('hillside') && normalizedKey.includes('pwc')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-pwc-hillside'];
+  }
+  if (normalizedKey.includes('pwc')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-pwc-towers'];
+  }
+  if (normalizedKey.includes('seher')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-seher'];
+  }
+  if (normalizedKey.includes('lighthouse')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-lighthouse'];
   }
   if (normalizedKey.includes('star-town')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-star-town-na-plots'];
+    return DYNAMIC_PROJECT_IMAGES['skyi-star-town'];
+  }
+  if (normalizedKey.includes('star-tower')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-star-towers'];
   }
   if (normalizedKey.includes('kasarsai') || normalizedKey.includes('meadows')) {
     return DYNAMIC_PROJECT_IMAGES['skyi-lakeside-meadows-kasarsai'];
@@ -245,18 +266,6 @@ export function getProjectImage(projectIdOrTitle: string): string {
   }
   if (normalizedKey.includes('wagholi') || normalizedKey.includes('eastgate')) {
     return DYNAMIC_PROJECT_IMAGES['skyi-eastgate-wagholi'];
-  }
-  if (normalizedKey.includes('baner') || normalizedKey.includes('iris') || normalizedKey.includes('park')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-park-iris-baner'];
-  }
-  if (normalizedKey.includes('dhayari') || normalizedKey.includes('star-city')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-star-city-dhayari'];
-  }
-  if (normalizedKey.includes('tigers-nest') || normalizedKey.includes('aura')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-tigers-nest-bhugaon'];
-  }
-  if (normalizedKey.includes('pwc')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-pwc-towers'];
   }
 
   return DYNAMIC_PROJECT_IMAGES['skyi-manas-lake-na-plots'];

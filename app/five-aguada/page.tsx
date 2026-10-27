@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'SKYi Developers',
     images: [
       {
-        url: 'https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp',
+        url: 'https://skyidevelopers.in/images/projects/skyi-five-aguada.webp',
         width: 1200,
         height: 630,
         alt: 'Five Aguada Bandstand Bandra West Mumbai by SKYi Developers',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Five Aguada Bandra West | Sea-Facing Homes | SKYi Developers',
     description: '180° Arabian Sea Panoramas & Single-Floor Residences at Bandstand Bandra West. Download Brochure & Request Private Tour!',
-    images: ['https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp'],
+    images: ['https://skyidevelopers.in/images/projects/skyi-five-aguada.webp'],
   },
 };
 
@@ -55,7 +55,7 @@ const PROJECT_DATA: ProjectHubDetail = {
   configurations: '4, 5 & 6 BHK Entire-Floor Sea-Facing Mansions',
   scale: 'Ultra-Luxury Mumbai Oceanfront Landmark',
   reraNumber: 'MahaRERA: Sanctioned Bandra West Coastal Listing',
-  heroImage: '/images/projects/skyi-five-racecourse.webp',
+  heroImage: '/images/projects/skyi-five-aguada.webp',
   overview:
     'Inspired by the historic Castella de Aguada fortress, Five Aguada by SKYi stands as a testament to oceanfront architectural grandeur on Mumbai’s celebrated Bandstand promenade in Bandra West. Offering full-floor 4, 5, and 6 BHK sky mansions with 180-degree unobstructed Arabian Sea horizons, bespoke private elevators, and white-glove concierge services.',
   keyHighlights: [
@@ -120,7 +120,7 @@ const jsonLd = {
       description:
         'Ultra-luxury 4, 5 & 6 BHK oceanfront entire-floor residences and penthouses at Bandstand, Bandra West, Mumbai, with unobstructed Arabian Sea views.',
       url: 'https://skyidevelopers.in/five-aguada',
-      image: ['https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp'],
+      image: ['https://skyidevelopers.in/images/projects/skyi-five-aguada.webp'],
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Bandstand, Near Castella de Aguada',

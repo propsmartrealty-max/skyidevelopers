@@ -47,7 +47,7 @@ const TOUR_ITEMS: TourMedia[] = [
     title: 'Poona Western Club & Sports Academies',
     category: 'Clubhouse',
     location: 'Skyi Songbirds, Bhugaon',
-    bgImage: getProjectImage('skyi-songbirds'),
+    bgImage: '/images/projects/skyi-songbirds-club.webp',
     badge: 'Clubhouse & Amenities',
     duration: '5:00 Min',
     description: 'Walk through the 5-acre sports club featuring Olympic-length pool, football academy, tennis courts, and fine dining banquets.',

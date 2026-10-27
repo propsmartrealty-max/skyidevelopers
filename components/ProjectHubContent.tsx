@@ -218,6 +218,33 @@ export default function ProjectHubContent({ project }: { project: ProjectHubDeta
                 <span>Download Floor Plans &amp; Pricing PDF</span>
               </button>
             </div>
+
+            {/* Visual Architecture Showcase */}
+            {project.heroImage && (
+              <div
+                style={{
+                  marginTop: '48px',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  boxShadow: '0 24px 60px rgba(0, 0, 0, 0.6)',
+                  maxHeight: '480px',
+                }}
+              >
+                <img
+                  src={project.heroImage}
+                  alt={`${project.title} ${project.subtitle} - SKYi Developers`}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    maxHeight: '480px',
+                    objectFit: 'cover',
+                    display: 'block',
+                  }}
+                  loading="eager"
+                />
+              </div>
+            )}
           </div>
         </section>
 

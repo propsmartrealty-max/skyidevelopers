@@ -82,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.95,
-      images: [`${baseUrl}/images/projects/skyi-five-racecourse.webp`],
+      images: [`${baseUrl}/images/projects/skyi-five-aguada.webp`],
     },
     {
       url: `${baseUrl}/five-maidan`,
@@ -167,7 +167,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Programmatic SEO Micro-Location & Project Pages
   const programmaticPages: MetadataRoute.Sitemap = PROGRAMMATIC_SEO_ITEMS.map((item) => {
     let img = `${baseUrl}/bungalow-plots.jpg`;
-    if (item.id.includes('five-aguada') || item.id.includes('five-racecourse')) {
+    if (item.id.includes('five-aguada')) {
+      img = `${baseUrl}/images/projects/skyi-five-aguada.webp`;
+    } else if (item.id.includes('five-racecourse')) {
       img = `${baseUrl}/images/projects/skyi-five-racecourse.webp`;
     } else if (item.id.includes('five-maidan')) {
       img = `${baseUrl}/images/projects/skyi-five-maidan.webp`;

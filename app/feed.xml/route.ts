@@ -58,7 +58,7 @@ export async function GET() {
       title: 'Five Aguada Bandra West | Sea-Facing Homes | SKYi Developers',
       link: `${baseUrl}/five-aguada`,
       description: 'Ultra-luxury 4, 5 & 6 BHK oceanfront entire-floor mansions commanding 180° unobstructed Arabian Sea views along Bandstand, Bandra West.',
-      image: `${baseUrl}/images/projects/skyi-five-racecourse.webp`,
+      image: `${baseUrl}/images/projects/skyi-five-aguada.webp`,
     },
     {
       title: 'Five Maidan Baner Pune | 4 BHK Residences | SKYi Developers',
