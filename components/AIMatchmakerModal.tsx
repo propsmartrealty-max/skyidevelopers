@@ -14,7 +14,7 @@ interface AIMatchmakerModalProps {
 export default function AIMatchmakerModal({ isOpen, onClose, onSelectProject }: AIMatchmakerModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
   const [step, setStep] = useState(1);
-  const [goal, setGoal] = useState<'plot' | 'flat' | 'luxury'>('plot');
+  const [goal, setGoal] = useState<'township' | 'luxury' | 'hillside'>('township');
   const [budget, setBudget] = useState<'45L-75L' | '75L-1.5Cr' | '1.5Cr+'>('75L-1.5Cr');
 
   /* Keyboard ESC & Focus Trap Listener */
@@ -67,11 +67,11 @@ export default function AIMatchmakerModal({ isOpen, onClose, onSelectProject }: 
   }, [isOpen, handleKeyDown]);
 
   const handleMatch = () => {
-    let matchedProject = 'SKYi Manas Lake NA Bungalow Plots (Bhukum)';
-    if (goal === 'flat' && budget === '45L-75L') matchedProject = 'Skyi Star City (Dhayari)';
-    else if (goal === 'flat' && budget === '75L-1.5Cr') matchedProject = 'SKYi Manas Lake (Bavdhan)';
-    else if (goal === 'luxury') matchedProject = 'Skyi Songbirds & SKYi Tigers Nest (Bhugaon)';
-    else if (goal === 'plot') matchedProject = 'SKYi Manas Lake NA Bungalow Plots (Bhukum)';
+    let matchedProject = 'Skyi Songbirds (Bhugaon)';
+    if (goal === 'township' && budget === '45L-75L') matchedProject = 'Skyi Songbirds 1 BHK New Launch (Bhugaon)';
+    else if (goal === 'township' && budget === '75L-1.5Cr') matchedProject = 'SKYi Manas Lake (Bhukum / Bavdhan)';
+    else if (goal === 'luxury') matchedProject = 'Five Racecourse & Five Aguada Signature Collection';
+    else if (goal === 'hillside') matchedProject = 'Tiger’s Nest & PWC Towers (Bhugaon)';
 
     onSelectProject(matchedProject);
     onClose();
@@ -113,32 +113,19 @@ export default function AIMatchmakerModal({ isOpen, onClose, onSelectProject }: 
             <div className="ai-body">
               {step === 1 && (
                 <div className="ai-step">
-                  <h3>Step 1: What is your primary investment goal?</h3>
+                  <h3>Step 1: What is your primary lifestyle preference?</h3>
                   <div className="ai-options-grid">
                     <button
                       type="button"
-                      className={`ai-option-btn ${goal === 'plot' ? 'active' : ''}`}
-                      onClick={() => setGoal('plot')}
+                      className={`ai-option-btn ${goal === 'township' ? 'active' : ''}`}
+                      onClick={() => setGoal('township')}
                     >
                       <Building2 size={20} />
                       <div>
-                        <strong className="option-title">PMRDA NA Villa Plot</strong>
-                        <span className="option-sub">Construct a bespoke multi-story bungalow</span>
+                        <strong className="option-title">Integrated Eco-Township</strong>
+                        <span className="option-sub">1, 2 &amp; 3 BHK Songbirds / Manas Lake Campus</span>
                       </div>
-                      {goal === 'plot' && <Check size={18} className="ai-check" />}
-                    </button>
-
-                    <button
-                      type="button"
-                      className={`ai-option-btn ${goal === 'flat' ? 'active' : ''}`}
-                      onClick={() => setGoal('flat')}
-                    >
-                      <Building2 size={20} />
-                      <div>
-                        <strong className="option-title">Modern Apartment</strong>
-                        <span className="option-sub">2 &amp; 3 BHK Zero Waste Township Home</span>
-                      </div>
-                      {goal === 'flat' && <Check size={18} className="ai-check" />}
+                      {goal === 'township' && <Check size={18} className="ai-check" />}
                     </button>
 
                     <button
@@ -148,10 +135,23 @@ export default function AIMatchmakerModal({ isOpen, onClose, onSelectProject }: 
                     >
                       <Building2 size={20} />
                       <div>
-                        <strong className="option-title">Luxury Hillside Sanctuary</strong>
-                        <span className="option-sub">3 &amp; 4 BHK Forest Deck Residences</span>
+                        <strong className="option-title">Signature “FIVE” Collection</strong>
+                        <span className="option-sub">Ultra-Luxury 4 &amp; 5 BHK (Sopan Baug / Bandra)</span>
                       </div>
                       {goal === 'luxury' && <Check size={18} className="ai-check" />}
+                    </button>
+
+                    <button
+                      type="button"
+                      className={`ai-option-btn ${goal === 'hillside' ? 'active' : ''}`}
+                      onClick={() => setGoal('hillside')}
+                    >
+                      <Building2 size={20} />
+                      <div>
+                        <strong className="option-title">Hillside &amp; Club Living</strong>
+                        <span className="option-sub">3 &amp; 4 BHK Forest Decks &amp; Poona Western Club</span>
+                      </div>
+                      {goal === 'hillside' && <Check size={18} className="ai-check" />}
                     </button>
                   </div>
                 </div>

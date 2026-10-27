@@ -35,27 +35,49 @@ const SOCIAL = [
 ];
 
 const PROJECTS_LIST = [
-  { value: 'songbirds',  label: 'Skyi Songbirds' },
-  { value: 'manaslake',  label: 'Manas Lake' },
-  { value: 'starcity',   label: 'Skyi Star City' },
-  { value: 'other',      label: 'Other / General Enquiry' },
+  { value: 'songbirds',       label: 'Skyi Songbirds (Bhugaon)' },
+  { value: 'manaslake',       label: 'SKYi Manas Lake (Bhukum)' },
+  { value: 'five-racecourse', label: 'Five Racecourse (Sopan Baug)' },
+  { value: 'five-aguada',     label: 'Five Aguada (Bandra West Mumbai)' },
+  { value: 'five-maidan',     label: 'Five Maidan (Baner)' },
+  { value: 'tigersnest',      label: 'Tiger’s Nest (Bhugaon)' },
+  { value: 'pwctowers',       label: 'PWC Towers & Hillside' },
+  { value: 'aura-riverside',  label: 'Aura Heights & Iris Riverside' },
+  { value: 'skyipark-iris',   label: 'SKYi Park & SKYi Iris' },
+  { value: 'starcity',        label: 'Skyi Star City (Dhayari)' },
+  { value: 'other',           label: 'Other / General Enquiry' },
 ];
 
 const MAHARERA_DISCLOSURES = [
   {
     name: 'Skyi Songbirds (Bhugaon)',
     rera: 'P52100000769 (Ph A) | P52100001117 (Ph B) | P52100019348 (Ph E) | P52100047992 | P52100000764 | P52100000643 | P52100000805',
-    type: 'Township / Residential Apartments',
+    type: '45-Acre Eco-Township / Residential Apartments',
   },
   {
     name: 'SKYi Manas Lake (Bhukum / Bavdhan)',
     rera: 'P52100000513 (Ph II) | P52100000514 (Ph III) | P52100026954 (Ph VI) | P52100052033 (Ph VIII) | P52100079680',
-    type: 'Lakefront Township & NA Plots',
+    type: '90-Acre Lakefront Eco-Township',
   },
   {
-    name: 'SKYi Star City (Dhayari / Kirkatwadi)',
-    rera: 'P52100026727 (Ph I) | P52100029481 (Ph II) | P52100029474 (Ph III) | P52100034274 (Ph IV) | P52100050099 (Ph V)',
-    type: 'Integrated Residential Township',
+    name: 'Five Racecourse (Sopan Baug, Pune)',
+    rera: 'MahaRERA Registered Signature High-Rise Living',
+    type: 'Ultra Luxury 4 & 5 BHK Panoramic Residences',
+  },
+  {
+    name: 'Five Aguada (Bandstand, Bandra West, Mumbai)',
+    rera: 'MahaRERA Registered Oceanfront Signature Collection',
+    type: 'Ultra Luxury 4, 5 & 6 BHK Sea-Facing Residences',
+  },
+  {
+    name: 'Five Maidan (Baner, Pune)',
+    rera: 'MahaRERA Registered Baner Parkland Living',
+    type: 'Exclusive 4 BHK Tower Residences',
+  },
+  {
+    name: 'SKYi Tigers Nest & PWC Towers (Bhugaon)',
+    rera: 'P52100000769 | P52100000643 | P52100000805 (Club Residences)',
+    type: 'Luxury Hillside & 5-Acre Club Residences',
   },
   {
     name: 'SKYi Iris & SKYi Park (Baner / Bavdhan)',
@@ -63,14 +85,9 @@ const MAHARERA_DISCLOSURES = [
     type: 'Urban Luxury Residences',
   },
   {
-    name: 'SKYi Tigers Nest & PWC Towers (Bhugaon)',
-    rera: 'P52100000769 | P52100000643 | P52100000805 (Club Residences)',
-    type: 'Luxury Hillside & Club Residences',
-  },
-  {
-    name: 'SKYi PMRDA NA Bungalow Plots (Bhukum / Pirangut / Kasarsai / Sus)',
-    rera: 'PMRDA Sanctioned Collector NA Layouts / 100% Clear Title 7/12 RERA Compliant',
-    type: 'PMRDA Sanctioned Villa Plots',
+    name: 'SKYi Star City (Dhayari / Kirkatwadi)',
+    rera: 'P52100026727 (Ph I) | P52100029481 (Ph II) | P52100029474 (Ph III) | P52100034274 (Ph IV) | P52100050099 (Ph V)',
+    type: '20-Acre Integrated Residential Township',
   },
 ];
 

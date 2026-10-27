@@ -5,15 +5,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Calendar } from 'lucide-react';
 import './Navbar.css';
 
-const SECTIONS = ['home', 'about', 'portfolio', 'calculator', 'connectivity', 'testimonials', 'contact'];
+const SECTIONS = ['home', 'portfolio', 'philosophy', 'master-plan', 'virtual-tour', 'connectivity', 'contact'];
 
 const NAV_LINKS = [
-  { name: 'Home',         href: '/',             id: 'home' },
-  { name: 'Portfolio',    href: '/projects',     id: 'portfolio' },
+  { name: 'Home',         href: '#home',         id: 'home' },
+  { name: 'Portfolio',    href: '#portfolio',    id: 'portfolio' },
   { name: 'Songbirds',    href: '/songbirds',    id: 'songbirds' },
-  { name: 'NA Plots',     href: '/na-plots-bhukum', id: 'na-plots' },
+  { name: 'Manas Lake',   href: '/manas-lake',   id: 'manas-lake' },
+  { name: 'Philosophy',   href: '#philosophy',   id: 'philosophy' },
   { name: 'Connectivity', href: '/connectivity', id: 'connectivity' },
-  { name: 'Calculator',   href: '#calculator',   id: 'calculator' },
   { name: 'Contact',      href: '/contact',      id: 'contact' },
 ];
 
@@ -54,9 +54,17 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
     return () => observers.forEach(o => o.disconnect());
   }, []);
 
-  const scrollTo = (id: string, e?: React.MouseEvent) => {
-    if (e) e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  const handleNavClick = (link: { name: string; href: string; id: string }, e?: React.MouseEvent) => {
+    if (link.href.startsWith('#')) {
+      const targetId = link.href.slice(1);
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        if (e) e.preventDefault();
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+        setMobileOpen(false);
+        return;
+      }
+    }
     setMobileOpen(false);
   };
 
@@ -78,7 +86,11 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
       >
         <div className="nav-container">
           {/* Logo */}
-          <a href="#home" className="logo" onClick={(e) => scrollTo('home', e)}>
+          <a
+            href="#home"
+            className="logo"
+            onClick={(e) => handleNavClick({ name: 'Home', href: '#home', id: 'home' }, e)}
+          >
             <img src="/logo-white.svg" alt="Skyi Developers" width="65" height="30" style={{ height: '30px', width: 'auto' }} />
           </a>
 
@@ -89,7 +101,7 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
                 key={link.name}
                 href={link.href}
                 className={`nav-link ${activeSection === link.id ? 'active' : ''}`}
-                onClick={(e) => scrollTo(link.id, e)}
+                onClick={(e) => handleNavClick(link, e)}
                 initial={{ opacity: 0, y: -18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15 + i * 0.06, ease: [0.22, 1, 0.36, 1] }}
@@ -161,7 +173,7 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
                 key={link.name}
                 href={link.href}
                 className={activeSection === link.id ? 'active' : ''}
-                onClick={(e) => scrollTo(link.id, e)}
+                onClick={(e) => handleNavClick(link, e)}
                 initial={{ opacity: 0, x: -16 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.05 }}

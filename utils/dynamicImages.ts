@@ -106,6 +106,32 @@ export const DYNAMIC_PROJECT_IMAGES: Record<string, string> = {
   'skyi-star-city-dhayari': '/images/projects/skyi-star-city.webp',
   'skyi-park-iris-baner': '/images/projects/skyi-iris-baner.webp',
   'skyi-pwc-towers': '/images/projects/skyi-songbirds-club.webp',
+  'skyi-five-aguada': createProjectSvgDataUri(
+    'Five Aguada by SKYi',
+    'BANDSTAND BANDRA MUMBAI',
+    '#051525',
+    '#020b14',
+    '#f59e0b',
+    'lake'
+  ),
+  'skyi-aura-heights': '/images/projects/skyi-tigers-nest.webp',
+  'skyi-iris-riverside': '/images/projects/skyi-iris-baner.webp',
+  'skyi-nilay-aundh': createProjectSvgDataUri(
+    'Nilay by SKYi',
+    'AUNDH PUNE • DELIVERED',
+    '#0f172a',
+    '#020617',
+    '#38bdf8',
+    'forest'
+  ),
+  'skyi-aquila-baner': createProjectSvgDataUri(
+    'Aquila Townhouses by SKYi',
+    'BANER PUNE • DELIVERED',
+    '#18181b',
+    '#09090b',
+    '#eab308',
+    'towers'
+  ),
   'skyi-star-town-na-plots': createProjectSvgDataUri(
     'SKYi Star Town NA Plots',
     'BHUGAON VILLA PLOTS',
@@ -172,8 +198,32 @@ export function getProjectImage(projectIdOrTitle: string): string {
   }
 
   // Matching heuristics
-  if (normalizedKey.includes('manas-lake') && normalizedKey.includes('plot')) {
-    return DYNAMIC_PROJECT_IMAGES['skyi-manas-lake-na-plots'];
+  if (normalizedKey.includes('aguada')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-five-aguada'];
+  }
+  if (normalizedKey.includes('racecourse')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-five-racecourse'];
+  }
+  if (normalizedKey.includes('maidan')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-five-maidan'];
+  }
+  if (normalizedKey.includes('nilay')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-nilay-aundh'];
+  }
+  if (normalizedKey.includes('aquila')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-aquila-baner'];
+  }
+  if (normalizedKey.includes('riverside')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-iris-riverside'];
+  }
+  if (normalizedKey.includes('aura')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-aura-heights'];
+  }
+  if (normalizedKey.includes('songbirds')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-songbirds'];
+  }
+  if (normalizedKey.includes('manas-lake')) {
+    return DYNAMIC_PROJECT_IMAGES['skyi-manas-lake-apartment'];
   }
   if (normalizedKey.includes('star-town')) {
     return DYNAMIC_PROJECT_IMAGES['skyi-star-town-na-plots'];

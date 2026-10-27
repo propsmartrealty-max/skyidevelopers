@@ -36,19 +36,19 @@ export default function ProgrammaticSEOSection({ onBookVisit }: ProgrammaticSEOS
       <div className="p-seo-inner">
         {/* Header */}
         <div className="p-seo-header">
-          <span className="section-subtitle">PMRDA NA Bungalow Plot Engine</span>
+          <span className="section-subtitle">Official Micro-Location Ecosystem</span>
           <h2 className="section-title">
-            Pune Micro-Location Plotting Ecosystem<br />
-            <span className="gradient-text">PMRDA Approved • Clear Title 7/12 • Gated Estates</span>
+            SKYi Developments &amp; Corridors Network<br />
+            <span className="gradient-text">IGBC Platinum Certified • MahaRERA Sanctioned • Prime Pune &amp; Mumbai</span>
           </h2>
           <p className="p-seo-subtitle">
-            Search PMRDA sanctioned NA Bungalow plots &amp; luxury townships across Bhukum, Bhugaon, Pirangut, Kasarsai, Talegaon, Khadakwasla, Saswad, Lavasa Road &amp; Wagholi with 100% bank loan approval.
+            Explore authentic SKYi developments, award-winning eco-townships, and signature luxury collections across Bhugaon, Bhukum, Bavdhan, Baner, Sopan Baug, and Bandra West Mumbai.
           </p>
         </div>
 
         {/* Micro-Location Quick Filters Chips */}
         <div className="p-seo-chips-wrapper">
-          <span className="p-seo-chip-label"><Compass size={14} /> Quick Micro-Locations:</span>
+          <span className="p-seo-chip-label"><Compass size={14} /> Corridors &amp; Hubs:</span>
           <div className="p-seo-chips-scroll">
             {PUNE_MICRO_LOCATIONS.map((loc) => (
               <button
@@ -69,7 +69,7 @@ export default function ProgrammaticSEOSection({ onBookVisit }: ProgrammaticSEOS
             <Search size={18} className="p-seo-icon" />
             <input
               type="text"
-              placeholder="Search by plot location, e.g. NA Plots Bhukum, Kasarsai Lake, Talegaon..."
+              placeholder="Search by project or corridor, e.g. Songbirds Bhugaon, Manas Lake, Five Racecourse, Baner..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />

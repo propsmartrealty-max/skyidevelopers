@@ -16,9 +16,15 @@ interface SiteVisitModalProps {
 
 const PROJECTS = [
   'Skyi Songbirds (Bhugaon)',
-  'Skyi Manas Lake (Bavdhan / Paud Rd)',
+  'SKYi Manas Lake (Bhukum / Bavdhan)',
+  'Five Racecourse (Sopan Baug, Pune)',
+  'Five Aguada (Bandstand, Bandra West, Mumbai)',
+  'Five Maidan (Baner, Pune)',
+  'Tiger’s Nest (Bhugaon)',
+  'PWC Towers & Hillside (Bhugaon)',
+  'Aura Heights & Iris Riverside (Bavdhan)',
+  'SKYi Park & SKYi Iris (Baner / Bavdhan)',
   'Skyi Star City (Dhayari)',
-  'SKYi Tigers Nest & Iris (Baner / Bhugaon)',
 ];
 
 const TIME_SLOTS = [

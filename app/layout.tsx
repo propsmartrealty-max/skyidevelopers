@@ -12,10 +12,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: '【Official】SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L* | 0% Brokerage',
-    template: '%s | SKYi Developers Pune™',
+    default: '【Official】SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
+    template: '%s | SKYi Developers™',
   },
-  description: '⭐ Official SKYi Developers Portal. Direct Developer Booking — 0% Brokerage. Skyi Songbirds 45-Acre Township (1, 2, 3 & 4 BHK from ₹38L*) & SKYi Manas Lake PMRDA NA Plots (From ₹95L*). Sahyadri Hill Views, 5-Acre Club. Download 2026 Floor Plans PDF & Schedule Free AC Cab Site Visit!',
+  description: '⭐ Official SKYi Developers Portal. Direct Developer Booking — 0% Brokerage. 45-Acre Skyi Songbirds (1, 2, 3 & 4 BHK from ₹38L*), 90-Acre SKYi Manas Lake, Five Racecourse (Sopan Baug), Five Aguada (Bandra Mumbai), Five Maidan (Baner), and Tiger’s Nest. Built around life and shaped by Max Light™. Download 2026 Floor Plans PDF & Schedule VIP Site Visit!',
   keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
   authors: [{ name: 'Skyi Developers' }],
   publisher: 'Skyi Developers',
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://skyidevelopers.in/',
-    title: '【Official】SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L* | 0% Brokerage',
-    description: '⭐ Official Developer Portal. 20+ Years, 7,000+ Families, IGBC Platinum certified townships & PMRDA NA bungalow plots. Explore 1 BHK to 4 BHK from ₹38L* & NA plots from ₹95L*. Zero brokerage direct developer booking.',
+    title: '【Official】SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
+    description: '⭐ Official Developer Portal. 20+ Years, 7,000+ Families, 7M+ Sq.Ft. delivered. Explore Songbirds, Manas Lake, Five Racecourse, Five Aguada Bandra, Five Maidan, and Tiger’s Nest. Zero brokerage direct developer booking.',
     siteName: 'Skyi Developers',
     locale: 'en_IN',
     alternateLocale: ['en_US', 'en_GB', 'en_AE', 'en_SG', 'en_AU', 'en_CA'],
@@ -72,8 +72,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '【Official】SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L*',
-    description: '⭐ Direct Developer Booking (0% Brokerage). 1, 2, 3, 4 BHK & PMRDA NA Plots from ₹38L*. Download Floor Plans PDF & Schedule Site Tour!',
+    title: '【Official】SKYi Developers | Eco-Townships & Ultra-Luxury Residences',
+    description: '⭐ Direct Developer Booking (0% Brokerage). 1, 2, 3, 4 BHK & Ultra-Luxury Residences from ₹38L*. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/og-image.jpg'],
   },
   robots: {

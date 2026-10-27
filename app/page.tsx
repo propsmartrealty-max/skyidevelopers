@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Metrics from '../components/Metrics';
 import Portfolio from '../components/Portfolio';
+import DesignPhilosophy from '../components/DesignPhilosophy';
 import Connectivity from '../components/Connectivity';
 import Testimonials from '../components/Testimonials';
 import ProgrammaticSEOSection from '../components/ProgrammaticSEOSection';
@@ -67,6 +68,11 @@ function HomeContent() {
         onOpenSiteVisit={handleOpenVisit}
         onOpenFloorPlan={handleOpenFloorPlan}
       />
+
+      {/* Architectural Ethos & Max Light™ Design Philosophy */}
+      <ErrorBoundary sectionName="DesignPhilosophy" silent>
+        <DesignPhilosophy />
+      </ErrorBoundary>
 
       {/* 2D/3D Interactive Master Layout Visualizer */}
       <ErrorBoundary sectionName="InteractiveMasterPlan" silent>

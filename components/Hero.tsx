@@ -6,10 +6,10 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import './Hero.css';
 
 const TYPEWRITER_STRINGS = [
-  'Shaped through design.',
-  'Built for generations.',
-  'Crafted with purpose.',
-  'Rooted in community.',
+  'by light, air & proportion.',
+  'with Max Light™ design.',
+  'around life & nature.',
+  'for generations to come.',
 ];
 
 interface HeroProps {
@@ -128,15 +128,15 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
       >
         {/* Strategic Launch Link Banner */}
         <motion.div className="hero-badge" variants={item}>
-          <a href="/songbirds" className="hero-link-badge">
+          <a href="#portfolio" className="hero-link-badge">
             <span className="badge-dot" />
-            <span>⭐ Award-Winning Townships: Skyi Songbirds Bhugaon &amp; SKYi Manas Lake — 1, 2, 3 &amp; 4 BHK Sustainable Residences</span>
+            <span>⭐ Official SKYi Portfolio: Songbirds • Manas Lake • Five Racecourse • Five Aguada (Mumbai)</span>
           </a>
         </motion.div>
 
         {/* Title */}
         <motion.h1 className="hero-title" variants={item}>
-          <span className="sr-only">SKYi Developers Pune Official Portal | Skyi Songbirds Bhugaon 1, 2, 3 &amp; 4 BHK from ₹38L* | SKYi Manas Lake PMRDA NA Bungalow Plots from ₹95L* | </span>
+          <span className="sr-only">SKYi Developers Official Portal | Skyi Songbirds Bhugaon 1, 2, 3 &amp; 4 BHK from ₹38L* | SKYi Manas Lake 2 &amp; 3 BHK | Five Racecourse Sopan Baug | Five Aguada Bandra Mumbai | </span>
           Built around<br />
           <span className="hero-title-accent">life.</span>{' '}
           <span className="hero-title-sub">Shaped</span><br />
@@ -148,13 +148,13 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
 
         {/* Description */}
         <motion.p className="hero-description" variants={item}>
-          Official portal of SKYi Developers in Pune. For over 20 years, crafting premier IGBC Platinum eco-townships across 45-acre Skyi Songbirds (Bhugaon), 90-acre SKYi Manas Lake (Bhukum), and PMRDA-sanctioned clear title NA bungalow plots.
+          Official portal of SKYi Developers. For over 20 years, engineering IGBC Platinum eco-townships and signature ultra-luxury residences across 7+ Million Sq.Ft. — built around life and shaped by light, air, and proportion.
         </motion.p>
 
         {/* CTAs */}
         <motion.div className="hero-actions" variants={item}>
           <button className="btn-primary" onClick={scrollToPortfolio}>
-            <span>Explore Projects</span>
+            <span>Explore Portfolio</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
@@ -168,6 +168,7 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
         <motion.div className="hero-stats" variants={item}>
           {[
             { num: '20+', label: 'Years' },
+            { num: '7M+', label: 'Sq.Ft. Delivered' },
             { num: '7000+', label: 'Families' },
             { num: '150+', label: 'Awards' },
           ].map((s, i) => (
