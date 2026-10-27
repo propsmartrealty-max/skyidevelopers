@@ -13,9 +13,9 @@ export async function GET() {
       image: `${baseUrl}/og-image.jpg`,
     },
     {
-      title: '⭐ Skyi Songbirds Bhugaon™ | New Launch 1 BHK (430 Sq.Ft.) & 3, 4 BHK Luxury Homes',
+      title: '⭐ Skyi Songbirds Bhugaon™ | New Tower Launch: Aria Heights 1 BHK (430 Sq.Ft.) From ₹38L*',
       link: `${baseUrl}/songbirds`,
-      description: 'Skyi Songbirds: 1, 2, 3 & 4 BHK hillside residences along Paud Road, 6 mins from Chandani Chowk and Kothrud. 5-acre sports club and Olympic pool. Starting ₹38L*.',
+      description: 'Skyi Songbirds: New Tower Launch Aria Heights smart 1 BHK (430 Sq.Ft. Carpet) from ₹38L* plus 3 & 4 BHK hillside residences along Paud Road. 5-acre sports club and Olympic pool. MahaRERA P52100028121.',
       image: `${baseUrl}/songbirds-1.webp`,
     },
     {

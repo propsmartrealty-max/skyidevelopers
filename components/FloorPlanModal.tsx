@@ -14,30 +14,42 @@ interface FloorPlanModalProps {
 
 const FLOOR_PLANS = [
   {
-    type: '1 BHK Eco Home (Songbirds New Launch)',
-    carpetArea: '430 Sq.Ft. Carpet Area',
-    balcony: 'Scenic Hillside Deck',
+    type: '1 BHK Smart Residence — Aria Heights Tower (Songbirds New Launch)',
+    carpetArea: '430 Sq.Ft. Carpet Area (Zero Dead Space)',
+    balcony: 'Private Hillside Sundeck (10\'x4\'6")',
     facing: 'East / West Facing (Vastu Compliant)',
     priceStarting: 'Starting ₹ 38 Lakhs*',
-    specs: ['Smart 430 Sq.Ft. Zero-Dead-Space Layout', 'Spacious Master Bedroom with Wardrobe Niche', 'Bright Living & Dining Deck with Sahyadri Views', 'IGBC Platinum Certified Green Fixtures & Solar Water'],
+    specs: [
+      'Smart 430 Sq.Ft. Usable RERA Carpet (Zero Dead Space Layout)',
+      'Living & Dining (10\'0" × 13\'6") with Panoramic Forest View Deck',
+      'Master Bedroom (10\'0" × 11\'0") with Built-in Wardrobe Space',
+      'Modular Kitchen (7\'0" × 8\'0") with Separate Dry Balcony (3\'6" × 5\'0")',
+      'Designer Eco Bathroom (7\'0" × 4\'6") with Solar Water Pre-Piping',
+      'Tower Aria Heights: G+14 Elevation with only 4 Units Per Core',
+    ],
     blueprintSvg: (
       <svg viewBox="0 0 400 300" className="blueprint-svg">
         <rect x="10" y="10" width="380" height="280" rx="12" fill="#0f172a" stroke="#ff6b35" strokeWidth="2" strokeDasharray="6 4" />
         {/* Living Room */}
         <rect x="30" y="30" width="180" height="150" fill="rgba(255, 107, 53, 0.15)" stroke="#ff6b35" strokeWidth="1.5" />
-        <text x="120" y="105" fill="#fed7aa" fontSize="13" textAnchor="middle" fontWeight="bold">Living &amp; Dining (430 SF)</text>
+        <text x="120" y="95" fill="#fed7aa" fontSize="13" textAnchor="middle" fontWeight="bold">Living &amp; Dining</text>
+        <text x="120" y="115" fill="#fed7aa" fontSize="11" textAnchor="middle">10&apos;0&quot; × 13&apos;6&quot; (430 SF)</text>
         {/* Master Bedroom */}
         <rect x="220" y="30" width="150" height="150" fill="rgba(59, 130, 246, 0.15)" stroke="#60a5fa" strokeWidth="1.5" />
-        <text x="295" y="105" fill="#bfdbfe" fontSize="12" textAnchor="middle">Master Bedroom</text>
+        <text x="295" y="95" fill="#bfdbfe" fontSize="12" textAnchor="middle" fontWeight="bold">Master Bedroom</text>
+        <text x="295" y="115" fill="#bfdbfe" fontSize="11" textAnchor="middle">10&apos;0&quot; × 11&apos;0&quot;</text>
         {/* Kitchen */}
         <rect x="30" y="190" width="110" height="90" fill="rgba(245, 158, 11, 0.15)" stroke="#fbbf24" strokeWidth="1.5" />
-        <text x="85" y="240" fill="#fde68a" fontSize="11" textAnchor="middle">Kitchen + Utility</text>
+        <text x="85" y="235" fill="#fde68a" fontSize="11" textAnchor="middle" fontWeight="bold">Kitchen + Dry</text>
+        <text x="85" y="252" fill="#fde68a" fontSize="10" textAnchor="middle">7&apos;0&quot; × 8&apos;0&quot;</text>
         {/* Bathroom */}
         <rect x="150" y="190" width="100" height="90" fill="rgba(16, 185, 129, 0.15)" stroke="#34d399" strokeWidth="1.5" />
-        <text x="200" y="240" fill="#a7f3d0" fontSize="11" textAnchor="middle">Bath / Toilet</text>
+        <text x="200" y="235" fill="#a7f3d0" fontSize="11" textAnchor="middle" fontWeight="bold">Bath / Toilet</text>
+        <text x="200" y="252" fill="#a7f3d0" fontSize="10" textAnchor="middle">7&apos;0&quot; × 4&apos;6&quot;</text>
         {/* Scenic Deck */}
         <rect x="260" y="190" width="110" height="90" fill="rgba(168, 85, 247, 0.15)" stroke="#c084fc" strokeWidth="1.5" />
-        <text x="315" y="240" fill="#e9d5ff" fontSize="11" textAnchor="middle">Hillside Deck</text>
+        <text x="315" y="235" fill="#e9d5ff" fontSize="11" textAnchor="middle" fontWeight="bold">Hillside Deck</text>
+        <text x="315" y="252" fill="#e9d5ff" fontSize="10" textAnchor="middle">10&apos;0&quot; × 4&apos;6&quot;</text>
       </svg>
     ),
   },

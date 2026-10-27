@@ -332,26 +332,27 @@ export const SKYI_ALL_PROJECTS_DEEP_DATA: SkyiProjectDeepSpec[] = [
   /* ── 9. Skyi Songbirds (Bhugaon) ── */
   {
     id: 'skyi-songbirds-bhugaon',
-    projectName: 'Skyi Songbirds Eco-Township (New Launch & Hillside Residences)',
+    projectName: 'Skyi Songbirds Eco-Township (New Tower Launch: Aria Heights 1 BHK & Hillside Residences)',
     statusCategory: 'Township',
     category: 'Townships & Residences',
     location: 'Bhugaon Foothills, Paud Road, Pune',
     microLocation: 'Bhugaon',
     corridor: 'West Pune / Paud Road Corridor',
     acreage: '45+ Acres Zero-Waste Eco Township',
-    type: '1, 2, 3 & 4 BHK Sustainable Residences (New Launch: 1 BHK 430 Sq.Ft.)',
+    type: '1, 2, 3 & 4 BHK Sustainable Residences (New Tower Launch: Aria Heights 1 BHK 430 Sq.Ft.)',
     priceStarting: '₹38 Lakhs*',
     priceRange: '₹38 Lakhs* - ₹2.10 Crores',
-    configurations: ['1 BHK Smart Eco-Home (430 Sq.Ft. New Launch)', '2 BHK Premium', '3 BHK Luxury', '4 BHK Sky Suite'],
+    configurations: ['1 BHK Smart Eco-Home (Aria Heights 430 Sq.Ft. New Launch)', '2 BHK Premium', '3 BHK Luxury', '4 BHK Sky Suite'],
     sizes: '430 - 1,850 Sq.Ft. Carpet Area',
     fsiRatio: 'Township Sanctioned High-Rise FSI',
     roadWidth: '60ft Wide Township Arterial Road',
-    reraNumbers: 'MahaRERA: P52100000769 (Ph A), P52100001117 (Ph B), P52100019348 (Ph E), P52100047992, P52100000764, P52100000643, P52100000805',
+    reraNumbers: 'MahaRERA: P52100028121 (Aria Heights Ph I), P52100000769 (Ph A), P52100001117 (Ph B), P52100019348 (Ph E), P52100047992, P52100000764, P52100000643, P52100000805',
     titleStatus: 'Full Clear Title & Occupancy Certificate (OC) Received for Ready Towers / New Launch Registered',
-    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'PNB Housing'],
+    bankApprovals: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank', 'Bank of Maharashtra', 'PNB Housing'],
     keyHighlights: [
-      '🔥 NEW LAUNCH: Smart 1 BHK Residences (430 Sq.Ft. Carpet Area) starting ₹38 Lakhs*',
+      '🔥 NEW TOWER LAUNCH: Aria Heights Smart 1 BHK Residences (430 Sq.Ft. Carpet) from ₹38 Lakhs*',
       'Zero-Dead-Space architectural planning maximizing usable living and storage space',
+      'High-Rise G+14 elevation with only 4 units per floor core & dual automated high-speed elevators',
       '45-acre integrated eco-township facing 7,000-acre NDA forest reserve',
       'Home to 5-acre Poona Western Club with Olympic pool & sports academies',
       'Zero Waste Township with 100% STP water recycling & solar power grid',
@@ -361,8 +362,10 @@ export const SKYI_ALL_PROJECTS_DEEP_DATA: SkyiProjectDeepSpec[] = [
     serpKeywords: [
       'SKYi Songbirds', 'Skyi Songbirds', 'SKYi Songbirds Pune', 'SKYi Songbirds Bhugaon',
       'SKYi Songbirds Paud Road', 'SKYi Songbirds price', 'SKYi Songbirds 1 BHK', 'SKYi Songbirds 1 BHK 430 sqft',
-      'Songbirds 1 BHK new launch', 'Skyi Songbirds new launch', '1 BHK flat in Bhugaon Songbirds',
-      'Skyi Songbirds 430 sqft price', 'Skyi Songbirds 430 sqft floor plan', '1 BHK under 40 lakhs Pune',
+      'Aria Heights Songbirds', 'Skyi Aria Heights', 'Skyi Aria Heights 1 BHK', 'Songbirds 1 BHK new tower launch',
+      'Aria Heights Bhugaon', 'Aria Heights 430 sqft', 'Aria Heights price', 'Songbirds 1 BHK new launch',
+      'Skyi Songbirds new launch', '1 BHK flat in Bhugaon Songbirds', 'Skyi Songbirds 430 sqft price',
+      'Skyi Songbirds 430 sqft floor plan', '1 BHK under 40 lakhs Pune', 'MahaRERA P52100028121',
       'SKYi Songbirds 3 BHK', 'SKYi Songbirds 4 BHK', 'SKYi Songbirds floor plan',
       'SKYi Songbirds amenities', 'SKYi Songbirds review', 'SKYi Songbirds location',
       'SKYi Songbirds RERA', 'SKYi Songbirds possession', 'SKYi Songbirds township',
@@ -809,12 +812,21 @@ export const SKYI_SONGBIRDS_KEYWORDS: string[] = [
   'SKYi Songbirds', 'Skyi Songbirds', 'SKYi Songbirds Pune', 'SKYi Songbirds Bhugaon',
   'SKYi Songbirds Paud Road', 'SKYi Songbirds price', 'SKYi Songbirds 1 BHK',
   'SKYi Songbirds 1 BHK 430 sqft', 'Songbirds 1 BHK new launch', 'Skyi Songbirds new launch',
-  '1 BHK flat in Bhugaon Songbirds', 'Skyi Songbirds 430 sqft price', 'Skyi Songbirds 430 sqft floor plan',
+  'Aria Heights Songbirds', 'Skyi Aria Heights', 'Skyi Aria Heights 1 BHK', 'Songbirds 1 BHK new tower launch',
+  'Aria Heights Bhugaon', 'Aria Heights 430 sqft', 'Aria Heights price', 'Aria Heights floor plan',
+  'MahaRERA P52100028121', '1 BHK flat in Bhugaon Songbirds', 'Skyi Songbirds 430 sqft price', 'Skyi Songbirds 430 sqft floor plan',
   '1 BHK under 40 lakhs Pune', 'SKYi Songbirds 2 BHK', 'SKYi Songbirds 3 BHK', 'SKYi Songbirds 4 BHK',
   'SKYi Songbirds floor plan', 'SKYi Songbirds amenities', 'SKYi Songbirds review',
   'SKYi Songbirds location', 'SKYi Songbirds RERA', 'SKYi Songbirds possession',
   'SKYi Songbirds township', 'SKYi Songbirds master plan', 'SKYi Songbirds forest facing',
   'SKYi Songbirds NDA forest', 'SKYi Songbirds Mula river', 'SKYi Songbirds investment'
+];
+
+export const SKYI_ARIA_HEIGHTS_KEYWORDS: string[] = [
+  'SKYi Aria Heights', 'Skyi Aria Heights', 'Aria Heights Songbirds', 'Aria Heights Pune',
+  'Aria Heights Bhugaon', 'Aria Heights 1 BHK', 'Aria Heights 430 sqft', 'Aria Heights price 38 lakhs',
+  'Aria Heights floor plan', 'Aria Heights brochure', 'Aria Heights MahaRERA P52100028121',
+  'Songbirds new tower launch', 'Songbirds 1 BHK new tower launch'
 ];
 
 export const SKYI_MANAS_LAKE_KEYWORDS: string[] = [
@@ -947,6 +959,7 @@ export const SKYI_ECOSYSTEM_MASTER_KEYWORDS = {
   fiveAguada: SKYI_FIVE_AGUADA_KEYWORDS,
   fiveMaidan: SKYI_FIVE_MAIDAN_KEYWORDS,
   pwcTowers: SKYI_PWC_TOWERS_KEYWORDS,
+  ariaHeights: SKYI_ARIA_HEIGHTS_KEYWORDS,
   auraHeights: SKYI_AURA_HEIGHTS_KEYWORDS,
   irisRiverside: SKYI_IRIS_RIVERSIDE_KEYWORDS,
   starCity: SKYI_STAR_CITY_KEYWORDS,
@@ -978,6 +991,7 @@ export const SKYI_ALL_ECOSYSTEM_KEYWORDS: string[] = Array.from(
     ...SKYI_FIVE_AGUADA_KEYWORDS,
     ...SKYI_FIVE_MAIDAN_KEYWORDS,
     ...SKYI_PWC_TOWERS_KEYWORDS,
+    ...SKYI_ARIA_HEIGHTS_KEYWORDS,
     ...SKYI_AURA_HEIGHTS_KEYWORDS,
     ...SKYI_IRIS_RIVERSIDE_KEYWORDS,
     ...SKYI_STAR_CITY_KEYWORDS,
