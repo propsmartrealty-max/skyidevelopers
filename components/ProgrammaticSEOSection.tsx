@@ -36,7 +36,7 @@ export default function ProgrammaticSEOSection({ onBookVisit }: ProgrammaticSEOS
       <div className="p-seo-inner">
         {/* Header */}
         <div className="p-seo-header">
-          <span className="section-subtitle">Official Micro-Location Ecosystem</span>
+          <span className="section-subtitle">Corridor &amp; Micro-Location Directory</span>
           <h2 className="section-title">
             SKYi Developments &amp; Corridors Network<br />
             <span className="gradient-text">IGBC Platinum Certified • MahaRERA Sanctioned • Prime Pune &amp; Mumbai</span>

@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ 【Official】Five Racecourse Sopan Baug Pune | 4 & 5 BHK From ₹3.85 Cr* | SKYi Developers',
-  description: '【Official Developer Portal】Five Racecourse by SKYi in prestigious Sopan Baug, Pune. Exclusive 4 & 5 BHK full-floor sky mansions with unobstructed 180° views of the 120-acre Pune Racecourse and Empress Botanical Gardens. Private elevators, rooftop infinity pool & 24/7 concierge. 0% Brokerage. Download Floor Plans & Book VIP Site Visit!',
+  title: '⭐ Five Racecourse Sopan Baug Pune | 4 & 5 BHK From ₹3.85 Cr* | SKYi Developers',
+  description: '【Project Showcase & Booking】Five Racecourse by SKYi in prestigious Sopan Baug, Pune. Exclusive 4 & 5 BHK full-floor sky mansions with unobstructed 180° views of the 120-acre Pune Racecourse and Empress Botanical Gardens. Private elevators, rooftop infinity pool & 24/7 concierge. 0% Brokerage. Download Floor Plans & Book VIP Site Visit!',
   keywords: [
     'Five Racecourse Sopan Baug',
     'Skyi Five Racecourse',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/five-racecourse',
   },
   openGraph: {
-    title: '⭐ 【Official】Five Racecourse Sopan Baug Pune | 4 & 5 BHK From ₹3.85 Cr*',
-    description: 'Exclusive 4 & 5 BHK full-floor sky residences with unobstructed Pune Racecourse and Empress Garden vistas. Direct Developer Booking (0% Brokerage).',
+    title: '⭐ Five Racecourse Sopan Baug Pune | 4 & 5 BHK From ₹3.85 Cr*',
+    description: 'Exclusive 4 & 5 BHK full-floor sky residences with unobstructed Pune Racecourse and Empress Garden vistas. Direct Booking Partner (0% Brokerage).',
     url: 'https://skyidevelopers.in/five-racecourse',
     siteName: 'Skyi Developers',
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ 【Official】Five Racecourse Sopan Baug | 4 & 5 BHK From ₹3.85 Cr*',
+    title: '⭐ Five Racecourse Sopan Baug | 4 & 5 BHK From ₹3.85 Cr*',
     description: 'Panoramic Racecourse Views & Ultra-Luxury Living in Sopan Baug Pune. Download Brochure & Schedule Private Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp'],
   },
@@ -54,7 +54,7 @@ const PROJECT_DATA: ProjectHubDetail = {
   priceStarting: 'Starting ₹3.85 Crores*',
   configurations: '4 & 5 BHK Full-Floor Sky Mansions & Duplexes',
   scale: 'Iconic Low-Density Luxury High-Rise',
-  reraNumber: 'MahaRERA: Official Sopan Baug Luxury Listing',
+  reraNumber: 'MahaRERA: Sanctioned Sopan Baug Luxury Listing',
   heroImage: '/images/projects/skyi-five-racecourse.webp',
   overview:
     'The pinnacle of Pune luxury. Five Racecourse by SKYi offers single-floor and duplex 4 & 5 BHK sky mansions commanding perpetual, unobstructed vistas of the historic 120-acre Pune Racecourse and lush Empress Botanical Gardens. Designed with private high-speed elevators, double-height viewing decks, and personalized five-star concierge services.',

@@ -150,16 +150,16 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
               <div className="privacy-icon-wrap"><ShieldCheck size={24} /></div>
               <div>
                 <h2 id="privacy-modal-title">MahaRERA Disclosures &amp; Legal Compliance</h2>
-                <p>Official Project Registrations, PMRDA Sanctions, FEMA/RBI Guidelines &amp; Privacy Policy</p>
+                <p>Sanctioned Project Registrations, PMRDA Sanctions, FEMA/RBI Guidelines &amp; Privacy Policy</p>
               </div>
             </div>
 
             <div className="privacy-body">
               {/* 1. MahaRERA Master Table */}
               <section className="privacy-section">
-                <h3><FileText size={16} /> 1. MahaRERA Official Project Registrations</h3>
+                <h3><FileText size={16} /> 1. MahaRERA Sanctioned Project Registrations</h3>
                 <p style={{ marginBottom: '12px' }}>
-                  All projects by <strong>Skyi Developers (SKYi)</strong> are strictly registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA) in compliance with the Real Estate (Regulation and Development) Act. Project details, sanctioned layout plans, quarterly progress reports, and title search reports are available on the official MahaRERA portal:
+                  All projects by <strong>Skyi Developers (SKYi)</strong> are strictly registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA) in compliance with the Real Estate (Regulation and Development) Act. Project details, sanctioned layout plans, quarterly progress reports, and title search reports are available on the MahaRERA portal:
                 </p>
 
                 <div className="rera-verification-link-box">
@@ -169,7 +169,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
                     rel="noopener noreferrer"
                     className="rera-portal-btn"
                   >
-                    <ExternalLink size={15} /> Visit MahaRERA Official Website (maharera.maharashtra.gov.in)
+                    <ExternalLink size={15} /> Visit MahaRERA Portal (maharera.maharashtra.gov.in)
                   </a>
                 </div>
 

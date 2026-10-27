@@ -3,7 +3,7 @@ import SongbirdsHubContent from '../../components/SongbirdsHubContent';
 
 export const metadata: Metadata = {
   title: '⭐ Skyi Songbirds Bhugaon™ | 1, 2, 3 & 4 BHK From ₹38L* | 2026 Floor Plans & Price List',
-  description: '【Official Developer Portal】Explore Skyi Songbirds 45-Acre Township in Bhugaon, Paud Road (10 Mins from Kothrud & Chandani Chowk). New Launch Smart 1 BHK (430 Sq.Ft.) from ₹38L* & Luxury 3 & 4 BHK Hillside Homes. 5-Acre Poona Western Club. MahaRERA P52100000769. Download Verified Floor Plans PDF & Book Free Cab Site Visit!',
+  description: '【Project Showcase & Booking】Explore Skyi Songbirds 45-Acre Township in Bhugaon, Paud Road (10 Mins from Kothrud & Chandani Chowk). New Launch Smart 1 BHK (430 Sq.Ft.) from ₹38L* & Luxury 3 & 4 BHK Hillside Homes. 5-Acre Poona Western Club. MahaRERA P52100000769. Download Verified Floor Plans PDF & Book Free Cab Site Visit!',
   keywords: [
     'Skyi Songbirds',
     'Skyi Songbirds Bhugaon',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '⭐ Skyi Songbirds Bhugaon™ | 1, 2, 3 & 4 BHK From ₹38L* | 2026 Floor Plans & Price List',
-    description: '【Official Developer Portal】45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New launch 1 BHK (430 Sq.Ft.) starting ₹38L*. Download Floor Plans PDF!',
+    description: '【Project Showcase & Booking】45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New launch 1 BHK (430 Sq.Ft.) starting ₹38L*. Download Floor Plans PDF!',
     url: 'https://skyidevelopers.in/songbirds',
     siteName: 'Skyi Developers',
     images: [

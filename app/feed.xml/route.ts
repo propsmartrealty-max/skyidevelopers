@@ -7,9 +7,9 @@ export async function GET() {
 
   const canonicalItems = [
     {
-      title: '【Official】SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L* | 0% Brokerage',
+      title: 'SKYi Developers Pune™ | Songbirds & NA Plots From ₹38L* | 0% Brokerage',
       link: `${baseUrl}/`,
-      description: 'Official developer portal of SKYi Developers in Pune: Skyi Songbirds (1-4 BHK from ₹38L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), SKYi Tigers Nest, and Poona Western Club.',
+      description: 'Featured showcase of SKYi Developers in Pune: Skyi Songbirds (1-4 BHK from ₹38L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), SKYi Tigers Nest, and Poona Western Club.',
       image: `${baseUrl}/og-image.jpg`,
     },
     {
@@ -19,7 +19,7 @@ export async function GET() {
       image: `${baseUrl}/songbirds-1.webp`,
     },
     {
-      title: '【Official】SKYi Manas Lake™ | 90-Acre Lakeside Township & PMRDA NA Plots',
+      title: '⭐ SKYi Manas Lake™ | 90-Acre Lakeside Township & PMRDA NA Plots',
       link: `${baseUrl}/manas-lake`,
       description: 'SKYi Manas Lake: Lakefront luxury apartments and PMRDA-sanctioned clear title NA bungalow plots (2,000-5,000+ SF, FSI 1.5) connecting Bavdhan and Kothrud from ₹95L*.',
       image: `${baseUrl}/bungalow-plots.jpg`,
@@ -37,7 +37,7 @@ export async function GET() {
       image: `${baseUrl}/songbirds-1.webp`,
     },
     {
-      title: '🌍 Global NRI Real Estate Investment Portal Pune | SKYi Developers Official Desk',
+      title: '🌍 Global NRI Real Estate Investment Portal Pune | SKYi Developers NRI Desk',
       link: `${baseUrl}/nri-hub`,
       description: 'FEMA & RBI compliant acquisition guide, NRE/NRO banking, digital escrow, 3D virtual tours, and dedicated NRI VIP concierge desk.',
       image: `${baseUrl}/songbirds-1.webp`,
@@ -49,31 +49,31 @@ export async function GET() {
       image: `${baseUrl}/og-image.jpg`,
     },
     {
-      title: '⭐ 【Official】Five Racecourse Sopan Baug Pune | 4 & 5 BHK Sky Mansions',
+      title: '⭐ Five Racecourse Sopan Baug Pune | 4 & 5 BHK Sky Mansions',
       link: `${baseUrl}/five-racecourse`,
       description: 'Ultra-luxury 4 & 5 BHK single-floor and duplex sky residences overlooking the historic 120-acre Pune Racecourse and Empress Botanical Gardens.',
       image: `${baseUrl}/images/projects/skyi-five-racecourse.webp`,
     },
     {
-      title: '⭐ 【Official】Five Aguada Bandstand Bandra West Mumbai | Sea-Facing Homes',
+      title: '⭐ Five Aguada Bandstand Bandra West Mumbai | Sea-Facing Homes',
       link: `${baseUrl}/five-aguada`,
       description: 'Ultra-luxury 4, 5 & 6 BHK oceanfront entire-floor mansions commanding 180° unobstructed Arabian Sea views along Bandstand, Bandra West.',
       image: `${baseUrl}/images/projects/skyi-five-racecourse.webp`,
     },
     {
-      title: '⭐ 【Official】Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens',
+      title: '⭐ Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens',
       link: `${baseUrl}/five-maidan`,
       description: 'Rare low-density 4 BHK luxury residences set within expansive landscaped green maidans and private forest walkways in Baner.',
       image: `${baseUrl}/images/projects/skyi-five-maidan.webp`,
     },
     {
-      title: '⭐ 【Official】Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr*',
+      title: '⭐ Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr*',
       link: `${baseUrl}/tigers-nest`,
       description: 'Secluded 4 BHK hillside residences directly facing the 7,000-acre NDA Forest Reserve in Bhugaon with heated valley-view pool.',
       image: `${baseUrl}/images/projects/skyi-tigers-nest.webp`,
     },
     {
-      title: '⭐ 【Official】SKYi Star City Dhayari Pune | 1 & 2 BHK Zero-Wastage Homes',
+      title: '⭐ SKYi Star City Dhayari Pune | 1 & 2 BHK Zero-Wastage Homes',
       link: `${baseUrl}/star-city`,
       description: '20-Acre integrated residential township featuring 70% open green space and zero-dead-corridor smart homes in Dhayari from ₹42L*.',
       image: `${baseUrl}/images/projects/skyi-star-city.webp`,
@@ -109,7 +109,7 @@ export async function GET() {
   <channel>
     <title>SKYi Developers Pune | Master Real Estate &amp; Township Feed</title>
     <link>${baseUrl}</link>
-    <description>Official real-time RSS feed for SKYi Developers eco-townships, luxury residences, and PMRDA approved NA bungalow plots across Pune.</description>
+    <description>Real-time updates for SKYi Developers eco-townships, luxury residences, and PMRDA approved NA bungalow plots across Pune.</description>
     <language>en-in</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml" />

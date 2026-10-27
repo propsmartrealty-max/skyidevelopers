@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ 【Official】Five Aguada Bandstand Bandra Mumbai | Sea-Facing Homes | SKYi Developers',
-  description: '【Official Developer Portal】Five Aguada by SKYi at Bandstand, Bandra West, Mumbai. Inspired by Castella de Aguada. Exclusive 4, 5 & 6 BHK oceanfront entire-floor mansions commanding 180° unobstructed Arabian Sea views. Private plunge pools, private elevators & white-glove concierge. 0% Brokerage. Download Brochure & Schedule Private Viewing!',
+  title: '⭐ Five Aguada Bandstand Bandra Mumbai | Sea-Facing Homes | SKYi Developers',
+  description: '【Project Showcase & Booking】Five Aguada by SKYi at Bandstand, Bandra West, Mumbai. Inspired by Castella de Aguada. Exclusive 4, 5 & 6 BHK oceanfront entire-floor mansions commanding 180° unobstructed Arabian Sea views. Private plunge pools, private elevators & white-glove concierge. 0% Brokerage. Download Brochure & Schedule Private Viewing!',
   keywords: [
     'Five Aguada Bandra',
     'Five Aguada Mumbai',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/five-aguada',
   },
   openGraph: {
-    title: '⭐ 【Official】Five Aguada Bandstand Bandra Mumbai | Sea-Facing Residences',
+    title: '⭐ Five Aguada Bandstand Bandra Mumbai | Sea-Facing Residences',
     description: 'Exclusive 4, 5 & 6 BHK entire-floor oceanfront mansions overlooking the Arabian Sea in Bandra West. Direct Developer Booking (0% Brokerage).',
     url: 'https://skyidevelopers.in/five-aguada',
     siteName: 'Skyi Developers',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ 【Official】Five Aguada Bandstand Bandra | Sea-Facing Mansions',
+    title: '⭐ Five Aguada Bandstand Bandra | Sea-Facing Mansions',
     description: '180° Arabian Sea Panoramas & Single-Floor Residences at Bandstand Bandra West. Download Brochure & Request Private Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp'],
   },
@@ -54,7 +54,7 @@ const PROJECT_DATA: ProjectHubDetail = {
   priceStarting: 'Price on Application (Exclusive Buyer Selection)',
   configurations: '4, 5 & 6 BHK Entire-Floor Sea-Facing Mansions',
   scale: 'Ultra-Luxury Mumbai Oceanfront Landmark',
-  reraNumber: 'MahaRERA: Official Bandra West Coastal Listing',
+  reraNumber: 'MahaRERA: Sanctioned Bandra West Coastal Listing',
   heroImage: '/images/projects/skyi-five-racecourse.webp',
   overview:
     'Inspired by the historic Castella de Aguada fortress, Five Aguada by SKYi stands as a testament to oceanfront architectural grandeur on Mumbai’s celebrated Bandstand promenade in Bandra West. Offering full-floor 4, 5, and 6 BHK sky mansions with 180-degree unobstructed Arabian Sea horizons, bespoke private elevators, and white-glove concierge services.',
@@ -105,7 +105,7 @@ const PROJECT_DATA: ProjectHubDetail = {
     },
     {
       q: 'How do I request a confidential dossier and schedule a private viewing?',
-      a: 'Confidential viewings are arranged strictly by prior appointment for accredited buyers. Please submit the private inquiry form to receive the official architectural brochure.',
+      a: 'Confidential viewings are arranged strictly by prior appointment for accredited buyers. Please submit the private inquiry form to receive the sanctioned architectural brochure.',
     },
   ],
 };

@@ -88,7 +88,7 @@ function createProjectSvgDataUri(
 
       <!-- Project Title overlay -->
       <text x="24" y="295" fill="#ffffff" font-size="20" font-weight="800" font-family="system-ui, sans-serif">${encodedTitle}</text>
-      <text x="24" y="318" fill="#94a3b8" font-size="12" font-weight="600" font-family="system-ui, sans-serif">SKYi Developers • Official Development</text>
+      <text x="24" y="318" fill="#94a3b8" font-size="12" font-weight="600" font-family="system-ui, sans-serif">SKYi Developers • Featured Development</text>
     </svg>
   `;
 

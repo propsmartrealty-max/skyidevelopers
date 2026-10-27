@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import ManasLakeHubContent from '../../components/ManasLakeHubContent';
 
 export const metadata: Metadata = {
-  title: '【Official】SKYi Manas Lake™ | PMRDA NA Plots & Lakefront Homes From ₹95L* | Clear 7/12',
-  description: '⭐ Official SKYi Manas Lake Portal. PMRDA Sanctioned Clear Title NA Bungalow Plots (2,000–5,000+ SF, FSI 1.5) from ₹95L* & 2, 3 BHK Lakeside Flats near Chandani Chowk Bavdhan. 90% Bank Loans Approved. Download Layout Plan & Book Site Visit!',
+  title: '⭐ SKYi Manas Lake™ | PMRDA NA Plots & Lakefront Homes From ₹95L* | Clear 7/12',
+  description: '⭐ SKYi Manas Lake. PMRDA Sanctioned Clear Title NA Bungalow Plots (2,000–5,000+ SF, FSI 1.5) from ₹95L* & 2, 3 BHK Lakeside Flats near Chandani Chowk Bavdhan. 90% Bank Loans Approved. Download Layout Plan & Book Site Visit!',
   keywords: [
     'Skyi Manas Lake',
     'Skyi Manas Lake plots',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/manas-lake',
   },
   openGraph: {
-    title: '【Official】SKYi Manas Lake™ | PMRDA NA Plots & Lakefront Homes From ₹95L* | Clear 7/12',
-    description: '⭐ Official Developer Portal. IGBC Platinum Certified 90+ Acre lakefront township featuring clear title PMRDA NA bungalow plots (2,000-5,000 SF) & 2, 3 BHK apartments near Chandani Chowk.',
+    title: '⭐ SKYi Manas Lake™ | PMRDA NA Plots & Lakefront Homes From ₹95L* | Clear 7/12',
+    description: '⭐ IGBC Platinum Certified 90+ Acre lakefront township featuring clear title PMRDA NA bungalow plots (2,000-5,000 SF) & 2, 3 BHK apartments near Chandani Chowk.',
     url: 'https://skyidevelopers.in/manas-lake',
     siteName: 'Skyi Developers',
     images: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '【Official】SKYi Manas Lake™ | PMRDA NA Plots & Flats From ₹95L*',
+    title: '⭐ SKYi Manas Lake™ | PMRDA NA Plots & Flats From ₹95L*',
     description: '90+ Acre Lakefront Township near Chandani Chowk. PMRDA NA Plots with FSI 1.5 & Lakeside Flats. Download Layout PDF!',
     images: ['https://skyidevelopers.in/bungalow-plots.jpg'],
   },

@@ -86,7 +86,7 @@ const PROJECT_LOCATIONS = [
     config: '4, 5 & 6 BHK Sea-Facing Entire-Floor Mansions — Price on Application',
     status: 'Launching Soon / Oceanfront Signature',
     category: 'Ultra-Luxury Mumbai Oceanfront',
-    rera: 'MahaRERA: Official Bandra Coastal Listing',
+    rera: 'MahaRERA: Sanctioned Bandra Coastal Listing',
     color: '#f59e0b',
   },
   {

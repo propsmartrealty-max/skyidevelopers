@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ 【Official】Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens | SKYi Developers',
-  description: '【Official Developer Portal】Five Maidan by SKYi in Baner, Pune. A rare single-tower luxury residential development set within sprawling landscaped open maidans and lush grounds. Expansive 4 BHK homes with double-height decks, zero-wastage layouts & resort amenities. 0% Brokerage. Download Floor Plans & Schedule Site Tour!',
+  title: '⭐ Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens | SKYi Developers',
+  description: '【Project Showcase & Booking】Five Maidan by SKYi in Baner, Pune. A rare single-tower luxury residential development set within sprawling landscaped open maidans and lush grounds. Expansive 4 BHK homes with double-height decks, zero-wastage layouts & resort amenities. 0% Brokerage. Download Floor Plans & Schedule Site Tour!',
   keywords: [
     'Five Maidan Baner',
     'Skyi Five Maidan',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/five-maidan',
   },
   openGraph: {
-    title: '⭐ 【Official】Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens',
+    title: '⭐ Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens',
     description: 'Exclusive 4 BHK luxury residences set within expansive green open fields in Baner. Direct Developer Booking (0% Brokerage).',
     url: 'https://skyidevelopers.in/five-maidan',
     siteName: 'Skyi Developers',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ 【Official】Five Maidan Baner Pune | 4 BHK Tower in Greens',
+    title: '⭐ Five Maidan Baner Pune | 4 BHK Tower in Greens',
     description: 'Exclusive 4 BHK Tower in Sprawling Greens near Balewadi High Street. Download Brochure & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-five-maidan.webp'],
   },
@@ -53,7 +53,7 @@ const PROJECT_DATA: ProjectHubDetail = {
   priceStarting: 'Starting ₹2.45 Crores*',
   configurations: '4 BHK Exclusive Luxury Tower Residences',
   scale: 'Low-Density Green Parkland Living',
-  reraNumber: 'MahaRERA: Official Baner Signature Listing',
+  reraNumber: 'MahaRERA: Sanctioned Baner Signature Listing',
   heroImage: '/images/projects/skyi-five-maidan.webp',
   overview:
     'A rare jewel of low-density urban luxury. Five Maidan by SKYi is an exclusive single-tower residential sanctuary immersed in vast landscaped green fields, private forest walkways, and serene sporting grounds in prime Baner. Offering expansive 4 BHK homes with zero-wastage layout designs, double-height viewing decks, and instant connectivity to Balewadi High Street and Hinjawadi IT Park.',
@@ -104,7 +104,7 @@ const PROJECT_DATA: ProjectHubDetail = {
     },
     {
       q: 'How can I download floor plans and book a site visit?',
-      a: 'You can download the verified floor plans PDF and book a complimentary AC cab site visit through our official booking portal on this page.',
+      a: 'You can download the verified floor plans PDF and book a complimentary AC cab site visit through our booking portal on this page.',
     },
   ],
 };

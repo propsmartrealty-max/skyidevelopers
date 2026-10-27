@@ -12,10 +12,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: '【Official】SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
+    default: 'SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
     template: '%s | SKYi Developers™',
   },
-  description: '⭐ Official SKYi Developers Portal. Direct Developer Booking — 0% Brokerage. 45-Acre Skyi Songbirds (1, 2, 3 & 4 BHK from ₹38L*), 90-Acre SKYi Manas Lake, Five Racecourse (Sopan Baug), Five Aguada (Bandra Mumbai), Five Maidan (Baner), and Tiger’s Nest. Built around life and shaped by Max Light™. Download 2026 Floor Plans PDF & Schedule VIP Site Visit!',
+  description: '⭐ Featured SKYi Developers Portal. Direct Developer Booking — 0% Brokerage. 45-Acre Skyi Songbirds (1, 2, 3 & 4 BHK from ₹38L*), 90-Acre SKYi Manas Lake, Five Racecourse (Sopan Baug), Five Aguada (Bandra Mumbai), Five Maidan (Baner), and Tiger’s Nest. Built around life and shaped by Max Light™. Download 2026 Floor Plans PDF & Schedule VIP Site Visit!',
   keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
   authors: [{ name: 'Skyi Developers' }],
   publisher: 'Skyi Developers',
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://skyidevelopers.in/',
-    title: '【Official】SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
-    description: '⭐ Official Developer Portal. 20+ Years, 7,000+ Families, 7M+ Sq.Ft. delivered. Explore Songbirds, Manas Lake, Five Racecourse, Five Aguada Bandra, Five Maidan, and Tiger’s Nest. Zero brokerage direct developer booking.',
+    title: 'SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
+    description: '⭐ Featured Project Showcase. 20+ Years, 7,000+ Families, 7M+ Sq.Ft. delivered. Explore Songbirds, Manas Lake, Five Racecourse, Five Aguada Bandra, Five Maidan, and Tiger’s Nest. Zero brokerage direct developer booking.',
     siteName: 'Skyi Developers',
     locale: 'en_IN',
     alternateLocale: ['en_US', 'en_GB', 'en_AE', 'en_SG', 'en_AU', 'en_CA'],
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         url: 'https://skyidevelopers.in/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Skyi Developers Pune — Official Master Portfolio & Eco-Townships',
+        alt: 'Skyi Developers Pune — Master Portfolio & Eco-Townships',
       },
       {
         url: 'https://skyidevelopers.in/images/projects/skyi-songbirds.webp',
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '【Official】SKYi Developers | Eco-Townships & Ultra-Luxury Residences',
+    title: 'SKYi Developers | Eco-Townships & Ultra-Luxury Residences',
     description: '⭐ Direct Developer Booking (0% Brokerage). 1, 2, 3, 4 BHK & Ultra-Luxury Residences from ₹38L*. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/og-image.jpg'],
   },
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     email: false,
   },
   verification: {
-    google: 'google-site-verification=skyidevelopers-official-portal',
+    google: 'google-site-verification=skyidevelopers-pune-portal',
   },
   category: 'real estate',
   other: {
@@ -213,7 +213,7 @@ const jsonLdSchema = {
           "itemOffered": {
             "@type": "RealEstateListing",
             "name": "SKYi Five Aguada 4, 5 & 6 BHK Sea-Facing Mansions Bandstand Bandra Mumbai",
-            "identifier": "MahaRERA: Official Bandra Coastal Listing",
+            "identifier": "MahaRERA: Sanctioned Bandra Coastal Listing",
             "price": "120000000",
             "priceCurrency": "INR",
             "address": { "@type": "PostalAddress", "streetAddress": "Bandstand", "addressLocality": "Bandra West, Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" }
@@ -347,7 +347,7 @@ const jsonLdSchema = {
       "@id": "https://skyidevelopers.in/#website",
       "url": "https://skyidevelopers.in/",
       "name": "Skyi Developers Pune",
-      "description": "Official Website of SKYi Developers (Enerrgia SKYi Developers) — Premium Eco-Townships & Luxury Residences in Pune",
+      "description": "Showcase of SKYi Developers (Enerrgia SKYi Developers) — Premium Eco-Townships & Luxury Residences in Pune",
       "publisher": { "@id": "https://skyidevelopers.in/#organization" },
       "potentialAction": {
         "@type": "SearchAction",
@@ -375,7 +375,7 @@ const jsonLdSchema = {
           "name": "Are Skyi Developers projects registered with MahaRERA?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, all residential townships by Skyi Developers are registered under Maharashtra Real Estate Regulatory Authority (MahaRERA). Registration details include Skyi Songbirds (P52100000769, P52100001117, P52100019348, P52100047992), SKYi Manas Lake (P52100000513, P52100000514, P52100026954, P52100052033), SKYi Star City (P52100026727, P52100029481, P52100029474, P52100034274, P52100050099), and SKYi Iris Baner (P52100019348). Official documents are verifiable on maharera.maharashtra.gov.in."
+            "text": "Yes, all residential townships by Skyi Developers are registered under Maharashtra Real Estate Regulatory Authority (MahaRERA). Registration details include Skyi Songbirds (P52100000769, P52100001117, P52100019348, P52100047992), SKYi Manas Lake (P52100000513, P52100000514, P52100026954, P52100052033), SKYi Star City (P52100026727, P52100029481, P52100029474, P52100034274, P52100050099), and SKYi Iris Baner (P52100019348). Project documents are verifiable on maharera.maharashtra.gov.in."
           }
         },
         {
@@ -431,7 +431,7 @@ const jsonLdSchema = {
           "name": "How can I book flats or PMRDA NA plots directly with SKYi Developers without paying brokerage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Booking directly through skyidevelopers.in connects you directly with the official SKYi sales desk, ensuring 0% brokerage, exclusive direct-developer pricing benefits, guaranteed inventory allocation, and official MahaRERA registered documentation without third-party agency markups."
+            "text": "Booking directly through skyidevelopers.in connects you directly with the priority SKYi sales desk, ensuring 0% brokerage, exclusive direct-developer pricing benefits, guaranteed inventory allocation, and verified MahaRERA registered documentation without third-party agency markups."
           }
         },
         {

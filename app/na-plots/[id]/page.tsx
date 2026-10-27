@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const title = `⭐ ${item.project} ${item.microLocation} | PMRDA NA Plots From ${item.priceRange.split('-')[0].trim()}* | Clear 7/12`;
-  const description = `【Official SKYi Listing】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). 0% Brokerage. Book VIP Site Tour!`;
+  const description = `【Verified SKYi Listing】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). 0% Brokerage. Book VIP Site Tour!`;
   const canonicalUrl = `https://skyidevelopers.in/na-plots/${item.id}`;
 
   return {
@@ -75,7 +75,7 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
         '@type': 'RealEstateListing',
         '@id': `https://skyidevelopers.in/na-plots/${item.id}#listing`,
         name: item.project,
-        description: `【Official Developer Portal】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. 0% Brokerage direct developer booking.`,
+        description: `【Project Showcase & Booking】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. 0% Brokerage direct booking.`,
         url: `https://skyidevelopers.in/na-plots/${item.id}`,
         datePosted: '2026-01-15T00:00:00+05:30',
         offers: {

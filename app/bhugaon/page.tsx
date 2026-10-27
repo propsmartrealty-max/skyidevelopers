@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Home from '../page';
 
 export const metadata: Metadata = {
-  title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L* | Official Site',
-  description: '【Official SKYi Bhugaon Hub】Discover premier townships along 6-lane Paud Road: Skyi Songbirds (1-4 BHK from ₹38L*), SKYi Tigers Nest & PWC Towers. Next to 7,000-acre NDA Forest. Download Brochures & Book Free AC Cab Site Visit!',
+  title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L*',
+  description: '【SKYi Bhugaon Hub】Discover premier townships along 6-lane Paud Road: Skyi Songbirds (1-4 BHK from ₹38L*), SKYi Tigers Nest & PWC Towers. Next to 7,000-acre NDA Forest. Download Brochures & Book Free AC Cab Site Visit!',
   keywords: [
     'Skyi Bhugaon',
     'Skyi Songbirds Bhugaon',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/bhugaon',
   },
   openGraph: {
-    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L* | Official Site',
-    description: '【Official SKYi Bhugaon Hub】Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune. Direct developer booking & zero brokerage.',
+    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds & Tigers Nest From ₹38L*',
+    description: '【SKYi Bhugaon Hub】Skyi Songbirds, Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune. Direct developer booking & zero brokerage.',
     url: 'https://skyidevelopers.in/bhugaon',
     siteName: 'Skyi Developers',
     images: [

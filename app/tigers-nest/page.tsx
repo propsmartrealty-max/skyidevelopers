@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ 【Official】Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr* | SKYi',
-  description: '【Official Developer Portal】Tiger’s Nest by SKYi in Bhugaon, Paud Road, Pune (Near Chandani Chowk). Secluded 4 BHK hillside residences directly facing the 7,000-acre NDA Forest Reserve. Heated infinity pool, 180° valley decks, and pure mountain air. MahaRERA P52100000769. 0% Brokerage. Download Floor Plans & Book Free Cab Visit!',
+  title: '⭐ Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr* | SKYi',
+  description: '【Project Showcase & Booking】Tiger’s Nest by SKYi in Bhugaon, Paud Road, Pune (Near Chandani Chowk). Secluded 4 BHK hillside residences directly facing the 7,000-acre NDA Forest Reserve. Heated infinity pool, 180° valley decks, and pure mountain air. MahaRERA P52100000769. 0% Brokerage. Download Floor Plans & Book Free Cab Visit!',
   keywords: [
     'Tigers Nest Bhugaon',
     'Skyi Tigers Nest',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/tigers-nest',
   },
   openGraph: {
-    title: '⭐ 【Official】Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr*',
+    title: '⭐ Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr*',
     description: 'Secluded 4 BHK hillside homes facing the 7,000-acre NDA Forest Reserve in Bhugaon. Direct Developer Booking (0% Brokerage).',
     url: 'https://skyidevelopers.in/tigers-nest',
     siteName: 'Skyi Developers',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ 【Official】Tiger’s Nest Bhugaon | 4 BHK Forest Decks From ₹1.79 Cr*',
+    title: '⭐ Tiger’s Nest Bhugaon | 4 BHK Forest Decks From ₹1.79 Cr*',
     description: 'Secluded Hillside Sanctuary Facing 7,000-Acre NDA Forest. Download Brochure & Book VIP Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-tigers-nest.webp'],
   },
@@ -100,7 +100,7 @@ const PROJECT_DATA: ProjectHubDetail = {
     },
     {
       q: 'Is Tiger’s Nest MahaRERA approved?',
-      a: 'Yes, Tiger’s Nest is officially registered under MahaRERA: P52100000769 and P52100001117 with 100% clear legal titles and approved loans from major nationalized banks.',
+      a: 'Yes, Tiger’s Nest is registered under MahaRERA: P52100000769 and P52100001117 with 100% clear legal titles and approved loans from major nationalized banks.',
     },
     {
       q: 'How can I schedule a private visit to Tiger’s Nest?',

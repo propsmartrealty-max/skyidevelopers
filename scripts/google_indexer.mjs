@@ -12,7 +12,7 @@
  * 2. GOOGLE SEARCH CONSOLE (GSC) AUTOMATION (permissionLevel: siteOwner):
  *    - Registers & verifies URL-prefix and sc-domain properties
  *    - Cleans obsolete/broken sitemaps
- *    - Automatically submits official sitemaps (sitemap.xml, sitemap-images.xml, feed.xml, google-merchant-products.xml)
+ *    - Automatically submits canonical sitemaps (sitemap.xml, sitemap-images.xml, feed.xml, google-merchant-products.xml)
  *    - Fetches real-time Search Analytics (Impressions, Clicks, CTR, Position, Top Queries)
  *
  * 3. GOOGLE INDEXING API (Googlebot & Google-InspectionTool Direct Push):
@@ -20,7 +20,7 @@
  *    via OAuth2 JWT with zero external dependencies (native Node.js crypto).
  *
  * 4. INDEXNOW PROTOCOL (Bing, Yandex, Seznam, Cloudflare Crawler Hints):
- *    Pushes real-time batch crawl requests via official IndexNow API key
+ *    Pushes real-time batch crawl requests via verified IndexNow API key
  *    (4f6d89a710b2401f8021c356972e0bf4).
  *
  * 5. LIVE PRE-FLIGHT INDEXABILITY INSPECTOR:
@@ -55,8 +55,8 @@ const CONFIG = {
   reportPath: path.join(ROOT_DIR, 'indexer_report.json'),
 };
 
-// Official Sitemaps to register in Google Search Console
-const OFFICIAL_FEEDS = [
+// Canonical Sitemaps to register in Google Search Console
+const CANONICAL_FEEDS = [
   'https://skyidevelopers.in/sitemap.xml',
   'https://skyidevelopers.in/sitemap-images.xml',
   'https://skyidevelopers.in/feed.xml',
@@ -301,9 +301,9 @@ async function syncGoogleSearchConsole(accessToken) {
     }
   }
 
-  // 4. Submit & Refresh Official Sitemaps
-  log(`  🚀 Submitting Official Sitemaps to GSC:`, colors.bright);
-  for (const feed of OFFICIAL_FEEDS) {
+  // 4. Submit & Refresh Canonical Sitemaps
+  log(`  🚀 Submitting Canonical Sitemaps to GSC:`, colors.bright);
+  for (const feed of CANONICAL_FEEDS) {
     for (const prop of [CONFIG.domainProperty, CONFIG.urlProperty]) {
       try {
         const subRes = await fetch(

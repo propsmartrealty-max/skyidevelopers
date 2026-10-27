@@ -117,7 +117,7 @@ export async function sendLeadEmailNotification(params: SendLeadEmailParams): Pr
           <div class="card">
             <div class="header">
               <h1>🔥 NEW ENQUIRY LEAD RECEIVED</h1>
-              <p>SKYi Developers — Official Project Enquiry Engine</p>
+              <p>SKYi Developers — Project Enquiry Engine</p>
             </div>
             <div class="body">
               <span class="badge">Reference ID: ${params.leadId}</span>

@@ -130,13 +130,13 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
         <motion.div className="hero-badge" variants={item}>
           <a href="#portfolio" className="hero-link-badge">
             <span className="badge-dot" />
-            <span>⭐ Official SKYi Portfolio: Songbirds • Manas Lake • Five Racecourse • Five Aguada (Mumbai)</span>
+            <span>⭐ Featured SKYi Portfolio: Songbirds • Manas Lake • Five Racecourse • Five Aguada (Mumbai)</span>
           </a>
         </motion.div>
 
         {/* Title */}
         <motion.h1 className="hero-title" variants={item}>
-          <span className="sr-only">SKYi Developers Official Portal | Skyi Songbirds Bhugaon 1, 2, 3 &amp; 4 BHK from ₹38L* | SKYi Manas Lake 2 &amp; 3 BHK | Five Racecourse Sopan Baug | Five Aguada Bandra Mumbai | </span>
+          <span className="sr-only">SKYi Developers Portfolio Showcase | Skyi Songbirds Bhugaon 1, 2, 3 &amp; 4 BHK from ₹38L* | SKYi Manas Lake 2 &amp; 3 BHK | Five Racecourse Sopan Baug | Five Aguada Bandra Mumbai | </span>
           Built around<br />
           <span className="hero-title-accent">life.</span>{' '}
           <span className="hero-title-sub">Shaped</span><br />
@@ -148,7 +148,7 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
 
         {/* Description */}
         <motion.p className="hero-description" variants={item}>
-          Official portal of SKYi Developers. For over 20 years, engineering IGBC Platinum eco-townships and signature ultra-luxury residences across 7+ Million Sq.Ft. — built around life and shaped by light, air, and proportion.
+          Partner portal showcasing SKYi Developers. For over 20 years, engineering IGBC Platinum eco-townships and signature ultra-luxury residences across 7+ Million Sq.Ft. — built around life and shaped by light, air, and proportion.
         </motion.p>
 
         {/* CTAs */}

@@ -3,7 +3,7 @@ import NRIHubContent from '../../components/NRIHubContent';
 
 export const metadata: Metadata = {
   title: '🌍 Global NRI Real Estate Hub Pune | FEMA & RBI Compliant SKYi Investments | High ROI',
-  description: '⭐ Official SKYi Developers Global NRI Advisory Hub. 100% FEMA/RBI compliant property purchase in Pune (USA, UAE, UK, Singapore, Australia, Canada). NRE/NRO banking, digital escrow, verified MahaRERA titles, high rental yields. Connect with VIP NRI Desk!',
+  description: '⭐ SKYi Developers Global NRI Advisory Hub. 100% FEMA/RBI compliant property purchase in Pune (USA, UAE, UK, Singapore, Australia, Canada). NRE/NRO banking, digital escrow, verified MahaRERA titles, high rental yields. Connect with VIP NRI Desk!',
   keywords: [
     'NRI real estate investment Pune', 'NRI property purchase India guide', 'Skyi Songbirds NRI booking',
     'SKYi Manas Lake plots NRI', 'SKYi Tigers Nest Bhugaon NRI', 'FEMA guidelines property purchase NRI',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: '🌍 Global NRI Property Investment in Pune | SKYi Developers Official Desk',
+    title: '🌍 Global NRI Property Investment in Pune | SKYi Developers NRI Desk',
     description: 'Comprehensive guide for overseas investors: FEMA compliance, NRE/NRO banking, digital escrow, 3D tours, and high-yield residential townships in Pune.',
     url: 'https://skyidevelopers.in/nri-hub',
     siteName: 'Skyi Developers',

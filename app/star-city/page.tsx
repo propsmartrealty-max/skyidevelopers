@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ 【Official】SKYi Star City Dhayari Pune | 1 & 2 BHK From ₹42L* | 20-Acre Township',
-  description: '【Official Developer Portal】SKYi Star City in Dhayari, Pune (Near DSK Vishwa / Sinhagad Road). 20-Acre integrated residential township featuring 70% open green space, zero-wastage 1 & 2 BHK smart homes, central night garden & on-campus retail plaza. MahaRERA P52100026727. 0% Brokerage. Download Floor Plans & Schedule Site Tour!',
+  title: '⭐ SKYi Star City Dhayari Pune | 1 & 2 BHK From ₹42L* | 20-Acre Township',
+  description: '【Project Showcase & Booking】SKYi Star City in Dhayari, Pune (Near DSK Vishwa / Sinhagad Road). 20-Acre integrated residential township featuring 70% open green space, zero-wastage 1 & 2 BHK smart homes, central night garden & on-campus retail plaza. MahaRERA P52100026727. 0% Brokerage. Download Floor Plans & Schedule Site Tour!',
   keywords: [
     'Skyi Star City',
     'Skyi Star City Dhayari',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/star-city',
   },
   openGraph: {
-    title: '⭐ 【Official】SKYi Star City Dhayari Pune | 1 & 2 BHK From ₹42L*',
+    title: '⭐ SKYi Star City Dhayari Pune | 1 & 2 BHK From ₹42L*',
     description: '20-Acre Master-Planned Township with 70% Green Cover & Zero-Wastage Smart Homes in Dhayari. Direct Developer Booking (0% Brokerage).',
     url: 'https://skyidevelopers.in/star-city',
     siteName: 'Skyi Developers',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ 【Official】SKYi Star City Dhayari | 1 & 2 BHK From ₹42L*',
+    title: '⭐ SKYi Star City Dhayari | 1 & 2 BHK From ₹42L*',
     description: '20-Acre Integrated Township with 70% Greenery in South Pune. Download Brochure & Schedule Site Visit!',
     images: ['https://skyidevelopers.in/images/projects/skyi-star-city.webp'],
   },

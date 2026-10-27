@@ -926,7 +926,7 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'CreativeWorkSeries',
-            name: 'SKYi Developers Official Google Web Stories',
+            name: 'SKYi Developers Google Web Stories',
             description: 'Interactive visual stories covering Skyi Songbirds, SKYi Manas Lake PMRDA NA Plots, Tigers Nest, Five Racecourse, and Star City Dhayari.',
             publisher: {
               '@type': 'Organization',
@@ -1085,7 +1085,7 @@ export default function GoogleWebStories({ onOpenSiteVisit }: GoogleWebStoriesPr
                     decoding="async"
                   />
                   <div>
-                    <span className="story-player-author">SKYi Official • {activeStory.category}</span>
+                    <span className="story-player-author">SKYi Portfolio • {activeStory.category}</span>
                     <span className="story-player-live">⚡ Google Web Story</span>
                   </div>
                 </div>

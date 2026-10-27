@@ -3,7 +3,7 @@ import Home from '../page';
 
 export const metadata: Metadata = {
   title: '【PMRDA NA Plots】SKYi Manas Lake Bhukum | 2,000+ SQFT From ₹95L* | Clear 7/12 Titles',
-  description: '⭐ Official SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum (6 Mins to Chandani Chowk). PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads, Underground Utilities. 90% Bank Loan Approved. Download Layout Blueprint & Book Free Cab Site Visit!',
+  description: '⭐ SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum (6 Mins to Chandani Chowk). PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads, Underground Utilities. 90% Bank Loan Approved. Download Layout Blueprint & Book Free Cab Site Visit!',
   keywords: [
     'PMRDA NA plots Bhukum',
     'NA bungalow plots Paud Road Pune',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '【PMRDA NA Plots】SKYi Manas Lake Bhukum | 2,000+ SQFT From ₹95L* | Clear 7/12 Titles',
-    description: '⭐ Official SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum. PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads. 90% Bank Loan Approved. Download Blueprint!',
+    description: '⭐ SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum. PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads. 90% Bank Loan Approved. Download Blueprint!',
     url: 'https://skyidevelopers.in/na-plots-bhukum',
     siteName: 'Skyi Developers',
     images: [

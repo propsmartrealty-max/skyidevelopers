@@ -470,14 +470,14 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
             <div className="footer-maharera-title-wrap">
               <ShieldCheck size={22} className="text-emerald-400" />
               <div>
-                <h3>MahaRERA Regulatory Compliance &amp; Official Registrations</h3>
+                <h3>MahaRERA Regulatory Compliance &amp; Sanctioned Registrations</h3>
                 <p>
                   All projects by Skyi Developers are registered under the Maharashtra Real Estate Regulatory Authority (MahaRERA). Details and sanctions available at{' '}
                   <a
                     href="https://maharera.maharashtra.gov.in/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="maharera-official-link"
+                    className="maharera-portal-link"
                   >
                     maharera.maharashtra.gov.in <ExternalLink size={12} />
                   </a>

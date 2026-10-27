@@ -76,7 +76,7 @@ const PROJECTS: Project[] = [
     seoContent: 'Five Racecourse by SKYi in Sopan Baug, Pune, represents ultra-luxury living with panoramic vistas overlooking the historic Pune Racecourse and Empress Gardens. Featuring expansive 4 & 5 BHK full-floor sky residences with private elevator access, double-height sundecks, and five-star hospitality services.',
     status: 'Ongoing',
     year: 'Signature Collection',
-    reraNumber: 'MahaRERA: Official Sopan Baug Landmark Listing',
+    reraNumber: 'MahaRERA: Sanctioned Sopan Baug Landmark Listing',
   },
   {
     title: 'Five Aguada',
@@ -91,7 +91,7 @@ const PROJECTS: Project[] = [
     seoContent: 'Five Aguada by SKYi is an ultra-exclusive residential landmark located at Bandstand, Bandra West, Mumbai. Offering full-floor 4, 5, and 6 BHK oceanfront residences with 180-degree unobstructed Arabian Sea views, bespoke architectural craftsmanship, and world-class security.',
     status: 'Launching Soon',
     year: '2025 Flagship',
-    reraNumber: 'MahaRERA: Official Bandra West Coastal Listing',
+    reraNumber: 'MahaRERA: Sanctioned Bandra West Coastal Listing',
   },
   {
     title: 'Five Maidan',
@@ -106,7 +106,7 @@ const PROJECTS: Project[] = [
     seoContent: 'Five Maidan by SKYi in Baner, Pune, is an exclusive single-tower residential sanctuary set within sprawling green open fields. Offering expansive 4 BHK homes with zero-wastage layout designs, private balconies, and proximity to Balewadi High Street.',
     status: 'Ongoing',
     year: 'Signature Edition',
-    reraNumber: 'MahaRERA: Official Baner Signature Listing',
+    reraNumber: 'MahaRERA: Sanctioned Baner Signature Listing',
   },
 
   /* ── 3. HILLSIDE & CLUB RESIDENCES ── */
@@ -405,7 +405,7 @@ export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: Portfoli
         viewport={{ once: true }}
         transition={{ duration: 0.75 }}
       >
-        <span className="section-subtitle">Official Project Directory</span>
+        <span className="section-subtitle">Master Project Directory</span>
         <h2 className="section-title">
           The SKYi Master Portfolio<br />
           <span className="gradient-text">Crafted Around Life. Shaped by Light &amp; Space.</span>
@@ -510,7 +510,7 @@ export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: Portfoli
                     rel="noopener noreferrer"
                     className="modal-rera-link"
                   >
-                    Verify on Official MahaRERA Portal (maharera.maharashtra.gov.in) →
+                    Verify on MahaRERA Portal (maharera.maharashtra.gov.in) →
                   </a>
                 </div>
 
