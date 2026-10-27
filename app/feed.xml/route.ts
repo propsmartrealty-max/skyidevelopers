@@ -43,10 +43,40 @@ export async function GET() {
       image: `${baseUrl}/songbirds-1.webp`,
     },
     {
-      title: '🏡 All Projects & Completed Landmarks | SKYi Developers Pune Master Portfolio',
+      title: '🏡 All Projects & Completed Landmarks | SKYi Developers Master Portfolio',
       link: `${baseUrl}/projects`,
-      description: 'Complete directory of ongoing and delivered developments across Bhugaon, Bhukum, Baner, Bavdhan, Sopan Baug, Dhayari, and Aundh.',
+      description: 'Complete directory of ongoing and delivered developments across Bhugaon, Bhukum, Baner, Bavdhan, Sopan Baug, Bandra West Mumbai, Dhayari, and Aundh.',
       image: `${baseUrl}/og-image.jpg`,
+    },
+    {
+      title: '⭐ 【Official】Five Racecourse Sopan Baug Pune | 4 & 5 BHK Sky Mansions',
+      link: `${baseUrl}/five-racecourse`,
+      description: 'Ultra-luxury 4 & 5 BHK single-floor and duplex sky residences overlooking the historic 120-acre Pune Racecourse and Empress Botanical Gardens.',
+      image: `${baseUrl}/images/projects/skyi-five-racecourse.webp`,
+    },
+    {
+      title: '⭐ 【Official】Five Aguada Bandstand Bandra West Mumbai | Sea-Facing Homes',
+      link: `${baseUrl}/five-aguada`,
+      description: 'Ultra-luxury 4, 5 & 6 BHK oceanfront entire-floor mansions commanding 180° unobstructed Arabian Sea views along Bandstand, Bandra West.',
+      image: `${baseUrl}/images/projects/skyi-five-racecourse.webp`,
+    },
+    {
+      title: '⭐ 【Official】Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens',
+      link: `${baseUrl}/five-maidan`,
+      description: 'Rare low-density 4 BHK luxury residences set within expansive landscaped green maidans and private forest walkways in Baner.',
+      image: `${baseUrl}/images/projects/skyi-five-maidan.webp`,
+    },
+    {
+      title: '⭐ 【Official】Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr*',
+      link: `${baseUrl}/tigers-nest`,
+      description: 'Secluded 4 BHK hillside residences directly facing the 7,000-acre NDA Forest Reserve in Bhugaon with heated valley-view pool.',
+      image: `${baseUrl}/images/projects/skyi-tigers-nest.webp`,
+    },
+    {
+      title: '⭐ 【Official】SKYi Star City Dhayari Pune | 1 & 2 BHK Zero-Wastage Homes',
+      link: `${baseUrl}/star-city`,
+      description: '20-Acre integrated residential township featuring 70% open green space and zero-dead-corridor smart homes in Dhayari from ₹42L*.',
+      image: `${baseUrl}/images/projects/skyi-star-city.webp`,
     },
   ];
 
