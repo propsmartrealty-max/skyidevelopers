@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { MessageSquare, Mail, MapPin, Share2, Globe, Play, Send, AlertCircle, Loader2, ShieldCheck, ExternalLink } from 'lucide-react';
 import { sanitizeInput, isSpamSubmission } from '../utils/security';
@@ -18,7 +20,7 @@ const CONTACT_INFO = [
     Icon: Mail,
     label: 'VIP Enquiry',
     value: 'Instant Sales Assistance',
-    href: '#contact',
+    href: '/contact',
   },
   {
     Icon: MapPin,
@@ -99,6 +101,7 @@ interface FooterProps {
 }
 
 export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterProps) {
+  const router = useRouter();
   const [form,      setForm]      = useState<Fields>({ name: '', email: '', phone: '', project: '', message: '', honeypot: '' });
   const [focused,   setFocused]   = useState<string | null>(null);
   const [errorMsg,  setErrorMsg]  = useState<string | null>(null);
@@ -257,35 +260,64 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
 
             {/* Contact info list */}
             <div className="contact-info-list">
-              {CONTACT_INFO.map(({ Icon, label, value, href }) => (
-                <motion.a
-                  key={label}
-                  href={href}
-                  className="contact-info-item"
-                  whileHover={{ x: 7 }}
-                  transition={{ type: 'spring', stiffness: 400, damping: 28 }}
-                >
-                  <div className="ci-icon">
-                    <Icon size={20} />
-                  </div>
-                  <div>
-                    <p className="ci-label">{label}</p>
-                    <p className="ci-value">{value}</p>
-                  </div>
-                </motion.a>
-              ))}
+              {CONTACT_INFO.map(({ Icon, label, value, href }) => {
+                const isExternal = href.startsWith('http');
+                return (
+                  <motion.div
+                    key={label}
+                    whileHover={{ x: 7 }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 28 }}
+                  >
+                    {isExternal ? (
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="contact-info-item"
+                      >
+                        <div className="ci-icon">
+                          <Icon size={20} />
+                        </div>
+                        <div>
+                          <p className="ci-label">{label}</p>
+                          <p className="ci-value">{value}</p>
+                        </div>
+                      </a>
+                    ) : (
+                      <Link
+                        href={href}
+                        className="contact-info-item"
+                        onClick={(e) => {
+                          if (href === '/contact' && typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '/contact')) {
+                            e.preventDefault();
+                            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                          }
+                        }}
+                      >
+                        <div className="ci-icon">
+                          <Icon size={20} />
+                        </div>
+                        <div>
+                          <p className="ci-label">{label}</p>
+                          <p className="ci-value">{value}</p>
+                        </div>
+                      </Link>
+                    )}
+                  </motion.div>
+                );
+              })}
             </div>
 
             {/* Strategic Links Cluster */}
             <div className="strategic-links-wrap" style={{ marginTop: '30px' }}>
               <p className="social-title" style={{ marginBottom: '12px', color: 'var(--accent-gold)' }}>Strategic Links — SKYi Eco-Townships &amp; Residences</p>
               <div className="strategic-links-grid">
-                <a href="/songbirds" className="strategic-link-item">Skyi Songbirds 45-Acre Township Bhugaon</a>
-                <a href="/projects" className="strategic-link-item">SKYi Manas Lake Lakeside Residences Paud Road</a>
-                <a href="/projects" className="strategic-link-item">SKYi Tigers Nest &amp; PWC Towers Bhugaon</a>
-                <a href="/connectivity" className="strategic-link-item">Pune Metro &amp; Paud Road Connectivity Matrix</a>
-                <a href="/virtual-tour" className="strategic-link-item">360° Drone Virtual Sightseeing Gallery</a>
-                <a href="/nri-hub" className="strategic-link-item">Global NRI Investment Advisory Hub</a>
+                <Link href="/songbirds" className="strategic-link-item">Skyi Songbirds 45-Acre Township Bhugaon</Link>
+                <Link href="/manas-lake" className="strategic-link-item">SKYi Manas Lake Lakeside Residences Paud Road</Link>
+                <Link href="/tigers-nest" className="strategic-link-item">SKYi Tigers Nest &amp; PWC Towers Bhugaon</Link>
+                <Link href="/connectivity" className="strategic-link-item">Pune Metro &amp; Paud Road Connectivity Matrix</Link>
+                <Link href="/virtual-tour" className="strategic-link-item">360° Drone Virtual Sightseeing Gallery</Link>
+                <Link href="/nri-hub" className="strategic-link-item">Global NRI Investment Advisory Hub</Link>
               </div>
             </div>
             <div className="social-row">
@@ -523,7 +555,18 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
                 Privacy &amp; MahaRERA Disclosures
               </button>
             )}
-            <a href="#home">Back to Top ↑</a>
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (typeof window !== 'undefined' && window.location.pathname !== '/') {
+                  router.push('/');
+                }
+              }}
+            >
+              Back to Top ↑
+            </a>
           </div>
         </div>
       </div>

@@ -3,6 +3,8 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { useEffect, useRef, useState, useCallback } from 'react';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import './Hero.css';
 
 const TYPEWRITER_STRINGS = [
@@ -17,6 +19,8 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenSiteVisit }: HeroProps) {
+  const pathname = usePathname() || '/';
+  const router = useRouter();
   const heroRef   = useRef<HTMLElement>(null);
   const mouseRef  = useRef({ x: 0, y: 0 });
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
@@ -89,8 +93,14 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
     show:   { opacity: 1, y: 0 },
   };
 
-  const scrollToPortfolio = useCallback(() =>
-    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }), []);
+  const scrollToPortfolio = useCallback(() => {
+    if (pathname === '/' || pathname === '') {
+      document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState(null, '', '/projects');
+    } else {
+      router.push('/projects');
+    }
+  }, [pathname, router]);
 
   return (
     <header className="hero" id="home" ref={heroRef}>
@@ -128,10 +138,20 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
       >
         {/* Strategic Launch Link Banner */}
         <motion.div className="hero-badge" variants={item}>
-          <a href="#portfolio" className="hero-link-badge">
+          <Link
+            href="/projects"
+            className="hero-link-badge"
+            onClick={(e) => {
+              if (pathname === '/' || pathname === '') {
+                e.preventDefault();
+                document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+                window.history.pushState(null, '', '/projects');
+              }
+            }}
+          >
             <span className="badge-dot" />
             <span>⭐ Featured SKYi Portfolio: Songbirds • Manas Lake • Five Racecourse • Five Aguada (Mumbai)</span>
-          </a>
+          </Link>
         </motion.div>
 
         {/* Title */}

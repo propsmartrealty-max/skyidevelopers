@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Navbar from '../components/Navbar';
@@ -29,6 +30,33 @@ const PrivacyPolicyModal = dynamic(() => import('../components/PrivacyPolicyModa
 const AIMatchmakerModal = dynamic(() => import('../components/AIMatchmakerModal'), { ssr: false });
 
 function HomeContent() {
+  const pathname = usePathname() || '/';
+
+  /* Auto-scroll to section if navigated directly to clean routes like /projects, /contact, /connectivity, /philosophy */
+  useEffect(() => {
+    const sectionMap: Record<string, string> = {
+      '/projects': 'portfolio',
+      '/contact': 'contact',
+      '/connectivity': 'connectivity',
+      '/philosophy': 'philosophy',
+      '/about': 'philosophy',
+      '/virtual-tour': 'virtual-tour',
+      '/master-plan': 'master-plan',
+      '/plot-estimator': 'calculator',
+    };
+
+    const targetId = sectionMap[pathname];
+    if (targetId) {
+      const timer = setTimeout(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 180);
+      return () => clearTimeout(timer);
+    }
+  }, [pathname]);
+
   /* Modal States */
   const [isVisitModalOpen, setIsVisitModalOpen] = useState(false);
   const [visitDefaultProject, setVisitDefaultProject] = useState<string | undefined>();
