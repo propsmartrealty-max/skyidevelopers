@@ -147,6 +147,16 @@
   letter-spacing: -3px;
   margin-bottom: 34px;
 }
+.hero-title-brand {
+  display: block;
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--accent-1);
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
 .hero-title-accent {
   background: var(--grad-cta);
   -webkit-background-clip: text;

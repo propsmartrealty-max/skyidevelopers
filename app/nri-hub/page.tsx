@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import NRIHubContent from '../../components/NRIHubContent';
 
 export const metadata: Metadata = {
-  title: '🌍 Global NRI Real Estate Hub Pune | FEMA & RBI Compliant SKYi Investments | High ROI',
-  description: '⭐ SKYi Developers Global NRI Advisory Hub. 100% FEMA/RBI compliant property purchase in Pune (USA, UAE, UK, Singapore, Australia, Canada). NRE/NRO banking, digital escrow, verified MahaRERA titles, high rental yields. Connect with VIP NRI Desk!',
+  title: 'NRI Real Estate Investment Desk Pune',
+  description: 'SKYi Developers Global NRI Advisory Hub. 100% FEMA/RBI compliant property purchase in Pune (USA, UAE, UK, Singapore, Australia, Canada). NRE/NRO banking, digital escrow, verified MahaRERA titles, high rental yields. Connect with VIP NRI Desk!',
   keywords: [
     'NRI real estate investment Pune', 'NRI property purchase India guide', 'Skyi Songbirds NRI booking',
     'SKYi Manas Lake plots NRI', 'SKYi Tigers Nest Bhugaon NRI', 'FEMA guidelines property purchase NRI',
@@ -25,11 +25,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: '🌍 Global NRI Property Investment in Pune | SKYi Developers NRI Desk',
+    title: 'NRI Real Estate Investment Desk Pune | SKYi Developers',
     description: 'Comprehensive guide for overseas investors: FEMA compliance, NRE/NRO banking, digital escrow, 3D tours, and high-yield residential townships in Pune.',
     url: 'https://skyidevelopers.in/nri-hub',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [{ url: 'https://skyidevelopers.in/songbirds-1.webp', width: 1200, height: 630, alt: 'SKYi Songbirds NRI Real Estate Pune' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NRI Real Estate Investment Desk Pune | SKYi Developers',
+    description: 'FEMA & RBI compliant property purchase in Pune for NRIs across USA, UAE, UK, and Singapore. Connect with VIP NRI Desk!',
+    images: ['https://skyidevelopers.in/songbirds-1.webp'],
   },
 };
 

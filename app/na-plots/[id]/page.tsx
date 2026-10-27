@@ -19,21 +19,89 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!item) {
     return {
-      title: 'Real Estate Projects & NA Plots Pune & Mumbai | SKYi Developers',
+      title: 'Projects & NA Plots Pune | SKYi Developers',
       description: 'PMRDA Sanctioned Clear Title NA Bungalow Plots and Luxury Residences across Pune and Mumbai.',
     };
   }
 
   const isPlot = item.type.toLowerCase().includes('plot');
-  const title = isPlot
-    ? `⭐ ${item.project} ${item.microLocation}™ | PMRDA NA Plots From ${item.priceRange.split('-')[0].trim()}* | 2026 Layout & Clear 7/12`
-    : `⭐ ${item.project} ${item.microLocation}™ | ${item.type.split('&')[0].trim()} From ${item.priceRange.split('-')[0].trim()}* | 2026 Price List & Plans`;
+  let shortPrice = item.priceRange.split('-')[0].trim();
+  if (/only\s*₹?49/i.test(shortPrice) || item.id.includes('1bhk') || item.id.includes('1-bhk')) {
+    shortPrice = '₹49L*';
+  } else if (/application/i.test(shortPrice)) {
+    shortPrice = 'POA';
+  } else {
+    const numMatch = shortPrice.match(/₹[\d.]+/);
+    const unitMatch = shortPrice.match(/Cr|Crore|Lakh|L/i);
+    if (numMatch && unitMatch) {
+      const unit = unitMatch[0].toLowerCase().startsWith('c') ? 'Cr*' : 'L*';
+      shortPrice = `${numMatch[0]} ${unit}`;
+    }
+  }
+
+  let cleanProject = item.project
+    .replace(/^SKYi\s+/i, '')
+    .replace(/PMRDA\s+/i, '')
+    .replace(/NA\s+(Bungalow|Villa)\s+(Plots|Estate)/i, 'Plots')
+    .replace(/NA\s+(Plotting|Plots)/i, 'Plots')
+    .replace(/(Luxury|Scenic)\s+Villa\s+Plots/i, 'Plots')
+    .replace(/Country\s+Estate\s+NA\s+Plotting/i, 'Country Plots')
+    .replace(/Tech-Corridor/i, 'Tech')
+    .replace(/Eco-Township/i, '')
+    .replace(/Residences/i, '')
+    .replace(/Sanctuaries/i, '')
+    .replace(/Annexe/i, '')
+    .replace(/1,\s*2,\s*3\s*&\s*4\s*BHK/i, '')
+    .replace(/20-Acre\s+Township/i, '')
+    .replace(/Club\s+Residences/i, 'Club')
+    .replace(/Waterfront\s+Residences/i, 'Waterfront')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const loc = item.microLocation.split(/[,/]/)[0].trim().replace(/\s*\(Mumbai\)/i, '').replace(/\s*&\s*.*$/, '');
+  if (!cleanProject.toLowerCase().includes(loc.toLowerCase())) {
+    cleanProject = `${cleanProject} ${loc}`.trim();
+  }
+
+  cleanProject = cleanProject.replace(/\s+/g, ' ').trim();
+
+  let title = `${cleanProject} | ${shortPrice}`;
+  if (title.length > 39) {
+    cleanProject = cleanProject
+      .replace(/Bungalow Estate/i, 'Plots')
+      .replace(/Foothills/i, '')
+      .replace(/Meadows/i, '')
+      .replace(/Corridor/i, '')
+      .replace(/Annexe/i, '')
+      .replace(/Master Developments/i, 'Townships')
+      .replace(/Smart Eco-Homes/i, 'Smart Homes')
+      .replace(/at Songbirds/i, 'Songbirds')
+      .replace(/Scenic/i, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    title = `${cleanProject} | ${shortPrice}`;
+  }
+
+  if (title.length > 39) {
+    const maxNameLen = 39 - shortPrice.length - 3;
+    const words = cleanProject.split(' ');
+    let built = '';
+    for (const w of words) {
+      if (`${built} ${w}`.trim().length <= maxNameLen) {
+        built = `${built} ${w}`.trim();
+      } else {
+        break;
+      }
+    }
+    title = `${built || cleanProject.slice(0, maxNameLen)} | ${shortPrice}`;
+  }
 
   const description = isPlot
-    ? `【Direct Developer Booking — 0% Brokerage】⭐ 100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Plot Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). Download Sanctioned Layout Blueprint & Book Free AC Cab Site Visit!`
-    : `【Direct Developer Booking — 0% Brokerage】⭐ ${item.project} at ${item.location}. ${item.type}. Configurations: ${item.plotSize || 'Expansive Carpet Areas'}. Approved Bank Loans (${item.bankLoans.join(', ')}). Download 2026 Floor Plans PDF & Schedule VIP Site Visit with Free Cab Pickup!`;
+    ? `100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Plot Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). Download Layout Blueprint & Book Free Cab Visit!`
+    : `${item.project} at ${item.location}. ${item.type}. Configurations: ${item.plotSize || 'Expansive Carpet Areas'}. Approved Bank Loans (${item.bankLoans.join(', ')}). Download 2026 Floor Plans PDF & Schedule VIP Site Visit with Free Cab Pickup!`;
 
   const canonicalUrl = `https://skyidevelopers.in/na-plots/${item.id}`;
+  const fullTitle = `${title} | SKYi Developers`;
 
   return {
     title,
@@ -45,10 +113,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: canonicalUrl,
     },
     openGraph: {
-      title,
+      title: fullTitle,
       description,
       url: canonicalUrl,
-      siteName: item.location.includes('Mumbai') ? 'Skyi Developers Mumbai' : 'Skyi Developers Pune',
+      siteName: 'SKYi Developers',
       locale: 'en_IN',
       type: 'website',
       images: [
@@ -62,7 +130,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: fullTitle,
       description,
       images: ['https://skyidevelopers.in/bungalow-plots.jpg'],
     },

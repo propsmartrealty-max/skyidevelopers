@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr* | SKYi',
-  description: '【Project Showcase & Booking】Tiger’s Nest by SKYi in Bhugaon, Paud Road, Pune (Near Chandani Chowk). Secluded 4 BHK hillside residences directly facing the 7,000-acre NDA Forest Reserve. Heated infinity pool, 180° valley decks, and pure mountain air. MahaRERA P52100000769. 0% Brokerage. Download Floor Plans & Book Free Cab Visit!',
+  title: 'Tigers Nest Bhugaon | 4 BHK Forest Decks',
+  description: 'Tiger’s Nest by SKYi in Bhugaon, Paud Road, Pune (Near Chandani Chowk). Secluded 4 BHK hillside residences directly facing the 7,000-acre NDA Forest Reserve. Heated infinity pool, 180° valley decks, and pure mountain air. MahaRERA P52100000769. 0% Brokerage. Download Floor Plans & Book Free Cab Visit!',
   keywords: [
     'Tigers Nest Bhugaon',
     'Skyi Tigers Nest',
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/tigers-nest',
   },
   openGraph: {
-    title: '⭐ Tiger’s Nest Bhugaon Pune | 4 BHK Forest Decks From ₹1.79 Cr*',
+    title: 'Tigers Nest Bhugaon | 4 BHK Forest Decks | SKYi Developers',
     description: 'Secluded 4 BHK hillside homes facing the 7,000-acre NDA Forest Reserve in Bhugaon. Direct Developer Booking (0% Brokerage).',
     url: 'https://skyidevelopers.in/tigers-nest',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [
       {
         url: 'https://skyidevelopers.in/images/projects/skyi-tigers-nest.webp',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ Tiger’s Nest Bhugaon | 4 BHK Forest Decks From ₹1.79 Cr*',
+    title: 'Tigers Nest Bhugaon | 4 BHK Forest Decks | SKYi Developers',
     description: 'Secluded Hillside Sanctuary Facing 7,000-Acre NDA Forest. Download Brochure & Book VIP Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-tigers-nest.webp'],
   },

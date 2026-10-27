@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import SongbirdsHubContent from '../../components/SongbirdsHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ Skyi Songbirds Bhugaon™ | 1 BHK All-Inclusive Only ₹49 Lacs* | New Tower Launch',
-  description: '【Project Showcase & Booking】Explore Skyi Songbirds 45-Acre Township in Bhugaon, Paud Road (10 Mins from Kothrud & Chandani Chowk). New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) All-Inclusive Only ₹49 Lacs* & Luxury 3 & 4 BHK Hillside Homes. 5-Acre Poona Western Club. MahaRERA P52100028121 / P52100000769. Download Verified Floor Plans PDF & Book Free Cab Site Visit!',
+  title: 'Skyi Songbirds Bhugaon | 1 BHK From ₹49L*',
+  description: 'Explore Skyi Songbirds 45-Acre Township in Bhugaon, Paud Road (10 Mins from Kothrud & Chandani Chowk). New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) All-Inclusive Only ₹49 Lacs* & Luxury 3 & 4 BHK Hillside Homes. 5-Acre Poona Western Club. MahaRERA P52100028121 / P52100000769. Download Verified Floor Plans PDF & Book Free Cab Site Visit!',
   keywords: [
     'Skyi Songbirds',
     'Skyi Songbirds Bhugaon',
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/songbirds',
   },
   openGraph: {
-    title: '⭐ Skyi Songbirds Bhugaon™ | 1 BHK All-Inclusive Only ₹49 Lacs* | New Tower Launch',
-    description: '【Project Showcase & Booking】45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) All-Inclusive Only ₹49 Lacs*. Download Floor Plans PDF!',
+    title: 'Skyi Songbirds Bhugaon | 1 BHK From ₹49L* | SKYi Developers',
+    description: '45+ Acre IGBC Platinum Certified Eco-Township in Bhugaon near Chandani Chowk & Kothrud. New Tower Launch: Aria Heights Smart 1 BHK (430 Sq.Ft.) All-Inclusive Only ₹49 Lacs*. Download Floor Plans PDF!',
     url: 'https://skyidevelopers.in/songbirds',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [
       {
         url: 'https://skyidevelopers.in/songbirds-1.webp',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ Skyi Songbirds Bhugaon™ | 1 BHK All-Inclusive Only ₹49 Lacs*',
+    title: 'Skyi Songbirds Bhugaon | 1 BHK From ₹49L* | SKYi Developers',
     description: '45+ Acre IGBC Platinum Township near Kothrud. Aria Heights Smart 1 BHK All-Inclusive Only ₹49 Lacs*. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/songbirds-1.webp'],
   },

@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ Five Racecourse Sopan Baug Pune | 4 & 5 BHK From ₹3.85 Cr* | SKYi Developers',
-  description: '【Project Showcase & Booking】Five Racecourse by SKYi in prestigious Sopan Baug, Pune. Exclusive 4 & 5 BHK full-floor sky mansions with unobstructed 180° views of the 120-acre Pune Racecourse and Empress Botanical Gardens. Private elevators, rooftop infinity pool & 24/7 concierge. 0% Brokerage. Download Floor Plans & Book VIP Site Visit!',
+  title: 'Five Racecourse Sopan Baug | 4 & 5 BHK',
+  description: 'Five Racecourse by SKYi in prestigious Sopan Baug, Pune. Exclusive 4 & 5 BHK full-floor sky mansions with unobstructed 180° views of the 120-acre Pune Racecourse and Empress Botanical Gardens. Private elevators, rooftop infinity pool & 24/7 concierge. 0% Brokerage. Download Floor Plans & Book VIP Site Visit!',
   keywords: [
     'Five Racecourse Sopan Baug',
     'Skyi Five Racecourse',
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/five-racecourse',
   },
   openGraph: {
-    title: '⭐ Five Racecourse Sopan Baug Pune | 4 & 5 BHK From ₹3.85 Cr*',
+    title: 'Five Racecourse Sopan Baug | 4 & 5 BHK | SKYi Developers',
     description: 'Exclusive 4 & 5 BHK full-floor sky residences with unobstructed Pune Racecourse and Empress Garden vistas. Direct Booking Partner (0% Brokerage).',
     url: 'https://skyidevelopers.in/five-racecourse',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [
       {
         url: 'https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ Five Racecourse Sopan Baug | 4 & 5 BHK From ₹3.85 Cr*',
+    title: 'Five Racecourse Sopan Baug | 4 & 5 BHK | SKYi Developers',
     description: 'Panoramic Racecourse Views & Ultra-Luxury Living in Sopan Baug Pune. Download Brochure & Schedule Private Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp'],
   },

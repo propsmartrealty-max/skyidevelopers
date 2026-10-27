@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Home from '../page';
 
 export const metadata: Metadata = {
-  title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds 1 BHK All-Inclusive ₹49L* & Tigers Nest',
-  description: '【Direct Developer Booking — 0% Brokerage】⭐ Discover premier townships along 6-lane Paud Road: Skyi Songbirds (1 BHK All-Inclusive Only ₹49L* & 3-4 BHK), SKYi Tigers Nest & PWC Towers. Next to 7,000-acre NDA Forest. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
+  title: 'SKYi Projects Bhugaon | 1 BHK From ₹49L*',
+  description: 'Discover premier townships along 6-lane Paud Road: Skyi Songbirds (1 BHK All-Inclusive Only ₹49L* & 3-4 BHK), SKYi Tigers Nest & PWC Towers. Next to 7,000-acre NDA Forest. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
   keywords: [
     'Skyi Bhugaon',
     'Skyi Songbirds Bhugaon',
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/bhugaon',
   },
   openGraph: {
-    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds 1 BHK All-Inclusive ₹49L* & Tigers Nest',
-    description: '【Direct Developer Booking — 0% Brokerage】Skyi Songbirds (1 BHK All-Inclusive ₹49L*), Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune. Download 2026 Price List & Plans!',
+    title: 'SKYi Projects Bhugaon | 1 BHK From ₹49L* | SKYi Developers',
+    description: 'Skyi Songbirds (1 BHK All-Inclusive ₹49L*), Tigers Nest & PWC Towers in Bhugaon near Chandani Chowk & Kothrud, Pune. Download 2026 Price List & Plans!',
     url: 'https://skyidevelopers.in/bhugaon',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [
       {
         url: 'https://skyidevelopers.in/songbirds-1.webp',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ SKYi Projects in Bhugaon Pune™ | Songbirds 1 BHK All-Inclusive ₹49L* & Tigers Nest',
+    title: 'SKYi Projects Bhugaon | 1 BHK From ₹49L* | SKYi Developers',
     description: 'Skyi Songbirds (1 BHK All-Inclusive ₹49L*), Tigers Nest & PWC Towers in Bhugaon near Kothrud. Download 2026 Floor Plans & Book Cab Tour!',
     images: ['https://skyidevelopers.in/songbirds-1.webp'],
   },

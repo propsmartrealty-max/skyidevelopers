@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens | SKYi Developers',
-  description: '【Project Showcase & Booking】Five Maidan by SKYi in Baner, Pune. A rare single-tower luxury residential development set within sprawling landscaped open maidans and lush grounds. Expansive 4 BHK homes with double-height decks, zero-wastage layouts & resort amenities. 0% Brokerage. Download Floor Plans & Schedule Site Tour!',
+  title: 'Five Maidan Baner Pune | 4 BHK Residences',
+  description: 'Five Maidan by SKYi in Baner, Pune. A rare single-tower luxury residential development set within sprawling landscaped open maidans and lush grounds. Expansive 4 BHK homes with double-height decks, zero-wastage layouts & resort amenities. 0% Brokerage. Download Floor Plans & Schedule Site Tour!',
   keywords: [
     'Five Maidan Baner',
     'Skyi Five Maidan',
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/five-maidan',
   },
   openGraph: {
-    title: '⭐ Five Maidan Baner Pune | 4 BHK Tower in Sprawling Greens',
+    title: 'Five Maidan Baner Pune | 4 BHK Residences | SKYi Developers',
     description: 'Exclusive 4 BHK luxury residences set within expansive green open fields in Baner. Direct Developer Booking (0% Brokerage).',
     url: 'https://skyidevelopers.in/five-maidan',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [
       {
         url: 'https://skyidevelopers.in/images/projects/skyi-five-maidan.webp',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ Five Maidan Baner Pune | 4 BHK Tower in Greens',
+    title: 'Five Maidan Baner Pune | 4 BHK Residences | SKYi Developers',
     description: 'Exclusive 4 BHK Tower in Sprawling Greens near Balewadi High Street. Download Brochure & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-five-maidan.webp'],
   },

@@ -508,9 +508,9 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
       <div className="footer-bottom">
         <div className="fb-container">
           <div className="fb-left">
-            <img src="/logo-white.svg" alt="Skyi Developers" width="52" height="24" style={{ height: '24px', width: 'auto' }} />
+            <img src="/logo-white.svg" alt="SKYi Developers" width="52" height="24" style={{ height: '24px', width: 'auto' }} />
             <p className="fb-copy">
-              © {new Date().getFullYear()} Skyi Developers. Built around life. All Rights Reserved.
+              © {new Date().getFullYear()} SKYi Developers. Built around life. All Rights Reserved.
             </p>
           </div>
           <div className="fb-right">

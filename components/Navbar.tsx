@@ -91,7 +91,7 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
             className="logo"
             onClick={(e) => handleNavClick({ name: 'Home', href: '#home', id: 'home' }, e)}
           >
-            <img src="/logo-white.svg" alt="Skyi Developers" width="65" height="30" style={{ height: '30px', width: 'auto' }} />
+            <img src="/logo-white.svg" alt="SKYi Developers" width="65" height="30" style={{ height: '30px', width: 'auto' }} />
           </a>
 
           {/* Desktop links */}

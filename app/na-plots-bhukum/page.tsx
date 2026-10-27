@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Home from '../page';
 
 export const metadata: Metadata = {
-  title: '【PMRDA NA Plots】SKYi Manas Lake Bhukum | 2,000+ SQFT From ₹95L* | Clear 7/12 Titles',
-  description: '⭐ SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum (6 Mins to Chandani Chowk). PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads, Underground Utilities. 90% Bank Loan Approved. Download Layout Blueprint & Book Free Cab Site Visit!',
+  title: 'PMRDA NA Plots Bhukum | SKYi Manas Lake',
+  description: 'SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum (6 Mins to Chandani Chowk). PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads, Underground Utilities. 90% Bank Loan Approved. Download Layout Blueprint & Book Free Cab Site Visit!',
   keywords: [
     'PMRDA NA plots Bhukum',
     'NA bungalow plots Paud Road Pune',
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/na-plots-bhukum',
   },
   openGraph: {
-    title: '【PMRDA NA Plots】SKYi Manas Lake Bhukum | 2,000+ SQFT From ₹95L* | Clear 7/12 Titles',
-    description: '⭐ SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum. PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads. 90% Bank Loan Approved. Download Blueprint!',
+    title: 'PMRDA NA Plots Bhukum | SKYi Manas Lake | SKYi Developers',
+    description: 'SKYi Manas Lake NA Bungalow Plots on Paud Road, Bhukum. PMRDA Sanctioned, FSI 1.5, Clear 7/12 & PR Cards, 40-50ft Concrete Roads. 90% Bank Loan Approved. Download Blueprint!',
     url: 'https://skyidevelopers.in/na-plots-bhukum',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [
       {
         url: 'https://skyidevelopers.in/bungalow-plots.jpg',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '【PMRDA NA Plots】SKYi Manas Lake Bhukum | 2,000+ SQFT From ₹95L*',
+    title: 'PMRDA NA Plots Bhukum | SKYi Manas Lake | SKYi Developers',
     description: 'PMRDA Sanctioned Clear Title NA Bungalow Plots with FSI 1.5. 90% Bank Loans Approved. Download Layout Plan!',
     images: ['https://skyidevelopers.in/bungalow-plots.jpg'],
   },

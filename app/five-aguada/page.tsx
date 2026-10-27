@@ -3,8 +3,8 @@ import ProjectHubContent from '../../components/ProjectHubContent';
 import type { ProjectHubDetail } from '../../components/ProjectHubContent';
 
 export const metadata: Metadata = {
-  title: '⭐ Five Aguada Bandstand Bandra Mumbai | Sea-Facing Homes | SKYi Developers',
-  description: '【Project Showcase & Booking】Five Aguada by SKYi at Bandstand, Bandra West, Mumbai. Inspired by Castella de Aguada. Exclusive 4, 5 & 6 BHK oceanfront entire-floor mansions commanding 180° unobstructed Arabian Sea views. Private plunge pools, private elevators & white-glove concierge. 0% Brokerage. Download Brochure & Schedule Private Viewing!',
+  title: 'Five Aguada Bandra West | Sea-Facing Homes',
+  description: 'Five Aguada by SKYi at Bandstand, Bandra West, Mumbai. Inspired by Castella de Aguada. Exclusive 4, 5 & 6 BHK oceanfront entire-floor mansions commanding 180° unobstructed Arabian Sea views. Private plunge pools, private elevators & white-glove concierge. 0% Brokerage. Download Brochure & Schedule Private Viewing!',
   keywords: [
     'Five Aguada Bandra',
     'Five Aguada Mumbai',
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     canonical: 'https://skyidevelopers.in/five-aguada',
   },
   openGraph: {
-    title: '⭐ Five Aguada Bandstand Bandra Mumbai | Sea-Facing Residences',
+    title: 'Five Aguada Bandra West | Sea-Facing Homes | SKYi Developers',
     description: 'Exclusive 4, 5 & 6 BHK entire-floor oceanfront mansions overlooking the Arabian Sea in Bandra West. Direct Developer Booking (0% Brokerage).',
     url: 'https://skyidevelopers.in/five-aguada',
-    siteName: 'Skyi Developers',
+    siteName: 'SKYi Developers',
     images: [
       {
         url: 'https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '⭐ Five Aguada Bandstand Bandra | Sea-Facing Mansions',
+    title: 'Five Aguada Bandra West | Sea-Facing Homes | SKYi Developers',
     description: '180° Arabian Sea Panoramas & Single-Floor Residences at Bandstand Bandra West. Download Brochure & Request Private Tour!',
     images: ['https://skyidevelopers.in/images/projects/skyi-five-racecourse.webp'],
   },

@@ -12,13 +12,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: '⭐ SKYi Developers Pune™ | 1 BHK All-Inclusive ₹49L* & NA Plots | 2026 Price List',
-    template: '%s | SKYi Developers™',
+    default: 'SKYi Developers | Eco-Townships & Luxury Residences Pune',
+    template: '%s | SKYi Developers',
   },
-  description: '【Direct Developer Booking — 0% Brokerage】⭐ Explore SKYi Developers Pune: Skyi Songbirds (New Launch 1 BHK All-Inclusive Only ₹49L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), Tigers Nest, Five Racecourse Sopan Baug, Five Aguada Bandra Mumbai. MahaRERA Approved. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
+  applicationName: 'SKYi Developers',
+  description: 'Explore SKYi Developers Pune: Skyi Songbirds (New Launch 1 BHK All-Inclusive Only ₹49L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), Tigers Nest, Five Racecourse Sopan Baug, Five Aguada Bandra Mumbai. MahaRERA Approved. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
   keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
-  authors: [{ name: 'Skyi Developers' }],
-  publisher: 'Skyi Developers',
+  authors: [{ name: 'SKYi Developers' }],
+  publisher: 'SKYi Developers',
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
     shortcut: '/favicon.svg',
@@ -50,9 +51,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://skyidevelopers.in/',
-    title: 'SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
-    description: '⭐ Featured Project Showcase. 20+ Years, 7,000+ Families, 7M+ Sq.Ft. delivered. Explore Songbirds, Manas Lake, Five Racecourse, Five Aguada Bandra, Five Maidan, and Tiger’s Nest. Zero brokerage direct developer booking.',
-    siteName: 'Skyi Developers',
+    title: 'SKYi Developers | Eco-Townships & Luxury Residences Pune',
+    description: 'Featured Project Showcase. 20+ Years, 7,000+ Families, 7M+ Sq.Ft. delivered. Explore Songbirds, Manas Lake, Five Racecourse, Five Aguada Bandra, Five Maidan, and Tiger’s Nest. Zero brokerage direct developer booking.',
+    siteName: 'SKYi Developers',
     locale: 'en_IN',
     alternateLocale: ['en_US', 'en_GB', 'en_AE', 'en_SG', 'en_AU', 'en_CA'],
     images: [
@@ -60,20 +61,20 @@ export const metadata: Metadata = {
         url: 'https://skyidevelopers.in/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Skyi Developers Pune — Master Portfolio & Eco-Townships',
+        alt: 'SKYi Developers Pune — Master Portfolio & Eco-Townships',
       },
       {
         url: 'https://skyidevelopers.in/images/projects/skyi-songbirds.webp',
         width: 1200,
         height: 630,
-        alt: 'Skyi Songbirds Bhugaon Pune Eco-Township',
+        alt: 'SKYi Songbirds Bhugaon Pune Eco-Township',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SKYi Developers | Eco-Townships & Ultra-Luxury Residences',
-    description: '⭐ Direct Developer Booking (0% Brokerage). 1 BHK All-Inclusive Only ₹49L*, 2, 3, 4 BHK & Ultra-Luxury Residences. Download Floor Plans PDF & Schedule Site Tour!',
+    title: 'SKYi Developers | Eco-Townships & Luxury Residences Pune',
+    description: 'Direct Developer Booking (0% Brokerage). 1 BHK All-Inclusive Only ₹49L*, 2, 3, 4 BHK & Ultra-Luxury Residences. Download Floor Plans PDF & Schedule Site Tour!',
     images: ['https://skyidevelopers.in/og-image.jpg'],
   },
   robots: {
@@ -111,8 +112,17 @@ const jsonLdSchema = {
     {
       "@type": "Organization",
       "@id": "https://skyidevelopers.in/#organization",
-      "name": "Skyi Developers",
-      "alternateName": ["SKYi Developers", "Skyi Developer Pune", "SKYi Properties", "SKYi Real Estate", "Enerrgia SKYi Developers"],
+      "name": "SKYi Developers",
+      "alternateName": [
+        "Skyi Developers",
+        "SKYi",
+        "Skyi",
+        "SKYi Developers Pune",
+        "Skyi Developers Pune",
+        "SKYi Properties",
+        "SKYi Real Estate",
+        "Enerrgia SKYi Developers"
+      ],
       "url": "https://skyidevelopers.in/",
       "logo": "https://skyidevelopers.in/favicon.svg",
       "foundingDate": "2004",
@@ -346,8 +356,17 @@ const jsonLdSchema = {
       "@type": "WebSite",
       "@id": "https://skyidevelopers.in/#website",
       "url": "https://skyidevelopers.in/",
-      "name": "Skyi Developers Pune",
-      "description": "Showcase of SKYi Developers (Enerrgia SKYi Developers) — Premium Eco-Townships & Luxury Residences in Pune",
+      "name": "SKYi Developers",
+      "alternateName": [
+        "Skyi Developers",
+        "SKYi",
+        "Skyi",
+        "SKYi Developers Pune",
+        "Skyi Developers Pune",
+        "Enerrgia SKYi Developers",
+        "skyidevelopers.in"
+      ],
+      "description": "SKYi Developers — Leading real estate developer of sustainable eco-townships and luxury residences in Pune and Mumbai.",
       "publisher": { "@id": "https://skyidevelopers.in/#organization" },
       "potentialAction": {
         "@type": "SearchAction",
