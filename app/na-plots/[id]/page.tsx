@@ -26,12 +26,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const isPlot = item.type.toLowerCase().includes('plot');
   const title = isPlot
-    ? `⭐ ${item.project} ${item.microLocation} | PMRDA NA Plots From ${item.priceRange.split('-')[0].trim()}* | Clear 7/12`
-    : `⭐ ${item.project} ${item.microLocation} | ${item.type.split('&')[0].trim()} From ${item.priceRange.split('-')[0].trim()}* | SKYi`;
+    ? `⭐ ${item.project} ${item.microLocation}™ | PMRDA NA Plots From ${item.priceRange.split('-')[0].trim()}* | 2026 Layout & Clear 7/12`
+    : `⭐ ${item.project} ${item.microLocation}™ | ${item.type.split('&')[0].trim()} From ${item.priceRange.split('-')[0].trim()}* | 2026 Price List & Plans`;
 
   const description = isPlot
-    ? `【Verified SKYi Listing】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). 0% Brokerage. Book VIP Site Tour!`
-    : `【Project Showcase & Booking】${item.project} at ${item.location}. ${item.type}. Configurations: ${item.plotSize || 'Expansive Carpet Areas'}. Approved Bank Loans (${item.bankLoans.join(', ')}). 0% Brokerage Direct Booking. Schedule VIP Visit!`;
+    ? `【Direct Developer Booking — 0% Brokerage】⭐ 100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Plot Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. Approved Bank Loans (${item.bankLoans.join(', ')}). Download Sanctioned Layout Blueprint & Book Free AC Cab Site Visit!`
+    : `【Direct Developer Booking — 0% Brokerage】⭐ ${item.project} at ${item.location}. ${item.type}. Configurations: ${item.plotSize || 'Expansive Carpet Areas'}. Approved Bank Loans (${item.bankLoans.join(', ')}). Download 2026 Floor Plans PDF & Schedule VIP Site Visit with Free Cab Pickup!`;
 
   const canonicalUrl = `https://skyidevelopers.in/na-plots/${item.id}`;
 

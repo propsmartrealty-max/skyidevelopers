@@ -12,10 +12,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'SKYi Developers | Eco-Townships & Ultra-Luxury Residences | 0% Brokerage',
+    default: '⭐ SKYi Developers Pune™ | 1-4 BHK & NA Plots From ₹38L* | 2026 Floor Plans & Price List',
     template: '%s | SKYi Developers™',
   },
-  description: '⭐ Featured SKYi Developers Portal. Direct Developer Booking — 0% Brokerage. 45-Acre Skyi Songbirds (1, 2, 3 & 4 BHK from ₹38L*), 90-Acre SKYi Manas Lake, Five Racecourse (Sopan Baug), Five Aguada (Bandra Mumbai), Five Maidan (Baner), and Tiger’s Nest. Built around life and shaped by Max Light™. Download 2026 Floor Plans PDF & Schedule VIP Site Visit!',
+  description: '【Direct Developer Booking — 0% Brokerage】⭐ Explore SKYi Developers Pune: Skyi Songbirds (New Launch 1 BHK from ₹38L*), SKYi Manas Lake (PMRDA NA Plots from ₹95L*), Tigers Nest, Five Racecourse Sopan Baug, Five Aguada Bandra Mumbai. MahaRERA Approved. Download 2026 Floor Plans PDF & Book Free AC Cab Site Visit!',
   keywords: SKYI_ALL_ECOSYSTEM_KEYWORDS,
   authors: [{ name: 'Skyi Developers' }],
   publisher: 'Skyi Developers',
