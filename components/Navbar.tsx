@@ -24,7 +24,18 @@ const NAV_LINKS: NavLinkItem[] = [
   { name: 'Contact',      href: '/contact',      id: 'contact',      sectionId: 'contact' },
 ];
 
-const SECTIONS = ['home', 'portfolio', 'philosophy', 'master-plan', 'virtual-tour', 'connectivity', 'contact'];
+const SECTION_TO_NAV_MAP: Record<string, string> = {
+  'home': 'home',
+  'portfolio': 'portfolio',
+  'master-plan': 'portfolio',
+  'virtual-tour': 'portfolio',
+  'calculator': 'portfolio',
+  'philosophy': 'philosophy',
+  'connectivity': 'connectivity',
+  'contact': 'contact',
+};
+
+const OBSERVED_SECTIONS = ['home', 'portfolio', 'philosophy', 'connectivity', 'contact'];
 
 interface NavbarProps {
   onOpenVisitModal?: () => void;
@@ -61,7 +72,7 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
   /* Scroll + progress */
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 60);
+      setScrolled(window.scrollY > 50);
       const total = document.documentElement.scrollHeight - window.innerHeight;
       setScrollProgress(total > 0 ? (window.scrollY / total) * 100 : 0);
     };
@@ -69,29 +80,32 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  /* Active section via IntersectionObserver when on home page */
+  /* Active section tracking via IntersectionObserver */
   useEffect(() => {
-    if (pathname !== '/' && pathname !== '') return;
+    // Only run on pages that render section anchors
+    const hasSections = OBSERVED_SECTIONS.some((id) => document.getElementById(id));
+    if (!hasSections) return;
 
     const observers: IntersectionObserver[] = [];
-    SECTIONS.forEach(id => {
+    OBSERVED_SECTIONS.forEach((id) => {
       const el = document.getElementById(id);
       if (!el) return;
       const obs = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            setActiveSection(id);
+            const mappedNav = SECTION_TO_NAV_MAP[id] || id;
+            setActiveSection(mappedNav);
           }
         },
-        { threshold: 0.25 }
+        { threshold: 0.2, rootMargin: '-75px 0px -40% 0px' }
       );
       obs.observe(el);
       observers.push(obs);
     });
-    return () => observers.forEach(o => o.disconnect());
+    return () => observers.forEach((o) => o.disconnect());
   }, [pathname]);
 
-  /* Keyboard & scroll lock for mobile menu */
+  /* Keyboard & safe scroll lock for mobile menu */
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setMobileOpen(false);
@@ -108,39 +122,45 @@ export default function Navbar({ onOpenVisitModal }: NavbarProps) {
     };
   }, [mobileOpen]);
 
+  /* Smooth scroll to target element with exact navbar offset */
+  const scrollToTargetSection = (targetId: string) => {
+    if (targetId === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const el = document.getElementById(targetId);
+    if (el) {
+      const navOffset = 82;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+      window.scrollTo({
+        top: Math.max(0, offsetPosition),
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const handleNavClick = (link: NavLinkItem, e?: React.MouseEvent) => {
     setMobileOpen(false);
-    const isHomePage = pathname === '/' || pathname === '';
+    document.body.style.overflow = '';
 
-    if (isHomePage) {
-      if (link.id === 'home') {
+    // If target section exists on current page, smooth scroll directly to it!
+    if (link.sectionId) {
+      const targetEl = document.getElementById(link.sectionId);
+      if (targetEl) {
         if (e) e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        window.history.pushState(null, '', '/');
-        setActiveSection('home');
-        return;
-      }
+        scrollToTargetSection(link.sectionId);
+        setActiveSection(link.id);
 
-      if (link.sectionId) {
-        const targetEl = document.getElementById(link.sectionId);
-        if (targetEl) {
-          if (e) e.preventDefault();
-          targetEl.scrollIntoView({ behavior: 'smooth' });
-          window.history.pushState(null, '', link.href);
-          setActiveSection(link.id);
-          return;
+        // Keep URL clean without unneeded Next.js page reloads
+        if (typeof window !== 'undefined' && window.location.pathname !== link.href) {
+          window.history.replaceState(null, '', link.href);
         }
-      }
-      // Separate routes like /songbirds, /manas-lake navigate naturally via Link
-    } else {
-      // Subpages
-      if (link.href === pathname) {
-        if (e) e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
-      // Navigating to other pages handled cleanly by Next.js Link
     }
+
+    // Otherwise, standard Next.js Link handles navigation to external routes (e.g., /songbirds)
   };
 
   const handleBookVisit = () => {

@@ -1,4 +1,5 @@
 import { PROGRAMMATIC_SEO_ITEMS } from '../../utils/programmaticSeo';
+import { getProjectImage } from '../../utils/dynamicImages';
 
 export const dynamic = 'force-static';
 
@@ -93,20 +94,25 @@ export async function GET() {
   `).join('');
 
   const programmaticXml = PROGRAMMATIC_SEO_ITEMS.map((item) => {
-    const isPlot = item.type.toLowerCase().includes('plot');
+    const isPlot = item.id.includes('manas-lake') && item.type.toLowerCase().includes('plot');
     const shortPrice = item.priceRange.split('-')[0].trim().replace('Lakhs*', 'L*').replace('Crores', 'Cr*').replace('Lakhs', 'L*');
     const cleanProject = item.project.replace(/^SKYi\s+/i, '').replace(/NA Bungalow Plots/i, 'Plots').replace(/NA Villa Plots/i, 'Plots').replace(/Eco-Township/i, '').trim();
     const itemTitle = isPlot
       ? `${cleanProject} ${item.microLocation} | Plots From ${shortPrice} | SKYi Developers`
       : `${cleanProject} ${item.microLocation} | From ${shortPrice} | SKYi Developers`;
+    const projectImg = `${baseUrl}${getProjectImage(item.id)}`;
+    const desc = isPlot
+      ? `PMRDA Sanctioned 100% Clear Title 7/12 ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}. Price: ${item.priceRange}. Bank Loans: ${item.bankLoans.join(', ')}. Direct Developer Booking.`
+      : `MahaRERA Sanctioned ${item.type} at ${item.location}. Configurations: ${item.plotSize || 'Expansive Carpet'}. Price: ${item.priceRange}. Bank Loans: ${item.bankLoans.join(', ')}. Direct Developer Booking.`;
+
     return `
     <item>
       <title><![CDATA[${itemTitle}]]></title>
       <link>${baseUrl}/na-plots/${item.id}</link>
       <guid isPermaLink="true">${baseUrl}/na-plots/${item.id}</guid>
-      <description><![CDATA[PMRDA Sanctioned 100% Clear Title 7/12 ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}. Price: ${item.priceRange}. Bank Loans: ${item.bankLoans.join(', ')}. Direct Developer Booking.]]></description>
-      <enclosure url="${baseUrl}/bungalow-plots.jpg" length="65000" type="image/jpeg" />
-      <media:content url="${baseUrl}/bungalow-plots.jpg" medium="image" />
+      <description><![CDATA[${desc}]]></description>
+      <enclosure url="${projectImg}" length="65000" type="image/webp" />
+      <media:content url="${projectImg}" medium="image" />
       <pubDate>${new Date().toUTCString()}</pubDate>
     </item>
   `;

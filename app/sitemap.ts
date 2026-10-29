@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { PROGRAMMATIC_SEO_ITEMS } from '../utils/programmaticSeo';
+import { getProjectImage } from '../utils/dynamicImages';
 
 export const dynamic = 'force-static';
 
@@ -178,22 +179,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Programmatic SEO Micro-Location & Project Pages
   const programmaticPages: MetadataRoute.Sitemap = PROGRAMMATIC_SEO_ITEMS.map((item) => {
-    let img = `${baseUrl}/bungalow-plots.jpg`;
-    if (item.id.includes('five-aguada')) {
-      img = `${baseUrl}/images/projects/skyi-five-aguada.webp`;
-    } else if (item.id.includes('five-racecourse')) {
-      img = `${baseUrl}/images/projects/skyi-five-racecourse.webp`;
-    } else if (item.id.includes('five-maidan')) {
-      img = `${baseUrl}/images/projects/skyi-five-maidan.webp`;
-    } else if (item.id.includes('tigers-nest')) {
-      img = `${baseUrl}/images/projects/skyi-tigers-nest.webp`;
-    } else if (item.id.includes('songbirds')) {
-      img = `${baseUrl}/images/projects/skyi-songbirds.webp`;
-    } else if (item.id.includes('star-city')) {
-      img = `${baseUrl}/images/projects/skyi-star-city.webp`;
-    } else if (item.id.includes('manas-lake')) {
-      img = `${baseUrl}/images/projects/skyi-manas-lake.webp`;
-    }
+    const img = `${baseUrl}${getProjectImage(item.id)}`;
 
     return {
       url: `${baseUrl}/na-plots/${item.id}`,

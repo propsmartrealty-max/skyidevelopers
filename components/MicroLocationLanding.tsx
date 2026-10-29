@@ -35,28 +35,49 @@ export default function MicroLocationLanding({ item }: MicroLocationLandingProps
   const [isPlanOpen, setIsPlanOpen] = useState(false);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(0);
 
+  const isPlot = item.id.includes('manas-lake') && (item.type.toLowerCase().includes('plot') || item.project.toLowerCase().includes('plot'));
+
   const toggleFaq = (idx: number) => {
     setExpandedFaq(expandedFaq === idx ? null : idx);
   };
 
-  const faqs = [
-    {
-      q: `What is the price range and plot size for ${item.project} in ${item.microLocation}?`,
-      a: `${item.project} at ${item.location} offers plot sizes starting from ${item.plotSize || '2,000 Sq.Ft.'} with price range starting from ${item.priceRange}. Permissible construction FSI is ${item.fsiRatio || '1.4 - 1.5'}.`,
-    },
-    {
-      q: `Are the plots at ${item.project} PMRDA sanctioned with individual 7/12 extract?`,
-      a: `Yes, all plots at ${item.project} are 100% Collector NA sanctioned under PMRDA residential zoning with separate 7/12 extract, clear PR card title, and individual sub-division demarcation.`,
-    },
-    {
-      q: `Which banks provide home and land purchase loans for ${item.project}?`,
-      a: `Pre-approved land purchase and composite construction loans are offered by leading nationalized and private banks including ${item.bankLoans.join(', ')} with up to 80% funding.`,
-    },
-    {
-      q: `How to schedule a free VIP site visit with AC cab pickup for ${item.project}?`,
-      a: `You can book an exclusive developer site visit directly on skyidevelopers.in/contact or via WhatsApp at 7744009295. SKYi Developers provides complimentary private AC cab pickup and drop across Pune. 0% brokerage.`,
-    },
-  ];
+  const faqs = isPlot
+    ? [
+        {
+          q: `What is the price range and plot size for ${item.project} at Manas Lake Bhukum?`,
+          a: `${item.project} offers collector NA villa plot sizes starting from ${item.plotSize || '2,000 Sq.Ft.'} with price range starting from ${item.priceRange}. Permissible construction FSI is ${item.fsiRatio || '1.4 - 1.5'}.`,
+        },
+        {
+          q: `Are the plots at ${item.project} PMRDA sanctioned with individual 7/12 extract?`,
+          a: `Yes, all bungalow plots at ${item.project} are 100% Collector NA sanctioned under PMRDA residential zoning with separate 7/12 extract, clear PR card title, and individual sub-division demarcation.`,
+        },
+        {
+          q: `Which banks provide land purchase and villa construction loans for ${item.project}?`,
+          a: `Pre-approved land purchase and composite construction loans are offered by leading nationalized and private banks including ${item.bankLoans.join(', ')} with up to 80% funding.`,
+        },
+        {
+          q: `How to schedule a free VIP site visit with AC cab pickup for ${item.project}?`,
+          a: `You can book an exclusive developer site visit directly on skyidevelopers.in/contact or via WhatsApp at 7744009295. SKYi Developers provides complimentary private AC cab pickup and drop across Pune. 0% brokerage.`,
+        },
+      ]
+    : [
+        {
+          q: `What configurations and prices are available for ${item.project} in ${item.microLocation}?`,
+          a: `${item.project} at ${item.location} offers ${item.type} with configurations spanning ${item.plotSize || 'expansive usable carpet areas'} starting from ${item.priceRange}.`,
+        },
+        {
+          q: `Is ${item.project} MahaRERA approved with clear title documentation?`,
+          a: `Yes, ${item.project} is fully sanctioned under MahaRERA and local municipal planning authorities with 100% clear title documentation and zero encumbrances.`,
+        },
+        {
+          q: `Which banks provide pre-approved home loans for ${item.project}?`,
+          a: `Pre-approved home loans up to 90% funding with competitive interest rates are available from leading financial institutions including ${item.bankLoans.join(', ')}.`,
+        },
+        {
+          q: `How to schedule a free VIP site visit with AC cab pickup for ${item.project}?`,
+          a: `You can schedule a complimentary site visit with private AC cab pickup and drop from anywhere across Pune via WhatsApp at 7744009295 or by booking through our direct developer desk. 0% brokerage.`,
+        },
+      ];
 
   return (
     <>
@@ -72,7 +93,9 @@ export default function MicroLocationLanding({ item }: MicroLocationLandingProps
                 <span style={{ marginLeft: '8px', color: '#475569' }}>/</span>
               </li>
               <li>
-                <Link href="/na-plots-bhukum" style={{ color: '#94a3b8', textDecoration: 'none' }}>PMRDA NA Plots</Link>
+                <Link href={isPlot ? '/na-plots-bhukum' : '/projects'} style={{ color: '#94a3b8', textDecoration: 'none' }}>
+                  {isPlot ? 'PMRDA NA Plots' : 'Projects'}
+                </Link>
                 <span style={{ marginLeft: '8px', color: '#475569' }}>/</span>
               </li>
               <li style={{ color: '#c8a96e', fontWeight: 600 }}>{item.project}</li>
@@ -105,19 +128,28 @@ export default function MicroLocationLanding({ item }: MicroLocationLandingProps
               borderRadius: '30px',
               marginBottom: '20px'
             }}>
-              <ShieldCheck size={16} /> ⭐ PMRDA Approved • Clear Title 7/12 • 0% Brokerage
+              <ShieldCheck size={16} /> {isPlot ? '⭐ PMRDA Approved • Clear Title 7/12 • 0% Brokerage' : '⭐ MahaRERA Approved • Clear Title • 0% Brokerage'}
             </div>
 
             {/* H1 Heading */}
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.18, marginBottom: '18px', color: '#ffffff' }}>
               {item.project}<br />
-              <span className="gradient-text">{item.microLocation}, West Pune</span>
+              <span className="gradient-text">{item.microLocation}, {item.corridor.includes('Mumbai') ? 'Mumbai' : 'Pune'}</span>
             </h1>
 
             {/* Subtitle */}
             <p style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: '#cbd5e1', lineHeight: 1.6, maxWidth: '820px', margin: '0 auto 28px' }}>
-              Collector NA sanctioned gated villa plotting at <strong style={{ color: '#ffffff' }}>{item.location}</strong>.
-              Starting from <strong style={{ color: '#c8a96e' }}>{item.priceRange}*</strong> with separate 7/12 extract, FSI {item.fsiRatio || '1.4 - 1.5'}, and 80% bank loans.
+              {isPlot ? (
+                <>
+                  Collector NA sanctioned gated villa plotting at <strong style={{ color: '#ffffff' }}>{item.location}</strong>.
+                  Starting from <strong style={{ color: '#c8a96e' }}>{item.priceRange}*</strong> with separate 7/12 extract, FSI {item.fsiRatio || '1.4 - 1.5'}, and 80% bank loans.
+                </>
+              ) : (
+                <>
+                  Thoughtfully designed {item.type} at <strong style={{ color: '#ffffff' }}>{item.location}</strong>.
+                  Starting from <strong style={{ color: '#c8a96e' }}>{item.priceRange}*</strong> with spacious usable carpet area, scenic balconies, and verified clear title.
+                </>
+              )}
             </p>
 
             {/* CTA Buttons */}
@@ -160,7 +192,7 @@ export default function MicroLocationLanding({ item }: MicroLocationLandingProps
                   gap: '8px',
                 }}
               >
-                <Download size={18} /> Download 2026 Price List PDF
+                <Download size={18} /> {isPlot ? 'Download Layout Blueprint PDF' : 'Download 2026 Floor Plans PDF'}
               </button>
 
               <a
@@ -200,18 +232,18 @@ export default function MicroLocationLanding({ item }: MicroLocationLandingProps
               </div>
 
               <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
-                <span style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Plot / Unit Sizes</span>
-                <p style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff', margin: '4px 0 0' }}>{item.plotSize || '2,000 - 5,000 Sq.Ft.'}</p>
+                <span style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{isPlot ? 'Plot Sizes' : 'Carpet / Unit Sizes'}</span>
+                <p style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff', margin: '4px 0 0' }}>{item.plotSize || (isPlot ? '2,000 - 5,000 Sq.Ft.' : 'Expansive Carpet')}</p>
               </div>
 
               <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
                 <span style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Sanction & Title</span>
-                <p style={{ fontSize: '1.15rem', fontWeight: 800, color: '#10b981', margin: '4px 0 0' }}>Clear 7/12 &amp; PMRDA</p>
+                <p style={{ fontSize: '1.15rem', fontWeight: 800, color: '#10b981', margin: '4px 0 0' }}>{isPlot ? 'Clear 7/12 & PMRDA' : 'MahaRERA Sanctioned'}</p>
               </div>
 
               <div style={{ background: 'rgba(255, 255, 255, 0.04)', padding: '16px', borderRadius: '10px', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
-                <span style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Permissible FSI</span>
-                <p style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff', margin: '4px 0 0' }}>{item.fsiRatio || '1.4 - 1.5 FSI'}</p>
+                <span style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{isPlot ? 'Permissible FSI' : 'Architecture'}</span>
+                <p style={{ fontSize: '1.15rem', fontWeight: 800, color: '#ffffff', margin: '4px 0 0' }}>{isPlot ? (item.fsiRatio || '1.4 - 1.5 FSI') : 'IGBC Platinum Design'}</p>
               </div>
             </div>
           </div>
@@ -259,7 +291,7 @@ export default function MicroLocationLanding({ item }: MicroLocationLandingProps
                 <Landmark size={22} color="#c8a96e" /> Pre-Approved Bank Loans &amp; Access
               </h3>
               <p style={{ fontSize: '0.95rem', color: '#cbd5e1', lineHeight: 1.6, marginBottom: '16px' }}>
-                Up to 80% funding available on plot purchase and composite bungalow construction from nationalized &amp; leading private banks:
+                {isPlot ? 'Up to 80% funding available on plot purchase and composite bungalow construction from nationalized & leading private banks:' : 'Up to 90% pre-approved home loans available from nationalized & leading private banks:'}
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '24px' }}>
                 {item.bankLoans.map((bank, idx) => (

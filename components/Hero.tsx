@@ -94,13 +94,22 @@ export default function Hero({ onOpenSiteVisit }: HeroProps) {
   };
 
   const scrollToPortfolio = useCallback(() => {
-    if (pathname === '/' || pathname === '') {
-      document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
-      window.history.pushState(null, '', '/projects');
+    const el = document.getElementById('portfolio');
+    if (el) {
+      const navOffset = 82;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+      window.scrollTo({
+        top: Math.max(0, offsetPosition),
+        behavior: 'smooth',
+      });
+      if (typeof window !== 'undefined' && window.location.pathname !== '/projects') {
+        window.history.replaceState(null, '', '/projects');
+      }
     } else {
       router.push('/projects');
     }
-  }, [pathname, router]);
+  }, [router]);
 
   return (
     <header className="hero" id="home" ref={heroRef}>

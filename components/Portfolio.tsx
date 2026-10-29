@@ -13,6 +13,14 @@ export type ProjectCategory =
   | 'Hillside & Club'
   | 'Urban & Delivered';
 
+export type ProjectFilter =
+  | 'All'
+  | 'Ongoing & New Launch'
+  | 'Townships'
+  | 'Ultra Luxury ("Five")'
+  | 'Hillside & Club'
+  | 'Delivered Landmarks';
+
 interface Project {
   title: string;
   category: ProjectCategory;
@@ -30,49 +38,89 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
-  /* ── 1. INTEGRATED TOWNSHIPS ── */
+  /* ══════════════════════════════════════════════════════════════
+     ONGOING & NEW LAUNCH PROJECTS (STRICTLY AT THE TOP)
+     ══════════════════════════════════════════════════════════════ */
   {
     title: 'Skyi Songbirds',
     category: 'Townships',
-    tagline: '45+ Acre Award-Winning Eco-Township',
-    description: 'Surrounded by the Sahyadri Hills and 7,000-acre NDA forest reserve. NEW TOWER LAUNCH: Aria Heights Smart 1 BHK (430 Sq.Ft. Carpet) All-Inclusive Only ₹49L* plus 3 & 4 BHK sustainable hillside homes.',
+    tagline: '45+ Acre Award-Winning Eco-Township • Aria Heights 1 BHK Only ₹49L*',
+    description: 'Surrounded by the Sahyadri Hills and 7,000-acre NDA forest reserve. NEW TOWER LAUNCH: Aria Heights Smart 1 BHK (430 Sq.Ft. Carpet) All-Inclusive Only ₹49L* plus luxury 3 & 4 BHK sustainable hillside homes.',
     bgImage: getProjectImage('skyi-songbirds'),
     scale: '45+ Acres, 2,000+ Families',
     configuration: '1 BHK (Aria Heights 430 Sq.Ft. New Launch), 2, 3 & 4 BHK Residences',
     location: 'Bhugaon, Paud Road, Pune (10 mins from Kothrud & Chandani Chowk)',
-    amenities: ['🔥 NEW TOWER LAUNCH: Aria Heights 1 BHK (430 Sq.Ft.)', '5-Acre Poona Western Club', 'Sports Academies (Football, Cricket, Tennis)', 'Zero Waste Campus & NDA Forest Facing', 'Max Light™ Daylighting Engineering'],
+    amenities: [
+      '🔥 NEW TOWER LAUNCH: Aria Heights 1 BHK (430 Sq.Ft.)',
+      '5-Acre Poona Western Club on Campus',
+      'Sports Academies (Football, Cricket, Tennis)',
+      'Zero Waste Campus & 7,000-Acre NDA Forest Facing',
+      'Max Light™ Daylighting Engineering',
+    ],
     seoContent: 'Skyi Songbirds in Bhugaon, Paud Road, Pune, is an iconic IGBC Platinum certified eco-township spread across 45+ acres bordering the 7,000-acre NDA forest reserve. Featuring the newly launched Aria Heights smart 1 BHK starter homes (430 Sq.Ft. Carpet) alongside 3 & 4 BHK hillside residences, this development integrates zero-waste environmental infrastructure, Max Light™ daylighting technology, and the 5-acre Poona Western Club.',
     status: 'Ongoing',
-    year: '2024 New Launch',
+    year: '2026 New Tower Launch',
     reraNumber: 'MahaRERA: P52100028121 (Aria Heights Ph I) / P52100000769 (Ph A) / P52100001117 (Ph B) / P52100019348 (Ph E)',
   },
   {
-    title: 'SKYi Manas Lake',
+    title: 'SKYi Manas Lake PMRDA NA Bungalow Plots',
     category: 'Townships',
-    tagline: '90+ Acre Benchmark Lakefront Eco-Township',
+    tagline: 'PMRDA Sanctioned Clear Title NA Bungalow Plots (2,000–5,000+ SF)',
+    description: 'The premier plotting development by SKYi. PMRDA-sanctioned 100% clear title 7/12 & PR card NA bungalow villa plots (2,000 to 5,000+ Sq.Ft., FSI 1.5) on Paud Road, Bhukum near Chandani Chowk. Direct lake waterline access, underground utilities, and 90% pre-approved bank loans.',
+    bgImage: getProjectImage('skyi-manas-lake-na-plots'),
+    scale: '90-Acre Gated Master Township',
+    configuration: '2,000 – 5,000+ Sq.Ft. Clear Title PMRDA NA Villa Plots',
+    location: 'Paud Road, Bhukum, Pune (6 mins from Chandani Chowk)',
+    amenities: [
+      '🌊 Lakefront Promenade & Natural Waterline Access',
+      '100% PMRDA Sanctioned Clear Title 7/12 & PR Card',
+      'FSI 1.5 (Ground + 2 Floors Permissible Construction)',
+      '40ft & 50ft Wide Internal Concrete Avenues',
+      'Underground Utilities (Water, Electricity, Drainage)',
+      '90% Bank Loan Approved (SBI, HDFC, ICICI, Axis)',
+    ],
+    seoContent: 'SKYi Manas Lake NA Bungalow Plots in Bhukum, Paud Road, Pune, is the official PMRDA-sanctioned gated villa plotting development by SKYi Developers. Located 6 minutes from Chandani Chowk and Kothrud, these lakeside clear title plots offer individual 7/12 extracts, separate PR cards, FSI 1.5 for customized bungalow construction, and complete underground civic infrastructure.',
+    status: 'Ongoing',
+    year: 'New Waterfront Release',
+    reraNumber: 'MahaRERA: Sanctioned PMRDA Clear Title Layout Bhukum',
+  },
+  {
+    title: 'SKYi Manas Lake Lakeside Residences',
+    category: 'Townships',
+    tagline: '90+ Acre Benchmark Lakefront Eco-Township • 2 & 3 BHK Homes',
     description: 'A benchmark 90-acre lakefront eco-township featuring lakeside luxury 2 & 3 BHK residences, scenic nature boardwalks, and a grand full-service clubhouse.',
     bgImage: getProjectImage('skyi-manas-lake-apartment'),
     scale: '90+ Acres, 2,000+ Families',
     configuration: '2 & 3 BHK Lakeside Residences',
     location: 'Paud Road, Bhukum / Bavdhan, Pune (Near Chandani Chowk)',
-    amenities: ['🌊 Lakefront Promenade & Nature Walkways', 'Fully Equipped Grand Clubhouse & Swimming Pool', 'Badminton, Tennis & Sports Courts', 'Zero-Waste Water Treatment & Rainwater Harvesting', 'Direct 6-Lane Paud Road Access'],
+    amenities: [
+      '🌊 Lakefront Promenade & Nature Walkways',
+      'Fully Equipped Grand Clubhouse & Swimming Pool',
+      'Badminton, Tennis & Sports Courts',
+      'Zero-Waste Water Treatment & Rainwater Harvesting',
+      'Direct 6-Lane Paud Road Access',
+    ],
     seoContent: 'SKYi Manas Lake is a premier 90+ acre residential township on Paud Road at the junction of Bavdhan and Bhukum, Pune, just minutes from Chandani Chowk. Featuring lakeside 2 & 3 BHK residences, this master community offers panoramic Sahyadri views, pristine air, and rapid highway connectivity.',
     status: 'Ongoing',
     year: 'Active & Delivered Phases',
     reraNumber: 'MahaRERA: P52100000513 / P52100000514',
   },
-
-  /* ── 2. THE "FIVE" ULTRA-LUXURY COLLECTION ── */
   {
     title: 'Five Racecourse',
     category: 'Ultra Luxury ("Five")',
-    tagline: 'Unobstructed 120-Acre Racecourse Panoramas',
+    tagline: 'Unobstructed 120-Acre Racecourse Panoramas • 4 & 5 BHK',
     description: 'The pinnacle of Pune luxury. Single-floor and duplex 4 & 5 BHK sky mansions offering perpetual, unobstructed vistas of the Pune Racecourse and Empress Botanical Gardens in prestigious Sopan Baug.',
     bgImage: getProjectImage('skyi-five-racecourse'),
     scale: 'Signature High-Rise Luxury',
     configuration: '4 & 5 BHK Ultra-Luxury Panoramic Residences',
     location: 'Sopan Baug / Empress Garden, Pune',
-    amenities: ['🏇 Unobstructed Pune Racecourse Views', 'Single Residence per Wing / Floor', 'Private High-Speed Elevator Lobbies', 'Rooftop Horizon Pool & Sky Observatory', 'Bespoke 24/7 Concierge & Valet'],
+    amenities: [
+      '🏇 Unobstructed Pune Racecourse Views',
+      'Single Residence per Wing / Floor Privacy',
+      'Private High-Speed Elevator Lobbies',
+      'Rooftop Horizon Pool & Sky Observatory',
+      'Bespoke 24/7 Concierge & Valet',
+    ],
     seoContent: 'Five Racecourse by SKYi in Sopan Baug, Pune, represents ultra-luxury living with panoramic vistas overlooking the historic Pune Racecourse and Empress Gardens. Featuring expansive 4 & 5 BHK full-floor sky residences with private elevator access, double-height sundecks, and five-star hospitality services.',
     status: 'Ongoing',
     year: 'Signature Collection',
@@ -81,45 +129,61 @@ const PROJECTS: Project[] = [
   {
     title: 'Five Aguada',
     category: 'Ultra Luxury ("Five")',
-    tagline: 'Sea-Facing Bandstand Residences, Mumbai',
+    tagline: 'Sea-Facing Bandstand Residences, Bandra West, Mumbai',
     description: 'Inspired by the iconic Castella de Aguada. Entire-floor sea-facing 4, 5 & 6 BHK luxury mansions along Bandstand, Bandra West, Mumbai, commanding uninterrupted 180° Arabian Sea horizons.',
     bgImage: getProjectImage('skyi-five-aguada'),
     scale: 'Ultra-Luxury Mumbai Oceanfront',
     configuration: '4, 5 & 6 BHK Sea-Facing Entire-Floor Mansions',
     location: 'Bandstand, Bandra West, Mumbai',
-    amenities: ['🌊 Perpetual 180° Arabian Sea Horizons', 'Single Residence per Floor Privacy', 'Private Plunge Pools & Sky Decks', 'Private Elevators & Direct Lobby Entry', 'VIP Concierge & Smart Security'],
+    amenities: [
+      '🌊 Perpetual 180° Arabian Sea Horizons',
+      'Single Residence per Floor Privacy',
+      'Private Plunge Pools & Sky Decks',
+      'Private Elevators & Direct Lobby Entry',
+      'VIP Concierge & Smart Security',
+    ],
     seoContent: 'Five Aguada by SKYi is an ultra-exclusive residential landmark located at Bandstand, Bandra West, Mumbai. Offering full-floor 4, 5, and 6 BHK oceanfront residences with 180-degree unobstructed Arabian Sea views, bespoke architectural craftsmanship, and world-class security.',
     status: 'Launching Soon',
-    year: '2025 Flagship',
+    year: '2026 Flagship Mumbai',
     reraNumber: 'MahaRERA: Sanctioned Bandra West Coastal Listing',
   },
   {
     title: 'Five Maidan',
     category: 'Ultra Luxury ("Five")',
-    tagline: 'Exclusive 4 BHK Tower in Sprawling Greens',
+    tagline: 'Exclusive 4 BHK Tower in Sprawling Green Parkland, Baner',
     description: 'A rare low-density luxury high-rise development in Baner immersed in expansive landscaped green maidans, private forest walkways, and serene sporting grounds.',
     bgImage: getProjectImage('skyi-five-maidan'),
     scale: 'Vast Open Green Parkland Living',
     configuration: '4 BHK Exclusive Luxury Residences',
     location: 'Baner, Pune',
-    amenities: ['🌿 Sprawling Landscaped Green Maidans', 'Double-Height Designer Sun Decks', 'Olympic-Length Swimming Pool & Squash', 'EV Charging Bays & Dual Car Parkings', 'Zero Common Walls Architecture'],
+    amenities: [
+      '🌿 Sprawling Landscaped Green Maidans',
+      'Double-Height Designer Sun Decks',
+      'Olympic-Length Swimming Pool & Squash',
+      'EV Charging Bays & Dual Car Parkings',
+      'Zero Common Walls Architecture',
+    ],
     seoContent: 'Five Maidan by SKYi in Baner, Pune, is an exclusive single-tower residential sanctuary set within sprawling green open fields. Offering expansive 4 BHK homes with zero-wastage layout designs, private balconies, and proximity to Balewadi High Street.',
     status: 'Ongoing',
     year: 'Signature Edition',
     reraNumber: 'MahaRERA: Sanctioned Baner Signature Listing',
   },
-
-  /* ── 3. HILLSIDE & CLUB RESIDENCES ── */
   {
     title: 'Tiger’s Nest',
     category: 'Hillside & Club',
-    tagline: '4 BHK Forest-Facing Hillside Sanctuary',
+    tagline: '4 BHK Forest-Facing Hillside Sanctuary, Bhugaon',
     description: 'Ultra-luxury forest-facing 4 BHK residences nestled directly against the 7,000-acre NDA forest reserve along Paud Road, Bhugaon. Unmatched privacy and Sahyadri valley breezes.',
     bgImage: getProjectImage('skyi-tigers-nest'),
     scale: 'Hillside Sanctuary',
     configuration: '4 BHK Luxury Hillside Forest Decks',
     location: 'Bhugaon / Paud Road, Pune',
-    amenities: ['🌲 Direct 7,000-Acre NDA Forest Vistas', '180° Deep Deck Balconies', 'Private Gated Security & Clubhouse', 'Heated Valley-View Infinity Pool', 'Max Light™ Daylighting Engineering'],
+    amenities: [
+      '🌲 Direct 7,000-Acre NDA Forest Vistas',
+      '180° Deep Deck Balconies',
+      'Private Gated Security & Clubhouse',
+      'Heated Valley-View Infinity Pool',
+      'Max Light™ Daylighting Engineering',
+    ],
     seoContent: 'Tiger’s Nest by SKYi is an ultra-luxury hillside sanctuary located in Bhugaon, Paud Road, Pune. Facing the protected 7,000-acre NDA forest reserve, these 4 BHK residences provide pristine air quality, natural tranquility, and panoramic Sahyadri views.',
     status: 'Ongoing',
     year: 'Hillside Sanctuary Edition',
@@ -128,13 +192,19 @@ const PROJECTS: Project[] = [
   {
     title: 'SKYi PWC Towers & Hillside',
     category: 'Hillside & Club',
-    tagline: 'Integrated 5-Acre Sports Club Residences',
+    tagline: 'Integrated 5-Acre Sports Club Residences, Bhugaon',
     description: 'Flagship high-rise towers built around the 5-acre Poona Western Club at Skyi Songbirds campus, Bhugaon. Doorstep access to Olympic-grade sports academies, tennis, cricket, and fine dining.',
     bgImage: getProjectImage('skyi-pwc-towers'),
     scale: '5-Acre Sports Club Campus',
     configuration: '3 & 4 BHK Club-Integrated Residences',
     location: 'Skyi Songbirds, Bhugaon, Paud Road, Pune',
-    amenities: ['🎾 Direct Doorstep Poona Western Club Access', 'Olympic-Length Swimming Pool', 'Badminton, Squash & Cricket Academies', 'Fine Dining Restaurant & Banquet Lawns', 'Multi-Tier Security & Concierge'],
+    amenities: [
+      '🎾 Direct Doorstep Poona Western Club Access',
+      'Olympic-Length Swimming Pool',
+      'Badminton, Squash & Cricket Academies',
+      'Fine Dining Restaurant & Banquet Lawns',
+      'Multi-Tier Security & Concierge',
+    ],
     seoContent: 'SKYi PWC Towers and PWC Towers Hillside are club-integrated residences inside the Skyi Songbirds campus in Bhugaon, Paud Road, Pune. Built around the 5-acre Poona Western Club sports complex, these residences offer sports coaching and fine dining at your doorstep.',
     status: 'Ongoing',
     year: 'Club Collection',
@@ -143,13 +213,18 @@ const PROJECTS: Project[] = [
   {
     title: 'Aura Heights',
     category: 'Hillside & Club',
-    tagline: 'Panoramic Mountain-View 3 BHK Residences',
+    tagline: 'Panoramic Mountain-View 3 BHK Residences, Bhugaon',
     description: 'Boutique hillside skyline residences capturing cool mountain breezes and panoramic valley vistas along the Bavdhan-Bhugaon corridor.',
     bgImage: getProjectImage('skyi-aura-heights'),
     scale: 'Hillside Skyline Residences',
     configuration: '3 BHK Panoramic Mountain-View Residences',
     location: 'Bavdhan / Bhugaon Corridor, Pune',
-    amenities: ['⛰️ 180° Sahyadri Valley & Hill Panoramas', 'Zero-Passage High-Efficiency Layouts', 'Rooftop Stargazing Deck & Yoga Lawn', 'Rapid 5-Min Drive to Chandani Chowk'],
+    amenities: [
+      '⛰️ 180° Sahyadri Valley & Hill Panoramas',
+      'Zero-Passage High-Efficiency Layouts',
+      'Rooftop Stargazing Deck & Yoga Lawn',
+      'Rapid 5-Min Drive to Chandani Chowk',
+    ],
     seoContent: 'SKYi Aura Heights in Bhugaon / Bavdhan represents hillside luxury living along Paud Road, Pune. Positioned next to the Sahyadri mountains with pristine air and panoramic valley views.',
     status: 'Ongoing',
     year: 'Hillside Series',
@@ -158,24 +233,46 @@ const PROJECTS: Project[] = [
   {
     title: 'Iris Riverside',
     category: 'Hillside & Club',
-    tagline: 'Premium 3 BHK Riverside Residences',
+    tagline: 'Premium 3 BHK Riverside Residences, Bavdhan',
     description: 'Tranquil waterfront living along the river corridor in Bavdhan. Exceptional connectivity to Kothrud, Baner, and Mumbai-Bangalore Highway paired with natural riverside serenity.',
     bgImage: getProjectImage('skyi-iris-riverside'),
     scale: 'Riverside Living',
     configuration: '3 BHK Premium Waterfront Residences',
     location: 'Bavdhan, Pune',
-    amenities: ['🌊 Riverbank Jogging & Promenade Track', 'Landscaped Riverfront Central Courtyard', 'Fully Equipped Gymnasium & Steam Room', 'Covered Car Parking with EV Ready Points'],
+    amenities: [
+      '🌊 Riverbank Jogging & Promenade Track',
+      'Landscaped Riverfront Central Courtyard',
+      'Fully Equipped Gymnasium & Steam Room',
+      'Covered Car Parking with EV Ready Points',
+    ],
     seoContent: 'Iris Riverside by SKYi in Bavdhan, Pune, delivers modern riverside apartments situated minutes from Pune University and Chandani Chowk with serene water views and cross ventilation.',
     status: 'Ongoing',
     year: 'Riverside Series',
     reraNumber: 'MahaRERA: P52100019348',
   },
 
-  /* ── 4. URBAN BOUTIQUES & DELIVERED HERITAGE ── */
+  /* ══════════════════════════════════════════════════════════════
+     DELIVERED HERITAGE LANDMARKS (STRICTLY AT THE BOTTOM)
+     ══════════════════════════════════════════════════════════════ */
+  {
+    title: 'Skyi Star City',
+    category: 'Townships',
+    tagline: '20-Acre Integrated Township, Dhayari',
+    description: 'A well-planned community spread across 20 acres with self-sufficient infrastructure and 70% open green spaces in South Pune.',
+    bgImage: getProjectImage('skyi-star-city'),
+    scale: '20 Acres Integrated Township',
+    configuration: '1 & 2 BHK Zero-Wastage Smart Homes',
+    location: 'Dhayari, Pune (Near DSK Vishwa)',
+    amenities: ['🌳 70% Open & Green Spaces', 'Zero-Wastage Home Designs', 'Dedicated Night Garden', 'On-Campus Retail & Convenience Stores'],
+    seoContent: 'SKYi Star City is an integrated 20-acre residential township located in Dhayari, Pune, maximizing usable living space with zero-dead-corridor engineering.',
+    status: 'Delivered',
+    year: 'Delivered Integrated Township',
+    reraNumber: 'MahaRERA: P52100026727 / P52100029481 / P52100029474',
+  },
   {
     title: 'SKYi Park',
     category: 'Urban & Delivered',
-    tagline: 'Modern 2 & 3 BHK High-Rise Residences',
+    tagline: 'Modern 2 & 3 BHK High-Rise Residences, Baner',
     description: 'Contemporary boutique high-rises in the Baner-Bavdhan corridor near Hinjawadi IT Park. Designed with zero-passage efficiency and rooftop infinity lounges.',
     bgImage: getProjectImage('skyi-park'),
     scale: 'Prime Urban Residential',
@@ -184,7 +281,7 @@ const PROJECTS: Project[] = [
     amenities: ['🏙️ Rooftop Infinity Sky Lounge', 'High-Speed Elevators & EV Charging', 'Zero-Passage Efficient Floor Plans', 'Multi-Tier Digital Security Systems'],
     seoContent: 'SKYi Park in Baner / Bavdhan, Pune, showcases modern 2 and 3 BHK luxury residences close to Aundh, Pashan, Sus, and Hinjewadi IT Park with zero-wastage floor plans.',
     status: 'Delivered',
-    year: '2016',
+    year: 'Delivered Landmark',
     reraNumber: 'MahaRERA: P52100000449',
   },
   {
@@ -199,23 +296,23 @@ const PROJECTS: Project[] = [
     amenities: ['Designer Entrance Lobby', 'Solar-Powered Common Utility Grids', 'Rainwater Harvesting & Green Landscapes', 'Dedicated Children Play Haven'],
     seoContent: 'SKYi Iris in Baner, Pune, provides 2 and 3 BHK homes featuring Max Light™ design and high-end urban lifestyle amenities.',
     status: 'Delivered',
-    year: '2016',
+    year: 'Delivered Landmark',
     reraNumber: 'MahaRERA: P52100019348',
   },
   {
-    title: 'Skyi Star City',
-    category: 'Townships',
-    tagline: '20-Acre Integrated Township, Dhayari',
-    description: 'A well-planned community spread across 20 acres with self-sufficient infrastructure and 70% open green spaces in South Pune.',
-    bgImage: getProjectImage('skyi-star-city'),
-    scale: '20 Acres Integrated Township',
-    configuration: '1 & 2 BHK Zero-Wastage Smart Homes',
-    location: 'Dhayari, Pune (Near DSK Vishwa)',
-    amenities: ['🌳 70% Open & Green Spaces', 'Zero-Wastage Home Designs', 'Dedicated Night Garden', 'On-Campus Retail & Convenience Stores'],
-    seoContent: 'SKYi Star City is an integrated 20-acre residential township located in Dhayari, Pune, maximizing usable living space with zero-dead-corridor engineering.',
+    title: 'Five Sopan Baug',
+    category: 'Urban & Delivered',
+    tagline: 'Flagship Ultra-Luxury Sky Mansions, Sopan Baug',
+    description: 'SKYi’s iconic first-edition ultra-luxury development in Sopan Baug featuring exclusive full-floor residences and private elevators.',
+    bgImage: getProjectImage('skyi-five-sopanbaug'),
+    scale: 'Exclusive Sopan Baug Landmark',
+    configuration: '4 & 5 BHK Full-Floor Sky Mansions',
+    location: 'Sopan Baug, Pune',
+    amenities: ['Full-Floor Privacy & Dedicated Elevators', 'Double-Height Living Rooms & Sundecks', 'Swimming Pool & Concierge Services', 'Prestigious Sopan Baug Address'],
+    seoContent: 'Five Sopan Baug by SKYi is a landmark delivered ultra-luxury development in Sopan Baug, Pune, establishing the gold standard of full-floor private residences.',
     status: 'Delivered',
-    year: '2012',
-    reraNumber: 'MahaRERA: P52100026727 / P52100029481 / P52100029474',
+    year: 'Delivered Heritage',
+    reraNumber: 'Fully Delivered Landmark Listing',
   },
   {
     title: 'Nilay',
@@ -281,7 +378,7 @@ const PROJECTS: Project[] = [
     title: 'Star Town',
     category: 'Urban & Delivered',
     tagline: 'Hillside Residential Enclave, Bhugaon',
-    description: 'Peaceful residential development nestled in the scenic foothills of Bhugaon with green open spaces and pure air.',
+    description: 'Peaceful residential development nestled in the scenic foothills of Bhugaon featuring smart 1 & 2 BHK hillside homes, green open courtyards, and fresh mountain air.',
     bgImage: getProjectImage('skyi-star-town'),
     scale: 'Hillside Residential Enclave',
     configuration: '1 & 2 BHK Foothill Smart Homes',
@@ -290,22 +387,7 @@ const PROJECTS: Project[] = [
     seoContent: 'Star Town by SKYi in Bhugaon, Paud Road, Pune, is a delivered hillside residential community surrounded by Sahyadri foothills and greenery.',
     status: 'Delivered',
     year: 'Delivered Heritage',
-    reraNumber: 'Fully Delivered Heritage Community',
-  },
-  {
-    title: 'Five Sopan Baug',
-    category: 'Urban & Delivered',
-    tagline: 'Flagship Ultra-Luxury Sky Mansions, Sopan Baug',
-    description: 'SKYi’s iconic first-edition ultra-luxury development in Sopan Baug featuring exclusive full-floor residences and private elevators.',
-    bgImage: getProjectImage('skyi-five-sopanbaug'),
-    scale: 'Exclusive Sopan Baug Landmark',
-    configuration: '4 & 5 BHK Full-Floor Sky Mansions',
-    location: 'Sopan Baug, Pune',
-    amenities: ['Full-Floor Privacy & Dedicated Elevators', 'Double-Height Living Rooms & Sundecks', 'Swimming Pool & Concierge Services', 'Prestigious Sopan Baug Address'],
-    seoContent: 'Five Sopan Baug by SKYi is a landmark delivered ultra-luxury development in Sopan Baug, Pune, establishing the gold standard of full-floor private residences.',
-    status: 'Delivered',
-    year: 'Delivered Heritage',
-    reraNumber: 'Fully Delivered Landmark Listing',
+    reraNumber: 'Fully Delivered Residential Community',
   },
 ];
 
@@ -436,7 +518,7 @@ function TiltCard({
 /* ─── Main Component ─── */
 export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: PortfolioProps) {
   const [selected, setSelected] = useState<Project | null>(null);
-  const [filter, setFilter] = useState<'All' | ProjectCategory>('All');
+  const [filter, setFilter] = useState<ProjectFilter>('All');
 
   useEffect(() => {
     document.body.style.overflow = selected ? 'hidden' : '';
@@ -446,14 +528,21 @@ export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: Portfoli
   }, [selected]);
 
   const filteredProjects =
-    filter === 'All' ? PROJECTS : PROJECTS.filter((p) => p.category === filter);
+    filter === 'All'
+      ? PROJECTS
+      : filter === 'Ongoing & New Launch'
+      ? PROJECTS.filter((p) => p.status === 'Ongoing' || p.status === 'Launching Soon')
+      : filter === 'Delivered Landmarks'
+      ? PROJECTS.filter((p) => p.status === 'Delivered')
+      : PROJECTS.filter((p) => p.category === filter);
 
-  const CATEGORY_TABS: Array<'All' | ProjectCategory> = [
-    'All',
-    'Townships',
-    'Ultra Luxury ("Five")',
-    'Hillside & Club',
-    'Urban & Delivered',
+  const CATEGORY_TABS: Array<{ id: ProjectFilter; label: string }> = [
+    { id: 'All',                  label: `All Projects (${PROJECTS.length})` },
+    { id: 'Ongoing & New Launch', label: '🔥 Ongoing & New Launch (10)' },
+    { id: 'Townships',            label: 'Townships' },
+    { id: 'Ultra Luxury ("Five")',label: 'Ultra Luxury ("Five")' },
+    { id: 'Hillside & Club',      label: 'Hillside & Club' },
+    { id: 'Delivered Landmarks',  label: '✓ Delivered (9)' },
   ];
 
   return (
@@ -471,19 +560,19 @@ export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: Portfoli
           <span className="gradient-text">Crafted Around Life. Shaped by Light &amp; Space.</span>
         </h2>
         <p style={{ maxWidth: '750px', margin: '14px auto 0', color: '#94a3b8', fontSize: '1rem', lineHeight: 1.6 }}>
-          Explore our certified IGBC Platinum eco-townships, signature “FIVE” ultra-luxury collection across Pune &amp; Mumbai, and hillside residences nestled against the Sahyadri mountains.
+          Explore our certified IGBC Platinum eco-townships, PMRDA-sanctioned lakeside NA bungalow plots at Manas Lake, signature “FIVE” ultra-luxury sky mansions across Pune &amp; Mumbai, and hillside club residences.
         </p>
         <div className="glow-line" style={{ margin: '18px auto 0' }} />
 
         {/* Filter buttons */}
         <div className="portfolio-filter-tabs">
-          {CATEGORY_TABS.map((cat) => (
+          {CATEGORY_TABS.map((tab) => (
             <button
-              key={cat}
-              className={`port-filter-btn ${filter === cat ? 'active' : ''}`}
-              onClick={() => setFilter(cat)}
+              key={tab.id}
+              className={`port-filter-btn ${filter === tab.id ? 'active' : ''}`}
+              onClick={() => setFilter(tab.id)}
             >
-              {cat === 'All' ? 'All Projects (14)' : cat}
+              {tab.label}
             </button>
           ))}
         </div>
@@ -509,110 +598,104 @@ export default function Portfolio({ onOpenSiteVisit, onOpenFloorPlan }: Portfoli
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
             onClick={() => setSelected(null)}
           >
-            <div
-              className="project-modal-backdrop"
-              style={{ backgroundImage: `url(${selected.bgImage})` }}
-            />
-            <div className="modal-overlay" />
-
             <motion.div
-              className="modal-sheet glass"
-              initial={{ y: '100%', opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: '100%', opacity: 0 }}
-              transition={{ delay: 0.08, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+              className="modal-content glass"
+              initial={{ scale: 0.9, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 20 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                className="modal-close"
-                onClick={() => setSelected(null)}
-                aria-label="Close project modal"
-              >
-                <X size={22} />
+              <button className="modal-close" onClick={() => setSelected(null)}>
+                <X size={20} />
               </button>
 
-              <div className="modal-header">
-                <p className="modal-location">
-                  <MapPin size={14} />
-                  {selected.location}
-                </p>
-                <h2 className="modal-title">{selected.title}</h2>
-                <p style={{ color: '#f59e0b', fontSize: '0.95rem', fontWeight: 600, margin: '4px 0 12px 0' }}>
-                  {selected.tagline}
-                </p>
-                <div className="modal-pills">
-                  <span className="modal-pill">
-                    <Building2 size={13} /> {selected.scale}
-                  </span>
-                  <span className="modal-pill">
-                    <Home size={13} /> {selected.configuration}
-                  </span>
-                  <span className="modal-pill" style={{ borderColor: 'rgba(245, 158, 11, 0.4)', color: '#fcd34d' }}>
-                    <Sparkles size={13} /> {selected.category}
-                  </span>
-                </div>
+              <div className="modal-header-img">
+                <img
+                  src={selected.bgImage}
+                  alt={`${selected.title} preview`}
+                  className="modal-img-tag"
+                />
+                <div className="modal-img-gradient" />
+                <span className="modal-category">{selected.category}</span>
+                <span className="modal-status-pill">{selected.status} • {selected.year}</span>
               </div>
 
               <div className="modal-body">
-                {/* MahaRERA Legal Registration Box */}
-                <div className="modal-rera-highlight">
-                  <div className="modal-rera-badge">
-                    <ShieldCheck size={18} />
-                    <strong>MahaRERA &amp; Legal Sanction</strong>
+                <h2>{selected.title}</h2>
+                <p className="modal-tagline">{selected.tagline}</p>
+
+                <div className="modal-rera-strip">
+                  <ShieldCheck size={16} className="text-emerald-400" />
+                  <span>{selected.reraNumber}</span>
+                </div>
+
+                <div className="modal-quick-info">
+                  <div className="mqi-item">
+                    <MapPin size={16} />
+                    <span>{selected.location}</span>
                   </div>
-                  <p className="modal-rera-text">{selected.reraNumber}</p>
-                  <a
-                    href="https://maharera.maharashtra.gov.in/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="modal-rera-link"
+                  <div className="mqi-item">
+                    <Building2 size={16} />
+                    <span>{selected.scale}</span>
+                  </div>
+                  <div className="mqi-item">
+                    <Home size={16} />
+                    <span>{selected.configuration}</span>
+                  </div>
+                </div>
+
+                <p className="modal-desc">{selected.seoContent}</p>
+
+                <h4>Key Highlights &amp; Specifications</h4>
+                <div className="modal-amenities">
+                  {selected.amenities.map((a) => (
+                    <span key={a} className="modal-pill">
+                      {a}
+                    </span>
+                  ))}
+                </div>
+
+                {/* MahaRERA Compliance Disclaimer */}
+                <div className="modal-maharera-disclaimer">
+                  <p>
+                    * MahaRERA Registered. Sanctioned layout drawings, verified title certificates, and approvals available at the sales desk. MahaRERA Official Website:{' '}
+                    <a
+                      href="https://maharera.maharashtra.gov.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="modal-rera-link"
+                    >
+                      maharera.maharashtra.gov.in
+                    </a>
+                  </p>
+                </div>
+
+                <div className="modal-cta-group">
+                  <button
+                    className="btn-primary"
+                    onClick={() => {
+                      const t = selected.title;
+                      setSelected(null);
+                      onOpenSiteVisit(t);
+                    }}
                   >
-                    Verify on MahaRERA Portal (maharera.maharashtra.gov.in) →
-                  </a>
+                    <Calendar size={16} />
+                    <span>Book Exclusive Site Visit</span>
+                  </button>
+                  <button
+                    className="btn-secondary"
+                    onClick={() => {
+                      const t = selected.title;
+                      setSelected(null);
+                      onOpenFloorPlan(t);
+                    }}
+                  >
+                    <FileText size={16} />
+                    <span>Download Floor Plans PDF</span>
+                  </button>
                 </div>
-
-                <div className="modal-section">
-                  <h4 className="modal-section-title">Architectural Overview</h4>
-                  <p className="modal-seo">{selected.seoContent}</p>
-                </div>
-
-                <div className="modal-section">
-                  <h4 className="modal-section-title">Signature Amenities &amp; Max Light™ Features</h4>
-                  <div className="modal-amenities">
-                    {selected.amenities.map((a) => (
-                      <div className="modal-amenity-chip" key={a}>
-                        <Star size={13} />
-                        <span>{a}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="modal-actions">
-                <button
-                  className="modal-cta-btn secondary"
-                  onClick={() => {
-                    const title = selected.title;
-                    setSelected(null);
-                    onOpenFloorPlan(title);
-                  }}
-                >
-                  <FileText size={16} /> View Floor Plans
-                </button>
-                <button
-                  className="modal-cta-btn primary"
-                  onClick={() => {
-                    const title = selected.title;
-                    setSelected(null);
-                    onOpenSiteVisit(title);
-                  }}
-                >
-                  <Calendar size={16} /> Book VIP Site Visit
-                </button>
               </div>
             </motion.div>
           </motion.div>

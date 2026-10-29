@@ -47,13 +47,25 @@ function HomeContent() {
 
     const targetId = sectionMap[pathname];
     if (targetId) {
-      const timer = setTimeout(() => {
+      const scrollToSection = () => {
         const el = document.getElementById(targetId);
         if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
+          const navOffset = 82;
+          const elementPosition = el.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+          window.scrollTo({
+            top: Math.max(0, offsetPosition),
+            behavior: 'smooth',
+          });
         }
-      }, 180);
-      return () => clearTimeout(timer);
+      };
+
+      const timer1 = setTimeout(scrollToSection, 80);
+      const timer2 = setTimeout(scrollToSection, 350);
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      };
     }
   }, [pathname]);
 

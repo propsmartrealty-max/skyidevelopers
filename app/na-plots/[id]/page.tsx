@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import MicroLocationLanding from '../../../components/MicroLocationLanding';
 import { PROGRAMMATIC_SEO_ITEMS } from '../../../utils/programmaticSeo';
+import { getProjectImage } from '../../../utils/dynamicImages';
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -121,10 +122,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: 'website',
       images: [
         {
-          url: 'https://skyidevelopers.in/bungalow-plots.jpg',
+          url: `https://skyidevelopers.in${getProjectImage(item.id)}`,
           width: 1200,
           height: 630,
-          alt: `${item.project} ${item.microLocation} Pune`,
+          alt: `${item.project} ${item.microLocation}`,
         },
       ],
     },
@@ -132,7 +133,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: fullTitle,
       description,
-      images: ['https://skyidevelopers.in/bungalow-plots.jpg'],
+      images: [`https://skyidevelopers.in${getProjectImage(item.id)}`],
     },
   };
 }
@@ -145,6 +146,8 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
     notFound();
   }
 
+  const isPlot = item.id.includes('manas-lake') && (item.type.toLowerCase().includes('plot') || item.project.toLowerCase().includes('plot'));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -152,7 +155,9 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
         '@type': 'RealEstateListing',
         '@id': `https://skyidevelopers.in/na-plots/${item.id}#listing`,
         name: item.project,
-        description: `【Project Showcase & Booking】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. 0% Brokerage direct booking.`,
+        description: isPlot
+          ? `【Project Showcase & Booking】100% Clear Title 7/12 & PR Card PMRDA Sanctioned ${item.type} at ${item.location}. Size: ${item.plotSize || '2,000 SQFT Onwards'}, FSI ${item.fsiRatio || '1.4 - 1.5'}. 0% Brokerage direct booking.`
+          : `【Project Showcase & Booking】MahaRERA Sanctioned ${item.type} at ${item.location}. Configurations: ${item.plotSize || 'Expansive Carpet Living'}. 0% Brokerage direct developer booking.`,
         url: `https://skyidevelopers.in/na-plots/${item.id}`,
         datePosted: '2026-01-15T00:00:00+05:30',
         offers: {
