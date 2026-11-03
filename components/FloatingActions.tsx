@@ -6,7 +6,7 @@ import { Calendar, MessageSquare, ArrowUp } from 'lucide-react';
 import './FloatingActions.css';
 
 interface FloatingActionsProps {
-  onOpenVisitModal: () => void;
+  onOpenVisitModal?: () => void;
 }
 
 export default function FloatingActions({ onOpenVisitModal }: FloatingActionsProps) {
@@ -62,7 +62,13 @@ export default function FloatingActions({ onOpenVisitModal }: FloatingActionsPro
 
       <motion.button
         className="floating-btn visit-btn"
-        onClick={onOpenVisitModal}
+        onClick={() => {
+          if (onOpenVisitModal) {
+            onOpenVisitModal();
+          } else if (typeof window !== 'undefined') {
+            window.location.href = '/contact';
+          }
+        }}
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.92 }}
         aria-label="Book VIP Site Visit"

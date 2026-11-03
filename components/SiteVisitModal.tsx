@@ -457,8 +457,8 @@ export default function SiteVisitModal({ isOpen, onClose, defaultProject }: Site
                     )}
                   </motion.button>
 
-                  <p className="form-disclaimer">
-                    🔒 Your contact details are safe. Our dedicated relationship executive will contact you shortly.
+                  <p className="form-disclaimer" style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '12px', textAlign: 'center', lineHeight: '1.4' }}>
+                    🔒 By confirming, you authorize PropSmart Realty (Authorized Partner) to contact you via Call/WhatsApp. Read our <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'underline' }}>Privacy Policy</a> and <a href="/disclaimer" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'underline' }}>Disclaimer</a>.
                   </p>
                 </form>
               </div>

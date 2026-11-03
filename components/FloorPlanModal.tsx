@@ -341,6 +341,10 @@ export default function FloorPlanModal({
                     <span>Book Sample Flat Tour</span>
                   </motion.button>
                 </div>
+
+                <p style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '12px', textAlign: 'center', lineHeight: '1.4' }}>
+                  Floor plans are indicative &amp; subject to competent authority sanctions. Authorized Partner: PropSmart Realty. View <a href="/disclaimer" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'underline' }}>Disclaimer</a> &amp; <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'underline' }}>Privacy Policy</a>.
+                </p>
               </div>
             </div>
           </motion.div>

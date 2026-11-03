@@ -453,6 +453,17 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
                       )}
                     </motion.button>
 
+                    <p style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '10px', textAlign: 'center', lineHeight: '1.4' }}>
+                      By submitting, you authorize PropSmart Realty (Authorized Marketing Partner) to contact you via Call/SMS/WhatsApp. Read our{' '}
+                      <Link href="/privacy-policy" style={{ color: '#38bdf8', textDecoration: 'underline' }}>
+                        Privacy Policy
+                      </Link>{' '}
+                      &amp;{' '}
+                      <Link href="/disclaimer" style={{ color: '#38bdf8', textDecoration: 'underline' }}>
+                        Disclaimer
+                      </Link>.
+                    </p>
+
                     <div style={{ marginTop: '14px', textAlign: 'center' }}>
                       <a
                         href="https://wa.me/917744009295?text=Hi%20SKYi%20Developers%2C%20I%20am%20interested%20in%20Songbirds%20%2F%20Manas%20Lake%20property%20details."
@@ -532,7 +543,7 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
           </div>
 
           <p className="maharera-disclaimer-note">
-            * Disclaimer: The artistic impressions, specifications, floor plans, and amenities shown on this website are indicative and subject to change as per competent authority approvals and MahaRERA guidelines. Clear title documentation and PMRDA sanction orders are available for verification at our site offices.
+            * Statutory Disclaimer: This portal is operated by PropSmart Realty, an authorized real estate channel partner for SKYi Developers (0% Brokerage). This is not the developer’s official website. Plotting developments are strictly restricted to SKYi Manas Lake (Bhukum); all other projects are residential apartments, townhomes, or sky mansions. Artistic impressions and specifications are indicative. Sanction documents and 7/12 extracts are open for inspection at our site offices.
           </p>
         </div>
       </div>
@@ -542,17 +553,23 @@ export default function Footer({ onOpenPrivacyModal, onOpenSiteVisit }: FooterPr
           <div className="fb-left">
             <img src="/logo-white.svg" alt="SKYi Developers" width="52" height="24" style={{ height: '24px', width: 'auto' }} />
             <p className="fb-copy">
-              © {new Date().getFullYear()} SKYi Developers. Built around life. All Rights Reserved.
+              © {new Date().getFullYear()} SKYi Developers Marketing Portal. Managed by <strong>PropSmart Realty</strong>, authorized channel partner for SKYi Projects. This is not the official developer website. All trademarks belong to their respective owners.
             </p>
           </div>
-          <div className="fb-right">
+          <div className="fb-right" style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+            <Link href="/privacy-policy" style={{ color: '#cbd5e1', fontSize: '0.85rem', textDecoration: 'none', transition: 'color 0.2s' }}>
+              Privacy Policy
+            </Link>
+            <Link href="/disclaimer" style={{ color: '#cbd5e1', fontSize: '0.85rem', textDecoration: 'none', transition: 'color 0.2s' }}>
+              Disclaimer &amp; RERA
+            </Link>
             {onOpenPrivacyModal && (
               <button
                 type="button"
                 className="fb-privacy-btn"
                 onClick={onOpenPrivacyModal}
               >
-                Privacy &amp; MahaRERA Disclosures
+                MahaRERA Table
               </button>
             )}
             <a

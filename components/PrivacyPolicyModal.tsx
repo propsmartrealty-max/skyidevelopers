@@ -54,10 +54,10 @@ const RERA_PROJECT_REGISTRATIONS = [
     status: 'Ongoing & Ready Phases',
   },
   {
-    name: 'SKYi PMRDA NA Bungalow Plot Estates (Bhukum, Pirangut, Kasarsai, Sus, Talegaon, Khadakwasla, Wagholi)',
-    location: 'West & East Pune Strategic Growth Corridors',
+    name: 'SKYi Manas Lake PMRDA NA Bungalow Plots (Bhukum)',
+    location: 'Manas Lake Waterfront, Bhukum, Paud Road, Pune',
     type: 'PMRDA Sanctioned Collector NA Villa Plots',
-    rera: 'PMRDA Sanctioned Collector NA Layouts / 100% Clear Title 7/12 Extracts',
+    rera: 'PMRDA Sanctioned Collector NA Layout / 100% Clear Title 7/12 Extract',
     status: 'Clear Title / Immediate Registration',
   },
 ];
@@ -217,7 +217,15 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
               <section className="privacy-section">
                 <h3><Lock size={16} /> 4. Data Protection &amp; Confidentiality</h3>
                 <p>
-                  We respect your privacy. Personal information collected through inquiry forms, site visit bookings, or financial calculators (Name, Phone Number, Email) is used exclusively by authorized SKYi property advisors for consultation. We never sell, rent, or trade customer information to unauthorized third-party marketing agencies.
+                  We respect your privacy. Personal information collected through inquiry forms, site visit bookings, or financial calculators (Name, Phone Number, Email) is used exclusively by authorized property advisors for consultation and coordination. We never sell, rent, or trade customer information to unauthorized third-party marketing agencies.
+                </p>
+              </section>
+
+              {/* 5. Authorized Channel Partner Disclosure */}
+              <section className="privacy-section">
+                <h3><ShieldCheck size={16} /> 5. Marketing Partner &amp; Channel Partner Transparency</h3>
+                <p>
+                  This portal (<code>skyidevelopers.in</code>) is an informational marketing website operated by <strong>PropSmart Realty</strong>, an authorized real estate channel partner for projects by SKYi Developers. This is not the official corporate website of the developer. All content, specifications, floor plans, and pricing are indicative and subject to change per MahaRERA approvals. Buyers incur 0% brokerage for developer inventory.
                 </p>
               </section>
             </div>

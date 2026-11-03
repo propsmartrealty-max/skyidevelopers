@@ -169,16 +169,9 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
           url: `https://skyidevelopers.in/na-plots/${item.id}`,
           seller: {
             '@type': 'Organization',
-            name: item.location.includes('Mumbai') ? 'SKYi Developers Mumbai' : 'SKYi Developers Pune',
+            name: 'PropSmart Realty (Authorized Partner for SKYi Developers)',
             url: 'https://skyidevelopers.in/',
           },
-        },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.95',
-          reviewCount: '890',
-          bestRating: '5',
-          worstRating: '1',
         },
         place: {
           '@type': 'Place',
@@ -209,8 +202,8 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'PMRDA NA Plots',
-            item: 'https://skyidevelopers.in/na-plots-bhukum',
+            name: isPlot ? 'PMRDA NA Plots' : 'Projects',
+            item: isPlot ? 'https://skyidevelopers.in/na-plots-bhukum' : 'https://skyidevelopers.in/projects',
           },
           {
             '@type': 'ListItem',
@@ -223,40 +216,75 @@ export default async function ProgrammaticNaPlotPage({ params }: PageProps) {
       {
         '@type': 'FAQPage',
         '@id': `https://skyidevelopers.in/na-plots/${item.id}#faq`,
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: `What is the price range and plot size for ${item.project} in ${item.microLocation}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `${item.project} at ${item.location} offers plot sizes starting from ${item.plotSize || '2,000 Sq.Ft.'} with price range starting from ${item.priceRange}. Permissible construction FSI is ${item.fsiRatio || '1.4 - 1.5'}.`,
-            },
-          },
-          {
-            '@type': 'Question',
-            name: `Are the plots at ${item.project} PMRDA sanctioned with individual 7/12 extract?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `Yes, all plots at ${item.project} are 100% Collector NA sanctioned under PMRDA residential zoning with separate 7/12 extract, clear PR card title, and individual sub-division demarcation.`,
-            },
-          },
-          {
-            '@type': 'Question',
-            name: `Which banks provide home and land purchase loans for ${item.project}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `Pre-approved land purchase and composite construction loans are offered by leading nationalized and private banks including ${item.bankLoans.join(', ')} with up to 80% funding.`,
-            },
-          },
-          {
-            '@type': 'Question',
-            name: `How to schedule a free VIP site visit with AC cab pickup for ${item.project}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `You can book an exclusive developer site visit directly on skyidevelopers.in/contact or via WhatsApp at 7744009295. SKYi Developers provides complimentary private AC cab pickup and drop across Pune. 0% brokerage.`,
-            },
-          },
-        ],
+        mainEntity: isPlot
+          ? [
+              {
+                '@type': 'Question',
+                name: `What is the price range and plot size for ${item.project} at Manas Lake Bhukum?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `${item.project} offers collector NA villa plot sizes starting from ${item.plotSize || '2,000 Sq.Ft.'} with price range starting from ${item.priceRange}. Permissible construction FSI is ${item.fsiRatio || '1.4 - 1.5'}.`,
+                },
+              },
+              {
+                '@type': 'Question',
+                name: `Are the plots at ${item.project} PMRDA sanctioned with individual 7/12 extract?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `Yes, all bungalow plots at ${item.project} are 100% Collector NA sanctioned under PMRDA residential zoning with separate 7/12 extract, clear PR card title, and individual sub-division demarcation.`,
+                },
+              },
+              {
+                '@type': 'Question',
+                name: `Which banks provide land purchase and villa construction loans for ${item.project}?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `Pre-approved land purchase and composite construction loans are offered by leading nationalized and private banks including ${item.bankLoans.join(', ')} with up to 80% funding.`,
+                },
+              },
+              {
+                '@type': 'Question',
+                name: `How to schedule a free VIP site visit with AC cab pickup for ${item.project}?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `You can book an exclusive site visit directly on skyidevelopers.in/contact or via WhatsApp at 7744009295. Complimentary private AC cab pickup and drop across Pune is provided. 0% brokerage.`,
+                },
+              },
+            ]
+          : [
+              {
+                '@type': 'Question',
+                name: `What configurations and prices are available for ${item.project} in ${item.microLocation}?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `${item.project} at ${item.location} offers ${item.type} with configurations spanning ${item.plotSize || 'expansive usable carpet areas'} starting from ${item.priceRange}.`,
+                },
+              },
+              {
+                '@type': 'Question',
+                name: `Is ${item.project} MahaRERA approved with clear title documentation?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `Yes, ${item.project} is fully sanctioned under MahaRERA and local planning authorities with 100% clear title documentation and zero encumbrances.`,
+                },
+              },
+              {
+                '@type': 'Question',
+                name: `Which banks provide pre-approved home loans for ${item.project}?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `Pre-approved home loans up to 90% funding with competitive interest rates are available from leading financial institutions including ${item.bankLoans.join(', ')}.`,
+                },
+              },
+              {
+                '@type': 'Question',
+                name: `How to schedule a free VIP site visit with AC cab pickup for ${item.project}?`,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `You can schedule a complimentary site visit with private AC cab pickup and drop from anywhere across Pune via WhatsApp at 7744009295 or by booking through our sales desk. 0% brokerage.`,
+                },
+              },
+            ],
       },
     ],
   };

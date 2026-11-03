@@ -171,13 +171,6 @@ const jsonLdSchema = {
         "addressRegion": "Maharashtra",
         "postalCode": "411045",
         "addressCountry": "IN"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1480",
-        "bestRating": "5",
-        "worstRating": "1"
       }
     },
     {
@@ -195,12 +188,6 @@ const jsonLdSchema = {
         "addressRegion": "Maharashtra",
         "postalCode": "411045",
         "addressCountry": "IN"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1480",
-        "bestRating": "5"
       }
     },
     {
