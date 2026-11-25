@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: 'What are the details of the new launch 1 BHK (430 Sq.Ft.) in Skyi Songbirds Bhugaon?',
-    a: 'Skyi Songbirds has launched an exclusive new phase of smart 1 BHK eco-residences featuring 430 Sq.Ft. usable RERA carpet area starting from ₹38 Lakhs*. These homes are designed on Zero-Dead-Space principles with scenic hillside balconies facing the 7,000-acre NDA forest, full access to the 5-acre Poona Western Club, and up to 90% pre-approved bank loans.',
+    a: 'Skyi Songbirds has launched an exclusive new tower launch (Aria Heights) of smart 1 BHK eco-residences featuring 430 Sq.Ft. usable RERA carpet area with all-inclusive price only ₹49 Lacs*. These homes are designed on Zero-Dead-Space principles with scenic hillside balconies facing the 7,000-acre NDA forest, full access to the 5-acre Poona Western Club, and up to 90% pre-approved bank loans.',
   },
   {
     q: 'Is PMRDA NA bungalow plotting available at SKYi Manas Lake in Bhukum Pune?',
@@ -45,7 +45,7 @@ const FAQS = [
   },
   {
     q: 'What is the price range for SKYi residential projects in Pune?',
-    a: 'SKYi project pricing is structured across segments: 1 BHK apartments start from ₹42 Lakhs* onwards in Dhayari and ₹45 Lakhs* in Bhugaon; 2 BHK homes range from ₹65 Lakhs* to ₹85 Lakhs*; 3 BHK luxury residences range from ₹95 Lakhs* to ₹1.45 Crores*; 4 BHK hillside sanctuaries in Tigers Nest start from ₹1.79 Crores*; 4 BHK Baner residences in Five Maidan start from ₹2.45 Crores*; and 4 & 5 BHK sky mansions in Five Racecourse (Sopan Baug) start from ₹3.85 Crores*.',
+    a: 'SKYi project pricing is structured across segments: 1 BHK smart homes in Songbirds (Aria Heights new tower launch) are priced at all-inclusive only ₹49 Lacs* and Star City Dhayari from ₹42 Lakhs*; 2 BHK homes range from ₹65 Lakhs* to ₹85 Lakhs*; 3 BHK luxury residences range from ₹95 Lakhs* to ₹1.45 Crores*; PMRDA NA bungalow plots at SKYi Manas Lake start from ₹95 Lakhs*; 4 BHK hillside sanctuaries in Tigers Nest start from ₹1.79 Crores*; 4 BHK Baner residences in Five Maidan start from ₹2.45 Crores*; and 4 & 5 BHK sky mansions in Five Racecourse (Sopan Baug) start from ₹3.85 Crores*.',
   },
   {
     q: 'Are all SKYi Developers projects registered with MahaRERA?',
@@ -265,7 +265,7 @@ export default function SEOContent() {
                 name: 'SKYi Developers Pune & Mumbai (Enerrgia SKYi Developers)',
                 description: 'Premier real estate developer in Pune and Mumbai since 2004 with 7,000+ homes delivered across 7M+ sq.ft., IGBC Platinum certified townships, and signature ultra-luxury residences.',
                 url: 'https://skyidevelopers.in',
-                priceRange: '₹38 Lakhs - ₹12.00 Crores',
+                priceRange: '₹42 Lakhs - ₹12.00 Crores',
                 address: {
                   '@type': 'PostalAddress',
                   streetAddress: 'Skymark One, Balewadi',

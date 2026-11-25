@@ -825,7 +825,8 @@ export const SKYI_SONGBIRDS_KEYWORDS: string[] = [
 
 export const SKYI_ARIA_HEIGHTS_KEYWORDS: string[] = [
   'SKYi Aria Heights', 'Skyi Aria Heights', 'Aria Heights Songbirds', 'Aria Heights Pune',
-  'Aria Heights Bhugaon', 'Aria Heights 1 BHK', 'Aria Heights 430 sqft', 'Aria Heights price 38 lakhs',
+  'Aria Heights Bhugaon', 'Aria Heights 1 BHK', 'Aria Heights 430 sqft', 'Aria Heights price 49 lakhs',
+  'Songbirds 1 BHK all inclusive only 49 Lacs', 'Skyi Songbirds 1 BHK 49 Lacs', 'Songbirds new launch 49 Lacs',
   'Aria Heights floor plan', 'Aria Heights brochure', 'Aria Heights MahaRERA P52100028121',
   'Songbirds new tower launch', 'Songbirds 1 BHK new tower launch'
 ];

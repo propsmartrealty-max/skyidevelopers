@@ -34,7 +34,7 @@ export async function GET() {
     {
       title: 'SKYi Projects Bhugaon | 1 BHK From ₹49L* | SKYi Developers',
       link: `${baseUrl}/bhugaon`,
-      description: 'Comprehensive property guide for Bhugaon: infrastructure investments, 6-lane expressway, metro connectivity, and hillside luxury living from ₹38L*.',
+      description: 'Comprehensive property guide for Bhugaon: infrastructure investments, 6-lane expressway, metro connectivity, and Songbirds 1 BHK new launch all-inclusive only ₹49L*.',
       image: `${baseUrl}/songbirds-1.webp`,
     },
     {
